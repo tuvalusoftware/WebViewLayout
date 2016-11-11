@@ -15,10 +15,10 @@
 		392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */; };
 		392061031DD5793A0009C7FB /* UIWebViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392061021DD5793A0009C7FB /* UIWebViewLayoutTests.swift */; };
 		3920610E1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */; };
-		392061361DD606FA0009C7FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 392061321DD606FA0009C7FB /* index.html */; };
-		392061371DD606FA0009C7FB /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 392061331DD606FA0009C7FB /* index.js */; };
-		392061381DD606FA0009C7FB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 392061341DD606FA0009C7FB /* style.css */; };
-		392061391DD606FA0009C7FB /* style.scss in Resources */ = {isa = PBXBuildFile; fileRef = 392061351DD606FA0009C7FB /* style.scss */; };
+		3920613B1DD61A440009C7FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3920613A1DD61A440009C7FB /* index.html */; };
+		3920613D1DD61A4C0009C7FB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3920613C1DD61A4C0009C7FB /* style.css */; };
+		3920613F1DD61A540009C7FB /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 3920613E1DD61A540009C7FB /* index.js */; };
+		392061411DD61A5C0009C7FB /* style.scss in Resources */ = {isa = PBXBuildFile; fileRef = 392061401DD61A5C0009C7FB /* style.scss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +54,10 @@
 		3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewLayoutUITests.swift; sourceTree = "<group>"; };
 		3920610F1DD5793A0009C7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebViewLayout-Bridging-Header.h"; sourceTree = "<group>"; };
-		392061321DD606FA0009C7FB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		392061331DD606FA0009C7FB /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
-		392061341DD606FA0009C7FB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		392061351DD606FA0009C7FB /* style.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = style.scss; sourceTree = "<group>"; };
+		3920613A1DD61A440009C7FB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3920613C1DD61A4C0009C7FB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		3920613E1DD61A540009C7FB /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		392061401DD61A5C0009C7FB /* style.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = style.scss; sourceTree = "<group>"; };
 		3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIWebViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,10 +154,10 @@
 		392061311DD606DF0009C7FB /* htdocs */ = {
 			isa = PBXGroup;
 			children = (
-				392061321DD606FA0009C7FB /* index.html */,
-				392061331DD606FA0009C7FB /* index.js */,
-				392061341DD606FA0009C7FB /* style.css */,
-				392061351DD606FA0009C7FB /* style.scss */,
+				3920613A1DD61A440009C7FB /* index.html */,
+				392061401DD61A5C0009C7FB /* style.scss */,
+				3920613C1DD61A4C0009C7FB /* style.css */,
+				3920613E1DD61A540009C7FB /* index.js */,
 			);
 			name = htdocs;
 			sourceTree = "<group>";
@@ -293,11 +293,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392061371DD606FA0009C7FB /* index.js in Resources */,
-				392061391DD606FA0009C7FB /* style.scss in Resources */,
-				392061381DD606FA0009C7FB /* style.css in Resources */,
 				392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */,
-				392061361DD606FA0009C7FB /* index.html in Resources */,
+				392061411DD61A5C0009C7FB /* style.scss in Resources */,
+				3920613B1DD61A440009C7FB /* index.html in Resources */,
+				3920613D1DD61A4C0009C7FB /* style.css in Resources */,
+				3920613F1DD61A540009C7FB /* index.js in Resources */,
 				392060F51DD5793A0009C7FB /* Assets.xcassets in Resources */,
 				392060F31DD5793A0009C7FB /* Main.storyboard in Resources */,
 			);

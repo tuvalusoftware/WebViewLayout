@@ -1,0 +1,21 @@
+{
+  "name": "uiwebviewlayout",
+  "homepage": "https://github.com/tuvalusoftware/WebViewLayout",
+  "description": "...",
+  "main": "..",
+  "keywords": [
+    "123"
+  ],
+  "authors": [
+    "nhd"
+  ],
+  "license": "nhd",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
