@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>An other navigation item.</title>
-  
-  
-  
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      @import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 * {
   -webkit-font-smoothing: antialiased;
   color: inherit;
@@ -153,39 +143,3 @@ body {
 .link:nth-child(5):hover p:before {
   background: #e74c3c;
 }
-
-    </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-</head>
-
-<body>
-  <ul id="list">
-  <li class="link">
-    <p><a href="#">Go home, you're drunk</a></p>
-    <span class="entypo-home"></span>
-  </li>
-  <li class="link">
-    <p><a href="#">Your awesome profile</a></p>
-    <span class="entypo-user"></span>
-  </li>
-  <li class="link">
-    <p><a href="#">Contact Folks</a></p>
-    <span class="entypo-chat"></span>
-  </li>
-  <li class="link">
-    <p><a href="#">Travel to the moon</a></p>
-    <span class="entypo-rocket"></span>
-  </li>
-  <li class="link">
-    <p><a href="#">Log-Out..</a></p>
-    <span class="entypo-logout"></span>
-  </li>
-</ul>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
-
-</body>
-</html>

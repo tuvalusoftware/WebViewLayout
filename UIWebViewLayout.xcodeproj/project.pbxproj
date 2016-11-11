@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F73929F24E3663FA6FE00DA /* Pods_UIWebViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */; };
 		392060EE1DD5793A0009C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060ED1DD5793A0009C7FB /* AppDelegate.swift */; };
 		392060F01DD5793A0009C7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060EF1DD5793A0009C7FB /* ViewController.swift */; };
 		392060F31DD5793A0009C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F11DD5793A0009C7FB /* Main.storyboard */; };
@@ -14,9 +15,10 @@
 		392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */; };
 		392061031DD5793A0009C7FB /* UIWebViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392061021DD5793A0009C7FB /* UIWebViewLayoutTests.swift */; };
 		3920610E1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */; };
-		392061201DD57D1D0009C7FB /* standard.css in Resources */ = {isa = PBXBuildFile; fileRef = 3920611F1DD57D1D0009C7FB /* standard.css */; };
-		392061221DD57D3B0009C7FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 392061211DD57D3B0009C7FB /* index.html */; };
-		392061241DD57D500009C7FB /* lib.js in Resources */ = {isa = PBXBuildFile; fileRef = 392061231DD57D500009C7FB /* lib.js */; };
+		392061361DD606FA0009C7FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 392061321DD606FA0009C7FB /* index.html */; };
+		392061371DD606FA0009C7FB /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 392061331DD606FA0009C7FB /* index.js */; };
+		392061381DD606FA0009C7FB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 392061341DD606FA0009C7FB /* style.css */; };
+		392061391DD606FA0009C7FB /* style.scss in Resources */ = {isa = PBXBuildFile; fileRef = 392061351DD606FA0009C7FB /* style.scss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		195B7CA0634B784EA242DE1C /* Pods-UIWebViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.release.xcconfig"; sourceTree = "<group>"; };
 		392060EA1DD5793A0009C7FB /* UIWebViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWebViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392060ED1DD5793A0009C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392060EF1DD5793A0009C7FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,9 +53,13 @@
 		392061091DD5793A0009C7FB /* UIWebViewLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIWebViewLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewLayoutUITests.swift; sourceTree = "<group>"; };
 		3920610F1DD5793A0009C7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3920611F1DD57D1D0009C7FB /* standard.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = standard.css; sourceTree = "<group>"; };
-		392061211DD57D3B0009C7FB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		392061231DD57D500009C7FB /* lib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lib.js; sourceTree = "<group>"; };
+		3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebViewLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		392061321DD606FA0009C7FB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		392061331DD606FA0009C7FB /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		392061341DD606FA0009C7FB /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		392061351DD606FA0009C7FB /* style.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = style.scss; sourceTree = "<group>"; };
+		3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIWebViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F73929F24E3663FA6FE00DA /* Pods_UIWebViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +95,8 @@
 				392061011DD5793A0009C7FB /* UIWebViewLayoutTests */,
 				3920610C1DD5793A0009C7FB /* UIWebViewLayoutUITests */,
 				392060EB1DD5793A0009C7FB /* Products */,
+				A3079A583C57CE982C2E5C32 /* Pods */,
+				E84AAC53F61591BA537C1180 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +113,7 @@
 		392060EC1DD5793A0009C7FB /* UIWebViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				392061311DD606DF0009C7FB /* htdocs */,
 				3920611B1DD57C510009C7FB /* Resources */,
 				392060ED1DD5793A0009C7FB /* AppDelegate.swift */,
 				392060EF1DD5793A0009C7FB /* ViewController.swift */,
@@ -110,6 +121,7 @@
 				392060F41DD5793A0009C7FB /* Assets.xcassets */,
 				392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */,
 				392060F91DD5793A0009C7FB /* Info.plist */,
+				3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */,
 			);
 			path = UIWebViewLayout;
 			sourceTree = "<group>";
@@ -135,35 +147,36 @@
 		3920611B1DD57C510009C7FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3920611C1DD57C5D0009C7FB /* htdocs */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		3920611C1DD57C5D0009C7FB /* htdocs */ = {
+		392061311DD606DF0009C7FB /* htdocs */ = {
 			isa = PBXGroup;
 			children = (
-				392061211DD57D3B0009C7FB /* index.html */,
-				3920611E1DD57CB20009C7FB /* js */,
-				3920611D1DD57C6A0009C7FB /* css */,
+				392061321DD606FA0009C7FB /* index.html */,
+				392061331DD606FA0009C7FB /* index.js */,
+				392061341DD606FA0009C7FB /* style.css */,
+				392061351DD606FA0009C7FB /* style.scss */,
 			);
 			name = htdocs;
 			sourceTree = "<group>";
 		};
-		3920611D1DD57C6A0009C7FB /* css */ = {
+		A3079A583C57CE982C2E5C32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3920611F1DD57D1D0009C7FB /* standard.css */,
+				3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */,
+				195B7CA0634B784EA242DE1C /* Pods-UIWebViewLayout.release.xcconfig */,
 			);
-			name = css;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		3920611E1DD57CB20009C7FB /* js */ = {
+		E84AAC53F61591BA537C1180 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				392061231DD57D500009C7FB /* lib.js */,
+				C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */,
 			);
-			name = js;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 392061121DD5793A0009C7FB /* Build configuration list for PBXNativeTarget "UIWebViewLayout" */;
 			buildPhases = (
+				92E39D3DC2A68B087F15D42C /* [CP] Check Pods Manifest.lock */,
 				392060E61DD5793A0009C7FB /* Sources */,
 				392060E71DD5793A0009C7FB /* Frameworks */,
 				392060E81DD5793A0009C7FB /* Resources */,
+				E3C135DEB0CDF8338E03F09A /* [CP] Embed Pods Frameworks */,
+				151DF9DECA4F44B92F2FE9EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +251,7 @@
 					392060E91DD5793A0009C7FB = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = RQA68E574G;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					392060FD1DD5793A0009C7FB = {
@@ -276,11 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392061221DD57D3B0009C7FB /* index.html in Resources */,
-				392061201DD57D1D0009C7FB /* standard.css in Resources */,
+				392061371DD606FA0009C7FB /* index.js in Resources */,
+				392061391DD606FA0009C7FB /* style.scss in Resources */,
+				392061381DD606FA0009C7FB /* style.css in Resources */,
 				392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */,
+				392061361DD606FA0009C7FB /* index.html in Resources */,
 				392060F51DD5793A0009C7FB /* Assets.xcassets in Resources */,
-				392061241DD57D500009C7FB /* lib.js in Resources */,
 				392060F31DD5793A0009C7FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +318,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		151DF9DECA4F44B92F2FE9EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E39D3DC2A68B087F15D42C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C135DEB0CDF8338E03F09A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		392060E61DD5793A0009C7FB /* Sources */ = {
@@ -457,26 +523,33 @@
 		};
 		392061131DD5793A0009C7FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = RQA68E574G;
 				INFOPLIST_FILE = UIWebViewLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = touchstone.ai.UIWebViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIWebViewLayout/UIWebViewLayout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		392061141DD5793A0009C7FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 195B7CA0634B784EA242DE1C /* Pods-UIWebViewLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = RQA68E574G;
 				INFOPLIST_FILE = UIWebViewLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = touchstone.ai.UIWebViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIWebViewLayout/UIWebViewLayout-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -558,6 +631,7 @@
 				392061141DD5793A0009C7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		392061151DD5793A0009C7FB /* Build configuration list for PBXNativeTarget "UIWebViewLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +640,7 @@
 				392061171DD5793A0009C7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		392061181DD5793A0009C7FB /* Build configuration list for PBXNativeTarget "UIWebViewLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +649,7 @@
 				3920611A1DD5793A0009C7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

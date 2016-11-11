@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,20 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Pe-ir-Mlc">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3r-Pg-ukh">
+                                <frame key="frameInset" minX="67" minY="209" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="8Pe-ir-Mlc" secondAttribute="trailing" id="Dvy-iS-8uO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Pe-ir-Mlc" secondAttribute="bottom" id="VUO-qf-eZo"/>
-                            <constraint firstItem="8Pe-ir-Mlc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nQZ-Ib-iGT"/>
-                            <constraint firstItem="8Pe-ir-Mlc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t95-rv-2vc"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="8Pe-ir-Mlc" id="9B1-VF-2US"/>
+                        <outlet property="uiwebView" destination="C3r-Pg-ukh" id="HYK-1g-VVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
