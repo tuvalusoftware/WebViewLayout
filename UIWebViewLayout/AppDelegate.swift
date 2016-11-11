@@ -18,15 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.webServer = GCDWebServer()
-        // Add a handler to respond to GET requests on any URL
-        webServer?.addDefaultHandler(forMethod: "GET", request: GCDWebServerRequest.self, processBlock: {request in
-            return GCDWebServerDataResponse(html:"<html><body><p>Hello World</p></body></html>")
-        })
-        
-        // Start server on port 8080
-        webServer?.start(withPort: 8080, bonjourName: nil)
-        print("Visit \(webServer?.serverURL) in your web browser")
+//        self.webServer = GCDWebServer()
+//        // Add a handler to respond to GET requests on any URL
+//        webServer?.addDefaultHandler(forMethod: "GET", request: GCDWebServerRequest.self, processBlock: {request in
+//            return GCDWebServerDataResponse(html:"<html><body><p>Hello World</p></body></html>")
+//        })
+//        
+//        // Start server on port 8080
+//        webServer?.start(withPort: 8080, bonjourName: nil)
+//        print("Visit \(webServer?.serverURL) in your web browser")
 
         return true
     }
