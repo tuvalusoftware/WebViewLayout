@@ -14,6 +14,9 @@
 		392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */; };
 		392061031DD5793A0009C7FB /* UIWebViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392061021DD5793A0009C7FB /* UIWebViewLayoutTests.swift */; };
 		3920610E1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */; };
+		392061201DD57D1D0009C7FB /* standard.css in Resources */ = {isa = PBXBuildFile; fileRef = 3920611F1DD57D1D0009C7FB /* standard.css */; };
+		392061221DD57D3B0009C7FB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 392061211DD57D3B0009C7FB /* index.html */; };
+		392061241DD57D500009C7FB /* lib.js in Resources */ = {isa = PBXBuildFile; fileRef = 392061231DD57D500009C7FB /* lib.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		392061091DD5793A0009C7FB /* UIWebViewLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIWebViewLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewLayoutUITests.swift; sourceTree = "<group>"; };
 		3920610F1DD5793A0009C7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3920611F1DD57D1D0009C7FB /* standard.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = standard.css; sourceTree = "<group>"; };
+		392061211DD57D3B0009C7FB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		392061231DD57D500009C7FB /* lib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lib.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		392060EC1DD5793A0009C7FB /* UIWebViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				3920611B1DD57C510009C7FB /* Resources */,
 				392060ED1DD5793A0009C7FB /* AppDelegate.swift */,
 				392060EF1DD5793A0009C7FB /* ViewController.swift */,
 				392060F11DD5793A0009C7FB /* Main.storyboard */,
@@ -123,6 +130,40 @@
 				3920610F1DD5793A0009C7FB /* Info.plist */,
 			);
 			path = UIWebViewLayoutUITests;
+			sourceTree = "<group>";
+		};
+		3920611B1DD57C510009C7FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3920611C1DD57C5D0009C7FB /* htdocs */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3920611C1DD57C5D0009C7FB /* htdocs */ = {
+			isa = PBXGroup;
+			children = (
+				392061211DD57D3B0009C7FB /* index.html */,
+				3920611E1DD57CB20009C7FB /* js */,
+				3920611D1DD57C6A0009C7FB /* css */,
+			);
+			name = htdocs;
+			sourceTree = "<group>";
+		};
+		3920611D1DD57C6A0009C7FB /* css */ = {
+			isa = PBXGroup;
+			children = (
+				3920611F1DD57D1D0009C7FB /* standard.css */,
+			);
+			name = css;
+			sourceTree = "<group>";
+		};
+		3920611E1DD57CB20009C7FB /* js */ = {
+			isa = PBXGroup;
+			children = (
+				392061231DD57D500009C7FB /* lib.js */,
+			);
+			name = js;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392061221DD57D3B0009C7FB /* index.html in Resources */,
+				392061201DD57D1D0009C7FB /* standard.css in Resources */,
 				392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */,
 				392060F51DD5793A0009C7FB /* Assets.xcassets in Resources */,
+				392061241DD57D500009C7FB /* lib.js in Resources */,
 				392060F31DD5793A0009C7FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
+        let html = try! String(contentsOfFile: htmlPath!, encoding: String.Encoding.utf8)
+        webView.loadHTMLString(html, baseURL: nil)
     }
 
     override func didReceiveMemoryWarning() {
