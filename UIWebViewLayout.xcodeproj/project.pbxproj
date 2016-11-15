@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F73929F24E3663FA6FE00DA /* Pods_UIWebViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */; };
+		381874721DD959F9007020B6 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381874711DD959F9007020B6 /* CustomWebView.swift */; };
 		392060EE1DD5793A0009C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060ED1DD5793A0009C7FB /* AppDelegate.swift */; };
 		392060F01DD5793A0009C7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060EF1DD5793A0009C7FB /* ViewController.swift */; };
 		392060F31DD5793A0009C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F11DD5793A0009C7FB /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		195B7CA0634B784EA242DE1C /* Pods-UIWebViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.release.xcconfig"; sourceTree = "<group>"; };
+		381874711DD959F9007020B6 /* CustomWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
 		392060EA1DD5793A0009C7FB /* UIWebViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWebViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392060ED1DD5793A0009C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392060EF1DD5793A0009C7FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */,
 				392060F91DD5793A0009C7FB /* Info.plist */,
 				3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */,
+				381874711DD959F9007020B6 /* CustomWebView.swift */,
 			);
 			path = UIWebViewLayout;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			files = (
 				392060F01DD5793A0009C7FB /* ViewController.swift in Sources */,
 				392060EE1DD5793A0009C7FB /* AppDelegate.swift in Sources */,
+				381874721DD959F9007020B6 /* CustomWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
