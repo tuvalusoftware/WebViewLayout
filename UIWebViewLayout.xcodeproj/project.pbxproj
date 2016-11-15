@@ -21,6 +21,8 @@
 		392061701DD62FED0009C7FB /* scss in Resources */ = {isa = PBXBuildFile; fileRef = 3920616C1DD62FEC0009C7FB /* scss */; };
 		392793571DDB7B99005F26EB /* angular-chart in Resources */ = {isa = PBXBuildFile; fileRef = 392793551DDB7B99005F26EB /* angular-chart */; };
 		392793581DDB7B99005F26EB /* chart in Resources */ = {isa = PBXBuildFile; fileRef = 392793561DDB7B99005F26EB /* chart */; };
+		3927935A1DDB7C9D005F26EB /* angular-chart.js in Resources */ = {isa = PBXBuildFile; fileRef = 392793591DDB7C9D005F26EB /* angular-chart.js */; };
+		3927935C1DDB7CCC005F26EB /* chart.js in Resources */ = {isa = PBXBuildFile; fileRef = 3927935B1DDB7CCC005F26EB /* chart.js */; };
 		3955ABB91DDB44C20086FEBD /* angular in Resources */ = {isa = PBXBuildFile; fileRef = 3955ABB21DDB44C20086FEBD /* angular */; };
 		3955ABBA1DDB44C20086FEBD /* angular-animate in Resources */ = {isa = PBXBuildFile; fileRef = 3955ABB31DDB44C20086FEBD /* angular-animate */; };
 		3955ABBB1DDB44C20086FEBD /* angular-aria in Resources */ = {isa = PBXBuildFile; fileRef = 3955ABB41DDB44C20086FEBD /* angular-aria */; };
@@ -67,6 +69,8 @@
 		3920616C1DD62FEC0009C7FB /* scss */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scss; sourceTree = "<group>"; };
 		392793551DDB7B99005F26EB /* angular-chart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "angular-chart"; sourceTree = "<group>"; };
 		392793561DDB7B99005F26EB /* chart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = chart; sourceTree = "<group>"; };
+		392793591DDB7C9D005F26EB /* angular-chart.js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "angular-chart.js"; sourceTree = "<group>"; };
+		3927935B1DDB7CCC005F26EB /* chart.js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = chart.js; sourceTree = "<group>"; };
 		3955ABB21DDB44C20086FEBD /* angular */ = {isa = PBXFileReference; lastKnownFileType = folder; path = angular; sourceTree = "<group>"; };
 		3955ABB31DDB44C20086FEBD /* angular-animate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "angular-animate"; sourceTree = "<group>"; };
 		3955ABB41DDB44C20086FEBD /* angular-aria */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "angular-aria"; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		392061311DD606DF0009C7FB /* htdocs */ = {
 			isa = PBXGroup;
 			children = (
+				3927935B1DDB7CCC005F26EB /* chart.js */,
+				392793591DDB7C9D005F26EB /* angular-chart.js */,
 				392793551DDB7B99005F26EB /* angular-chart */,
 				392793561DDB7B99005F26EB /* chart */,
 				3955ABB21DDB44C20086FEBD /* angular */,
@@ -315,9 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3920616D1DD62FED0009C7FB /* css in Resources */,
+				3927935A1DDB7C9D005F26EB /* angular-chart.js in Resources */,
 				3955ABB91DDB44C20086FEBD /* angular in Resources */,
 				3955ABBE1DDB44C20086FEBD /* angular-messages in Resources */,
 				3955ABBD1DDB44C20086FEBD /* angular-material in Resources */,
+				3927935C1DDB7CCC005F26EB /* chart.js in Resources */,
 				3955ABBA1DDB44C20086FEBD /* angular-animate in Resources */,
 				392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */,
 				392061701DD62FED0009C7FB /* scss in Resources */,
