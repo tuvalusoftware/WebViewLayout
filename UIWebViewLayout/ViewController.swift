@@ -22,6 +22,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         self.webView.navigationDelegate = self
         
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")!
+        
         let html = try! String(contentsOfFile: htmlPath, encoding: String.Encoding.utf8)
         webView.loadHTMLString(html, baseURL: nil)
         
@@ -34,16 +35,28 @@ class ViewController: UIViewController, WKNavigationDelegate {
 //        self.webView.load(request)
     }
     
+    
+//    func configWeb() -> WKWebViewConfiguration {
+//        let configuration = WKWebViewConfiguration()
+//        configuration.preferences = WKPreferences()
+//        configuration.preferences.minimumFontSize = 18
+//        configuration.preferences.javaScriptCanOpenWindowsAutomatically = true
+//        configuration.userContentController = WKUserContentController()
+//        configuration.userContentController.add(self as! WKScriptMessageHandler, name: "readJsonFile")
+//        
+//        return configuration
+//    }
+    
     func initWebServer(_ basePath: URL) {
         // Create server
-        self.webServer = GCDWebServer()
-        let GCDWebServer_DEBUG = 0
-        let GCDWebServer_VERBOSE = 1
-        let GCDWebServer_INFO = 2
-        let GCDWebServer_WARNING = 3
-        let GCDWebServer_ERROR = 4
-        let GCDWebServer_EXCEPTION = 5
-        GCDWebServer.setLogLevel(Int32(GCDWebServer_ERROR))
+//        self.webServer = GCDWebServer()
+//        let GCDWebServer_DEBUG = 0
+//        let GCDWebServer_VERBOSE = 1
+//        let GCDWebServer_INFO = 2
+//        let GCDWebServer_WARNING = 3
+//        let GCDWebServer_ERROR = 4
+//        let GCDWebServer_EXCEPTION = 5
+//        GCDWebServer.setLogLevel(Int32(GCDWebServer_ERROR))
         // Add a handler to respond to GET requests on any URL
 //        webServer.addDefaultHandler(forMethod: "GET", request: GCDWebServerRequest.self) { (request) -> GCDWebServerResponse? in
 //            var page = request.url!.lastPathComponent!
@@ -88,13 +101,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
 //            webServer.start(withPort: 8080, bonjourName: nil)
 //        }
 
-        webServer.addDefaultHandler(forMethod: "GET", request: GCDWebServerRequest.self) { (request) -> GCDWebServerResponse? in
-            var path = request?.url!.path
-            var file = path
-            var fullPath = "\(basePath)\(path)"
-            var sFullPath = fullPath.substring(from: fullPath.index(fullPath.startIndex, offsetBy: 7))
-            return GCDWebServerDataResponse(html: "<html><body><p>404 : unknown file \(sFullPath) World</p></body></html>")
-        }
+//        webServer.addDefaultHandler(forMethod: "GET", request: GCDWebServerRequest.self) { (request) -> GCDWebServerResponse? in
+//            var path = request?.url!.path
+//            var file = path
+//            var fullPath = "\(basePath)\(path)"
+//            var sFullPath = fullPath.substring(from: fullPath.index(fullPath.startIndex, offsetBy: 7))
+//            return GCDWebServerDataResponse(html: "<html><body><p>404 : unknown file \(sFullPath) World</p></body></html>")
+//        }
     }
 //        webServer.addDefaultHandler(forMethod: "GET", request: GCDWebServerRequest.self, processBlock: {request in
 //            var page = request.url!.lastPathComponent!
