@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <div ng-app="app" ng-controller="RadarCtrl" style="width: 25%;">
-            <canvas id="bar" class="chart chart-bar"
-                chart-data="data" chart-labels="labels" chart-series="series" >
-            </canvas>
-            <canvas id="radar" class="chart chart-radar"
-                chart-data="data" chart-options="options" chart-labels="labels" >
-            </canvas>
-        </div>
+   
         <script src="angular/angular.min.js"></script>
-        <script src="chart/Chart.js"></script>
+   
         <script src="chart/Chart.min.js"></script>
         <script src="angular-chart/angular-chart.min.js"></script>
         <script src="angular/angular.js"></script>
@@ -37,5 +30,16 @@
                                                            });
                                                            
             </script>
+        
+        <H1> HELLO </H1>
+        
+        <div ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
+            <canvas id="bar" class="chart chart-bar"
+                chart-data="data" chart-labels="labels" chart-series="series" >
+            </canvas>
+            <canvas id="radar" class="chart chart-radar"
+                chart-data="data" chart-options="options" chart-labels="labels" >
+            </canvas>
+        </div>
     </body>
 </html>

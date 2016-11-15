@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0F73929F24E3663FA6FE00DA /* Pods_UIWebViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */; };
 		381874721DD959F9007020B6 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381874711DD959F9007020B6 /* CustomWebView.swift */; };
+		389881BC1DDB7FEF00BCE7B7 /* scatter.html in Resources */ = {isa = PBXBuildFile; fileRef = 389881BB1DDB7FEF00BCE7B7 /* scatter.html */; };
+		389881BE1DDB800A00BCE7B7 /* scatter.js in Resources */ = {isa = PBXBuildFile; fileRef = 389881BD1DDB800A00BCE7B7 /* scatter.js */; };
 		392060EE1DD5793A0009C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060ED1DD5793A0009C7FB /* AppDelegate.swift */; };
 		392060F01DD5793A0009C7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060EF1DD5793A0009C7FB /* ViewController.swift */; };
 		392060F31DD5793A0009C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F11DD5793A0009C7FB /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* Begin PBXFileReference section */
 		195B7CA0634B784EA242DE1C /* Pods-UIWebViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.release.xcconfig"; sourceTree = "<group>"; };
 		381874711DD959F9007020B6 /* CustomWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
+		389881BB1DDB7FEF00BCE7B7 /* scatter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = scatter.html; sourceTree = "<group>"; };
+		389881BD1DDB800A00BCE7B7 /* scatter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scatter.js; sourceTree = "<group>"; };
 		392060EA1DD5793A0009C7FB /* UIWebViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWebViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392060ED1DD5793A0009C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392060EF1DD5793A0009C7FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 		392061311DD606DF0009C7FB /* htdocs */ = {
 			isa = PBXGroup;
 			children = (
+				389881BB1DDB7FEF00BCE7B7 /* scatter.html */,
+				389881BD1DDB800A00BCE7B7 /* scatter.js */,
 				3927935B1DDB7CCC005F26EB /* chart.js */,
 				392793591DDB7C9D005F26EB /* angular-chart.js */,
 				392793551DDB7B99005F26EB /* angular-chart */,
@@ -326,6 +332,7 @@
 				3920616D1DD62FED0009C7FB /* css in Resources */,
 				3927935A1DDB7C9D005F26EB /* angular-chart.js in Resources */,
 				3955ABB91DDB44C20086FEBD /* angular in Resources */,
+				389881BE1DDB800A00BCE7B7 /* scatter.js in Resources */,
 				3955ABBE1DDB44C20086FEBD /* angular-messages in Resources */,
 				3955ABBD1DDB44C20086FEBD /* angular-material in Resources */,
 				3927935C1DDB7CCC005F26EB /* chart.js in Resources */,
@@ -334,6 +341,7 @@
 				392061701DD62FED0009C7FB /* scss in Resources */,
 				3920616E1DD62FED0009C7FB /* index.html in Resources */,
 				392793571DDB7B99005F26EB /* angular-chart in Resources */,
+				389881BC1DDB7FEF00BCE7B7 /* scatter.html in Resources */,
 				3920616F1DD62FED0009C7FB /* js in Resources */,
 				392060F51DD5793A0009C7FB /* Assets.xcassets in Resources */,
 				392793581DDB7B99005F26EB /* chart in Resources */,

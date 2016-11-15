@@ -14,18 +14,29 @@ class ViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var uiwebView: UIWebView!
     var webServer:GCDWebServer!
     var webView: WKWebView!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        
+        
         webView = WKWebView(frame: view.bounds)
         view.addSubview(webView)
-        self.webView.navigationDelegate = self
+        // self.webView.navigationDelegate = self
         
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")!
         
-        let html = try! String(contentsOfFile: htmlPath, encoding: String.Encoding.utf8)
-        webView.loadHTMLString(html, baseURL: nil)
-        webView.allowsBackForwardNavigationGestures = true
+        var  filePath = Bundle.main.resourcePath
         
+        let webAppUrl = NSURL(fileURLWithPath: filePath!, isDirectory: true)
+        let fileUrl = NSURL(fileURLWithPath: htmlPath, isDirectory: false)
+        
+        webView.loadFileURL(fileUrl as URL, allowingReadAccessTo: webAppUrl as URL)
+   
+    
+    
         //        var bundleURL = Bundle.main.bundleURL
         //        var basePath: URL? = nil
         //        // Init WebServer
@@ -34,6 +45,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         //        var request = URLRequest(url: basePath!)
         //        self.webView.load(request)
     }
+    
     
     
     //    func configWeb() -> WKWebViewConfiguration {
