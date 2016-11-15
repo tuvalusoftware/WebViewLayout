@@ -1,67 +1,41 @@
-<html lang="en" >
-    <head>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-            <script src="angular-animate/angular-animate.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-                <style>
-                    .box {
-                        color:white;
-                        padding:10px;
-                        text-align:center;
-                        border-style: inset;
-                    }
-                .green {
-                    background:green;
-                }
-                .blue {
-                    background:blue;
-                }
-                </style>
-                <script language="javascript">
-                    angular
-                    .module('firstApplication', ['ngMaterial'])
-                    .controller('layoutController', layoutController);
-                    
-                    function layoutController ($scope) {
-                    }
-                </script>
-                </head>
-    <body ng-app="firstApplication">
-        <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="row" style="height:50%;" ng-cloak layout-wrap>
-            <div flex="30" class="green box">
-                [flex="30"]
-            </div>
-            <div flex="45" class="blue box">
-                [flex="45"]
-            </div>
-            <div flex="25" class="green box">
-                [flex="25"]
-            </div>
-            <div  flex-gt-sm="90" flex="10" class="green box">
-                [flex="33"]
-            </div>
-            <div flex="66" class="blue box">
-                [flex="66"]
-            </div>
-            <div flex="50" class="blue box">
-                [flex="50"]
-            </div>
-            <div flex class="green box">
-                [flex]
-            </div>
+<!DOCTYPE html>
+<html>
+    <body>
+        <div ng-app="app" ng-controller="RadarCtrl" style="width: 25%;">
+            <canvas id="bar" class="chart chart-bar"
+                chart-data="data" chart-labels="labels" chart-series="series" >
+            </canvas>
+            <canvas id="radar" class="chart chart-radar"
+                chart-data="data" chart-options="options" chart-labels="labels" >
+            </canvas>
         </div>
-        
-        <div layout="row" height:50%>
-            <div flex-gt-sm="66" flex="33">
-                flex 33% on mobile, <br>and 66% on gt-sm devices.
-            </div>
-            <div flex-gt-sm="33" flex="66">
-                flex 66%  on mobile, <br>and 33% on gt-sm devices.
-            </div>
-        </div>
+        <script src="angular/angular.min.js"></script>
+        <script src="chart.js/dist/Chart.js"></script>
+        <script src="chart.js/dist/Chart.min.js"></script>
+        <script src="angular-chart.js/dist/angular-chart.min.js"></script>
+        <script src="angular/angular.js"></script>
+        <script src="angular-aria/angular-aria.js"></script>
+        <script src="angular-animate/angular-animate.js"></script>
+        <script src="angular-material/angular-material.js"></script>
+        <script>
+            
+            // Include app dependency on ngMaterial
+            angular.module("app", ["chart.js"]).controller("RadarCtrl", function ($scope) {
+                                                           $scope.labels =["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"];
+                                                           
+                                                           $scope.data = [
+                                                                          [65, 59, 90, 81, 56, 55, 40],
+                                                                          [28, 48, 40, 19, 96, 27, 100]
+                                                                          ];
+                                                           $scope.labels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+                                                           $scope.series = ['Series A', 'Series B'];
+                                                           
+                                                           $scope.data = [
+                                                                          [65, 59, 80, 81, 56, 55, 40],
+                                                                          [28, 48, 40, 19, 86, 27, 90]
+                                                                          ];
+                                                           });
+                                                           
+            </script>
     </body>
 </html>
