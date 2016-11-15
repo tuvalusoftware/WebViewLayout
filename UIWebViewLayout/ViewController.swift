@@ -24,7 +24,9 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")!
         
         let html = try! String(contentsOfFile: htmlPath, encoding: String.Encoding.utf8)
+        let url = URL(string: "https://www.hackingwithswift.com")!
         webView.loadHTMLString(html, baseURL: nil)
+        webView.allowsBackForwardNavigationGestures = true
         
 //        var bundleURL = Bundle.main.bundleURL
 //        var basePath: URL? = nil
