@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "892EA74711655564BD84278E74421FC3F266AC06",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EDEE360E64DD2F809899489C2D81AC4F0EF21BF3" : 9223372036854775807,
+    "892EA74711655564BD84278E74421FC3F266AC06" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F4829A3C-2000-4EE7-90D4-21A7036D55B4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EDEE360E64DD2F809899489C2D81AC4F0EF21BF3" : "GRMustache.swift\/",
+    "892EA74711655564BD84278E74421FC3F266AC06" : "WebViewLayout\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UIWebViewLayout",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UIWebViewLayout.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tuvalusoftware\/WebViewLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "892EA74711655564BD84278E74421FC3F266AC06"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/groue\/GRMustache.swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EDEE360E64DD2F809899489C2D81AC4F0EF21BF3"
+    }
+  ]
+}
