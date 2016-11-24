@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  UIWebViewLayout
-//
-//  Created by Duc Nguyen on 11/11/16.
-//  Copyright © 2016 tuvalusoftware. All rights reserved.
-//
+ 
 import UIKit
 import WebKit
 import GCDWebServer
@@ -20,15 +14,16 @@ class ViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        
+         let template = try! Template(named: "Document")
+         _ = try! template.render()
         
         webView = WKWebView(frame: view.bounds)
         view.addSubview(webView)
-        // self.webView.navigationDelegate = self
         
-        let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")!
         
-        var  filePath = Bundle.main.resourcePath
+        let htmlPath = Bundle.main.path(forResource: "index2", ofType: "html")!
+        
+        let  filePath = Bundle.main.resourcePath
         
         let webAppUrl = NSURL(fileURLWithPath: filePath!, isDirectory: true)
         let fileUrl = NSURL(fileURLWithPath: htmlPath, isDirectory: false)

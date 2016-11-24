@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  UIWebViewLayout
-//
-//  Created by Duc Nguyen on 11/11/16.
-//  Copyright © 2016 tuvalusoftware. All rights reserved.
-//
+ 
 
 import UIKit
 import GCDWebServer

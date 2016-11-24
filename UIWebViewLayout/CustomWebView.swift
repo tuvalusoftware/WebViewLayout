@@ -1,10 +1,4 @@
-//
-//  CustomWebView.swift
-//  UIWebViewLayout
-//
-//  Created by TimO'Brien on 11/13/16.
-//  Copyright © 2016 tuvalusoftware. All rights reserved.
-//
+
 
 import UIKit
 import WebKit
