@@ -23,9 +23,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
         view.addSubview(webView)
         
  
+        let htmlPath = Bundle.main.path(forResource: "index3", ofType: "html")!
         
         
-        let htmlPath = Bundle.main.path(forResource: "index2", ofType: "html")!
+        print(" \(htmlPath)")
+        
+        
+        
         
         let  filePath = Bundle.main.resourcePath
         

@@ -4,11 +4,13 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7D30EBE85A47B822B9F295862525D99AB5DE07B7" : 9223372036854775807,
     "EDEE360E64DD2F809899489C2D81AC4F0EF21BF3" : 9223372036854775807,
     "892EA74711655564BD84278E74421FC3F266AC06" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A35319D5-82A5-4931-97CB-ED209A0B92AF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7D30EBE85A47B822B9F295862525D99AB5DE07B7" : "WebViewLayout\/angular-chart.js\/",
     "EDEE360E64DD2F809899489C2D81AC4F0EF21BF3" : "GRMustache.swift\/",
     "892EA74711655564BD84278E74421FC3F266AC06" : "WebViewLayout\/"
   },
@@ -16,6 +18,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UIWebViewLayout.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jtblin\/angular-chart.js.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D30EBE85A47B822B9F295862525D99AB5DE07B7"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tuvalusoftware\/WebViewLayout.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
