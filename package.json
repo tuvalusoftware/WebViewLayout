@@ -1,0 +1,19 @@
+{
+  "name": "uiwebviewlayout",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "index.js",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuvalusoftware/WebViewLayout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuvalusoftware/WebViewLayout/issues"
+  },
+  "homepage": "https://github.com/tuvalusoftware/WebViewLayout#readme"
+}
