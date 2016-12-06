@@ -2,13 +2,16 @@ PODS:
   - GCDWebServer (3.3.3):
     - GCDWebServer/Core (= 3.3.3)
   - GCDWebServer/Core (3.3.3)
+  - GRMustache.swift (2.0.0)
 
 DEPENDENCIES:
   - GCDWebServer (~> 3.0)
+  - GRMustache.swift
 
 SPEC CHECKSUMS:
   GCDWebServer: 1c39a1f0763e4eb492bee021e4270fce097d3555
+  GRMustache.swift: 8a547c12bea16052071b2b540af83d770075f0eb
 
-PODFILE CHECKSUM: 248c601d1b884df5f7b74b96cd68e7c40c5ef203
+PODFILE CHECKSUM: e740543241197a489e56ee8ea3e000d7e17a569f
 
 COCOAPODS: 1.1.1

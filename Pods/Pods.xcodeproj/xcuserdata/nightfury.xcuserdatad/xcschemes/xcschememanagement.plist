@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GRMustache.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-UIWebViewLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DB5897FA1BDDFC1B909BC8C169C5007</key>
+		<key>1EEDA0FE033F983A39499C0E1E950457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB081FFB2F7D73641D86871E2DAF4DE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

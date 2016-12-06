@@ -5,49 +5,34 @@
     <title>Demo angular-chart</title>
     <script src="myjs/angular.min.js" type="text/javascript"></script>
     <script src="myjs/chart.min.js" type="text/javascript"></script>
+    <script src="myjs/main_ctrl.js" type="text/javascript"></script>
 </head>
 <body ng-app="my_app">
+  </br>
+        </br>
+        </br>
+        <h1> Tap on the button to change its color! </h1>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<strong>
+    <input type="button" name="Tap Me!" id="clickMeButton" value="Tap Me!"/ class="btn" style="width:200;height:200" >
+        </strong></p>
 <div style="width: 50%" ng-controller="LineCtrl">
   <h1>Line Chart</h1>
   <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-click="onClick">
     
   </canvas>
 </div>
-<div style="width: 50%" ng-controller="BarCtrl">
-  <h1>Bar Chart</h1>
-  <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-series="series" chart-click="onClick">
-    
-  </canvas>
-</div>
-<div style="width: 50%" ng-controller="DoughnutCtrl">
-  <h1>Doughnut Chart</h1>
-  <canvas id="doughnut" class="chart chart-doughnut" chart-data="data" chart-labels="labels">
 
-  </canvas> 
-</div>
-<div style="width: 50%" ng-controller="RadarCtrl">
-  <h1>Radar Chart</h1>
-  <canvas id="radar" class="chart chart-radar" chart-data="data" chart-options="options" chart-labels="labels">
-  
-  </canvas>
-</div>
-<div style="width: 50%" ng-controller="PieCtrl">
-  <h1>Pie Chart</h1>
-  <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-options="options">
-  
-  </canvas>
-</div>
-<div style="width: 50%" ng-controller="PolarAreaCtrl">
-  <h1>Polar Area Chart</h1>
-  <canvas id="polar-area" class="chart chart-polar-area" chart-data="data" chart-labels="labels" chart-options="options">
-  
-  </canvas> 
-</div>
-<div style="width: 50%" ng-controller="BarCtrl">
-  <h1>Horizontal Bar Chart</h1>
-  <canvas id="base" class="chart-horizontal-bar" chart-data="data" chart-labels="labels" >
-  
-  </canvas> 
-</div>
+<script>
+        var app = angular.module('my_app', ['chart.js']);
+app.controller("LineCtrl", function ($scope) {
+               
+               $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
+               $scope.series = ['Series A', 'Series B'];
+               $scope.data = [
+                              [65, 59, 80, 81, 56, 55, 40],
+                              [28, 48, 40, 19, 86, 27, 90]
+                              ];
+               });
+  </script>
 </body>     
 </html>

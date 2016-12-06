@@ -12,7 +12,7 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "7D30EBE85A47B822B9F295862525D99AB5DE07B7" : "WebViewLayout\/angular-chart.js\/",
     "EDEE360E64DD2F809899489C2D81AC4F0EF21BF3" : "GRMustache.swift\/",
-    "892EA74711655564BD84278E74421FC3F266AC06" : "WebViewLayout\/"
+    "892EA74711655564BD84278E74421FC3F266AC06" : "UIWebViewLayout\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "UIWebViewLayout",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

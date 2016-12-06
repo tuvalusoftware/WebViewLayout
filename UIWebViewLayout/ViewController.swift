@@ -42,7 +42,6 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
          let template = try! Template(named: "Document")
          _ = try! template.render()
         
@@ -50,7 +49,7 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         view.addSubview(webView)
         webView!.navigationDelegate = self
  
-        let htmlPath = Bundle.main.path(forResource: "myindex", ofType: "html")!
+        let htmlPath = Bundle.main.path(forResource: "index2", ofType: "html")!
         
         
         print(" \(htmlPath)")

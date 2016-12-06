@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB081FFB2F7D73641D86871E2DAF4DE4"
-               BuildableName = "Pods_UIWebViewLayout.framework"
-               BlueprintName = "Pods-UIWebViewLayout"
+               BlueprintIdentifier = "1EEDA0FE033F983A39499C0E1E950457"
+               BuildableName = "Mustache.framework"
+               BlueprintName = "GRMustache.swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB081FFB2F7D73641D86871E2DAF4DE4"
-            BuildableName = "Pods_UIWebViewLayout.framework"
-            BlueprintName = "Pods-UIWebViewLayout"
+            BlueprintIdentifier = "1EEDA0FE033F983A39499C0E1E950457"
+            BuildableName = "Mustache.framework"
+            BlueprintName = "GRMustache.swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
