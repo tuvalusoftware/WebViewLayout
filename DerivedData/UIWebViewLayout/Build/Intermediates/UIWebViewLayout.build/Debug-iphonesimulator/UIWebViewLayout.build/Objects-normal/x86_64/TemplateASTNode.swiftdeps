@@ -1,0 +1,159 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TemplateASTNode"
+provides-nominal:
+- "O15UIWebViewLayout15TemplateASTNode"
+- "VO15UIWebViewLayout15TemplateASTNode5Block"
+- "VO15UIWebViewLayout15TemplateASTNode15PartialOverride"
+- "VO15UIWebViewLayout15TemplateASTNode7Partial"
+- "VO15UIWebViewLayout15TemplateASTNode7Section"
+- "VO15UIWebViewLayout15TemplateASTNode8Variable"
+provides-member:
+- ["O15UIWebViewLayout15TemplateASTNode", ""]
+- ["VO15UIWebViewLayout15TemplateASTNode5Block", ""]
+- ["VO15UIWebViewLayout15TemplateASTNode15PartialOverride", ""]
+- ["VO15UIWebViewLayout15TemplateASTNode7Partial", ""]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", ""]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "String"
+- "Bool"
+- "TemplateAST"
+- "ContentType"
+- "Expression"
+- "VariableTag"
+- "TemplateToken"
+- "SectionTag"
+- "TemplateASTNode"
+depends-member:
+- !private ["Ps9AnyObject", "init"]
+- ["VO15UIWebViewLayout15TemplateASTNode5Block", "String"]
+- ["VO15UIWebViewLayout15TemplateASTNode5Block", "TemplateAST"]
+- ["VO15UIWebViewLayout15TemplateASTNode5Block", "deinit"]
+- ["VO15UIWebViewLayout15TemplateASTNode5Block", "init"]
+- ["VO15UIWebViewLayout15TemplateASTNode5Block", "innerTemplateAST"]
+- ["VO15UIWebViewLayout15TemplateASTNode5Block", "name"]
+- ["Sb", "deinit"]
+- ["O15UIWebViewLayout11ContentType", "deinit"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["O15UIWebViewLayout10Expression", "deinit"]
+- !private ["P15UIWebViewLayout10LocatedTag", "init"]
+- ["Sq", "deinit"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Partial", "String"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Partial", "TemplateAST"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Partial", "deinit"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Partial", "init"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Partial", "name"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Partial", "templateAST"]
+- ["VO15UIWebViewLayout15TemplateASTNode15PartialOverride", "Partial"]
+- ["VO15UIWebViewLayout15TemplateASTNode15PartialOverride", "TemplateAST"]
+- ["VO15UIWebViewLayout15TemplateASTNode15PartialOverride", "childTemplateAST"]
+- ["VO15UIWebViewLayout15TemplateASTNode15PartialOverride", "deinit"]
+- ["VO15UIWebViewLayout15TemplateASTNode15PartialOverride", "init"]
+- ["VO15UIWebViewLayout15TemplateASTNode15PartialOverride", "parentPartial"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "Bool"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "Expression"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "SectionTag"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "deinit"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "expression"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "init"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "inverted"]
+- ["VO15UIWebViewLayout15TemplateASTNode7Section", "tag"]
+- ["C15UIWebViewLayout10SectionTag", "deinit"]
+- !private ["C15UIWebViewLayout10SectionTag", "init"]
+- ["SS", "deinit"]
+- !private ["P15UIWebViewLayout3Tag", "init"]
+- ["C15UIWebViewLayout11TemplateAST", "deinit"]
+- ["O15UIWebViewLayout15TemplateASTNode", "Block"]
+- ["O15UIWebViewLayout15TemplateASTNode", "Bool"]
+- ["O15UIWebViewLayout15TemplateASTNode", "ContentType"]
+- ["O15UIWebViewLayout15TemplateASTNode", "Expression"]
+- ["O15UIWebViewLayout15TemplateASTNode", "Partial"]
+- ["O15UIWebViewLayout15TemplateASTNode", "PartialOverride"]
+- ["O15UIWebViewLayout15TemplateASTNode", "Section"]
+- ["O15UIWebViewLayout15TemplateASTNode", "SectionTag"]
+- ["O15UIWebViewLayout15TemplateASTNode", "String"]
+- ["O15UIWebViewLayout15TemplateASTNode", "TemplateAST"]
+- ["O15UIWebViewLayout15TemplateASTNode", "TemplateASTNode"]
+- ["O15UIWebViewLayout15TemplateASTNode", "TemplateToken"]
+- ["O15UIWebViewLayout15TemplateASTNode", "Variable"]
+- ["O15UIWebViewLayout15TemplateASTNode", "VariableTag"]
+- ["O15UIWebViewLayout15TemplateASTNode", "block"]
+- ["O15UIWebViewLayout15TemplateASTNode", "blockNode"]
+- ["O15UIWebViewLayout15TemplateASTNode", "deinit"]
+- ["O15UIWebViewLayout15TemplateASTNode", "partial"]
+- ["O15UIWebViewLayout15TemplateASTNode", "partialNode"]
+- ["O15UIWebViewLayout15TemplateASTNode", "partialOverride"]
+- ["O15UIWebViewLayout15TemplateASTNode", "partialOverrideNode"]
+- ["O15UIWebViewLayout15TemplateASTNode", "section"]
+- ["O15UIWebViewLayout15TemplateASTNode", "sectionNode"]
+- ["O15UIWebViewLayout15TemplateASTNode", "text"]
+- ["O15UIWebViewLayout15TemplateASTNode", "textNode"]
+- ["O15UIWebViewLayout15TemplateASTNode", "variable"]
+- ["O15UIWebViewLayout15TemplateASTNode", "variableNode"]
+- ["V15UIWebViewLayout13TemplateToken", "deinit"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "Bool"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "Expression"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "VariableTag"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "deinit"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "escapesHTML"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "expression"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "init"]
+- ["VO15UIWebViewLayout15TemplateASTNode8Variable", "tag"]
+- ["C15UIWebViewLayout11VariableTag", "deinit"]
+- !private ["C15UIWebViewLayout11VariableTag", "init"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "VO15UIWebViewLayout15TemplateASTNode5Block"
+- "Sb"
+- "O15UIWebViewLayout11ContentType"
+- !private "Ps23CustomStringConvertible"
+- "O15UIWebViewLayout10Expression"
+- !private "P15UIWebViewLayout10LocatedTag"
+- "Sq"
+- "VO15UIWebViewLayout15TemplateASTNode7Partial"
+- "VO15UIWebViewLayout15TemplateASTNode15PartialOverride"
+- "VO15UIWebViewLayout15TemplateASTNode7Section"
+- "C15UIWebViewLayout10SectionTag"
+- "SS"
+- !private "P15UIWebViewLayout3Tag"
+- "C15UIWebViewLayout11TemplateAST"
+- "O15UIWebViewLayout15TemplateASTNode"
+- "V15UIWebViewLayout13TemplateToken"
+- "VO15UIWebViewLayout15TemplateASTNode8Variable"
+- "C15UIWebViewLayout11VariableTag"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/UIWebViewLayout-Bridging-Header.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerStreamedResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerFileResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerErrorResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerDataResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerURLEncodedFormRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerMultiPartFormRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerFileRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerDataRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerHTTPStatusCodes.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerFunctions.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerConnection.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServer.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServer-umbrella.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Modules/FileKit.swiftmodule/x86_64.swiftmodule"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Headers/FileKit-Swift.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Headers/FileKit-umbrella.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Modules/module.modulemap"
+interface-hash: "bd63a7c4317b3ae4fcdd3ad9fc8b0549"

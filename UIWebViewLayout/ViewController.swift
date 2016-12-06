@@ -2,7 +2,7 @@
 import UIKit
 import WebKit
 import GCDWebServer
-
+import FileKit
 
 
 class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate {
@@ -13,6 +13,9 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
 
     var webConfig:WKWebViewConfiguration {
         get {
+            
+    
+            
             
             // Create WKWebViewConfiguration instance
             let webCfg:WKWebViewConfiguration = WKWebViewConfiguration()
@@ -42,6 +45,22 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+//        let app_resources = Path.allLibraries
+//        var user_home = Path.userHome
+//        let  application_support = Path.userApplicationSupport
+       let  user_documents      = Path.userDocuments
+//        
+        
+        
+        let textFiles = Path.userDocuments.find(searchDepth: 5) {
+            
+             path in
+             path.pathExtension == "mustache"
+        }
+        
+        print(textFiles)
       
          let template = try! Template(named: "Document")
          _ = try! template.render()
@@ -50,8 +69,8 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         view.addSubview(webView)
         webView!.navigationDelegate = self
  
-        let htmlPath = Bundle.main.path(forResource: "myindex", ofType: "html")!
-        
+        let htmlPath = Bundle.main.path(forResource: "index2", ofType: "html")!
+       
         
         print(" \(htmlPath)")
         
@@ -59,6 +78,23 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         
         
         let  filePath = Bundle.main.resourcePath
+        
+        let mustachePath = filePath?.appending("/index2.mustache")
+        
+        let templatePath:URL =  URL(fileURLWithPath: mustachePath!, isDirectory: false)
+        
+        
+        do {
+            
+                let text2 = try String(contentsOf:templatePath, encoding: String.Encoding.utf8)
+                print(text2)
+        }
+        catch {/* error handling here */}
+    
+        
+  
+        
+        
         
         let webAppUrl = NSURL(fileURLWithPath: filePath!, isDirectory: true)
         let fileUrl = NSURL(fileURLWithPath: htmlPath, isDirectory: false)

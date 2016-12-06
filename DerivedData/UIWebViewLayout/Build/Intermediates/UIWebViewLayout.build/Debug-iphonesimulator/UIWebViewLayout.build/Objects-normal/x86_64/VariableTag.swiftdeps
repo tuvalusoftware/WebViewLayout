@@ -1,0 +1,246 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VariableTag"
+provides-nominal:
+- "C15UIWebViewLayout11VariableTag"
+provides-member:
+- ["C15UIWebViewLayout11VariableTag", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Int"
+- "VariableTag"
+- "TemplateID"
+- "Rendering"
+- "Context"
+- "TagType"
+- "TemplateToken"
+- "LocatedTag"
+- "String"
+- "TagDelimiterPair"
+- "ContentType"
+- "AssignmentPrecedence"
+- "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "Rendering"]
+- !private ["Ps9AnyObject", "contentType"]
+- ["Ps9AnyObject", "description"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "innerTemplateString"]
+- ["Ps9AnyObject", "lineNumber"]
+- ["Ps9AnyObject", "render"]
+- ["Ps9AnyObject", "tagDelimiterPair"]
+- ["Ps9AnyObject", "templateID"]
+- !private ["Ps9AnyObject", "token"]
+- ["Ps9AnyObject", "type"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "deinit"]
+- ["Ps7CVarArg", "init"]
+- !private ["Vs9Character", "deinit"]
+- ["Ps10Comparable", "init"]
+- ["O15UIWebViewLayout11ContentType", "deinit"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Rendering"]
+- !private ["Ps23CustomStringConvertible", "contentType"]
+- ["Ps23CustomStringConvertible", "description"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "innerTemplateString"]
+- ["Ps23CustomStringConvertible", "lineNumber"]
+- ["Ps23CustomStringConvertible", "render"]
+- ["Ps23CustomStringConvertible", "tagDelimiterPair"]
+- ["Ps23CustomStringConvertible", "templateID"]
+- !private ["Ps23CustomStringConvertible", "token"]
+- ["Ps23CustomStringConvertible", "type"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "variable"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "variable"]
+- ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["P15UIWebViewLayout10LocatedTag", "Rendering"]
+- !private ["P15UIWebViewLayout10LocatedTag", "contentType"]
+- ["P15UIWebViewLayout10LocatedTag", "description"]
+- ["P15UIWebViewLayout10LocatedTag", "innerTemplateString"]
+- ["P15UIWebViewLayout10LocatedTag", "lineNumber"]
+- ["P15UIWebViewLayout10LocatedTag", "render"]
+- ["P15UIWebViewLayout10LocatedTag", "tagDelimiterPair"]
+- ["P15UIWebViewLayout10LocatedTag", "templateID"]
+- !private ["P15UIWebViewLayout10LocatedTag", "token"]
+- ["P15UIWebViewLayout10LocatedTag", "type"]
+- ["P15UIWebViewLayout10LocatedTag", ""]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["P15UIWebViewLayout15MustacheBoxable", "init"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["P7FileKit8Readable", "init"]
+- ["V15UIWebViewLayout9Rendering", "deinit"]
+- !private ["V15UIWebViewLayout9Rendering", "init"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- !private ["P15UIWebViewLayout3Tag", "Rendering"]
+- !private ["P15UIWebViewLayout3Tag", "contentType"]
+- ["P15UIWebViewLayout3Tag", "description"]
+- ["P15UIWebViewLayout3Tag", "innerTemplateString"]
+- ["P15UIWebViewLayout3Tag", "lineNumber"]
+- ["P15UIWebViewLayout3Tag", "render"]
+- ["P15UIWebViewLayout3Tag", "tagDelimiterPair"]
+- ["P15UIWebViewLayout3Tag", "templateID"]
+- !private ["P15UIWebViewLayout3Tag", "token"]
+- ["P15UIWebViewLayout3Tag", "type"]
+- ["P15UIWebViewLayout3Tag", ""]
+- ["O15UIWebViewLayout7TagType", "deinit"]
+- ["O15UIWebViewLayout7TagType", "variable"]
+- ["V15UIWebViewLayout13TemplateToken", "deinit"]
+- !private ["V15UIWebViewLayout13TemplateToken", "lineNumber"]
+- !private ["V15UIWebViewLayout13TemplateToken", "locationDescription"]
+- !private ["V15UIWebViewLayout13TemplateToken", "tagDelimiterPair"]
+- !private ["V15UIWebViewLayout13TemplateToken", "templateID"]
+- !private ["V15UIWebViewLayout13TemplateToken", "templateSubstring"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- ["C15UIWebViewLayout11VariableTag", "ContentType"]
+- ["C15UIWebViewLayout11VariableTag", "Context"]
+- ["C15UIWebViewLayout11VariableTag", "Int"]
+- ["C15UIWebViewLayout11VariableTag", "Rendering"]
+- ["C15UIWebViewLayout11VariableTag", "String"]
+- ["C15UIWebViewLayout11VariableTag", "TagDelimiterPair"]
+- ["C15UIWebViewLayout11VariableTag", "TagType"]
+- ["C15UIWebViewLayout11VariableTag", "TemplateID"]
+- ["C15UIWebViewLayout11VariableTag", "TemplateToken"]
+- ["C15UIWebViewLayout11VariableTag", "contentType"]
+- ["C15UIWebViewLayout11VariableTag", "deinit"]
+- ["C15UIWebViewLayout11VariableTag", "description"]
+- ["C15UIWebViewLayout11VariableTag", "init"]
+- ["C15UIWebViewLayout11VariableTag", "innerTemplateString"]
+- ["C15UIWebViewLayout11VariableTag", "lineNumber"]
+- ["C15UIWebViewLayout11VariableTag", "render"]
+- ["C15UIWebViewLayout11VariableTag", "tagDelimiterPair"]
+- ["C15UIWebViewLayout11VariableTag", "templateID"]
+- ["C15UIWebViewLayout11VariableTag", "token"]
+- ["C15UIWebViewLayout11VariableTag", "type"]
+- ["P7FileKit8Writable", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "variable"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Vs9Character"
+- "Ps10Comparable"
+- "O15UIWebViewLayout11ContentType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- "Ps8Hashable"
+- "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- "P15UIWebViewLayout10LocatedTag"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "P15UIWebViewLayout15MustacheBoxable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Sq"
+- "P7FileKit8Readable"
+- "V15UIWebViewLayout9Rendering"
+- "SS"
+- "P15UIWebViewLayout3Tag"
+- "O15UIWebViewLayout7TagType"
+- "V15UIWebViewLayout13TemplateToken"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- "C15UIWebViewLayout11VariableTag"
+- "P7FileKit8Writable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/UIWebViewLayout-Bridging-Header.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerStreamedResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerFileResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerErrorResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerDataResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerURLEncodedFormRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerMultiPartFormRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerFileRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerDataRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerHTTPStatusCodes.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerFunctions.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerConnection.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerResponse.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServerRequest.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServer.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Headers/GCDWebServer-umbrella.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/GCDWebServer/GCDWebServer.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Modules/FileKit.swiftmodule/x86_64.swiftmodule"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Headers/FileKit-Swift.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Headers/FileKit-umbrella.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/FileKit/FileKit.framework/Modules/module.modulemap"
+interface-hash: "a57315d25cafa5a79ea4c7582420b504"

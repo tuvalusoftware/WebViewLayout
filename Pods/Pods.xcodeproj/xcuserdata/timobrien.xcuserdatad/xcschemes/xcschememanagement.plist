@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FileKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GCDWebServer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DB5897FA1BDDFC1B909BC8C169C5007</key>
+		<key>C03B465A9DC80D249937B032179F5BB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE5568CD1227C620A2438E52FF5F6D9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
