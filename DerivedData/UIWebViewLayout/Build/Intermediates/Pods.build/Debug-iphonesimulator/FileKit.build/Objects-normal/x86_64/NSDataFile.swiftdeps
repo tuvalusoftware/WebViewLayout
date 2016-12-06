@@ -8,9 +8,9 @@ provides-member:
 - ["C7FileKit4File", "write"]
 provides-dynamic-lookup:
 depends-top-level:
+- "NSDataFile"
 - "NSData"
 - !private "FileKitError"
-- "NSDataFile"
 - "File"
 depends-member:
 - !private ["Ps9AnyObject", "FileKitError"]

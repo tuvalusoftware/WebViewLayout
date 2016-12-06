@@ -175,7 +175,6 @@
 		388FC92B1DF61EA900958C4A /* angular-aria in Resources */ = {isa = PBXBuildFile; fileRef = 388FC92A1DF61EA900958C4A /* angular-aria */; };
 		388FC92E1DF61ECC00958C4A /* angular-animate in Resources */ = {isa = PBXBuildFile; fileRef = 388FC92D1DF61ECC00958C4A /* angular-animate */; };
 		388FC9301DF61EDB00958C4A /* angular in Resources */ = {isa = PBXBuildFile; fileRef = 388FC92F1DF61EDA00958C4A /* angular */; };
-		388FC9341DF6368400958C4A /* index2.mustache  in Resources */ = {isa = PBXBuildFile; fileRef = 388FC9331DF6368400958C4A /* index2.mustache  */; };
 		392060EE1DD5793A0009C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060ED1DD5793A0009C7FB /* AppDelegate.swift */; };
 		392060F01DD5793A0009C7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060EF1DD5793A0009C7FB /* ViewController.swift */; };
 		392060F31DD5793A0009C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F11DD5793A0009C7FB /* Main.storyboard */; };
@@ -183,42 +182,6 @@
 		392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */; };
 		392061031DD5793A0009C7FB /* UIWebViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392061021DD5793A0009C7FB /* UIWebViewLayoutTests.swift */; };
 		3920610E1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */; };
-		3942EF341DEB359D006F3AE9 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF101DEB359D006F3AE9 /* Box.swift */; };
-		3942EF351DEB359D006F3AE9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF111DEB359D006F3AE9 /* Common.swift */; };
-		3942EF361DEB359D006F3AE9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF121DEB359D006F3AE9 /* Configuration.swift */; };
-		3942EF371DEB359D006F3AE9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF131DEB359D006F3AE9 /* Context.swift */; };
-		3942EF381DEB359D006F3AE9 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF141DEB359D006F3AE9 /* CoreFunctions.swift */; };
-		3942EF391DEB359D006F3AE9 /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF151DEB359D006F3AE9 /* CoreGraphics.swift */; };
-		3942EF3A1DEB359D006F3AE9 /* EachFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF161DEB359D006F3AE9 /* EachFilter.swift */; };
-		3942EF3B1DEB359D006F3AE9 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF171DEB359D006F3AE9 /* Expression.swift */; };
-		3942EF3C1DEB359D006F3AE9 /* ExpressionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF181DEB359D006F3AE9 /* ExpressionGenerator.swift */; };
-		3942EF3D1DEB359D006F3AE9 /* ExpressionInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF191DEB359D006F3AE9 /* ExpressionInvocation.swift */; };
-		3942EF3E1DEB359D006F3AE9 /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF1A1DEB359D006F3AE9 /* ExpressionParser.swift */; };
-		3942EF3F1DEB359D006F3AE9 /* Fixit-1.1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF1B1DEB359D006F3AE9 /* Fixit-1.1.0.swift */; };
-		3942EF401DEB359D006F3AE9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF1C1DEB359D006F3AE9 /* Formatter.swift */; };
-		3942EF411DEB359D006F3AE9 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF1D1DEB359D006F3AE9 /* Foundation.swift */; };
-		3942EF421DEB359D006F3AE9 /* HTMLEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF1E1DEB359D006F3AE9 /* HTMLEscapeHelper.swift */; };
-		3942EF431DEB359D006F3AE9 /* JavascriptEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF1F1DEB359D006F3AE9 /* JavascriptEscapeHelper.swift */; };
-		3942EF441DEB359D006F3AE9 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF201DEB359D006F3AE9 /* Localizer.swift */; };
-		3942EF451DEB359D006F3AE9 /* LocatedTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF211DEB359D006F3AE9 /* LocatedTag.swift */; };
-		3942EF461DEB359D006F3AE9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF221DEB359D006F3AE9 /* Logger.swift */; };
-		3942EF471DEB359D006F3AE9 /* MustacheBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF231DEB359D006F3AE9 /* MustacheBox.swift */; };
-		3942EF481DEB359D006F3AE9 /* RenderingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF241DEB359D006F3AE9 /* RenderingEngine.swift */; };
-		3942EF491DEB359D006F3AE9 /* SectionTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF251DEB359D006F3AE9 /* SectionTag.swift */; };
-		3942EF4A1DEB359D006F3AE9 /* StandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF261DEB359D006F3AE9 /* StandardLibrary.swift */; };
-		3942EF4B1DEB359D006F3AE9 /* SwiftStandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF271DEB359D006F3AE9 /* SwiftStandardLibrary.swift */; };
-		3942EF4C1DEB359D006F3AE9 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF281DEB359D006F3AE9 /* Tag.swift */; };
-		3942EF4D1DEB359D006F3AE9 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF291DEB359D006F3AE9 /* Template.swift */; };
-		3942EF4E1DEB359D006F3AE9 /* TemplateAST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF2A1DEB359D006F3AE9 /* TemplateAST.swift */; };
-		3942EF4F1DEB359D006F3AE9 /* TemplateASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF2B1DEB359D006F3AE9 /* TemplateASTNode.swift */; };
-		3942EF501DEB359D006F3AE9 /* TemplateCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF2C1DEB359D006F3AE9 /* TemplateCompiler.swift */; };
-		3942EF511DEB359D006F3AE9 /* TemplateGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF2D1DEB359D006F3AE9 /* TemplateGenerator.swift */; };
-		3942EF521DEB359D006F3AE9 /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF2E1DEB359D006F3AE9 /* TemplateParser.swift */; };
-		3942EF531DEB359D006F3AE9 /* TemplateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF2F1DEB359D006F3AE9 /* TemplateRepository.swift */; };
-		3942EF541DEB359D006F3AE9 /* TemplateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF301DEB359D006F3AE9 /* TemplateToken.swift */; };
-		3942EF551DEB359D006F3AE9 /* URLEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF311DEB359D006F3AE9 /* URLEscapeHelper.swift */; };
-		3942EF561DEB359D006F3AE9 /* VariableTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF321DEB359D006F3AE9 /* VariableTag.swift */; };
-		3942EF571DEB359D006F3AE9 /* ZipFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942EF331DEB359D006F3AE9 /* ZipFilter.swift */; };
 		3942EF6C1DEB3C38006F3AE9 /* myindex.html in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6A1DEB3C38006F3AE9 /* myindex.html */; };
 		3942EF6D1DEB3C38006F3AE9 /* myjs in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6B1DEB3C38006F3AE9 /* myjs */; };
 		3942EF6F1DEB5C59006F3AE9 /* main_ctrl.js in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */; };
@@ -455,7 +418,6 @@
 		388FC92C1DF61EBC00958C4A /* angular-aria */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-aria"; path = "UIWebViewLayout/angular-aria"; sourceTree = "<group>"; };
 		388FC92D1DF61ECC00958C4A /* angular-animate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-animate"; path = "UIWebViewLayout/angular-animate"; sourceTree = "<group>"; };
 		388FC92F1DF61EDA00958C4A /* angular */ = {isa = PBXFileReference; lastKnownFileType = folder; name = angular; path = UIWebViewLayout/angular; sourceTree = "<group>"; };
-		388FC9331DF6368400958C4A /* index2.mustache  */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "index2.mustache "; sourceTree = "<group>"; };
 		392060EA1DD5793A0009C7FB /* UIWebViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWebViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392060ED1DD5793A0009C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392060EF1DD5793A0009C7FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -470,42 +432,6 @@
 		3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewLayoutUITests.swift; sourceTree = "<group>"; };
 		3920610F1DD5793A0009C7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebViewLayout-Bridging-Header.h"; sourceTree = "<group>"; };
-		3942EF101DEB359D006F3AE9 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Box.swift; path = UIWebViewLayout/Sources/Box.swift; sourceTree = SOURCE_ROOT; };
-		3942EF111DEB359D006F3AE9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = UIWebViewLayout/Sources/Common.swift; sourceTree = SOURCE_ROOT; };
-		3942EF121DEB359D006F3AE9 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = UIWebViewLayout/Sources/Configuration.swift; sourceTree = SOURCE_ROOT; };
-		3942EF131DEB359D006F3AE9 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Context.swift; path = UIWebViewLayout/Sources/Context.swift; sourceTree = SOURCE_ROOT; };
-		3942EF141DEB359D006F3AE9 /* CoreFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = UIWebViewLayout/Sources/CoreFunctions.swift; sourceTree = SOURCE_ROOT; };
-		3942EF151DEB359D006F3AE9 /* CoreGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreGraphics.swift; path = UIWebViewLayout/Sources/CoreGraphics.swift; sourceTree = SOURCE_ROOT; };
-		3942EF161DEB359D006F3AE9 /* EachFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EachFilter.swift; path = UIWebViewLayout/Sources/EachFilter.swift; sourceTree = SOURCE_ROOT; };
-		3942EF171DEB359D006F3AE9 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = UIWebViewLayout/Sources/Expression.swift; sourceTree = SOURCE_ROOT; };
-		3942EF181DEB359D006F3AE9 /* ExpressionGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpressionGenerator.swift; path = UIWebViewLayout/Sources/ExpressionGenerator.swift; sourceTree = SOURCE_ROOT; };
-		3942EF191DEB359D006F3AE9 /* ExpressionInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpressionInvocation.swift; path = UIWebViewLayout/Sources/ExpressionInvocation.swift; sourceTree = SOURCE_ROOT; };
-		3942EF1A1DEB359D006F3AE9 /* ExpressionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpressionParser.swift; path = UIWebViewLayout/Sources/ExpressionParser.swift; sourceTree = SOURCE_ROOT; };
-		3942EF1B1DEB359D006F3AE9 /* Fixit-1.1.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Fixit-1.1.0.swift"; path = "UIWebViewLayout/Sources/Fixit-1.1.0.swift"; sourceTree = SOURCE_ROOT; };
-		3942EF1C1DEB359D006F3AE9 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = UIWebViewLayout/Sources/Formatter.swift; sourceTree = SOURCE_ROOT; };
-		3942EF1D1DEB359D006F3AE9 /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = UIWebViewLayout/Sources/Foundation.swift; sourceTree = SOURCE_ROOT; };
-		3942EF1E1DEB359D006F3AE9 /* HTMLEscapeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLEscapeHelper.swift; path = UIWebViewLayout/Sources/HTMLEscapeHelper.swift; sourceTree = SOURCE_ROOT; };
-		3942EF1F1DEB359D006F3AE9 /* JavascriptEscapeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JavascriptEscapeHelper.swift; path = UIWebViewLayout/Sources/JavascriptEscapeHelper.swift; sourceTree = SOURCE_ROOT; };
-		3942EF201DEB359D006F3AE9 /* Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Localizer.swift; path = UIWebViewLayout/Sources/Localizer.swift; sourceTree = SOURCE_ROOT; };
-		3942EF211DEB359D006F3AE9 /* LocatedTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocatedTag.swift; path = UIWebViewLayout/Sources/LocatedTag.swift; sourceTree = SOURCE_ROOT; };
-		3942EF221DEB359D006F3AE9 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = UIWebViewLayout/Sources/Logger.swift; sourceTree = SOURCE_ROOT; };
-		3942EF231DEB359D006F3AE9 /* MustacheBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MustacheBox.swift; path = UIWebViewLayout/Sources/MustacheBox.swift; sourceTree = SOURCE_ROOT; };
-		3942EF241DEB359D006F3AE9 /* RenderingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RenderingEngine.swift; path = UIWebViewLayout/Sources/RenderingEngine.swift; sourceTree = SOURCE_ROOT; };
-		3942EF251DEB359D006F3AE9 /* SectionTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionTag.swift; path = UIWebViewLayout/Sources/SectionTag.swift; sourceTree = SOURCE_ROOT; };
-		3942EF261DEB359D006F3AE9 /* StandardLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandardLibrary.swift; path = UIWebViewLayout/Sources/StandardLibrary.swift; sourceTree = SOURCE_ROOT; };
-		3942EF271DEB359D006F3AE9 /* SwiftStandardLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftStandardLibrary.swift; path = UIWebViewLayout/Sources/SwiftStandardLibrary.swift; sourceTree = SOURCE_ROOT; };
-		3942EF281DEB359D006F3AE9 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = UIWebViewLayout/Sources/Tag.swift; sourceTree = SOURCE_ROOT; };
-		3942EF291DEB359D006F3AE9 /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Template.swift; path = UIWebViewLayout/Sources/Template.swift; sourceTree = SOURCE_ROOT; };
-		3942EF2A1DEB359D006F3AE9 /* TemplateAST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateAST.swift; path = UIWebViewLayout/Sources/TemplateAST.swift; sourceTree = SOURCE_ROOT; };
-		3942EF2B1DEB359D006F3AE9 /* TemplateASTNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateASTNode.swift; path = UIWebViewLayout/Sources/TemplateASTNode.swift; sourceTree = SOURCE_ROOT; };
-		3942EF2C1DEB359D006F3AE9 /* TemplateCompiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateCompiler.swift; path = UIWebViewLayout/Sources/TemplateCompiler.swift; sourceTree = SOURCE_ROOT; };
-		3942EF2D1DEB359D006F3AE9 /* TemplateGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateGenerator.swift; path = UIWebViewLayout/Sources/TemplateGenerator.swift; sourceTree = SOURCE_ROOT; };
-		3942EF2E1DEB359D006F3AE9 /* TemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateParser.swift; path = UIWebViewLayout/Sources/TemplateParser.swift; sourceTree = SOURCE_ROOT; };
-		3942EF2F1DEB359D006F3AE9 /* TemplateRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateRepository.swift; path = UIWebViewLayout/Sources/TemplateRepository.swift; sourceTree = SOURCE_ROOT; };
-		3942EF301DEB359D006F3AE9 /* TemplateToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateToken.swift; path = UIWebViewLayout/Sources/TemplateToken.swift; sourceTree = SOURCE_ROOT; };
-		3942EF311DEB359D006F3AE9 /* URLEscapeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLEscapeHelper.swift; path = UIWebViewLayout/Sources/URLEscapeHelper.swift; sourceTree = SOURCE_ROOT; };
-		3942EF321DEB359D006F3AE9 /* VariableTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VariableTag.swift; path = UIWebViewLayout/Sources/VariableTag.swift; sourceTree = SOURCE_ROOT; };
-		3942EF331DEB359D006F3AE9 /* ZipFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipFilter.swift; path = UIWebViewLayout/Sources/ZipFilter.swift; sourceTree = SOURCE_ROOT; };
 		3942EF6A1DEB3C38006F3AE9 /* myindex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myindex.html; sourceTree = "<group>"; };
 		3942EF6B1DEB3C38006F3AE9 /* myjs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = myjs; sourceTree = "<group>"; };
 		3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main_ctrl.js; path = myjs/main_ctrl.js; sourceTree = "<group>"; };
@@ -552,57 +478,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3805CAB91DE33469008E4C8E /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				3942EF101DEB359D006F3AE9 /* Box.swift */,
-				3942EF111DEB359D006F3AE9 /* Common.swift */,
-				3942EF121DEB359D006F3AE9 /* Configuration.swift */,
-				3942EF131DEB359D006F3AE9 /* Context.swift */,
-				3942EF141DEB359D006F3AE9 /* CoreFunctions.swift */,
-				3942EF151DEB359D006F3AE9 /* CoreGraphics.swift */,
-				3942EF161DEB359D006F3AE9 /* EachFilter.swift */,
-				3942EF171DEB359D006F3AE9 /* Expression.swift */,
-				3942EF181DEB359D006F3AE9 /* ExpressionGenerator.swift */,
-				3942EF191DEB359D006F3AE9 /* ExpressionInvocation.swift */,
-				3942EF1A1DEB359D006F3AE9 /* ExpressionParser.swift */,
-				3942EF1B1DEB359D006F3AE9 /* Fixit-1.1.0.swift */,
-				3942EF1C1DEB359D006F3AE9 /* Formatter.swift */,
-				3942EF1D1DEB359D006F3AE9 /* Foundation.swift */,
-				3942EF1E1DEB359D006F3AE9 /* HTMLEscapeHelper.swift */,
-				3942EF1F1DEB359D006F3AE9 /* JavascriptEscapeHelper.swift */,
-				3942EF201DEB359D006F3AE9 /* Localizer.swift */,
-				3942EF211DEB359D006F3AE9 /* LocatedTag.swift */,
-				3942EF221DEB359D006F3AE9 /* Logger.swift */,
-				3942EF231DEB359D006F3AE9 /* MustacheBox.swift */,
-				3942EF241DEB359D006F3AE9 /* RenderingEngine.swift */,
-				3942EF251DEB359D006F3AE9 /* SectionTag.swift */,
-				3942EF261DEB359D006F3AE9 /* StandardLibrary.swift */,
-				3942EF271DEB359D006F3AE9 /* SwiftStandardLibrary.swift */,
-				3942EF281DEB359D006F3AE9 /* Tag.swift */,
-				3942EF291DEB359D006F3AE9 /* Template.swift */,
-				3942EF2A1DEB359D006F3AE9 /* TemplateAST.swift */,
-				3942EF2B1DEB359D006F3AE9 /* TemplateASTNode.swift */,
-				3942EF2C1DEB359D006F3AE9 /* TemplateCompiler.swift */,
-				3942EF2D1DEB359D006F3AE9 /* TemplateGenerator.swift */,
-				3942EF2E1DEB359D006F3AE9 /* TemplateParser.swift */,
-				3942EF2F1DEB359D006F3AE9 /* TemplateRepository.swift */,
-				3942EF301DEB359D006F3AE9 /* TemplateToken.swift */,
-				3942EF311DEB359D006F3AE9 /* URLEscapeHelper.swift */,
-				3942EF321DEB359D006F3AE9 /* VariableTag.swift */,
-				3942EF331DEB359D006F3AE9 /* ZipFilter.swift */,
-			);
-			name = Sources;
-			path = ../GRMustache.swift/Sources;
-			sourceTree = "<group>";
-		};
 		381AE6571DE6A5F3002C47C3 /* resources */ = {
 			isa = PBXGroup;
 			children = (
 				3942EF6A1DEB3C38006F3AE9 /* myindex.html */,
 				3942EF6B1DEB3C38006F3AE9 /* myjs */,
 				381AE6581DE6A609002C47C3 /* Document.mustache */,
-				388FC9331DF6368400958C4A /* index2.mustache  */,
 				381AEC951DE6A7FD002C47C3 /* Layout.mustache */,
 				381AE6601DE6A619002C47C3 /* css */,
 				381AE65A1DE6A609002C47C3 /* index3.html */,
@@ -977,7 +858,6 @@
 				388FC9251DF61E7300958C4A /* angular-messages */,
 				388FC91D1DF61E5000958C4A /* angular-material */,
 				3811D0771DE900D700A3D1EA /* chart */,
-				3805CAB91DE33469008E4C8E /* Sources */,
 				392060EC1DD5793A0009C7FB /* UIWebViewLayout */,
 				392061011DD5793A0009C7FB /* UIWebViewLayoutTests */,
 				3920610C1DD5793A0009C7FB /* UIWebViewLayoutUITests */,
@@ -1121,7 +1001,7 @@
 				TargetAttributes = {
 					392060E91DD5793A0009C7FB = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = RQA68E574G;
+						DevelopmentTeam = J2V4H7NGAG;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -1274,7 +1154,6 @@
 				381AE7911DE6A629002C47C3 /* controller.line.tests.js in Resources */,
 				381AECE91DE8D431002C47C3 /* index2.html in Resources */,
 				381AE7381DE6A628002C47C3 /* bar-horizontal.html in Resources */,
-				388FC9341DF6368400958C4A /* index2.mustache  in Resources */,
 				392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */,
 				392060F51DD5793A0009C7FB /* Assets.xcassets in Resources */,
 				381AE7621DE6A628002C47C3 /* position-modes.html in Resources */,
@@ -1442,63 +1321,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3942EF431DEB359D006F3AE9 /* JavascriptEscapeHelper.swift in Sources */,
 				381AE72C1DE6A628002C47C3 /* 08-Bubble-Chart.md in Sources */,
-				3942EF541DEB359D006F3AE9 /* TemplateToken.swift in Sources */,
 				392060F01DD5793A0009C7FB /* ViewController.swift in Sources */,
-				3942EF3B1DEB359D006F3AE9 /* Expression.swift in Sources */,
-				3942EF551DEB359D006F3AE9 /* URLEscapeHelper.swift in Sources */,
-				3942EF391DEB359D006F3AE9 /* CoreGraphics.swift in Sources */,
-				3942EF371DEB359D006F3AE9 /* Context.swift in Sources */,
 				381AE7331DE6A628002C47C3 /* LICENSE.md in Sources */,
 				381AE7251DE6A628002C47C3 /* 01-Chart-Configuration.md in Sources */,
-				3942EF3E1DEB359D006F3AE9 /* ExpressionParser.swift in Sources */,
 				381AE7271DE6A628002C47C3 /* 03-Line-Chart.md in Sources */,
-				3942EF4C1DEB359D006F3AE9 /* Tag.swift in Sources */,
-				3942EF481DEB359D006F3AE9 /* RenderingEngine.swift in Sources */,
-				3942EF3A1DEB359D006F3AE9 /* EachFilter.swift in Sources */,
-				3942EF341DEB359D006F3AE9 /* Box.swift in Sources */,
-				3942EF561DEB359D006F3AE9 /* VariableTag.swift in Sources */,
 				381AE72E1DE6A628002C47C3 /* 10-Notes.md in Sources */,
-				3942EF521DEB359D006F3AE9 /* TemplateParser.swift in Sources */,
-				3942EF3F1DEB359D006F3AE9 /* Fixit-1.1.0.swift in Sources */,
-				3942EF471DEB359D006F3AE9 /* MustacheBox.swift in Sources */,
 				381AE7AA1DE6A629002C47C3 /* thankyou.md in Sources */,
 				381AE71D1DE6A628002C47C3 /* PULL_REQUEST_TEMPLATE.md in Sources */,
-				3942EF3C1DEB359D006F3AE9 /* ExpressionGenerator.swift in Sources */,
-				3942EF381DEB359D006F3AE9 /* CoreFunctions.swift in Sources */,
 				381AE7341DE6A628002C47C3 /* MAINTAINING.md in Sources */,
 				392060EE1DD5793A0009C7FB /* AppDelegate.swift in Sources */,
 				381AE72B1DE6A628002C47C3 /* 07-Pie-Doughnut-Chart.md in Sources */,
 				381AE72D1DE6A628002C47C3 /* 09-Advanced.md in Sources */,
-				3942EF4F1DEB359D006F3AE9 /* TemplateASTNode.swift in Sources */,
-				3942EF461DEB359D006F3AE9 /* Logger.swift in Sources */,
-				3942EF491DEB359D006F3AE9 /* SectionTag.swift in Sources */,
-				3942EF401DEB359D006F3AE9 /* Formatter.swift in Sources */,
-				3942EF361DEB359D006F3AE9 /* Configuration.swift in Sources */,
-				3942EF4D1DEB359D006F3AE9 /* Template.swift in Sources */,
-				3942EF501DEB359D006F3AE9 /* TemplateCompiler.swift in Sources */,
-				3942EF4A1DEB359D006F3AE9 /* StandardLibrary.swift in Sources */,
-				3942EF421DEB359D006F3AE9 /* HTMLEscapeHelper.swift in Sources */,
 				381AE7241DE6A628002C47C3 /* 00-Getting-Started.md in Sources */,
-				3942EF451DEB359D006F3AE9 /* LocatedTag.swift in Sources */,
 				381AE7361DE6A628002C47C3 /* README.md in Sources */,
-				3942EF3D1DEB359D006F3AE9 /* ExpressionInvocation.swift in Sources */,
 				381AE7261DE6A628002C47C3 /* 02-Scales.md in Sources */,
 				381874721DD959F9007020B6 /* CustomWebView.swift in Sources */,
-				3942EF411DEB359D006F3AE9 /* Foundation.swift in Sources */,
 				381AE7231DE6A628002C47C3 /* CONTRIBUTING.md in Sources */,
 				381AE7281DE6A628002C47C3 /* 04-Bar-Chart.md in Sources */,
 				381AE72A1DE6A628002C47C3 /* 06-Polar-Area-Chart.md in Sources */,
-				3942EF351DEB359D006F3AE9 /* Common.swift in Sources */,
-				3942EF531DEB359D006F3AE9 /* TemplateRepository.swift in Sources */,
 				381AE7291DE6A628002C47C3 /* 05-Radar-Chart.md in Sources */,
 				381AE71C1DE6A628002C47C3 /* ISSUE_TEMPLATE.md in Sources */,
-				3942EF4B1DEB359D006F3AE9 /* SwiftStandardLibrary.swift in Sources */,
-				3942EF571DEB359D006F3AE9 /* ZipFilter.swift in Sources */,
-				3942EF4E1DEB359D006F3AE9 /* TemplateAST.swift in Sources */,
-				3942EF441DEB359D006F3AE9 /* Localizer.swift in Sources */,
-				3942EF511DEB359D006F3AE9 /* TemplateGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1652,7 +1495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = RQA68E574G;
+				DEVELOPMENT_TEAM = J2V4H7NGAG;
 				INFOPLIST_FILE = UIWebViewLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = touchstone.ai.UIWebViewLayout;
@@ -1669,7 +1512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = RQA68E574G;
+				DEVELOPMENT_TEAM = J2V4H7NGAG;
 				INFOPLIST_FILE = UIWebViewLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = touchstone.ai.UIWebViewLayout;

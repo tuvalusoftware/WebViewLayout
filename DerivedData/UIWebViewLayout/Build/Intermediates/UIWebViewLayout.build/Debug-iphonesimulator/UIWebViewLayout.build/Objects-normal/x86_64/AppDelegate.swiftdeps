@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C15UIWebViewLayout11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
 - "applicationWillEnterForeground"
-- "applicationWillTerminate"
-- "applicationDidBecomeActive"
 - "application"
-- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
+- "window"
+- "applicationWillTerminate"
 - "webServer"
 - "applicationWillResignActive"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "UIApplication"
-- "AppDelegate"
-- "UIWindow"
-- "UIResponder"
-- "UIApplicationDelegate"
-- "GCDWebServer"
 - "Bool"
+- "UIWindow"
 - !private "BooleanLiteralType"
+- "UIApplicationDelegate"
 - "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
+- "UIResponder"
+- "GCDWebServer"
+- "UIApplication"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -143,22 +143,6 @@ depends-member:
 - ["Ps8Hashable", "webServer"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
-- ["P15UIWebViewLayout15MustacheBoxable", "application"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationDidBecomeActive"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationDidEnterBackground"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationDidFinishLaunching"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationDidReceiveMemoryWarning"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationProtectedDataDidBecomeAvailable"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationProtectedDataWillBecomeUnavailable"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationShouldRequestHealthAuthorization"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationSignificantTimeChange"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationWillEnterForeground"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationWillResignActive"]
-- ["P15UIWebViewLayout15MustacheBoxable", "applicationWillTerminate"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "init"]
-- ["P15UIWebViewLayout15MustacheBoxable", "webServer"]
-- ["P15UIWebViewLayout15MustacheBoxable", "window"]
-- ["P15UIWebViewLayout15MustacheBoxable", ""]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "GCDWebServer"]
 - ["CSo8NSObject", "UIApplication"]
@@ -273,7 +257,6 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - "Ps8Hashable"
-- "P15UIWebViewLayout15MustacheBoxable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "Sq"

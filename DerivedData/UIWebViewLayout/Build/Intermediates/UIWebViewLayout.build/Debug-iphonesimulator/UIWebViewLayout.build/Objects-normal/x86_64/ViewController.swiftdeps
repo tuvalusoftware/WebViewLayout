@@ -6,50 +6,49 @@ provides-nominal:
 provides-member:
 - ["C15UIWebViewLayout14ViewController", ""]
 provides-dynamic-lookup:
+- "uiwebView"
 - "webServer"
 - "viewDidLoad"
-- "buttonClickEventTriggeredScriptToAddToDocument"
-- "userContentController"
+- "webView"
+- "webView"
 - "didReceiveMemoryWarning"
-- "webView"
-- "webView"
-- "initWebServer"
-- "uiwebView"
+- "userContentController"
+- "buttonClickEventTriggeredScriptToAddToDocument"
 - "webConfig"
+- "initWebServer"
 depends-top-level:
-- "AssignmentPrecedence"
-- "URL"
-- !private "WKUserScriptInjectionTime"
-- !private "UIAlertAction"
-- "CastingPrecedence"
-- !private "NSURL"
-- "ViewController"
-- !private "=="
-- "GCDWebServer"
-- !private "print"
-- "UIWebView"
-- !private "UnicodeScalarType"
-- !private "NSLog"
-- "WKNavigation"
-- "WKScriptMessage"
-- !private "Bundle"
-- "String"
+- !private "StringLiteralType"
+- !private "UIAlertController"
 - "WKUserContentController"
 - !private "Void"
-- "WKNavigationDelegate"
-- "WKWebView"
-- !private "Template"
-- !private "UIAlertController"
-- "WKScriptMessageHandler"
-- "UIViewController"
-- "NSError"
-- !private "Int"
-- !private "BooleanLiteralType"
-- !private "Path"
-- !private "StringLiteralType"
-- !private "WKUserScript"
+- "String"
+- !private "NSLog"
 - !private "arc4random_uniform"
+- !private "NSURL"
+- !private "Path"
+- !private "Int"
+- "WKScriptMessageHandler"
+- "NSError"
+- "WKNavigationDelegate"
+- !private "BooleanLiteralType"
+- !private "UnicodeScalarType"
+- "URL"
+- "WKScriptMessage"
+- "UIWebView"
+- "GCDWebServer"
+- "WKWebView"
+- !private "Bundle"
+- "CastingPrecedence"
+- "WKNavigation"
 - "WKWebViewConfiguration"
+- !private "UIAlertAction"
+- "AssignmentPrecedence"
+- !private "WKUserScriptInjectionTime"
+- !private "WKUserScript"
+- !private "=="
+- "UIViewController"
+- !private "print"
+- "ViewController"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "Encoding"]
@@ -58,7 +57,6 @@ depends-member:
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "Path"]
 - !private ["Ps9AnyObject", "String"]
-- !private ["Ps9AnyObject", "Template"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "URL"]
@@ -87,7 +85,6 @@ depends-member:
 - !private ["Ps9AnyObject", "path"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "print"]
-- !private ["Ps9AnyObject", "render"]
 - !private ["Ps9AnyObject", "resourcePath"]
 - ["Ps9AnyObject", "uiwebView"]
 - ["Ps9AnyObject", "userContentController"]
@@ -119,7 +116,6 @@ depends-member:
 - !private ["Ps7CVarArg", "NSURL"]
 - !private ["Ps7CVarArg", "Path"]
 - !private ["Ps7CVarArg", "String"]
-- !private ["Ps7CVarArg", "Template"]
 - !private ["Ps7CVarArg", "UIAlertAction"]
 - !private ["Ps7CVarArg", "UIAlertController"]
 - !private ["Ps7CVarArg", "URL"]
@@ -170,7 +166,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "Path"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
-- !private ["Ps28CustomDebugStringConvertible", "Template"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
@@ -201,7 +196,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "pathExtension"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
-- !private ["Ps28CustomDebugStringConvertible", "render"]
 - !private ["Ps28CustomDebugStringConvertible", "resourcePath"]
 - ["Ps28CustomDebugStringConvertible", "uiwebView"]
 - ["Ps28CustomDebugStringConvertible", "userContentController"]
@@ -226,7 +220,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "Path"]
 - !private ["Ps23CustomStringConvertible", "String"]
-- !private ["Ps23CustomStringConvertible", "Template"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "URL"]
@@ -279,7 +272,6 @@ depends-member:
 - !private ["Ps9Equatable", "NSURL"]
 - !private ["Ps9Equatable", "Path"]
 - !private ["Ps9Equatable", "String"]
-- !private ["Ps9Equatable", "Template"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "URL"]
@@ -359,7 +351,6 @@ depends-member:
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "Path"]
 - !private ["Ps8Hashable", "String"]
-- !private ["Ps8Hashable", "Template"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "URL"]
@@ -420,53 +411,6 @@ depends-member:
 - !private ["Ps10MirrorPath", "Encoding"]
 - !private ["Ps10MirrorPath", "appending"]
 - !private ["Ps10MirrorPath", "init"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "Bundle"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "Encoding"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "Int"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "NSLog"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "NSURL"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "Path"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "String"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "Template"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "UIAlertAction"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "UIAlertController"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "URL"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "ViewController"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "WKUserContentController"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "WKUserScript"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "WKUserScriptInjectionTime"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "WKWebView"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "WKWebViewConfiguration"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "add"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "addAction"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "addSubview"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "addUserScript"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "appending"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "arc4random_uniform"]
-- ["P15UIWebViewLayout15MustacheBoxable", "buttonClickEventTriggeredScriptToAddToDocument"]
-- ["P15UIWebViewLayout15MustacheBoxable", "didReceiveMemoryWarning"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "evaluateJavaScript"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "frame"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "init"]
-- ["P15UIWebViewLayout15MustacheBoxable", "initWebServer"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "loadFileURL"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "localizedDescription"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "main"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "navigationDelegate"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "path"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "present"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "print"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "render"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "resourcePath"]
-- ["P15UIWebViewLayout15MustacheBoxable", "uiwebView"]
-- ["P15UIWebViewLayout15MustacheBoxable", "userContentController"]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "view"]
-- ["P15UIWebViewLayout15MustacheBoxable", "viewDidLoad"]
-- ["P15UIWebViewLayout15MustacheBoxable", "webConfig"]
-- ["P15UIWebViewLayout15MustacheBoxable", "webServer"]
-- ["P15UIWebViewLayout15MustacheBoxable", "webView"]
-- ["P15UIWebViewLayout15MustacheBoxable", "webViewWebContentProcessDidTerminate"]
-- ["P15UIWebViewLayout15MustacheBoxable", ""]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Bundle"]
 - !private ["PSo8NSCoding", "Encoding"]
@@ -475,7 +419,6 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "Path"]
 - !private ["PSo8NSCoding", "String"]
-- !private ["PSo8NSCoding", "Template"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "URL"]
@@ -523,7 +466,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "Path"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
-- !private ["PSo26NSExtensionRequestHandling", "Template"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "URL"]
@@ -562,7 +504,6 @@ depends-member:
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "Path"]
 - ["CSo8NSObject", "String"]
-- !private ["CSo8NSObject", "Template"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIWebView"]
@@ -612,7 +553,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "Path"]
 - !private ["PSo16NSObjectProtocol", "String"]
-- !private ["PSo16NSObjectProtocol", "Template"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "URL"]
@@ -686,9 +626,6 @@ depends-member:
 - !private ["SS", "appending"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
-- ["C15UIWebViewLayout8Template", "deinit"]
-- !private ["C15UIWebViewLayout8Template", "init"]
-- !private ["C15UIWebViewLayout8Template", "render"]
 - !private ["Ps16TextOutputStream", "Encoding"]
 - !private ["Ps16TextOutputStream", "appending"]
 - !private ["Ps16TextOutputStream", "init"]
@@ -722,7 +659,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "Path"]
 - !private ["PSo21UIAppearanceContainer", "String"]
-- !private ["PSo21UIAppearanceContainer", "Template"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "URL"]
@@ -760,7 +696,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "Path"]
 - !private ["PSo18UIContentContainer", "String"]
-- !private ["PSo18UIContentContainer", "Template"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "URL"]
@@ -805,7 +740,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "Path"]
 - !private ["PSo18UIFocusEnvironment", "String"]
-- !private ["PSo18UIFocusEnvironment", "Template"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "URL"]
@@ -851,7 +785,6 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "Path"]
 - ["CSo11UIResponder", "String"]
-- !private ["CSo11UIResponder", "Template"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
 - ["CSo11UIResponder", "UIWebView"]
@@ -893,7 +826,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSURL"]
 - !private ["PSo30UIResponderStandardEditActions", "Path"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
-- !private ["PSo30UIResponderStandardEditActions", "Template"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
 - !private ["PSo30UIResponderStandardEditActions", "URL"]
@@ -931,7 +863,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "Path"]
 - !private ["PSo16UIStateRestoring", "String"]
-- !private ["PSo16UIStateRestoring", "Template"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "URL"]
@@ -964,7 +895,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "Path"]
 - !private ["PSo18UITraitEnvironment", "String"]
-- !private ["PSo18UITraitEnvironment", "Template"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "URL"]
@@ -1010,7 +940,6 @@ depends-member:
 - !private ["CSo16UIViewController", "NSURL"]
 - !private ["CSo16UIViewController", "Path"]
 - ["CSo16UIViewController", "String"]
-- !private ["CSo16UIViewController", "Template"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
 - ["CSo16UIViewController", "UIWebView"]
@@ -1059,7 +988,6 @@ depends-member:
 - !private ["C15UIWebViewLayout14ViewController", "NSURL"]
 - !private ["C15UIWebViewLayout14ViewController", "Path"]
 - ["C15UIWebViewLayout14ViewController", "String"]
-- !private ["C15UIWebViewLayout14ViewController", "Template"]
 - !private ["C15UIWebViewLayout14ViewController", "UIAlertAction"]
 - !private ["C15UIWebViewLayout14ViewController", "UIAlertController"]
 - ["C15UIWebViewLayout14ViewController", "UIWebView"]
@@ -1096,7 +1024,6 @@ depends-member:
 - !private ["PSo20WKNavigationDelegate", "NSURL"]
 - !private ["PSo20WKNavigationDelegate", "Path"]
 - !private ["PSo20WKNavigationDelegate", "String"]
-- !private ["PSo20WKNavigationDelegate", "Template"]
 - !private ["PSo20WKNavigationDelegate", "UIAlertAction"]
 - !private ["PSo20WKNavigationDelegate", "UIAlertController"]
 - !private ["PSo20WKNavigationDelegate", "URL"]
@@ -1122,7 +1049,6 @@ depends-member:
 - !private ["PSo22WKScriptMessageHandler", "NSURL"]
 - !private ["PSo22WKScriptMessageHandler", "Path"]
 - !private ["PSo22WKScriptMessageHandler", "String"]
-- !private ["PSo22WKScriptMessageHandler", "Template"]
 - !private ["PSo22WKScriptMessageHandler", "UIAlertAction"]
 - !private ["PSo22WKScriptMessageHandler", "UIAlertController"]
 - !private ["PSo22WKScriptMessageHandler", "URL"]
@@ -1192,7 +1118,6 @@ depends-member:
 - !private ["Ps9_Hashable", "NSURL"]
 - !private ["Ps9_Hashable", "Path"]
 - !private ["Ps9_Hashable", "String"]
-- !private ["Ps9_Hashable", "Template"]
 - !private ["Ps9_Hashable", "UIAlertAction"]
 - !private ["Ps9_Hashable", "UIAlertController"]
 - !private ["Ps9_Hashable", "URL"]
@@ -1281,7 +1206,6 @@ depends-nominal:
 - !private "Ps17IntegerArithmetic"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
-- "P15UIWebViewLayout15MustacheBoxable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -1303,7 +1227,6 @@ depends-nominal:
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
 - "SS"
-- "C15UIWebViewLayout8Template"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"

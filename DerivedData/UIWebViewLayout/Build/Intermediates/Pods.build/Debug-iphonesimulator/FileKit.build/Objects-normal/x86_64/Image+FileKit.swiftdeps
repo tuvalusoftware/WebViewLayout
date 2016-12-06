@@ -8,17 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "writable"
 depends-top-level:
-- !private "FileKitError"
-- "WritableConvertible"
-- "Data"
-- "String"
 - !private "??"
+- !private "FileKitError"
 - "ReadableWritable"
-- !private "UIImagePNGRepresentation"
 - "Image"
+- "Data"
+- "WritableConvertible"
 - "URL"
 - "Path"
 - "UIImage"
+- "String"
+- !private "UIImagePNGRepresentation"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
 - !private ["Ps9AnyObject", "FileKitError"]

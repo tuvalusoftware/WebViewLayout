@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 - "webView"
 depends-top-level:
-- "NSCoder"
-- "WKWebView"
-- "CGRect"
-- "WKWebViewConfiguration"
-- "NSError"
-- "CustomWebView"
 - "WKNavigation"
+- "NSCoder"
+- "WKWebViewConfiguration"
+- "CGRect"
+- "NSError"
+- "WKWebView"
+- "CustomWebView"
 depends-member:
 - !private ["Ps9AnyObject", "WKWebViewConfiguration"]
 - ["Ps9AnyObject", "init"]
@@ -54,10 +54,6 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "webView"]
 - ["Ps8Hashable", ""]
-- !private ["P15UIWebViewLayout15MustacheBoxable", "WKWebViewConfiguration"]
-- ["P15UIWebViewLayout15MustacheBoxable", "init"]
-- ["P15UIWebViewLayout15MustacheBoxable", "webView"]
-- ["P15UIWebViewLayout15MustacheBoxable", ""]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "WKWebViewConfiguration"]
 - ["PSo8NSCoding", "init"]
@@ -159,7 +155,6 @@ depends-nominal:
 - "C15UIWebViewLayout13CustomWebView"
 - "Ps9Equatable"
 - "Ps8Hashable"
-- "P15UIWebViewLayout15MustacheBoxable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"

@@ -6,10 +6,10 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "File"
-- "NSArrayFile"
 - "ArrayFile"
 - "NSArray"
+- "NSArrayFile"
+- "File"
 - "Array"
 depends-member:
 - ["Sa", "deinit"]

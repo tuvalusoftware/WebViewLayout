@@ -6,13 +6,13 @@ provides-member:
 - ["Vs10Dictionary", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Path"
+- "CastingPrecedence"
 - "NSDictionary"
+- "Dictionary"
 - "WritableConvertible"
 - "ReadableWritable"
-- "CastingPrecedence"
-- "Path"
 - !private "FileKitError"
-- "Dictionary"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps7CVarArg", "FileKitError"]

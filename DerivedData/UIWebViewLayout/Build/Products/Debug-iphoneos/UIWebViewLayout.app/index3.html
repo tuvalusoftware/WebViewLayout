@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   
+   <link rel="stylesheet" href="angular-material/angular-material.min.css">
+  
+  
+  <link rel="stylesheet" href="angular-material.min.css">
+      <script src="angular/angular.js"></script>
+      <script src="angular-aria/angular-aria.min.js"></script>
+      <script src="angular-animate/angular-animate.js"></script>
+      <script src="angular-material/angular-material.js"></script>
+      <script src="angular-material/angular-material.min.js"></script>
+      <script src="chart/Chart.min.js"></script>
+      <script src="angular-chart.js/dist/angular-chart.min.js"></script>
+
+
+        <script language="javascript">
+           
+           angular
+            .module('app', ['ngMaterial'])
+            .controller('layoutController', layoutController);
+            
+            
+            function layoutController ($scope) {
+            }
+        
+
+        </script>
+        
+        <style>
+            .box {
+                color:white;
+                padding:10px;
+                text-align:center;
+                border-style: inset;
+            }
+        .green {
+            background:green;
+        }
+        .blue {
+            background:blue;
+        }
+        </style>
+        
+        </head>
+    
+ 
+  
+
+     <body ng-app="app">
+         
+     
+     
+         
+         <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="row" style="height:100%;" ng-cloak layout-wrap>
+             <div flex="50" class="green box">
+                 [flex="50"]
+             </div>
+             <div flex="50" class="blue box">
+                 [flex="50"]
+             </div>
+             <div flex="25" class="green box">
+                 [flex="25"]
+             </div>
+             <div flex="33" class="green box">
+                 [flex="33"]
+             </div>
+             <div flex="66" class="blue box">
+                 [flex="66"]
+             </div>
+             <div flex="50" class="blue box">
+                 [flex="50"]
+             </div>
+             <div flex class="green box">
+                 [flex]
+             </div>
+         </div>
+         
+         
+   
+             
+     </body>
+        
+     
+</html>

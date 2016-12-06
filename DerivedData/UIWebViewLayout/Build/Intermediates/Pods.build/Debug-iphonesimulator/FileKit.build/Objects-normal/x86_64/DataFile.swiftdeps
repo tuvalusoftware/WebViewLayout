@@ -11,16 +11,16 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Array"
-- "TernaryPrecedence"
+- "DataFile"
+- !private "StringLiteralType"
+- "DataFileWithOptions"
+- "Path"
 - "AssignmentPrecedence"
 - !private "=="
-- "Data"
-- !private "StringLiteralType"
-- "Path"
-- "DataFileWithOptions"
 - "Bool"
-- "DataFile"
+- "TernaryPrecedence"
 - "File"
+- "Data"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
 - ["Ps9AnyObject", "init"]

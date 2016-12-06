@@ -62,8 +62,7 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         
         print(textFiles)
       
-         let template = try! Template(named: "Document")
-         _ = try! template.render()
+      
         
         webView = WKWebView (frame: self.view.frame, configuration: webConfig)
         view.addSubview(webView)
