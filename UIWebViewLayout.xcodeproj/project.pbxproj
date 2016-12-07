@@ -215,6 +215,7 @@
 		3942EF6C1DEB3C38006F3AE9 /* myindex.html in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6A1DEB3C38006F3AE9 /* myindex.html */; };
 		3942EF6D1DEB3C38006F3AE9 /* myjs in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6B1DEB3C38006F3AE9 /* myjs */; };
 		3942EF6F1DEB5C59006F3AE9 /* main_ctrl.js in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */; };
+		39F8A3061DF7CE2E008B6C92 /* bower_components in Resources */ = {isa = PBXBuildFile; fileRef = 39F8A3051DF7CE2E008B6C92 /* bower_components */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -493,6 +494,7 @@
 		3942EF6A1DEB3C38006F3AE9 /* myindex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myindex.html; sourceTree = "<group>"; };
 		3942EF6B1DEB3C38006F3AE9 /* myjs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = myjs; sourceTree = "<group>"; };
 		3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main_ctrl.js; path = myjs/main_ctrl.js; sourceTree = "<group>"; };
+		39F8A3051DF7CE2E008B6C92 /* bower_components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bower_components; sourceTree = "<group>"; };
 		3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIWebViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -975,6 +977,7 @@
 		392060EC1DD5793A0009C7FB /* UIWebViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				39F8A3051DF7CE2E008B6C92 /* bower_components */,
 				381AE6571DE6A5F3002C47C3 /* resources */,
 				392060ED1DD5793A0009C7FB /* AppDelegate.swift */,
 				392060EF1DD5793A0009C7FB /* ViewController.swift */,
@@ -1256,6 +1259,7 @@
 				381AE7701DE6A629002C47C3 /* controller.doughnut.js in Resources */,
 				381AE7191DE6A628002C47C3 /* .editorconfig in Resources */,
 				381AE79D1DE6A629002C47C3 /* core.title.tests.js in Resources */,
+				39F8A3061DF7CE2E008B6C92 /* bower_components in Resources */,
 				381AE75D1DE6A628002C47C3 /* scatter.html in Resources */,
 				381AE7A61DE6A629002C47C3 /* scale.linear.tests.js in Resources */,
 				381AE7961DE6A629002C47C3 /* core.element.tests.js in Resources */,

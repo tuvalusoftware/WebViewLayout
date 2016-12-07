@@ -80,8 +80,46 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         
         // The rendering: "Hello Arthur..."
       //  let rendering = try template.render(data)
-   
-  
+        
+    }
+    
+    
+    func writeFileToDocument() {
+        var applicationUrl =  try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        
+        let path1 = Bundle.main.resourcePath! + "/bower_components"
+        
+        let fileManager = FileManager()     // let fileManager = NSFileManager.defaultManager()
+        let en=fileManager.enumerator(atPath: path1)   // let enumerator:NSDirectoryEnumerator = fileManager.enumeratorAtPath(folderPath)
+        
+        while let element = en?.nextObject() as? String {
+            print(element)
+            
+            var readString = "" // Used to store the file contents
+            do {
+                // Read the file contents
+                readString = try String(contentsOfFile: path1 + "/" + element, encoding: String.Encoding.utf8)
+                
+                let nameOfFile = element.characters.split{$0 == "/"}.map(String.init)
+                
+                if let fileURL = applicationUrl?.appendingPathComponent(nameOfFile[nameOfFile.count - 1]) {
+                    do {
+                        try readString.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
+                    }
+                    catch {/* error handling here */}
+                }
+                
+                
+            } catch let error as NSError {
+                //print("Failed reading from URL: \(element), Error: " + error.localizedDescription)
+            }
+            
+            
+            if element.hasSuffix("js") {
+                // do something with the_path/*.ext ....
+            }
+        }
+        print(applicationUrl)
     }
     
     // WKScriptMessageHandler Delegate

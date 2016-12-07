@@ -31,20 +31,16 @@
     </head>
     <html>
         <body ng-app="app" >
-            
-        
-            
-            
+
              <script>
-                
-              
+                 
+                 function createData() {
+                     var cars = ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"];
+                 }
                 
                 // Include app dependency on ngMaterial
                 angular.module("Graph", ["chart.js"]).controller("RadarCtrl", function ($scope) {
-<!--                 $scope.onClick = function (points, evt) {-->
-<!--                        console.log(points, evt);-->
-<!--                 };-->
-                 $scope.labels =["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"];
+                $scope.labels = cars;
                
                $scope.data = [
                               [65, 59, 90, 81, 56, 55, 40],
@@ -86,7 +82,10 @@
             -->
            
            
-          
+           <p>
+           <br>
+           <button type="button" onclick="createData()">Light On</button>
+           </p>
           
           <body ng-app="app">
               <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="column"   ng-cloak layout-wrap>
