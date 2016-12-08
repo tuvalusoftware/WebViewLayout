@@ -182,6 +182,9 @@
 		392060F81DD5793A0009C7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */; };
 		392061031DD5793A0009C7FB /* UIWebViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392061021DD5793A0009C7FB /* UIWebViewLayoutTests.swift */; };
 		3920610E1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */; };
+		394268251DF86DEB002BE459 /* someData.json in Resources */ = {isa = PBXBuildFile; fileRef = 394268241DF86DEB002BE459 /* someData.json */; };
+		394268271DF86DF2002BE459 /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = 394268261DF86DF2002BE459 /* app.js */; };
+		3942682B1DF8F4CE002BE459 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3942682A1DF8F4CE002BE459 /* style.css */; };
 		3942EF6C1DEB3C38006F3AE9 /* myindex.html in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6A1DEB3C38006F3AE9 /* myindex.html */; };
 		3942EF6D1DEB3C38006F3AE9 /* myjs in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6B1DEB3C38006F3AE9 /* myjs */; };
 		3942EF6F1DEB5C59006F3AE9 /* main_ctrl.js in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */; };
@@ -432,6 +435,9 @@
 		3920610D1DD5793A0009C7FB /* UIWebViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewLayoutUITests.swift; sourceTree = "<group>"; };
 		3920610F1DD5793A0009C7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebViewLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		394268241DF86DEB002BE459 /* someData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = someData.json; sourceTree = "<group>"; };
+		394268261DF86DF2002BE459 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
+		3942682A1DF8F4CE002BE459 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		3942EF6A1DEB3C38006F3AE9 /* myindex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myindex.html; sourceTree = "<group>"; };
 		3942EF6B1DEB3C38006F3AE9 /* myjs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = myjs; sourceTree = "<group>"; };
 		3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main_ctrl.js; path = myjs/main_ctrl.js; sourceTree = "<group>"; };
@@ -481,7 +487,10 @@
 		381AE6571DE6A5F3002C47C3 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				3942682A1DF8F4CE002BE459 /* style.css */,
 				3942EF6A1DEB3C38006F3AE9 /* myindex.html */,
+				394268261DF86DF2002BE459 /* app.js */,
+				394268241DF86DEB002BE459 /* someData.json */,
 				3942EF6B1DEB3C38006F3AE9 /* myjs */,
 				381AE6581DE6A609002C47C3 /* Document.mustache */,
 				381AEC951DE6A7FD002C47C3 /* Layout.mustache */,
@@ -1141,6 +1150,7 @@
 				381AE65C1DE6A609002C47C3 /* Document.mustache in Resources */,
 				381AE7141DE6A628002C47C3 /* Chart.bundle.min.js in Resources */,
 				381AE7871DE6A629002C47C3 /* element.rectangle.js in Resources */,
+				3942682B1DF8F4CE002BE459 /* style.css in Resources */,
 				381AE7671DE6A629002C47C3 /* Chart.Bar.js in Resources */,
 				381AE7301DE6A628002C47C3 /* karma.conf.ci.js in Resources */,
 				381AE78E1DE6A629002C47C3 /* controller.bar.tests.js in Resources */,
@@ -1192,9 +1202,11 @@
 				381AE7751DE6A629002C47C3 /* core.canvasHelpers.js in Resources */,
 				381AE7181DE6A628002C47C3 /* .codeclimate.yml in Resources */,
 				3811D0781DE900D700A3D1EA /* chart in Resources */,
+				394268271DF86DF2002BE459 /* app.js in Resources */,
 				381AE7151DE6A628002C47C3 /* Chart.js in Resources */,
 				381AE7861DE6A629002C47C3 /* element.point.js in Resources */,
 				381AE7571DE6A628002C47C3 /* scatter-logX.html in Resources */,
+				394268251DF86DEB002BE459 /* someData.json in Resources */,
 				381AE76C1DE6A629002C47C3 /* Chart.Radar.js in Resources */,
 				381AE7921DE6A629002C47C3 /* controller.polarArea.tests.js in Resources */,
 				381AE7321DE6A628002C47C3 /* karma.coverage.conf.js in Resources */,

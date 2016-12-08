@@ -68,7 +68,7 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         view.addSubview(webView)
         webView!.navigationDelegate = self
  
-        let htmlPath = Bundle.main.path(forResource: "index2", ofType: "html")!
+        let htmlPath = Bundle.main.path(forResource: "myindex", ofType: "html")!
        
         
         print(" \(htmlPath)")
@@ -123,7 +123,7 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
     // WKScriptMessageHandler Delegate
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
-        let js2:String = String(format: "var app = angular.module(\'my_app\',[\'chart.js\']); app.controller(\"LineCtrl\", function ($scope) { $scope.labels = [\"tao\", \"day\", \"March\", \"April\", \"May\", \"June\", \"July\"]; $scope.series = [\'Series A\', \'Series B\']; $scope.data = [[\(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100)))], [\(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100))), \(Int(arc4random_uniform(100)))]]; $scope.$apply(); });")
+        let js2:String = String(format: "var appElement = document.querySelector('[ng-app=plunker]'); var appScope = angular.element(appElement).scope(); var controllerScope = appScope.$$childHead; controllerScope.$apply(function() { controllerScope.myValue = 100; });")
         
         print(js2)
         webView?.evaluateJavaScript(js2, completionHandler: { (AnyObject, NSError) -> Void in
@@ -133,7 +133,43 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         
     }
     
-  
+    func writeFileToDocument() {
+        var applicationUrl =  try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        
+        let path1 = Bundle.main.resourcePath! + "/bower_components"
+        
+        let fileManager = FileManager()     // let fileManager = NSFileManager.defaultManager()
+        let en=fileManager.enumerator(atPath: path1)   // let enumerator:NSDirectoryEnumerator = fileManager.enumeratorAtPath(folderPath)
+        
+        while let element = en?.nextObject() as? String {
+            print(element)
+            
+            var readString = "" // Used to store the file contents
+            do {
+                // Read the file contents
+                readString = try String(contentsOfFile: path1 + "/" + element, encoding: String.Encoding.utf8)
+                
+                let nameOfFile = element.characters.split{$0 == "/"}.map(String.init)
+                
+                if let fileURL = applicationUrl?.appendingPathComponent(nameOfFile[nameOfFile.count - 1]) {
+                    do {
+                        try readString.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
+                    }
+                    catch {/* error handling here */}
+                }
+                
+                
+            } catch let error as NSError {
+                //print("Failed reading from URL: \(element), Error: " + error.localizedDescription)
+            }
+            
+            
+            if element.hasSuffix("js") {
+                // do something with the_path/*.ext ....
+            }
+        }
+        print(applicationUrl)
+    }
     
     func initWebServer(_ basePath: URL) {
        
