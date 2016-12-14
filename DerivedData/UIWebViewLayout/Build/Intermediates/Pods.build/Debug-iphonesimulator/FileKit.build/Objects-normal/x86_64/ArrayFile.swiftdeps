@@ -7,10 +7,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ArrayFile"
-- "NSArray"
-- "NSArrayFile"
-- "File"
 - "Array"
+- "NSArray"
+- "File"
+- "NSArrayFile"
 depends-member:
 - ["Sa", "deinit"]
 - ["CSo7NSArray", "deinit"]

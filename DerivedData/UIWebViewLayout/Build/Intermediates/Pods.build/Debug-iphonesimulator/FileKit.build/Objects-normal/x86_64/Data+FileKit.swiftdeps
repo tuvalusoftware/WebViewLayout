@@ -6,14 +6,14 @@ provides-member:
 - ["V10Foundation4Data", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Path"
-- "TernaryPrecedence"
-- !private "Array"
 - "ReadableWritable"
-- !private "BooleanLiteralType"
+- !private "Array"
+- "TernaryPrecedence"
+- "Data"
+- "Path"
 - "Bool"
 - !private "FileKitError"
-- "Data"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps23BidirectionalCollection", "FileKitError"]
 - ["Ps23BidirectionalCollection", "ReadingOptions"]

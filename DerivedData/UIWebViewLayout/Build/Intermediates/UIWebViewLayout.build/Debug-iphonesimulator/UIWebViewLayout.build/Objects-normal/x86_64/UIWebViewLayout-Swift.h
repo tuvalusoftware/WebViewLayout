@@ -116,27 +116,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 @import WebKit;
 @import CoreGraphics;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class GCDWebServer;
 @class UIWindow;
 @class UIApplication;
 
 SWIFT_CLASS("_TtC15UIWebViewLayout11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (nonatomic, strong) GCDWebServer * _Nullable webServer;
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic, copy) NSURL * _Nullable application_support;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (void)writeFileToDocument;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -152,25 +152,41 @@ SWIFT_CLASS("_TtC15UIWebViewLayout13CustomWebView")
 - (void)webViewWithWebView:(WKWebView * _Null_unspecified)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Null_unspecified)error;
 @end
 
-@class WKUserContentController;
-@class WKScriptMessage;
-@class UIWebView;
+@class WKFrameInfo;
+@class WebViewProgressView;
+@class UIBarButtonItem;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC15UIWebViewLayout14ViewController")
-@interface ViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
-@property (nonatomic, weak) IBOutlet UIWebView * _Null_unspecified uiwebView;
-@property (nonatomic, strong) GCDWebServer * _Null_unspecified webServer;
-@property (nonatomic, strong) WKWebView * _Null_unspecified webView;
-@property (nonatomic, readonly, strong) WKWebViewConfiguration * _Nonnull webConfig;
+@interface ViewController : UIViewController <WKUIDelegate, WKNavigationDelegate>
+@property (nonatomic, weak) WKWebView * _Nullable webView;
+@property (nonatomic, weak) WebViewProgressView * _Nullable progressView;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified backBarButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified forwardBarButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified stopBarButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified refreshBarButton;
 - (void)viewDidLoad;
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-- (void)initWebServer:(NSURL * _Nonnull)basePath SWIFT_METHOD_FAMILY(none);
-- (NSString * _Nonnull)buttonClickEventTriggeredScriptToAddToDocument;
-- (void)webViewWithWebView:(WKWebView * _Null_unspecified)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Null_unspecified)error;
-- (void)didReceiveMemoryWarning;
+- (void)evaluateJavaScriptForDataWithDictionaryData:(NSDictionary<NSString *, id> * _Nonnull)dictionaryData;
+- (void)evaluateJavaScriptForDataInitWithDictionaryData:(NSDictionary<NSString *, id> * _Nonnull)dictionaryData;
+- (BOOL)injectAngularInto:(WKWebView * _Nonnull)webView error:(NSError * _Nullable * _Nullable)error;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+- (void)webView:(WKWebView * _Nonnull)webView runJavaScriptAlertPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView runJavaScriptConfirmPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView runJavaScriptTextInputPanelWithPrompt:(NSString * _Nonnull)prompt defaultText:(NSString * _Nullable)defaultText initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15UIWebViewLayout19WebViewProgressView")
+@interface WebViewProgressView : UIView
+@property (nonatomic) double barAnimationDuration;
+@property (nonatomic) double fadeAnimationDuration;
+@property (nonatomic) double fadeOutDelay;
+@property (nonatomic) float progress;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setProgress:(float)progress animated:(BOOL)animated;
 @end
 
 #pragma clang diagnostic pop

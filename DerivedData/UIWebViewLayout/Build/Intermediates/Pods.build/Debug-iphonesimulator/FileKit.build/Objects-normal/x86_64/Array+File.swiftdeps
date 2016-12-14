@@ -6,12 +6,12 @@ provides-member:
 - ["Sa", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Array"
+- "Path"
 - "CastingPrecedence"
+- "Array"
 - "ReadableWritable"
 - "WritableConvertible"
 - !private "FileKitError"
-- "Path"
 - "NSArray"
 depends-member:
 - !private ["Ps9AnyObject", "init"]

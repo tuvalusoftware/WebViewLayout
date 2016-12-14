@@ -1,0 +1,1 @@
+var goodvariablename = "thisismyvariablename"

@@ -38,7 +38,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		SvdRLACo5lgIxWOlo91YjDYgNX8=
+		8cFMqfxKBeFXtOB44RnIJ0uuESI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		Jv4gXgKkeZqNqVCA9FL0+DrP7Ws=
+		Ck1qDapL55mO07I2dhFUmBcm7mc=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		dEZzQIdlP2VqnfYOzwQFvbhkk2s=
+		zJWMdDJjP9YQnulIVhIRVLy9/3E=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		X/Ywrgm8Rfc2HbHI4eGpXz2h1Ic=
+		5FQUffccJNqxpys/LEwI8+A9ATk=
 		</data>
 		<key>Chart.Bar.js</key>
 		<data>
@@ -96,6 +96,10 @@
 		<data>
 		vYyM/MPQmnMXx9ht8Fq/9rPQt5w=
 		</data>
+		<key>Chart.js</key>
+		<data>
+		jFBG8WFWhn6zLfW4wKoV2hf5Z+w=
+		</data>
 		<key>Chart.min.js</key>
 		<data>
 		6vLaOm1iGdR/a3dDdrdkA6SMdfs=
@@ -106,7 +110,7 @@
 		</data>
 		<key>Frameworks/FileKit.framework/FileKit</key>
 		<data>
-		t9mYdBIttwM2Q9xhfQJBEKSTYtE=
+		qVQXNGOCZGSCQjqjClubcLrfFJg=
 		</data>
 		<key>Frameworks/FileKit.framework/Info.plist</key>
 		<data>
@@ -118,7 +122,7 @@
 		</data>
 		<key>Frameworks/GCDWebServer.framework/GCDWebServer</key>
 		<data>
-		erygNKScm705LuPIXYKQEfpt0mA=
+		n5D1RNdNfTVHaGysIRDoKgJZuVc=
 		</data>
 		<key>Frameworks/GCDWebServer.framework/Info.plist</key>
 		<data>
@@ -171,6 +175,10 @@
 		<key>Info.plist</key>
 		<data>
 		AzEuI25DCIvCpwBAOlVmAdqvDTE=
+		</data>
+		<key>Javascript.js</key>
+		<data>
+		upqW/CVNCmyR4zS8Aof/r6Cok8E=
 		</data>
 		<key>Layout.mustache</key>
 		<data>
@@ -2448,6 +2456,10 @@
 		<data>
 		1322UvGoec81zlhD6/10oUZg5IU=
 		</data>
+		<key>app.js</key>
+		<data>
+		Jeu2pd/xgEUuxS9C/4O74TwBiwA=
+		</data>
 		<key>bar-horizontal.html</key>
 		<data>
 		E+nc1+WyEEx81g25t48e03MDa+E=
@@ -2467,10 +2479,6 @@
 		<key>bubble.html</key>
 		<data>
 		tO9IYGCJ1n15kDnTcpvg2lUy+nE=
-		</data>
-		<key>chart.js</key>
-		<data>
-		EXHE61WUonx3Fn6Ja0oi6JbqlxM=
 		</data>
 		<key>chart/Chart.bundle.js</key>
 		<data>
@@ -2730,7 +2738,7 @@
 		</data>
 		<key>index2.html</key>
 		<data>
-		7h3zHzYWpcrkc/8bS5xkdfu0dWc=
+		gvTUS3IMS7LU0/FZKHeEjkSgFvY=
 		</data>
 		<key>index3.html</key>
 		<data>
@@ -2822,7 +2830,7 @@
 		</data>
 		<key>myindex.html</key>
 		<data>
-		uFYAgFGXEHFnl7mJldHeIQhNABU=
+		bg9F6WBxLYkwoAxqVpmv9VhfGgk=
 		</data>
 		<key>myjs/angular-chart.min.js</key>
 		<data>
@@ -2944,6 +2952,10 @@
 		<data>
 		UZZp9TqiscOWvBSAGL5gkId/ciM=
 		</data>
+		<key>someData.json</key>
+		<data>
+		o/YUzaMF0ArXBt9YA9Lawh5ZWUM=
+		</data>
 		<key>step-size.html</key>
 		<data>
 		fkFlcuzoCQcloHJVe+++MwtcqyQ=
@@ -2963,6 +2975,10 @@
 		<key>utils.js</key>
 		<data>
 		+cTO/P+5V4xy4rfZH62knjb8Tpc=
+		</data>
+		<key>variables.js</key>
+		<data>
+		wVPCXnYIHxVdK0uNJCb55UjIGqs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -3059,11 +3075,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SvdRLACo5lgIxWOlo91YjDYgNX8=
+			8cFMqfxKBeFXtOB44RnIJ0uuESI=
 			</data>
 			<key>hash2</key>
 			<data>
-			+MvcQID/gKkDJb4qz/wl2D2T/PfxG0A+ENn56/Go7fM=
+			kxaD0lufFvE7j6qXjAqsElQDe9m8X2QWwKkXgdKOyFo=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -3081,22 +3097,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jv4gXgKkeZqNqVCA9FL0+DrP7Ws=
+			Ck1qDapL55mO07I2dhFUmBcm7mc=
 			</data>
 			<key>hash2</key>
 			<data>
-			3iEgp8/rEjMzvakpr2xEY0rzI61iOtQlvH7Rt3A/VbQ=
+			ao4XNRwYkXpk7uBYkwNq8wX8XTEnz/kdq2JzHwFr+7E=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dEZzQIdlP2VqnfYOzwQFvbhkk2s=
+			zJWMdDJjP9YQnulIVhIRVLy9/3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			xtA3n3R4TTUjES2K3uh7edj3RRmfeJBNmycXz5nznKk=
+			roXdZrfyiCujUdFkzg+i5sZdBzXIAQnoWALVyJykJug=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -3114,11 +3130,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X/Ywrgm8Rfc2HbHI4eGpXz2h1Ic=
+			5FQUffccJNqxpys/LEwI8+A9ATk=
 			</data>
 			<key>hash2</key>
 			<data>
-			TE+GCDp4DXRkXSJyKJF4Iccm+GnQGTYuONZ64gO9Occ=
+			/nTNOE6ByoUEEFcQki36CxNEY0HqeZofmLfz4QND4nk=
 			</data>
 		</dict>
 		<key>Chart.Bar.js</key>
@@ -3220,6 +3236,17 @@
 			RASNMNlmRtIreeznffYMDUxBXcMRjijEaaGF/gxT6vw=
 			</data>
 		</dict>
+		<key>Chart.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jFBG8WFWhn6zLfW4wKoV2hf5Z+w=
+			</data>
+			<key>hash2</key>
+			<data>
+			HptdWaetAoQSrTP9GZVVxKovdIq1C3MmKazLYQ7JnL4=
+			</data>
+		</dict>
 		<key>Chart.min.js</key>
 		<dict>
 			<key>hash</key>
@@ -3246,11 +3273,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t9mYdBIttwM2Q9xhfQJBEKSTYtE=
+			qVQXNGOCZGSCQjqjClubcLrfFJg=
 			</data>
 			<key>hash2</key>
 			<data>
-			6J1G92f9mk0qYD7qcocH/95LAv6kMZyascdV6ZZCg4U=
+			8b+KlHHMNhiLNSc0ylkea7FxUQlMlzrkR7SoPixMnMg=
 			</data>
 		</dict>
 		<key>Frameworks/FileKit.framework/Info.plist</key>
@@ -3279,11 +3306,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			erygNKScm705LuPIXYKQEfpt0mA=
+			n5D1RNdNfTVHaGysIRDoKgJZuVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			5O7uidbDp5EsG/oafJ+2ZwkVRQEq1TANhcIe3Y7gLI4=
+			mXusgqJ8kxjqGEzyZOXHxuQVqVrbJmUUrwLi5vu77w0=
 			</data>
 		</dict>
 		<key>Frameworks/GCDWebServer.framework/Info.plist</key>
@@ -3416,6 +3443,17 @@
 			<key>hash2</key>
 			<data>
 			LKFPTUpBtenmsLKZuIozhsw72DYUOTHrROjw0Hd+myk=
+			</data>
+		</dict>
+		<key>Javascript.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			upqW/CVNCmyR4zS8Aof/r6Cok8E=
+			</data>
+			<key>hash2</key>
+			<data>
+			m1mI9/DLwc1QznmukYOrH7vTLH3/4LpxBnoUsurkD4A=
 			</data>
 		</dict>
 		<key>Layout.mustache</key>
@@ -9666,6 +9704,17 @@
 			g3sxztIo8Q+5tracClWcs6l07mGOgMKUpXe6xSOpdMw=
 			</data>
 		</dict>
+		<key>app.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jeu2pd/xgEUuxS9C/4O74TwBiwA=
+			</data>
+			<key>hash2</key>
+			<data>
+			593Azh7GIxBQ0kIzmlrBkTQc1+TNemhgkc93f3JRPUQ=
+			</data>
+		</dict>
 		<key>bar-horizontal.html</key>
 		<dict>
 			<key>hash</key>
@@ -9719,17 +9768,6 @@
 			<key>hash2</key>
 			<data>
 			BkGFzzNReR8hYQiPmYRhzpqhk+susSBLv4bLJtcY2dg=
-			</data>
-		</dict>
-		<key>chart.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EXHE61WUonx3Fn6Ja0oi6JbqlxM=
-			</data>
-			<key>hash2</key>
-			<data>
-			xb8d/KwAmwKZgFDrzu8//qQ+qPliVQpBCzJVgMFIYpg=
 			</data>
 		</dict>
 		<key>chart/Chart.bundle.js</key>
@@ -10440,11 +10478,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7h3zHzYWpcrkc/8bS5xkdfu0dWc=
+			gvTUS3IMS7LU0/FZKHeEjkSgFvY=
 			</data>
 			<key>hash2</key>
 			<data>
-			vy3GIH6/r2duuOrEe85vAhKMD/ZbodrQPPJ7uUJO/dA=
+			QAQeF9RGs5znP7B88eCZxFAvnEQoY8JkmL7CHq1ncXM=
 			</data>
 		</dict>
 		<key>index3.html</key>
@@ -10693,11 +10731,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uFYAgFGXEHFnl7mJldHeIQhNABU=
+			bg9F6WBxLYkwoAxqVpmv9VhfGgk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZanEdg+aY5YA6IZGFZnc967BYIL2cKF1sPVF2kK9vHI=
+			xI7hwgyIaV8RssfbkUdzndBYqrLO1Cw6wLMPR0c5ZR8=
 			</data>
 		</dict>
 		<key>myjs/angular-chart.min.js</key>
@@ -11030,6 +11068,17 @@
 			6plo6ltJIhP8sj/gCG5PA5v7/gpn/lg2br6bn6xmdSE=
 			</data>
 		</dict>
+		<key>someData.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o/YUzaMF0ArXBt9YA9Lawh5ZWUM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZAtFoBStZyodoNa96iKtpLnCvqrT7m2KherV53Rf5gI=
+			</data>
+		</dict>
 		<key>step-size.html</key>
 		<dict>
 			<key>hash</key>
@@ -11083,6 +11132,17 @@
 			<key>hash2</key>
 			<data>
 			oqhGKH8vIsjXduW+aEKNA47ZXyFTjUv/zhWO81V5bpw=
+			</data>
+		</dict>
+		<key>variables.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wVPCXnYIHxVdK0uNJCb55UjIGqs=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZHSjBJkmsLP896WFZZbLA1oG+ieh+6VnscNm9yA/lZY=
 			</data>
 		</dict>
 	</dict>

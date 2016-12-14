@@ -1,53 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Demo angular-chart</title>
-    <script src="myjs/angular.min.js" type="text/javascript"></script>
-    <script src="myjs/chart.min.js" type="text/javascript"></script>
-</head>
-<body ng-app="my_app">
-<div style="width: 50%" ng-controller="LineCtrl">
-  <h1>Line Chart</h1>
-  <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-click="onClick">
+<html ng-app="plunker">
     
-  </canvas>
-</div>
-<div style="width: 50%" ng-controller="BarCtrl">
-  <h1>Bar Chart</h1>
-  <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-series="series" chart-click="onClick">
+    <head>
+        <meta charset="utf-8" />
+        <title>AngularJS Plunker</title>
+        <script>document.write('<base href="' + document.location + '" />');</script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
+        <script src="angular/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+        <script src="https://rawgit.com/krispo/angular-nvd3/v1.0.4/dist/angular-nvd3.js"></script>
+        <script src="app.js"></script>
+    </head>
     
-  </canvas>
-</div>
-<div style="width: 50%" ng-controller="DoughnutCtrl">
-  <h1>Doughnut Chart</h1>
-  <canvas id="doughnut" class="chart chart-doughnut" chart-data="data" chart-labels="labels">
-
-  </canvas> 
-</div>
-<div style="width: 50%" ng-controller="RadarCtrl">
-  <h1>Radar Chart</h1>
-  <canvas id="radar" class="chart chart-radar" chart-data="data" chart-options="options" chart-labels="labels">
-  
-  </canvas>
-</div>
-<div style="width: 50%" ng-controller="PieCtrl">
-  <h1>Pie Chart</h1>
-  <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-options="options">
-  
-  </canvas>
-</div>
-<div style="width: 50%" ng-controller="PolarAreaCtrl">
-  <h1>Polar Area Chart</h1>
-  <canvas id="polar-area" class="chart chart-polar-area" chart-data="data" chart-labels="labels" chart-options="options">
-  
-  </canvas> 
-</div>
-<div style="width: 50%" ng-controller="BarCtrl">
-  <h1>Horizontal Bar Chart</h1>
-  <canvas id="base" class="chart-horizontal-bar" chart-data="data" chart-labels="labels" >
-  
-  </canvas> 
-</div>
-</body>     
+    <body ng-controller="MainCtrl">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <button ng-click="myfunc()">Start / Stop</button>
+        <input type="text" ng-model="myValue"/>
+        
+        <p>duration: 500</p>
+        <nvd3 options="options" data="data"></nvd3>
+        
+        <br><a href="http://krispo.github.io/angular-nvd3/" target="_blank" style="float: right;">See more</a>
+    </body>
+    
 </html>

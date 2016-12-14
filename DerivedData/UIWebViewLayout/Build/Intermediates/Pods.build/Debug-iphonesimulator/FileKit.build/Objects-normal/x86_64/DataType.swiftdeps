@@ -21,17 +21,17 @@ provides-member:
 - ["P7FileKit19WritableConvertible", "write"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "BooleanLiteralType"
-- "Path"
-- "WritableToFile"
-- "Writable"
-- "Readable"
-- "String"
 - "ReadableWritable"
+- !private "BooleanLiteralType"
+- "WritableToFile"
+- "WritableConvertible"
+- "Readable"
+- "Writable"
+- !private "FileKitError"
+- "String"
+- "Path"
 - "Bool"
 - "AssignmentPrecedence"
-- "WritableConvertible"
-- !private "FileKitError"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]

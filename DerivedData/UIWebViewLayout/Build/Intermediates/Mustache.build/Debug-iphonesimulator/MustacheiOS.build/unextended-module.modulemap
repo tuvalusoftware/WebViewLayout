@@ -1,0 +1,10 @@
+framework module Mustache {
+  umbrella header "Mustache.h"
+
+  export *
+  module * { export * }
+}
+
+module Mustache.__Swift {
+    exclude header "Mustache-Swift.h"
+}

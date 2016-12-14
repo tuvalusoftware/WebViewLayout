@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0F73929F24E3663FA6FE00DA /* Pods_UIWebViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */; };
 		3811D0781DE900D700A3D1EA /* chart in Resources */ = {isa = PBXBuildFile; fileRef = 3811D0771DE900D700A3D1EA /* chart */; };
+		381209551DFCAAC4006C8332 /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381209541DFCAAC4006C8332 /* WebData.swift */; };
+		381551601E0092AE006BCF9E /* Javascript.js in Resources */ = {isa = PBXBuildFile; fileRef = 3815515F1E0092AE006BCF9E /* Javascript.js */; };
+		381551621E01A348006BCF9E /* variables.js in Resources */ = {isa = PBXBuildFile; fileRef = 381551611E01A348006BCF9E /* variables.js */; };
 		381874721DD959F9007020B6 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381874711DD959F9007020B6 /* CustomWebView.swift */; };
 		381AE65C1DE6A609002C47C3 /* Document.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 381AE6581DE6A609002C47C3 /* Document.mustache */; };
 		381AE65E1DE6A609002C47C3 /* index3.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AE65A1DE6A609002C47C3 /* index3.html */; };
@@ -169,6 +172,7 @@
 		381AEC961DE6A7FD002C47C3 /* Layout.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 381AEC951DE6A7FD002C47C3 /* Layout.mustache */; };
 		381AECE91DE8D431002C47C3 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AECE81DE8D431002C47C3 /* index2.html */; };
 		381AECEB1DE8D450002C47C3 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AECEA1DE8D450002C47C3 /* index2.html */; };
+		381F21451DFA494F003AF1FC /* WebViewProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F21441DFA494F003AF1FC /* WebViewProgressView.swift */; };
 		388FC91E1DF61E5000958C4A /* angular-material in Resources */ = {isa = PBXBuildFile; fileRef = 388FC91D1DF61E5000958C4A /* angular-material */; };
 		388FC9261DF61E7300958C4A /* angular-messages in Resources */ = {isa = PBXBuildFile; fileRef = 388FC9251DF61E7300958C4A /* angular-messages */; };
 		388FC9291DF61E9700958C4A /* angular-chart in Resources */ = {isa = PBXBuildFile; fileRef = 388FC9281DF61E9700958C4A /* angular-chart */; };
@@ -253,6 +257,9 @@
 		195B7CA0634B784EA242DE1C /* Pods-UIWebViewLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.release.xcconfig"; sourceTree = "<group>"; };
 		3805CAA41DE33294008E4C8E /* Mustache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mustache.xcodeproj; path = ../GRMustache.swift/Xcode/Mustache.xcodeproj; sourceTree = "<group>"; };
 		3811D0771DE900D700A3D1EA /* chart */ = {isa = PBXFileReference; lastKnownFileType = folder; name = chart; path = UIWebViewLayout/chart; sourceTree = "<group>"; };
+		381209541DFCAAC4006C8332 /* WebData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebData.swift; sourceTree = "<group>"; };
+		3815515F1E0092AE006BCF9E /* Javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Javascript.js; sourceTree = "<group>"; };
+		381551611E01A348006BCF9E /* variables.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = variables.js; sourceTree = "<group>"; };
 		381874711DD959F9007020B6 /* CustomWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
 		381AE6581DE6A609002C47C3 /* Document.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Document.mustache; sourceTree = "<group>"; };
 		381AE65A1DE6A609002C47C3 /* index3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index3.html; sourceTree = "<group>"; };
@@ -413,6 +420,7 @@
 		381AEC951DE6A7FD002C47C3 /* Layout.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Layout.mustache; sourceTree = "<group>"; };
 		381AECE81DE8D431002C47C3 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
 		381AECEA1DE8D450002C47C3 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
+		381F21441DFA494F003AF1FC /* WebViewProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewProgressView.swift; sourceTree = "<group>"; };
 		388FC91D1DF61E5000958C4A /* angular-material */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-material"; path = "UIWebViewLayout/angular-material"; sourceTree = "<group>"; };
 		388FC9251DF61E7300958C4A /* angular-messages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-messages"; path = "UIWebViewLayout/angular-messages"; sourceTree = "<group>"; };
 		388FC9271DF61E8700958C4A /* angular-material */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-material"; path = "UIWebViewLayout/angular-material"; sourceTree = "<group>"; };
@@ -487,6 +495,8 @@
 		381AE6571DE6A5F3002C47C3 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				3815515F1E0092AE006BCF9E /* Javascript.js */,
+				381551611E01A348006BCF9E /* variables.js */,
 				3942682A1DF8F4CE002BE459 /* style.css */,
 				3942EF6A1DEB3C38006F3AE9 /* myindex.html */,
 				394268261DF86DF2002BE459 /* app.js */,
@@ -899,6 +909,8 @@
 				392060F91DD5793A0009C7FB /* Info.plist */,
 				3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */,
 				381874711DD959F9007020B6 /* CustomWebView.swift */,
+				381F21441DFA494F003AF1FC /* WebViewProgressView.swift */,
+				381209541DFCAAC4006C8332 /* WebData.swift */,
 			);
 			path = UIWebViewLayout;
 			sourceTree = "<group>";
@@ -1004,6 +1016,9 @@
 		392060E21DD5793A0009C7FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					entry,
+				);
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = tuvalusoftware;
@@ -1189,6 +1204,7 @@
 				381AE7441DE6A628002C47C3 /* line-multi-axis.html in Resources */,
 				381AECEB1DE8D450002C47C3 /* index2.html in Resources */,
 				381AE7741DE6A629002C47C3 /* core.animation.js in Resources */,
+				381551621E01A348006BCF9E /* variables.js in Resources */,
 				381AE79A1DE6A629002C47C3 /* core.legend.tests.js in Resources */,
 				381AE79F1DE6A629002C47C3 /* defaultConfig.tests.js in Resources */,
 				381AE74C1DE6A628002C47C3 /* polar-area.html in Resources */,
@@ -1245,6 +1261,7 @@
 				381AE78A1DE6A629002C47C3 /* scale.linearbase.js in Resources */,
 				381AE71E1DE6A628002C47C3 /* .gitignore in Resources */,
 				381AE7711DE6A629002C47C3 /* controller.line.js in Resources */,
+				381551601E0092AE006BCF9E /* Javascript.js in Resources */,
 				3942EF6F1DEB5C59006F3AE9 /* main_ctrl.js in Resources */,
 				381AE7521DE6A628002C47C3 /* line-non-numeric-y.html in Resources */,
 				381AE7541DE6A628002C47C3 /* step-size.html in Resources */,
@@ -1348,11 +1365,13 @@
 				381AE7241DE6A628002C47C3 /* 00-Getting-Started.md in Sources */,
 				381AE7361DE6A628002C47C3 /* README.md in Sources */,
 				381AE7261DE6A628002C47C3 /* 02-Scales.md in Sources */,
+				381F21451DFA494F003AF1FC /* WebViewProgressView.swift in Sources */,
 				381874721DD959F9007020B6 /* CustomWebView.swift in Sources */,
 				381AE7231DE6A628002C47C3 /* CONTRIBUTING.md in Sources */,
 				381AE7281DE6A628002C47C3 /* 04-Bar-Chart.md in Sources */,
 				381AE72A1DE6A628002C47C3 /* 06-Polar-Area-Chart.md in Sources */,
 				381AE7291DE6A628002C47C3 /* 05-Radar-Chart.md in Sources */,
+				381209551DFCAAC4006C8332 /* WebData.swift in Sources */,
 				381AE71C1DE6A628002C47C3 /* ISSUE_TEMPLATE.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

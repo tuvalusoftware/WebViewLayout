@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ReadableWritableStringEncoding"
-- "ReadableWritable"
-- !private "FileKitError"
-- "String"
 - "Path"
 - "Bool"
 - !private "BooleanLiteralType"
+- !private "FileKitError"
+- "ReadableWritable"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "write"]
