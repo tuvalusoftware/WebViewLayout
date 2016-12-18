@@ -10,8 +10,8 @@ depends-top-level:
 - "=="
 - !private "~="
 - "String"
-- "StringLiteralType"
 - "RelativePathType"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

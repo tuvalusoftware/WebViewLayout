@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 - "webView"
 depends-top-level:
-- "WKNavigation"
-- "NSCoder"
 - "WKWebView"
 - "WKWebViewConfiguration"
-- "CGRect"
-- "NSError"
 - "CustomWebView"
+- "CGRect"
+- "NSCoder"
+- "NSError"
+- "WKNavigation"
 depends-member:
 - !private ["Ps9AnyObject", "WKWebViewConfiguration"]
 - ["Ps9AnyObject", "init"]

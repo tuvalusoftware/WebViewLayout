@@ -6,8 +6,8 @@ provides-member:
 - ["Os11CommandLine", "workingDirectory"]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
 - "CommandLine"
+- "AssignmentPrecedence"
 - "Path"
 depends-member:
 - ["Os11CommandLine", "Path"]

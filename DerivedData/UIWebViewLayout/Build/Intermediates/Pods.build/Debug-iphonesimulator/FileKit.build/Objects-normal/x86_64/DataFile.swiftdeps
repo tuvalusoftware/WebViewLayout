@@ -10,17 +10,17 @@ provides-member:
 - ["C7FileKit19DataFileWithOptions", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "DataFile"
-- "File"
-- "Data"
-- "Array"
-- !private "StringLiteralType"
-- "DataFileWithOptions"
 - "AssignmentPrecedence"
 - !private "=="
+- "File"
+- "Bool"
 - "Path"
 - "TernaryPrecedence"
-- "Bool"
+- "DataFile"
+- "Data"
+- !private "StringLiteralType"
+- "Array"
+- "DataFileWithOptions"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
 - ["Ps9AnyObject", "init"]

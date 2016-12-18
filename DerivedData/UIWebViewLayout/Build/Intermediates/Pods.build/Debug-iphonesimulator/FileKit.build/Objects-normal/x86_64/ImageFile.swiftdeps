@@ -5,9 +5,9 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "Image"
 - "ImageFile"
 - "File"
-- "Image"
 depends-member:
 - ["CSo7UIImage", "deinit"]
 depends-nominal:

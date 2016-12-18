@@ -22,7 +22,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ReadableWritable"
-- !private "BooleanLiteralType"
+- "AssignmentPrecedence"
 - "WritableToFile"
 - "WritableConvertible"
 - "Readable"
@@ -30,8 +30,8 @@ depends-top-level:
 - !private "FileKitError"
 - "String"
 - "Path"
+- !private "BooleanLiteralType"
 - "Bool"
-- "AssignmentPrecedence"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]

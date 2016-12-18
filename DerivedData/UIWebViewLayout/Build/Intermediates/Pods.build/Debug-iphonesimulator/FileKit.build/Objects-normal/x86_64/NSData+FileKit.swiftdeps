@@ -9,8 +9,8 @@ depends-top-level:
 - "ReadableWritable"
 - "WritableToFile"
 - "Path"
-- !private "FileKitError"
 - "NSData"
+- !private "FileKitError"
 depends-member:
 - !private ["Ps9AnyObject", "FileKitError"]
 - ["Ps9AnyObject", "ReadingOptions"]

@@ -1,6 +1,0 @@
-framework module Pods_UIWebViewLayout {
-  umbrella header "Pods-UIWebViewLayout-umbrella.h"
-
-  export *
-  module * { export * }
-}

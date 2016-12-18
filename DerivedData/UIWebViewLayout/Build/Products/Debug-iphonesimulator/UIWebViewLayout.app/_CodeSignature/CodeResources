@@ -38,7 +38,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		8cFMqfxKBeFXtOB44RnIJ0uuESI=
+		bGr2KXCYlN8oM5FLUCVcwx9gNb0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		Ck1qDapL55mO07I2dhFUmBcm7mc=
+		p4HW6RB60+qv8CvXRtQEXTkf0ko=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		zJWMdDJjP9YQnulIVhIRVLy9/3E=
+		jflU1wUnYAHLoPyzS2LucXg8Ta0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		5FQUffccJNqxpys/LEwI8+A9ATk=
+		ZQB0K3+jTZCyq/+Z8e5gm0UAxUg=
 		</data>
 		<key>Chart.Bar.js</key>
 		<data>
@@ -96,10 +96,6 @@
 		<data>
 		vYyM/MPQmnMXx9ht8Fq/9rPQt5w=
 		</data>
-		<key>Chart.js</key>
-		<data>
-		jFBG8WFWhn6zLfW4wKoV2hf5Z+w=
-		</data>
 		<key>Chart.min.js</key>
 		<data>
 		6vLaOm1iGdR/a3dDdrdkA6SMdfs=
@@ -110,7 +106,7 @@
 		</data>
 		<key>Frameworks/FileKit.framework/FileKit</key>
 		<data>
-		qVQXNGOCZGSCQjqjClubcLrfFJg=
+		6Sm8Jus3onUaZaZWNkdieVlv91o=
 		</data>
 		<key>Frameworks/FileKit.framework/Info.plist</key>
 		<data>
@@ -122,7 +118,7 @@
 		</data>
 		<key>Frameworks/GCDWebServer.framework/GCDWebServer</key>
 		<data>
-		n5D1RNdNfTVHaGysIRDoKgJZuVc=
+		m6kXZhYqlQBbyv4URyBTbLsIDWw=
 		</data>
 		<key>Frameworks/GCDWebServer.framework/Info.plist</key>
 		<data>
@@ -178,7 +174,7 @@
 		</data>
 		<key>Javascript.js</key>
 		<data>
-		upqW/CVNCmyR4zS8Aof/r6Cok8E=
+		rspTaOfGZLHYJmyBHEbe3W6Iq0s=
 		</data>
 		<key>Layout.mustache</key>
 		<data>
@@ -2480,6 +2476,10 @@
 		<data>
 		tO9IYGCJ1n15kDnTcpvg2lUy+nE=
 		</data>
+		<key>chart.js</key>
+		<data>
+		EXHE61WUonx3Fn6Ja0oi6JbqlxM=
+		</data>
 		<key>chart/Chart.bundle.js</key>
 		<data>
 		0KFYfvOSHO9iiVxLKhQu4n4t69k=
@@ -2738,7 +2738,7 @@
 		</data>
 		<key>index2.html</key>
 		<data>
-		gvTUS3IMS7LU0/FZKHeEjkSgFvY=
+		1qC3P9DZwuuAa3W7lh+VRGRWh08=
 		</data>
 		<key>index3.html</key>
 		<data>
@@ -2978,7 +2978,7 @@
 		</data>
 		<key>variables.js</key>
 		<data>
-		wVPCXnYIHxVdK0uNJCb55UjIGqs=
+		JTpSFTtE20JidqzSxaY6a1L10mE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -3075,11 +3075,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8cFMqfxKBeFXtOB44RnIJ0uuESI=
+			bGr2KXCYlN8oM5FLUCVcwx9gNb0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kxaD0lufFvE7j6qXjAqsElQDe9m8X2QWwKkXgdKOyFo=
+			EunBmTsQAjK27ILYhrh0C28RTcFa/XY3cDX+PWp7kg8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -3097,22 +3097,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ck1qDapL55mO07I2dhFUmBcm7mc=
+			p4HW6RB60+qv8CvXRtQEXTkf0ko=
 			</data>
 			<key>hash2</key>
 			<data>
-			ao4XNRwYkXpk7uBYkwNq8wX8XTEnz/kdq2JzHwFr+7E=
+			SK3Hs5lAd/Th+q41ZH3ySPDaUdZaq07eFj7h9cRUGY4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zJWMdDJjP9YQnulIVhIRVLy9/3E=
+			jflU1wUnYAHLoPyzS2LucXg8Ta0=
 			</data>
 			<key>hash2</key>
 			<data>
-			roXdZrfyiCujUdFkzg+i5sZdBzXIAQnoWALVyJykJug=
+			AFE4y5GefDRp/gnlFyReoXwsE5HiJiwc3wmL4ubGs2k=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -3130,11 +3130,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5FQUffccJNqxpys/LEwI8+A9ATk=
+			ZQB0K3+jTZCyq/+Z8e5gm0UAxUg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/nTNOE6ByoUEEFcQki36CxNEY0HqeZofmLfz4QND4nk=
+			ywXGZnYmnsbJzrkh9AELj+UW04ZtYD+IWBtWuxaje1g=
 			</data>
 		</dict>
 		<key>Chart.Bar.js</key>
@@ -3236,17 +3236,6 @@
 			RASNMNlmRtIreeznffYMDUxBXcMRjijEaaGF/gxT6vw=
 			</data>
 		</dict>
-		<key>Chart.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jFBG8WFWhn6zLfW4wKoV2hf5Z+w=
-			</data>
-			<key>hash2</key>
-			<data>
-			HptdWaetAoQSrTP9GZVVxKovdIq1C3MmKazLYQ7JnL4=
-			</data>
-		</dict>
 		<key>Chart.min.js</key>
 		<dict>
 			<key>hash</key>
@@ -3273,11 +3262,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qVQXNGOCZGSCQjqjClubcLrfFJg=
+			6Sm8Jus3onUaZaZWNkdieVlv91o=
 			</data>
 			<key>hash2</key>
 			<data>
-			8b+KlHHMNhiLNSc0ylkea7FxUQlMlzrkR7SoPixMnMg=
+			AoyL+JuvuRKnUJ0wtsnZcqf7Sug/qWaqpZ29+j/7dTY=
 			</data>
 		</dict>
 		<key>Frameworks/FileKit.framework/Info.plist</key>
@@ -3306,11 +3295,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n5D1RNdNfTVHaGysIRDoKgJZuVc=
+			m6kXZhYqlQBbyv4URyBTbLsIDWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			mXusgqJ8kxjqGEzyZOXHxuQVqVrbJmUUrwLi5vu77w0=
+			4UzsF/IC7TFt9hThLycLjPxS996RRVo0rz1C26sZvCQ=
 			</data>
 		</dict>
 		<key>Frameworks/GCDWebServer.framework/Info.plist</key>
@@ -3449,11 +3438,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			upqW/CVNCmyR4zS8Aof/r6Cok8E=
+			rspTaOfGZLHYJmyBHEbe3W6Iq0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			m1mI9/DLwc1QznmukYOrH7vTLH3/4LpxBnoUsurkD4A=
+			J/sXLcQ1P3Pq3d4ugLhbFXJStk6QgO15GzfnvmTUE+A=
 			</data>
 		</dict>
 		<key>Layout.mustache</key>
@@ -9770,6 +9759,17 @@
 			BkGFzzNReR8hYQiPmYRhzpqhk+susSBLv4bLJtcY2dg=
 			</data>
 		</dict>
+		<key>chart.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EXHE61WUonx3Fn6Ja0oi6JbqlxM=
+			</data>
+			<key>hash2</key>
+			<data>
+			xb8d/KwAmwKZgFDrzu8//qQ+qPliVQpBCzJVgMFIYpg=
+			</data>
+		</dict>
 		<key>chart/Chart.bundle.js</key>
 		<dict>
 			<key>hash</key>
@@ -10478,11 +10478,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gvTUS3IMS7LU0/FZKHeEjkSgFvY=
+			1qC3P9DZwuuAa3W7lh+VRGRWh08=
 			</data>
 			<key>hash2</key>
 			<data>
-			QAQeF9RGs5znP7B88eCZxFAvnEQoY8JkmL7CHq1ncXM=
+			Qun48QQGWUUPMva8xpgPJs4AVxSr3nLUIpFxKP3+8Tw=
 			</data>
 		</dict>
 		<key>index3.html</key>
@@ -11138,11 +11138,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wVPCXnYIHxVdK0uNJCb55UjIGqs=
+			JTpSFTtE20JidqzSxaY6a1L10mE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZHSjBJkmsLP896WFZZbLA1oG+ieh+6VnscNm9yA/lZY=
+			aVFVhxpKTIf1LA+TpVUrq2PWmXhTsk3fLWSRbNRp4go=
 			</data>
 		</dict>
 	</dict>

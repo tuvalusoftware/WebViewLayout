@@ -7,65 +7,74 @@ provides-nominal:
 provides-member:
 - ["C15UIWebViewLayout14ViewController", ""]
 provides-dynamic-lookup:
-- "refreshBarButton"
-- "backBarButton"
-- "observeValue"
-- "stopBarButton"
-- "webView"
-- "webView"
-- "webView"
-- "webView"
-- "progressView"
-- "injectAngular"
-- "viewDidLoad"
-- "forwardBarButton"
-- "evaluateJavaScriptForData"
 - "evaluateJavaScriptForDataInit"
+- "progressView"
+- "evaluateJavaScriptForData"
+- "refreshBarButton"
+- "injectAngular"
+- "forwardBarButton"
+- "observeValue"
+- "backBarButton"
+- "webView"
+- "webView"
+- "webView"
+- "webView"
+- "viewDidLoad"
+- "stopBarButton"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "Void"
-- "WKFrameInfo"
-- !private "WKWebViewConfiguration"
-- !private "Dictionary"
-- "WKNavigationDelegate"
-- "NSKeyValueChangeKey"
-- "Bool"
-- !private "URL"
-- "WKUIDelegate"
+- !private "WKWebsiteDataTypeDiskCache"
 - !private "UITextField"
-- !private "!="
-- "UIViewController"
-- !private "JSONSerialization"
-- !private "StringLiteralType"
-- !private "Array"
+- !private "WKWebsiteDataStore"
+- !private "WKWebViewConfiguration"
 - "AnyObject"
-- "WebViewProgressView"
-- !private "Error"
+- "NSKeyValueChangeKey"
+- "ViewController"
 - !private "WKUserScript"
-- !private "NSString"
-- !private "UIAlertController"
-- "myContext"
+- !private "!="
+- !private "!"
+- !private "BooleanLiteralType"
+- !private "StringLiteralType"
 - !private "Bundle"
-- "CastingPrecedence"
+- !private "URL"
+- !private "NSSet"
+- "myContext"
+- "WKWebView"
+- !private "Array"
+- !private "WKUserContentController"
 - "String"
+- !private "Set"
+- !private "JSONSerialization"
+- "WKUIDelegate"
 - "AssignmentPrecedence"
 - !private "NSURL"
-- !private "WKUserContentController"
-- !private "=="
-- "IntegerLiteralType"
-- !private "print"
-- "WKWebView"
+- "UIViewController"
+- "CastingPrecedence"
+- "WKFrameInfo"
+- !private "Error"
+- !private "UIAlertController"
 - !private "UIAlertAction"
-- "UIBarButtonItem"
-- !private "!"
-- "ViewController"
+- !private "=="
+- "Bool"
+- "WebViewProgressView"
+- !private "NSDate"
 - "FloatLiteralType"
+- !private "print"
+- !private "Dictionary"
+- !private "WKWebsiteDataTypeMemoryCache"
+- "Void"
+- "UIBarButtonItem"
+- !private "NSString"
+- !private "Date"
+- "IntegerLiteralType"
+- "WKNavigationDelegate"
 - "UnsafeMutableRawPointer"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "JSONSerialization"]
+- !private ["Ps9AnyObject", "NSDate"]
 - !private ["Ps9AnyObject", "NSKeyValueChangeKey"]
+- !private ["Ps9AnyObject", "NSSet"]
 - !private ["Ps9AnyObject", "NSString"]
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "String"]
@@ -75,6 +84,9 @@ depends-member:
 - !private ["Ps9AnyObject", "WKUserScript"]
 - !private ["Ps9AnyObject", "WKWebView"]
 - !private ["Ps9AnyObject", "WKWebViewConfiguration"]
+- !private ["Ps9AnyObject", "WKWebsiteDataStore"]
+- !private ["Ps9AnyObject", "WKWebsiteDataTypeDiskCache"]
+- !private ["Ps9AnyObject", "WKWebsiteDataTypeMemoryCache"]
 - !private ["Ps9AnyObject", "addAction"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTextField"]
@@ -86,6 +98,7 @@ depends-member:
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "configuration"]
 - !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "default"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "evaluateJavaScript"]
 - ["Ps9AnyObject", "evaluateJavaScriptForData"]
@@ -106,6 +119,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "progressView"]
 - ["Ps9AnyObject", "refreshBarButton"]
+- !private ["Ps9AnyObject", "removeData"]
 - !private ["Ps9AnyObject", "removeObserver"]
 - !private ["Ps9AnyObject", "request"]
 - !private ["Ps9AnyObject", "resourcePath"]
@@ -121,7 +135,11 @@ depends-member:
 - ["Ps9AnyObject", "webViewDidClose"]
 - ["Ps9AnyObject", "webViewWebContentProcessDidTerminate"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "base64EncodedData"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
 - !private ["Ps22BidirectionalIndexable", "base64EncodedData"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
@@ -143,11 +161,14 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "uiDelegate"]
 - !private ["Ps7CVarArg", "Bundle"]
+- !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Encoding"]
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "JSONSerialization"]
 - !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "NSDate"]
 - !private ["Ps7CVarArg", "NSKeyValueChangeKey"]
+- !private ["Ps7CVarArg", "NSSet"]
 - !private ["Ps7CVarArg", "NSString"]
 - !private ["Ps7CVarArg", "NSURL"]
 - !private ["Ps7CVarArg", "String"]
@@ -159,6 +180,9 @@ depends-member:
 - !private ["Ps7CVarArg", "WKUserScript"]
 - !private ["Ps7CVarArg", "WKWebView"]
 - !private ["Ps7CVarArg", "WKWebViewConfiguration"]
+- !private ["Ps7CVarArg", "WKWebsiteDataStore"]
+- !private ["Ps7CVarArg", "WKWebsiteDataTypeDiskCache"]
+- !private ["Ps7CVarArg", "WKWebsiteDataTypeMemoryCache"]
 - !private ["Ps7CVarArg", "addAction"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "addTextField"]
@@ -169,6 +193,7 @@ depends-member:
 - !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "configuration"]
 - !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "default"]
 - !private ["Ps7CVarArg", "evaluateJavaScript"]
 - ["Ps7CVarArg", "evaluateJavaScriptForData"]
 - ["Ps7CVarArg", "evaluateJavaScriptForDataInit"]
@@ -187,6 +212,7 @@ depends-member:
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "progressView"]
 - ["Ps7CVarArg", "refreshBarButton"]
+- !private ["Ps7CVarArg", "removeData"]
 - !private ["Ps7CVarArg", "removeObserver"]
 - !private ["Ps7CVarArg", "request"]
 - !private ["Ps7CVarArg", "resourcePath"]
@@ -204,6 +230,7 @@ depends-member:
 - ["Ps7CVarArg", "webViewWebContentProcessDidTerminate"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "Key"]
@@ -216,11 +243,14 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "newKey"]
 - !private ["Ps28CustomDebugStringConvertible", "Bundle"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Encoding"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "JSONSerialization"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
 - !private ["Ps28CustomDebugStringConvertible", "NSKeyValueChangeKey"]
+- !private ["Ps28CustomDebugStringConvertible", "NSSet"]
 - !private ["Ps28CustomDebugStringConvertible", "NSString"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
@@ -232,6 +262,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "WKUserScript"]
 - !private ["Ps28CustomDebugStringConvertible", "WKWebView"]
 - !private ["Ps28CustomDebugStringConvertible", "WKWebViewConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "WKWebsiteDataStore"]
+- !private ["Ps28CustomDebugStringConvertible", "WKWebsiteDataTypeDiskCache"]
+- !private ["Ps28CustomDebugStringConvertible", "WKWebsiteDataTypeMemoryCache"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTextField"]
@@ -243,6 +276,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "configuration"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
 - !private ["Ps28CustomDebugStringConvertible", "evaluateJavaScript"]
 - ["Ps28CustomDebugStringConvertible", "evaluateJavaScriptForData"]
 - ["Ps28CustomDebugStringConvertible", "evaluateJavaScriptForDataInit"]
@@ -262,6 +296,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "progressView"]
 - ["Ps28CustomDebugStringConvertible", "refreshBarButton"]
+- !private ["Ps28CustomDebugStringConvertible", "removeData"]
 - !private ["Ps28CustomDebugStringConvertible", "removeObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "request"]
 - !private ["Ps28CustomDebugStringConvertible", "resourcePath"]
@@ -283,6 +318,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "host"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Encoding"]
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "Key"]
@@ -294,11 +330,14 @@ depends-member:
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "url"]
 - !private ["Ps23CustomStringConvertible", "Bundle"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Encoding"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "JSONSerialization"]
 - !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
 - !private ["Ps23CustomStringConvertible", "NSKeyValueChangeKey"]
+- !private ["Ps23CustomStringConvertible", "NSSet"]
 - !private ["Ps23CustomStringConvertible", "NSString"]
 - !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "String"]
@@ -310,6 +349,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "WKUserScript"]
 - !private ["Ps23CustomStringConvertible", "WKWebView"]
 - !private ["Ps23CustomStringConvertible", "WKWebViewConfiguration"]
+- !private ["Ps23CustomStringConvertible", "WKWebsiteDataStore"]
+- !private ["Ps23CustomStringConvertible", "WKWebsiteDataTypeDiskCache"]
+- !private ["Ps23CustomStringConvertible", "WKWebsiteDataTypeMemoryCache"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
@@ -322,6 +364,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "configuration"]
 - !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "default"]
 - !private ["Ps23CustomStringConvertible", "evaluateJavaScript"]
 - ["Ps23CustomStringConvertible", "evaluateJavaScriptForData"]
 - ["Ps23CustomStringConvertible", "evaluateJavaScriptForDataInit"]
@@ -342,6 +385,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "progressView"]
 - !private ["Ps23CustomStringConvertible", "rawValue"]
 - ["Ps23CustomStringConvertible", "refreshBarButton"]
+- !private ["Ps23CustomStringConvertible", "removeData"]
 - !private ["Ps23CustomStringConvertible", "removeObserver"]
 - !private ["Ps23CustomStringConvertible", "request"]
 - !private ["Ps23CustomStringConvertible", "resourcePath"]
@@ -362,13 +406,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["V10Foundation4Data", "base64EncodedData"]
 - ["V10Foundation4Data", "deinit"]
+- ["V10Foundation4Date", "deinit"]
 - !private ["Vs10Dictionary", "Index"]
 - !private ["Vs10Dictionary", "Key"]
 - !private ["Vs10Dictionary", "SubSequence"]
 - !private ["Vs10Dictionary", "Value"]
 - ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
-- !private ["Sd", "deinit"]
+- ["Sd", "deinit"]
 - ["VE10FoundationSS8Encoding", "deinit"]
 - !private ["VE10FoundationSS8Encoding", "rawValue"]
 - !private ["VE10FoundationSS8Encoding", "utf8"]
@@ -376,7 +421,9 @@ depends-member:
 - !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "Encoding"]
 - !private ["Ps9Equatable", "JSONSerialization"]
+- !private ["Ps9Equatable", "NSDate"]
 - !private ["Ps9Equatable", "NSKeyValueChangeKey"]
+- !private ["Ps9Equatable", "NSSet"]
 - !private ["Ps9Equatable", "NSString"]
 - !private ["Ps9Equatable", "NSURL"]
 - !private ["Ps9Equatable", "String"]
@@ -386,6 +433,9 @@ depends-member:
 - !private ["Ps9Equatable", "WKUserScript"]
 - !private ["Ps9Equatable", "WKWebView"]
 - !private ["Ps9Equatable", "WKWebViewConfiguration"]
+- !private ["Ps9Equatable", "WKWebsiteDataStore"]
+- !private ["Ps9Equatable", "WKWebsiteDataTypeDiskCache"]
+- !private ["Ps9Equatable", "WKWebsiteDataTypeMemoryCache"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -427,6 +477,7 @@ depends-member:
 - ["Ps9Equatable", "progressView"]
 - !private ["Ps9Equatable", "rawValue"]
 - ["Ps9Equatable", "refreshBarButton"]
+- !private ["Ps9Equatable", "removeData"]
 - !private ["Ps9Equatable", "removeObserver"]
 - !private ["Ps9Equatable", "request"]
 - !private ["Ps9Equatable", "resourcePath"]
@@ -447,6 +498,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "flexibleHeight"]
 - !private ["Ps25ExpressibleByArrayLiteral", "flexibleWidth"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "prettyPrinted"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
@@ -466,7 +518,9 @@ depends-member:
 - !private ["Ps8Hashable", "Bundle"]
 - !private ["Ps8Hashable", "Encoding"]
 - !private ["Ps8Hashable", "JSONSerialization"]
+- !private ["Ps8Hashable", "NSDate"]
 - !private ["Ps8Hashable", "NSKeyValueChangeKey"]
+- !private ["Ps8Hashable", "NSSet"]
 - !private ["Ps8Hashable", "NSString"]
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "String"]
@@ -476,6 +530,9 @@ depends-member:
 - !private ["Ps8Hashable", "WKUserScript"]
 - !private ["Ps8Hashable", "WKWebView"]
 - !private ["Ps8Hashable", "WKWebViewConfiguration"]
+- !private ["Ps8Hashable", "WKWebsiteDataStore"]
+- !private ["Ps8Hashable", "WKWebsiteDataTypeDiskCache"]
+- !private ["Ps8Hashable", "WKWebsiteDataTypeMemoryCache"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
 - !private ["Ps8Hashable", "addSubview"]
@@ -514,6 +571,7 @@ depends-member:
 - ["Ps8Hashable", "progressView"]
 - !private ["Ps8Hashable", "rawValue"]
 - ["Ps8Hashable", "refreshBarButton"]
+- !private ["Ps8Hashable", "removeData"]
 - !private ["Ps8Hashable", "removeObserver"]
 - !private ["Ps8Hashable", "request"]
 - !private ["Ps8Hashable", "resourcePath"]
@@ -532,6 +590,7 @@ depends-member:
 - ["Ps8Hashable", "webViewWebContentProcessDidTerminate"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "Iterator"]
 - !private ["Ps9Indexable", "Key"]
@@ -540,6 +599,7 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "base64EncodedData"]
 - !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Element"]
 - !private ["Ps13IndexableBase", "Index"]
 - !private ["Ps13IndexableBase", "Iterator"]
 - !private ["Ps13IndexableBase", "Key"]
@@ -561,13 +621,17 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "Encoding"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "base64EncodedData"]
+- !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableIndexable", "base64EncodedData"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Bundle"]
 - !private ["PSo8NSCoding", "Encoding"]
 - !private ["PSo8NSCoding", "JSONSerialization"]
+- !private ["PSo8NSCoding", "NSDate"]
 - !private ["PSo8NSCoding", "NSKeyValueChangeKey"]
+- !private ["PSo8NSCoding", "NSSet"]
 - !private ["PSo8NSCoding", "NSString"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "String"]
@@ -577,6 +641,9 @@ depends-member:
 - !private ["PSo8NSCoding", "WKUserScript"]
 - !private ["PSo8NSCoding", "WKWebView"]
 - !private ["PSo8NSCoding", "WKWebViewConfiguration"]
+- !private ["PSo8NSCoding", "WKWebsiteDataStore"]
+- !private ["PSo8NSCoding", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo8NSCoding", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTextField"]
@@ -586,6 +653,7 @@ depends-member:
 - ["PSo8NSCoding", "backBarButton"]
 - !private ["PSo8NSCoding", "bounds"]
 - !private ["PSo8NSCoding", "configuration"]
+- !private ["PSo8NSCoding", "default"]
 - !private ["PSo8NSCoding", "evaluateJavaScript"]
 - ["PSo8NSCoding", "evaluateJavaScriptForData"]
 - ["PSo8NSCoding", "evaluateJavaScriptForDataInit"]
@@ -602,6 +670,7 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "progressView"]
 - ["PSo8NSCoding", "refreshBarButton"]
+- !private ["PSo8NSCoding", "removeData"]
 - !private ["PSo8NSCoding", "removeObserver"]
 - !private ["PSo8NSCoding", "setProgress"]
 - ["PSo8NSCoding", "stopBarButton"]
@@ -619,9 +688,13 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "request"]
 - !private ["PSo9NSCopying", "userContentController"]
+- ["CSo6NSDate", "deinit"]
+- !private ["CSo6NSDate", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "Bundle"]
 - !private ["PSo26NSExtensionRequestHandling", "JSONSerialization"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSKeyValueChangeKey"]
+- !private ["PSo26NSExtensionRequestHandling", "NSSet"]
 - !private ["PSo26NSExtensionRequestHandling", "NSString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
@@ -631,6 +704,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "WKUserScript"]
 - !private ["PSo26NSExtensionRequestHandling", "WKWebView"]
 - !private ["PSo26NSExtensionRequestHandling", "WKWebViewConfiguration"]
+- !private ["PSo26NSExtensionRequestHandling", "WKWebsiteDataStore"]
+- !private ["PSo26NSExtensionRequestHandling", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo26NSExtensionRequestHandling", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - !private ["PSo26NSExtensionRequestHandling", "addTextField"]
 - ["PSo26NSExtensionRequestHandling", "backBarButton"]
@@ -653,6 +729,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "webViewDidClose"]
 - ["PSo26NSExtensionRequestHandling", "webViewWebContentProcessDidTerminate"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "init"]
 - ["VSC19NSKeyValueChangeKey", "deinit"]
 - !private ["VSC19NSKeyValueChangeKey", "newKey"]
 - !private ["PSo16NSMutableCopying", "Encoding"]
@@ -660,12 +737,16 @@ depends-member:
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Bundle"]
+- !private ["CSo8NSObject", "Date"]
 - !private ["CSo8NSObject", "Encoding"]
 - !private ["CSo8NSObject", "Error"]
 - !private ["CSo8NSObject", "JSONSerialization"]
+- !private ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "NSKeyValueChangeKey"]
+- !private ["CSo8NSObject", "NSSet"]
 - !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "Set"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
@@ -679,6 +760,9 @@ depends-member:
 - !private ["CSo8NSObject", "WKUserScript"]
 - ["CSo8NSObject", "WKWebView"]
 - !private ["CSo8NSObject", "WKWebViewConfiguration"]
+- !private ["CSo8NSObject", "WKWebsiteDataStore"]
+- !private ["CSo8NSObject", "WKWebsiteDataTypeDiskCache"]
+- !private ["CSo8NSObject", "WKWebsiteDataTypeMemoryCache"]
 - ["CSo8NSObject", "WebViewProgressView"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -690,6 +774,7 @@ depends-member:
 - !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "configuration"]
 - !private ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "default"]
 - !private ["CSo8NSObject", "evaluateJavaScript"]
 - ["CSo8NSObject", "evaluateJavaScriptForData"]
 - ["CSo8NSObject", "evaluateJavaScriptForDataInit"]
@@ -708,6 +793,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "progressView"]
 - ["CSo8NSObject", "refreshBarButton"]
+- !private ["CSo8NSObject", "removeData"]
 - !private ["CSo8NSObject", "removeObserver"]
 - !private ["CSo8NSObject", "request"]
 - !private ["CSo8NSObject", "resourcePath"]
@@ -725,7 +811,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Bundle"]
 - !private ["PSo16NSObjectProtocol", "Encoding"]
 - !private ["PSo16NSObjectProtocol", "JSONSerialization"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
 - !private ["PSo16NSObjectProtocol", "NSKeyValueChangeKey"]
+- !private ["PSo16NSObjectProtocol", "NSSet"]
 - !private ["PSo16NSObjectProtocol", "NSString"]
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "String"]
@@ -735,6 +823,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "WKUserScript"]
 - !private ["PSo16NSObjectProtocol", "WKWebView"]
 - !private ["PSo16NSObjectProtocol", "WKWebViewConfiguration"]
+- !private ["PSo16NSObjectProtocol", "WKWebsiteDataStore"]
+- !private ["PSo16NSObjectProtocol", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo16NSObjectProtocol", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTextField"]
@@ -745,6 +836,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "configuration"]
 - !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "default"]
 - !private ["PSo16NSObjectProtocol", "evaluateJavaScript"]
 - ["PSo16NSObjectProtocol", "evaluateJavaScriptForData"]
 - ["PSo16NSObjectProtocol", "evaluateJavaScriptForDataInit"]
@@ -763,6 +855,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "progressView"]
 - ["PSo16NSObjectProtocol", "refreshBarButton"]
+- !private ["PSo16NSObjectProtocol", "removeData"]
 - !private ["PSo16NSObjectProtocol", "removeObserver"]
 - !private ["PSo16NSObjectProtocol", "request"]
 - !private ["PSo16NSObjectProtocol", "resourcePath"]
@@ -780,6 +873,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "Encoding"]
 - !private ["PSo14NSSecureCoding", "init"]
+- ["CSo5NSSet", "deinit"]
+- !private ["CSo5NSSet", "init"]
 - !private ["CSo8NSString", "Encoding"]
 - ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
@@ -790,9 +885,13 @@ depends-member:
 - !private ["Ps9OptionSet", "flexibleWidth"]
 - !private ["Ps9OptionSet", "prettyPrinted"]
 - ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "base64EncodedData"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
 - !private ["Ps21RandomAccessIndexable", "base64EncodedData"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
 - !private ["Ps26RangeReplaceableCollection", "base64EncodedData"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "base64EncodedData"]
 - !private ["Ps16RawRepresentable", "Element"]
 - !private ["Ps16RawRepresentable", "alert"]
@@ -817,7 +916,9 @@ depends-member:
 - !private ["Ps8Sequence", "Value"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "base64EncodedData"]
+- !private ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "subscript"]
+- ["Vs3Set", "deinit"]
 - !private ["Ps10SetAlgebra", "Element"]
 - !private ["Ps10SetAlgebra", "flexibleHeight"]
 - !private ["Ps10SetAlgebra", "flexibleWidth"]
@@ -874,7 +975,9 @@ depends-member:
 - !private ["PSo12UIAppearance", "uiDelegate"]
 - !private ["PSo21UIAppearanceContainer", "Bundle"]
 - !private ["PSo21UIAppearanceContainer", "JSONSerialization"]
+- !private ["PSo21UIAppearanceContainer", "NSDate"]
 - !private ["PSo21UIAppearanceContainer", "NSKeyValueChangeKey"]
+- !private ["PSo21UIAppearanceContainer", "NSSet"]
 - !private ["PSo21UIAppearanceContainer", "NSString"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "String"]
@@ -884,6 +987,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "WKUserScript"]
 - !private ["PSo21UIAppearanceContainer", "WKWebView"]
 - !private ["PSo21UIAppearanceContainer", "WKWebViewConfiguration"]
+- !private ["PSo21UIAppearanceContainer", "WKWebsiteDataStore"]
+- !private ["PSo21UIAppearanceContainer", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo21UIAppearanceContainer", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTextField"]
@@ -922,7 +1028,9 @@ depends-member:
 - !private ["CSo9UIBarItem", "isEnabled"]
 - !private ["PSo18UIContentContainer", "Bundle"]
 - !private ["PSo18UIContentContainer", "JSONSerialization"]
+- !private ["PSo18UIContentContainer", "NSDate"]
 - !private ["PSo18UIContentContainer", "NSKeyValueChangeKey"]
+- !private ["PSo18UIContentContainer", "NSSet"]
 - !private ["PSo18UIContentContainer", "NSString"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "String"]
@@ -932,6 +1040,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "WKUserScript"]
 - !private ["PSo18UIContentContainer", "WKWebView"]
 - !private ["PSo18UIContentContainer", "WKWebViewConfiguration"]
+- !private ["PSo18UIContentContainer", "WKWebsiteDataStore"]
+- !private ["PSo18UIContentContainer", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo18UIContentContainer", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - !private ["PSo18UIContentContainer", "addTextField"]
 - ["PSo18UIContentContainer", "backBarButton"]
@@ -984,7 +1095,9 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "uiDelegate"]
 - !private ["PSo18UIFocusEnvironment", "Bundle"]
 - !private ["PSo18UIFocusEnvironment", "JSONSerialization"]
+- !private ["PSo18UIFocusEnvironment", "NSDate"]
 - !private ["PSo18UIFocusEnvironment", "NSKeyValueChangeKey"]
+- !private ["PSo18UIFocusEnvironment", "NSSet"]
 - !private ["PSo18UIFocusEnvironment", "NSString"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "String"]
@@ -994,6 +1107,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "WKUserScript"]
 - !private ["PSo18UIFocusEnvironment", "WKWebView"]
 - !private ["PSo18UIFocusEnvironment", "WKWebViewConfiguration"]
+- !private ["PSo18UIFocusEnvironment", "WKWebsiteDataStore"]
+- !private ["PSo18UIFocusEnvironment", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo18UIFocusEnvironment", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTextField"]
@@ -1047,11 +1163,15 @@ depends-member:
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Bundle"]
+- !private ["CSo11UIResponder", "Date"]
 - !private ["CSo11UIResponder", "Error"]
 - !private ["CSo11UIResponder", "JSONSerialization"]
+- !private ["CSo11UIResponder", "NSDate"]
 - ["CSo11UIResponder", "NSKeyValueChangeKey"]
+- !private ["CSo11UIResponder", "NSSet"]
 - !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "Set"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
@@ -1065,6 +1185,9 @@ depends-member:
 - !private ["CSo11UIResponder", "WKUserScript"]
 - ["CSo11UIResponder", "WKWebView"]
 - !private ["CSo11UIResponder", "WKWebViewConfiguration"]
+- !private ["CSo11UIResponder", "WKWebsiteDataStore"]
+- !private ["CSo11UIResponder", "WKWebsiteDataTypeDiskCache"]
+- !private ["CSo11UIResponder", "WKWebsiteDataTypeMemoryCache"]
 - ["CSo11UIResponder", "WebViewProgressView"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addSubview"]
@@ -1101,7 +1224,9 @@ depends-member:
 - ["CSo11UIResponder", "webViewWebContentProcessDidTerminate"]
 - !private ["PSo30UIResponderStandardEditActions", "Bundle"]
 - !private ["PSo30UIResponderStandardEditActions", "JSONSerialization"]
+- !private ["PSo30UIResponderStandardEditActions", "NSDate"]
 - !private ["PSo30UIResponderStandardEditActions", "NSKeyValueChangeKey"]
+- !private ["PSo30UIResponderStandardEditActions", "NSSet"]
 - !private ["PSo30UIResponderStandardEditActions", "NSString"]
 - !private ["PSo30UIResponderStandardEditActions", "NSURL"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
@@ -1111,6 +1236,9 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "WKUserScript"]
 - !private ["PSo30UIResponderStandardEditActions", "WKWebView"]
 - !private ["PSo30UIResponderStandardEditActions", "WKWebViewConfiguration"]
+- !private ["PSo30UIResponderStandardEditActions", "WKWebsiteDataStore"]
+- !private ["PSo30UIResponderStandardEditActions", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo30UIResponderStandardEditActions", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo30UIResponderStandardEditActions", "addAction"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "addTextField"]
@@ -1147,7 +1275,9 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "Bundle"]
 - !private ["PSo16UIStateRestoring", "JSONSerialization"]
+- !private ["PSo16UIStateRestoring", "NSDate"]
 - !private ["PSo16UIStateRestoring", "NSKeyValueChangeKey"]
+- !private ["PSo16UIStateRestoring", "NSSet"]
 - !private ["PSo16UIStateRestoring", "NSString"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "String"]
@@ -1157,6 +1287,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "WKUserScript"]
 - !private ["PSo16UIStateRestoring", "WKWebView"]
 - !private ["PSo16UIStateRestoring", "WKWebViewConfiguration"]
+- !private ["PSo16UIStateRestoring", "WKWebsiteDataStore"]
+- !private ["PSo16UIStateRestoring", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo16UIStateRestoring", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - !private ["PSo16UIStateRestoring", "addTextField"]
 - ["PSo16UIStateRestoring", "backBarButton"]
@@ -1185,7 +1318,9 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "Bundle"]
 - !private ["PSo18UITraitEnvironment", "JSONSerialization"]
+- !private ["PSo18UITraitEnvironment", "NSDate"]
 - !private ["PSo18UITraitEnvironment", "NSKeyValueChangeKey"]
+- !private ["PSo18UITraitEnvironment", "NSSet"]
 - !private ["PSo18UITraitEnvironment", "NSString"]
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "String"]
@@ -1195,6 +1330,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "WKUserScript"]
 - !private ["PSo18UITraitEnvironment", "WKWebView"]
 - !private ["PSo18UITraitEnvironment", "WKWebViewConfiguration"]
+- !private ["PSo18UITraitEnvironment", "WKWebsiteDataStore"]
+- !private ["PSo18UITraitEnvironment", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo18UITraitEnvironment", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTextField"]
@@ -1249,11 +1387,15 @@ depends-member:
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "Bundle"]
+- !private ["CSo16UIViewController", "Date"]
 - !private ["CSo16UIViewController", "Error"]
 - !private ["CSo16UIViewController", "JSONSerialization"]
+- !private ["CSo16UIViewController", "NSDate"]
 - ["CSo16UIViewController", "NSKeyValueChangeKey"]
+- !private ["CSo16UIViewController", "NSSet"]
 - !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "NSURL"]
+- !private ["CSo16UIViewController", "Set"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
@@ -1267,6 +1409,9 @@ depends-member:
 - !private ["CSo16UIViewController", "WKUserScript"]
 - ["CSo16UIViewController", "WKWebView"]
 - !private ["CSo16UIViewController", "WKWebViewConfiguration"]
+- !private ["CSo16UIViewController", "WKWebsiteDataStore"]
+- !private ["CSo16UIViewController", "WKWebsiteDataTypeDiskCache"]
+- !private ["CSo16UIViewController", "WKWebsiteDataTypeMemoryCache"]
 - ["CSo16UIViewController", "WebViewProgressView"]
 - !private ["CSo16UIViewController", "addAction"]
 - !private ["CSo16UIViewController", "addTextField"]
@@ -1304,11 +1449,15 @@ depends-member:
 - ["C15UIWebViewLayout14ViewController", "AnyObject"]
 - ["C15UIWebViewLayout14ViewController", "Bool"]
 - !private ["C15UIWebViewLayout14ViewController", "Bundle"]
+- !private ["C15UIWebViewLayout14ViewController", "Date"]
 - !private ["C15UIWebViewLayout14ViewController", "Error"]
 - !private ["C15UIWebViewLayout14ViewController", "JSONSerialization"]
+- !private ["C15UIWebViewLayout14ViewController", "NSDate"]
 - ["C15UIWebViewLayout14ViewController", "NSKeyValueChangeKey"]
+- !private ["C15UIWebViewLayout14ViewController", "NSSet"]
 - !private ["C15UIWebViewLayout14ViewController", "NSString"]
 - !private ["C15UIWebViewLayout14ViewController", "NSURL"]
+- !private ["C15UIWebViewLayout14ViewController", "Set"]
 - ["C15UIWebViewLayout14ViewController", "String"]
 - !private ["C15UIWebViewLayout14ViewController", "UIAlertAction"]
 - !private ["C15UIWebViewLayout14ViewController", "UIAlertController"]
@@ -1322,6 +1471,9 @@ depends-member:
 - !private ["C15UIWebViewLayout14ViewController", "WKUserScript"]
 - ["C15UIWebViewLayout14ViewController", "WKWebView"]
 - !private ["C15UIWebViewLayout14ViewController", "WKWebViewConfiguration"]
+- !private ["C15UIWebViewLayout14ViewController", "WKWebsiteDataStore"]
+- !private ["C15UIWebViewLayout14ViewController", "WKWebsiteDataTypeDiskCache"]
+- !private ["C15UIWebViewLayout14ViewController", "WKWebsiteDataTypeMemoryCache"]
 - ["C15UIWebViewLayout14ViewController", "WebViewProgressView"]
 - ["C15UIWebViewLayout14ViewController", "backBarButton"]
 - ["C15UIWebViewLayout14ViewController", "deinit"]
@@ -1347,7 +1499,9 @@ depends-member:
 - !private ["CSo11WKFrameInfo", "request"]
 - !private ["PSo20WKNavigationDelegate", "Bundle"]
 - !private ["PSo20WKNavigationDelegate", "JSONSerialization"]
+- !private ["PSo20WKNavigationDelegate", "NSDate"]
 - !private ["PSo20WKNavigationDelegate", "NSKeyValueChangeKey"]
+- !private ["PSo20WKNavigationDelegate", "NSSet"]
 - !private ["PSo20WKNavigationDelegate", "NSString"]
 - !private ["PSo20WKNavigationDelegate", "NSURL"]
 - !private ["PSo20WKNavigationDelegate", "String"]
@@ -1357,6 +1511,9 @@ depends-member:
 - !private ["PSo20WKNavigationDelegate", "WKUserScript"]
 - !private ["PSo20WKNavigationDelegate", "WKWebView"]
 - !private ["PSo20WKNavigationDelegate", "WKWebViewConfiguration"]
+- !private ["PSo20WKNavigationDelegate", "WKWebsiteDataStore"]
+- !private ["PSo20WKNavigationDelegate", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo20WKNavigationDelegate", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo20WKNavigationDelegate", "backBarButton"]
 - !private ["PSo20WKNavigationDelegate", "forwardBarButton"]
 - !private ["PSo20WKNavigationDelegate", "injectAngular"]
@@ -1374,7 +1531,9 @@ depends-member:
 - ["PSo20WKNavigationDelegate", ""]
 - !private ["PSo12WKUIDelegate", "Bundle"]
 - !private ["PSo12WKUIDelegate", "JSONSerialization"]
+- !private ["PSo12WKUIDelegate", "NSDate"]
 - !private ["PSo12WKUIDelegate", "NSKeyValueChangeKey"]
+- !private ["PSo12WKUIDelegate", "NSSet"]
 - !private ["PSo12WKUIDelegate", "NSString"]
 - !private ["PSo12WKUIDelegate", "NSURL"]
 - !private ["PSo12WKUIDelegate", "String"]
@@ -1384,6 +1543,9 @@ depends-member:
 - !private ["PSo12WKUIDelegate", "WKUserScript"]
 - !private ["PSo12WKUIDelegate", "WKWebView"]
 - !private ["PSo12WKUIDelegate", "WKWebViewConfiguration"]
+- !private ["PSo12WKUIDelegate", "WKWebsiteDataStore"]
+- !private ["PSo12WKUIDelegate", "WKWebsiteDataTypeDiskCache"]
+- !private ["PSo12WKUIDelegate", "WKWebsiteDataTypeMemoryCache"]
 - !private ["PSo12WKUIDelegate", "backBarButton"]
 - !private ["PSo12WKUIDelegate", "forwardBarButton"]
 - !private ["PSo12WKUIDelegate", "injectAngular"]
@@ -1420,9 +1582,13 @@ depends-member:
 - ["CSo22WKWebViewConfiguration", "deinit"]
 - !private ["CSo22WKWebViewConfiguration", "init"]
 - !private ["CSo22WKWebViewConfiguration", "userContentController"]
+- !private ["CSo18WKWebsiteDataStore", "default"]
+- ["CSo18WKWebsiteDataStore", "deinit"]
+- !private ["CSo18WKWebsiteDataStore", "removeData"]
 - !private ["C15UIWebViewLayout19WebViewProgressView", "setProgress"]
 - ["VCSo17JSONSerialization14WritingOptions", "deinit"]
 - !private ["VCSo17JSONSerialization14WritingOptions", "prettyPrinted"]
+- !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "allowsBackForwardNavigationGestures"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "autoresizingMask"]
@@ -1436,6 +1602,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setProgress"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "uiDelegate"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -1451,7 +1618,9 @@ depends-member:
 - !private ["Ps9_Hashable", "Bundle"]
 - !private ["Ps9_Hashable", "Encoding"]
 - !private ["Ps9_Hashable", "JSONSerialization"]
+- !private ["Ps9_Hashable", "NSDate"]
 - !private ["Ps9_Hashable", "NSKeyValueChangeKey"]
+- !private ["Ps9_Hashable", "NSSet"]
 - !private ["Ps9_Hashable", "NSString"]
 - !private ["Ps9_Hashable", "NSURL"]
 - !private ["Ps9_Hashable", "String"]
@@ -1461,6 +1630,9 @@ depends-member:
 - !private ["Ps9_Hashable", "WKUserScript"]
 - !private ["Ps9_Hashable", "WKWebView"]
 - !private ["Ps9_Hashable", "WKWebViewConfiguration"]
+- !private ["Ps9_Hashable", "WKWebsiteDataStore"]
+- !private ["Ps9_Hashable", "WKWebsiteDataTypeDiskCache"]
+- !private ["Ps9_Hashable", "WKWebsiteDataTypeMemoryCache"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addAction"]
 - !private ["Ps9_Hashable", "addSubview"]
@@ -1499,6 +1671,7 @@ depends-member:
 - ["Ps9_Hashable", "progressView"]
 - !private ["Ps9_Hashable", "rawValue"]
 - ["Ps9_Hashable", "refreshBarButton"]
+- !private ["Ps9_Hashable", "removeData"]
 - !private ["Ps9_Hashable", "removeObserver"]
 - !private ["Ps9_Hashable", "request"]
 - !private ["Ps9_Hashable", "resourcePath"]
@@ -1517,6 +1690,7 @@ depends-member:
 - ["Ps9_Hashable", "webViewWebContentProcessDidTerminate"]
 - ["Ps9_Hashable", ""]
 - !private ["P10Foundation18_MutablePairBoxing", "base64EncodedData"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
@@ -1533,6 +1707,7 @@ depends-member:
 - !private ["Ps20_SwiftNewtypeWrapper", "newKey"]
 depends-nominal:
 - "Ps9AnyObject"
+- "Sa"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
 - "Sb"
@@ -1547,8 +1722,9 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
+- "V10Foundation4Date"
 - "Vs10Dictionary"
-- !private "Sd"
+- "Sd"
 - "VE10FoundationSS8Encoding"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
@@ -1578,12 +1754,15 @@ depends-nominal:
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- "CSo6NSDate"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
 - "VSC19NSKeyValueChangeKey"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- "CSo5NSSet"
 - "CSo8NSString"
 - "CSo5NSURL"
 - !private "Ps9OptionSet"
@@ -1595,6 +1774,7 @@ depends-nominal:
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - !private "Ps8Sequence"
+- "Vs3Set"
 - !private "Ps10SetAlgebra"
 - !private "Vs5Slice"
 - "SS"
@@ -1645,9 +1825,12 @@ depends-nominal:
 - "OSC25WKUserScriptInjectionTime"
 - "CSo9WKWebView"
 - "CSo22WKWebViewConfiguration"
+- "CSo18WKWebsiteDataStore"
 - !private "C15UIWebViewLayout19WebViewProgressView"
 - "VCSo17JSONSerialization14WritingOptions"
+- !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -1661,8 +1844,8 @@ depends-nominal:
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps20_SwiftNewtypeWrapper"
 depends-dynamic-lookup:
-- !private "floatValue"
 - !private "boolValue"
+- !private "floatValue"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/UIWebViewLayout-Bridging-Header.h"

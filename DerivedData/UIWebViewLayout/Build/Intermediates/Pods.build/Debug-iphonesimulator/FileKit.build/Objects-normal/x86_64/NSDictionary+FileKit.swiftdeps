@@ -6,11 +6,11 @@ provides-member:
 - ["CSo12NSDictionary", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "FileKitError"
+- "WritableToFile"
 - "ReadableWritable"
+- !private "FileKitError"
 - "NSDictionary"
 - "Path"
-- "WritableToFile"
 depends-member:
 - !private ["Ps9AnyObject", "FileKitError"]
 - ["Ps9AnyObject", "read"]

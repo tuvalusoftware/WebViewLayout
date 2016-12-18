@@ -36,6 +36,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let websiteDataTypes = NSSet(array: [WKWebsiteDataTypeDiskCache, WKWebsiteDataTypeMemoryCache])
+        let date = NSDate(timeIntervalSince1970: 0)
+        WKWebsiteDataStore.default().removeData(ofTypes: websiteDataTypes as! Set<String>, modifiedSince: date as Date, completionHandler:{ })
+        
  
 //        
 //        let source = "document.body.style.background = \"#777\";"
@@ -69,10 +74,12 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let source = "printOutput('\(sample)')"
         let userScript = WKUserScript(source: source, injectionTime: .atDocumentStart, forMainFrameOnly: true)
         
-        let userContentController = WKUserContentController()
-        userContentController.addUserScript(userScript)
+       let userContentController = WKUserContentController()
+//         userContentController.addUserScript(userScript)
         
-        let configuration = WKWebViewConfiguration()
+         let configuration = WKWebViewConfiguration()
+        
+        
         configuration.userContentController = userContentController
         
         
@@ -116,7 +123,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 //        
 //        webView.loadFileURL(NSURL(fileURLWithPath:(support?.path)!, isDirectory: false) as URL, allowingReadAccessTo: NSURL(fileURLWithPath:(appDelegate.application_support?.path)! , isDirectory: true) as URL)
 //        
-//   
+////   
         
         do{
             
@@ -165,7 +172,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let userScript = WKUserScript(source: source, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         
         let userContentController = WKUserContentController()
-        userContentController.addUserScript(userScript)
+       // userContentController.addUserScript(userScript)
         
         let configuration = WKWebViewConfiguration()
         configuration.userContentController = userContentController
@@ -208,6 +215,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     
     func injectAngular(into webView: WKWebView) throws  {
+        
+        
         guard let scriptPath = Bundle.main.path(forResource: "Javascript", ofType: "js") else {
             
            print("error")
@@ -221,12 +230,14 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         }
         
         
+        
         let scriptString2 = try NSString(contentsOfFile: variablesPath, encoding: String.Encoding.utf8.rawValue) as String
-        let script2 = WKUserScript(source: scriptString2, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        let script2 = WKUserScript(source: scriptString2, injectionTime: .atDocumentStart, forMainFrameOnly: true)
         webView.configuration.userContentController.addUserScript(script2)
         
         let scriptString = try NSString(contentsOfFile: scriptPath, encoding: String.Encoding.utf8.rawValue) as String
-        let script = WKUserScript(source: scriptString, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        let script = WKUserScript(source: scriptString, injectionTime: .atDocumentStart, forMainFrameOnly: true)
+        
         webView.configuration.userContentController.addUserScript(script)
         
     }

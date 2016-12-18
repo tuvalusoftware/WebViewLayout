@@ -12,28 +12,31 @@
         <script src="angular-chart/angular-chart.min.js"></script>
         
         <script>
-        function reloadData(sBinaryParam) {
-            
-             alert("encoding data")
-            // This 'atob' decodes the Base64 encoded data sent by swift
-            var sDecodedParam = window.atob(sBinaryParam);
-            alert("encoding data 2")
-            var oData = JSON.parse(sDecodedParam);
-             alert("encoding data 3")
-             alert("decoded" + sDecodedParam)
-            // This 'oData' is your js object (dictionary)
-           return true;
-        }
+            function reloadData(sBinaryParam) {
+                
+                alert("encoding data")
+                // This 'atob' decodes the Base64 encoded data sent by swift
+                var sDecodedParam = window.atob(sBinaryParam);
+                alert("encoding data 2")
+                var oData = JSON.parse(sDecodedParam);
+                alert("encoding data 3")
+                alert("decoded" + sDecodedParam)
+                // This 'oData' is your js object (dictionary)
+                return true;
+            }
         
         
         function printOutput(sBinaryParam) {
             alert("defined")
-          
+            
             return true;
             
         }
         
-        </script>
+        
+        
+        
+            </script>
         
         <style>
             .box {
@@ -55,11 +58,20 @@
     
     </head>
     <html>
-        <body ng-app="app" >
+     
+     
+     <script>
+         
+         
+         setDimensions()
+         
+         setVar();
+         alert(window.goodvariablename)
+         
+         
+
+      </script>
             
-  
-  
-          
            <!--
             <div ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
                 <canvas id="bar" class="chart chart-bar"
@@ -69,13 +81,15 @@
                     chart-data="data" chart-options="options" chart-labels="labels" >
                 </canvas>
             </div>
-            -->
            
+           -->
            
-          
+            
           
           <body ng-app="app" ng-controller="RadarCtrl">
-              
+              <BR>
+              <BR>
+              <BR>
               <button type="button" class="btn btn-success" ng-click="ReloadChart();">Reload</button>
               
               <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="column"   ng-cloak layout-wrap>
@@ -100,6 +114,7 @@
                       
                   </div>
                </div>
+            
         </body>
     
         

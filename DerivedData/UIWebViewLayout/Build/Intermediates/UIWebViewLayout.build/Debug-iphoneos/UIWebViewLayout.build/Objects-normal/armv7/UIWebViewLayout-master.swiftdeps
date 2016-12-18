@@ -1,7 +1,0 @@
-version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
-options: "8d48944bc73e1c6324cd633da25c6cf2"
-build_time: [534378960, 935574000]
-inputs:
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/ViewController.swift": [534378762, 0]
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/AppDelegate.swift": [533419892, 0]
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/CustomWebView.swift": [533419892, 0]
