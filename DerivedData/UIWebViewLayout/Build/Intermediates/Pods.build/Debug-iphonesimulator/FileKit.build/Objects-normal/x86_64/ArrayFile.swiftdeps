@@ -6,11 +6,11 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "NSArray"
-- "ArrayFile"
-- "File"
-- "Array"
 - "NSArrayFile"
+- "File"
+- "NSArray"
+- "Array"
+- "ArrayFile"
 depends-member:
 - ["Sa", "deinit"]
 - ["CSo7NSArray", "deinit"]

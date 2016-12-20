@@ -1,15 +1,12 @@
-//
-//  WebViewController.swift
-//  WebKitDemo
-//
-//  Created by Kyusaku Mihara on 9/17/14.
-//  Copyright (c) 2014 epohsoft. All rights reserved.
-//
-
+ 
 import UIKit
 import WebKit
 
 var myContext = 0
+ 
+ 
+ 
+
 
 class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
@@ -30,11 +27,97 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     
     
+    func addButton(){
+        
+        
+        
+        let button = UIButton(frame: CGRect(x: 4, y: 10, width: 100, height: 40))
+        button.backgroundColor = .yellow
+        button.setTitle("Test Button", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
+        self.view.addSubview(button)
+        
+    }
+    
+    
+        @IBAction func buttonAction(_ sender: AnyObject) {
+            
+            
+            
+            guard let jsonPath = Bundle.main.path(forResource: "data", ofType: "json") else {
+                
+                print("error")
+             
+              
+                
+                return
+            }
+            
+            do
+            {
+                
+                func callback (_: Any?, _: Error?) ->Void
+                {
+                    
+                    print("completed with")
+                }
+            
+                let temp = "vingo"
+              let jsonString = try NSString(contentsOfFile: jsonPath, encoding: String.Encoding.utf8.rawValue) as String
+            
+              let source = "reloadData('\(temp)')"
+              webView?.evaluateJavaScript(source, completionHandler:callback)
+             
+            }
+            catch
+            {
+                print("exception")
+                
+            }
+            
+            
+        /*
+            let testData = "my example "
+            let dictionaryData = ["hello":"bye" as AnyObject]
+            let serializedData = try! JSONSerialization.data(withJSONObject: dictionaryData, options: .prettyPrinted)
+            
+            let strVal =  NSString(data: serializedData, encoding: String.Encoding.utf8.rawValue)
+            var dataString = String(data: serializedData, encoding: String.Encoding.utf8)
+            
+            let encodedData = serializedData.base64EncodedData()
+            let source = "reloadData('\(dataString)')"
+            
+            func callback (_: Any?, _: Error?) ->Void
+            {
+                
+                print("completed with")
+            }
+            
+            
+             webView?.evaluateJavaScript(source, completionHandler:callback) 
+  */
+            
+        }
     
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        class NotificationScriptMessageHandler: NSObject, WKScriptMessageHandler {
+            
+            public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage)
+            {
+                print(message.body)
+                
+            }
+            
+            
+            
+        }
         
         
         let websiteDataTypes = NSSet(array: [WKWebsiteDataTypeDiskCache, WKWebsiteDataTypeMemoryCache])
@@ -74,18 +157,30 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let source = "printOutput('\(sample)')"
         let userScript = WKUserScript(source: source, injectionTime: .atDocumentStart, forMainFrameOnly: true)
         
-       let userContentController = WKUserContentController()
+      let userContentController = WKUserContentController()
 //         userContentController.addUserScript(userScript)
         
          let configuration = WKWebViewConfiguration()
         
         
+        addButton()
+        
+        
         configuration.userContentController = userContentController
         
+        let margin:CGFloat = 80
+        
+        let rect = CGRect(x: 0, y: margin, width: self.view.frame.width, height:self.view.frame.height-margin)
+        
+ 
+        self.view.backgroundColor = UIColor.red
+        
+        let webView = WKWebView(frame: rect, configuration: configuration)
         
         
         
-        let webView = WKWebView(frame: self.view.bounds, configuration: configuration)
+        
+        webView.backgroundColor = UIColor.green
         
         
         webView.navigationDelegate = self
@@ -93,6 +188,9 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         webView.allowsBackForwardNavigationGestures = false
         webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
+        //let userContentController = WKUserContentController()
+        let handler = NotificationScriptMessageHandler()
+        userContentController.add(handler, name: "notification")
         
         
         
@@ -304,10 +402,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 //        }
 //    }
     
-//    @IBAction func refreshBarButtonTapped(_ sender: AnyObject) {
-//        self.webView?.reload()
-//    }
-//    
+     @IBAction func refreshBarButtonTapped(_ sender: AnyObject) {
+         self.webView?.reload()
+     }
+    
 //    // MARK: - WKNavigationDelegate methods
     
 //    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation) {

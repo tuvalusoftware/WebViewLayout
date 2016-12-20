@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "adaed0516cb3bd104389faf4b937d8ba"
-build_time: [535250116, 948812000]
+build_time: [535411604, 941710000]
 inputs:
   "/Users/timobrien/projects/WebViewLayout/Pods/FileKit/Sources/Array+File.swift": [534294561, 0]
   "/Users/timobrien/projects/WebViewLayout/Pods/FileKit/Sources/ArrayFile.swift": [534294561, 0]

@@ -7,13 +7,13 @@ provides-member:
 - ["SS", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "BooleanLiteralType"
 - "ReadableWritable"
+- "ReadableWritableStringEncoding"
 - !private "FileKitError"
+- "String"
 - "Path"
 - "Bool"
-- !private "BooleanLiteralType"
-- "ReadableWritableStringEncoding"
-- "String"
 depends-member:
 - ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "write"]

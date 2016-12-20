@@ -7,14 +7,14 @@ provides-member:
 - ["V7FileKit19DirectoryEnumerator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "DirectoryEnumerator"
-- !private "+"
-- !private "String"
-- "CastingPrecedence"
-- "IteratorProtocol"
-- "FileManager"
 - "AssignmentPrecedence"
+- "FileManager"
+- "CastingPrecedence"
+- !private "String"
+- !private "+"
+- "IteratorProtocol"
 - "Path"
+- "DirectoryEnumerator"
 depends-member:
 - ["Ps9AnyObject", "DirectoryEnumerator"]
 - !private ["Ps9AnyObject", "enumerator"]

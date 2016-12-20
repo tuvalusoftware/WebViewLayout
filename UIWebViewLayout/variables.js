@@ -44,6 +44,13 @@ function setVar () {
     
     
     function layoutController ($scope) {
+        
+        $scope.sayHello = function () {
+            
+            window.webkit.messageHandlers.notification.postMessage({body: ".hello"});
+
+            
+        }
     }
     
     

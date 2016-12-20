@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "Dictionary"
-- "DictionaryFile"
-- "Hashable"
-- "NSDictionaryFile"
-- "File"
 - "NSDictionary"
+- "File"
+- "NSDictionaryFile"
+- "Dictionary"
+- "Hashable"
+- "DictionaryFile"
 depends-member:
 - ["Vs10Dictionary", "deinit"]
 - ["CSo12NSDictionary", "deinit"]

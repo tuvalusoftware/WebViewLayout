@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-    <!DOCTYPE html>
+ <html>
 
     <head>
         
@@ -12,15 +11,33 @@
         <script src="angular-chart/angular-chart.min.js"></script>
         
         <script>
+            
+            
+            var myJSON = '{ "name":"John", "age":31,"city":"New York" }';
+            var myObj = JSON.parse(myJSON);
+          
+            alert(myObj.name)
+                   
+        var text = '{ "employees" : [' +
+        '{ "firstName":"John" , "lastName":"Doe" },' +
+        '{ "firstName":"Anna" , "lastName":"Smith" },' +
+        '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+ 
+        
+        window.parsedJson = JSON.parse( text);
+              
+              
+    
+              
             function reloadData(sBinaryParam) {
                 
-                alert("encoding data")
+                
                 // This 'atob' decodes the Base64 encoded data sent by swift
-                var sDecodedParam = window.atob(sBinaryParam);
-                alert("encoding data 2")
-                var oData = JSON.parse(sDecodedParam);
-                alert("encoding data 3")
-                alert("decoded" + sDecodedParam)
+                alert("start")
+                  
+                 var oData = JSON.parse(window.json);
+                
+                alert("hello")
                 // This 'oData' is your js object (dictionary)
                 return true;
             }
@@ -57,20 +74,10 @@
     
     
     </head>
-    <html>
+  
      
      
-     <script>
-         
-         
-         setDimensions()
-         
-         setVar();
-         alert(window.goodvariablename)
-         
-         
 
-      </script>
             
            <!--
             <div ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
@@ -84,14 +91,26 @@
            
            -->
            
-            
+   
           
           <body ng-app="app" ng-controller="RadarCtrl">
-              <BR>
-              <BR>
-              <BR>
-              <button type="button" class="btn btn-success" ng-click="ReloadChart();">Reload</button>
+              <script>
+                  
+                  
+                  setDimensions()
+                  
+                  setVar();
+                  
+                  
+                  
+                  
+                  </script>
               
+              
+              <div ng-controller="layoutController">
+                  <button  ng-click="sayHello();">THIS ONE </button>
+              </div>
+
               <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="column"   ng-cloak layout-wrap>
                   
                   <div flex="50"  >

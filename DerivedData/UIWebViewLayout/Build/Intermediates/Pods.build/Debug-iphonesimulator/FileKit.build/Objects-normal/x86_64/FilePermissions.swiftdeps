@@ -7,24 +7,24 @@ provides-member:
 - ["V7FileKit15FilePermissions", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Path"
+- "CustomStringConvertible"
+- "String"
 - "FilePermissions"
 - !private "+="
-- "CustomStringConvertible"
-- "Path"
-- "FloatLiteralType"
-- "OptionSet"
-- "IntegerLiteralType"
-- !private "!"
-- "TernaryPrecedence"
-- "File"
-- "Int"
-- "String"
-- "ReadableWritable"
-- "=="
-- "AssignmentPrecedence"
-- !private "+"
 - !private "UnicodeScalarType"
 - !private "StringLiteralType"
+- "OptionSet"
+- "=="
+- "ReadableWritable"
+- "AssignmentPrecedence"
+- "IntegerLiteralType"
+- "TernaryPrecedence"
+- !private "+"
+- "FloatLiteralType"
+- "File"
+- !private "!"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isEmpty"]
