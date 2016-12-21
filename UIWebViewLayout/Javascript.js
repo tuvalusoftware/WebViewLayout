@@ -3,13 +3,12 @@
 function setDimensions ()
 {
 
-  window.labels =  ["Dog", "Cat", "Horse", "Lizard", "Frog", "Toad", "Bird"]
+    window.labels =  ["Dog", "Cat", "Horse", "Lizard", "Frog", "Toad", "Bird"];
     window.data =  [
                     [65, 59, 90, 81, 56, 55, 40],
                     [28, 48, 40, 19, 96, 27, 100]
                    ];
-    
-    
+    window.series = ['Series A', 'Series B'];
 }
 
 function printData() {
@@ -29,14 +28,16 @@ function printData() {
 
 
 function setJson(json) {
-    
-    
-    
-    alert("printing")
+    window.abc =  2;
+    alert(window.abc);
     var oData = JSON.parse(json);
-    window.jsonData = oData
-    alert("hello")
+    alert(oData)
+    window.labels = oData.label
+    window.data = oData.data
+    window.series = oData.series
+    alert("this is set json function")
     alert(json)
+    
     
   
  

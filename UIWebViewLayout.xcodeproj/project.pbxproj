@@ -194,6 +194,7 @@
 		3942EF6C1DEB3C38006F3AE9 /* myindex.html in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6A1DEB3C38006F3AE9 /* myindex.html */; };
 		3942EF6D1DEB3C38006F3AE9 /* myjs in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6B1DEB3C38006F3AE9 /* myjs */; };
 		3942EF6F1DEB5C59006F3AE9 /* main_ctrl.js in Resources */ = {isa = PBXBuildFile; fileRef = 3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */; };
+		39BEEF301E0A78830004F7F9 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEEF2F1E0A78830004F7F9 /* ChartData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -453,6 +454,7 @@
 		3942EF6A1DEB3C38006F3AE9 /* myindex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myindex.html; sourceTree = "<group>"; };
 		3942EF6B1DEB3C38006F3AE9 /* myjs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = myjs; sourceTree = "<group>"; };
 		3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main_ctrl.js; path = myjs/main_ctrl.js; sourceTree = "<group>"; };
+		39BEEF2F1E0A78830004F7F9 /* ChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIWebViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -917,6 +919,7 @@
 				381F21441DFA494F003AF1FC /* WebViewProgressView.swift */,
 				381209541DFCAAC4006C8332 /* WebData.swift */,
 				3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */,
+				39BEEF2F1E0A78830004F7F9 /* ChartData.swift */,
 			);
 			path = UIWebViewLayout;
 			sourceTree = "<group>";
@@ -1378,6 +1381,7 @@
 				381AE7231DE6A628002C47C3 /* CONTRIBUTING.md in Sources */,
 				381AE7281DE6A628002C47C3 /* 04-Bar-Chart.md in Sources */,
 				381AE72A1DE6A628002C47C3 /* 06-Polar-Area-Chart.md in Sources */,
+				39BEEF301E0A78830004F7F9 /* ChartData.swift in Sources */,
 				381AE7291DE6A628002C47C3 /* 05-Radar-Chart.md in Sources */,
 				381209551DFCAAC4006C8332 /* WebData.swift in Sources */,
 				381AE71C1DE6A628002C47C3 /* ISSUE_TEMPLATE.md in Sources */,

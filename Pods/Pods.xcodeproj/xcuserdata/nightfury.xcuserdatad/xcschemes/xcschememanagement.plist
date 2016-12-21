@@ -6,22 +6,23 @@
 	<dict>
 		<key>FileKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GCDWebServer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-UIWebViewLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -31,22 +32,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1EEDA0FE033F983A39499C0E1E950457</key>
+		<key>8725D09E7E6F2997B6336F46BCECB3F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DB5897FA1BDDFC1B909BC8C169C5007</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AB081FFB2F7D73641D86871E2DAF4DE4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C03B465A9DC80D249937B032179F5BB8</key>
+		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

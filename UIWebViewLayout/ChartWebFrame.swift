@@ -101,17 +101,16 @@ class ChartWebFrame: WKWebView {
     func updateDimensions(json:String)
     {
         
-        let jsonTrimmed  = json.replacingOccurrences(of: "\n", with: "")
-        
+        var jsonTrimmed  = json.replacingOccurrences(of: "\n", with: "")
+        jsonTrimmed  = jsonTrimmed.replacingOccurrences(of: "\r", with: "")
         
         func callback (_: Any?, _: Error?) ->Void
         {
-            
             print("completed with")
         }
-        
         let source = "setJson('\(jsonTrimmed)')"
         self.evaluateJavaScript(source, completionHandler:callback)
+        self.reload()
         
         
     }

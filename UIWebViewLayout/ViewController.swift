@@ -1,6 +1,7 @@
  
 import UIKit
 import WebKit
+import ObjectMapper
 
 var myContext = 0
  
@@ -79,6 +80,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let JSONString = "{ \"label\": [\"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"],\r\n\"series\":[\"Series A\", \"Series B\"],\r\n\"data\":[\r\n    [65, 59, 80, 81, 56, 55, 40],\r\n    [28, 48, 40, 19, 86, 27, 90]\r\n  ]}"
+        
+        let user = Mapper<ChartData>().map(JSONString: JSONString)
+        let jsonstr = user?.toJSONString(prettyPrint: true)
         
         
         
@@ -93,7 +98,6 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
             
             
         }
-    
         
         
         addButton()
@@ -109,6 +113,9 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         
         let webView = ChartWebFrame(withoutconfig: rect, template: Templates.rows2column1)
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            webView.updateDimensions(json: JSONString)
+        }
         
         
         
