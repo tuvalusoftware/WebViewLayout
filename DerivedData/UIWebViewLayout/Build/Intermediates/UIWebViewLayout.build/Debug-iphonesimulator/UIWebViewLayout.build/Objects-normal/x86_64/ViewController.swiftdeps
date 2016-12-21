@@ -7,78 +7,79 @@ provides-nominal:
 provides-member:
 - ["C15UIWebViewLayout14ViewController", ""]
 provides-dynamic-lookup:
+- "refreshBarButtonTapped"
+- "backBarButton"
+- "viewDidLoad"
+- "progressView"
+- "stopBarButton"
+- "injectAngular"
+- "buttonAction"
+- "observeValue"
+- "evaluateJavaScriptForDataInit"
+- "evaluateJavaScriptForData"
+- "forwardBarButton"
+- "addButton"
 - "refreshBarButton"
 - "webView"
 - "webView"
 - "webView"
 - "webView"
-- "forwardBarButton"
-- "injectAngular"
-- "viewDidLoad"
-- "evaluateJavaScriptForDataInit"
-- "progressView"
-- "stopBarButton"
-- "evaluateJavaScriptForData"
-- "addButton"
-- "observeValue"
-- "backBarButton"
-- "refreshBarButtonTapped"
-- "buttonAction"
 depends-top-level:
-- !private "UITextField"
-- "UIBarButtonItem"
-- !private "Array"
-- "Bool"
-- !private "Date"
-- "WKFrameInfo"
-- "Void"
-- "AssignmentPrecedence"
-- !private "WKWebsiteDataTypeMemoryCache"
-- !private "WKWebViewConfiguration"
-- "WebViewProgressView"
-- !private "UIAlertAction"
-- "CastingPrecedence"
-- !private "UIColor"
-- !private "WKWebsiteDataTypeDiskCache"
-- !private "WKUserScript"
-- "myContext"
-- !private "=="
 - !private "WKScriptMessageHandler"
 - !private "NSSet"
-- !private "UIAlertController"
-- !private "NSObject"
-- !private "UIButton"
-- "FloatLiteralType"
-- "NSKeyValueChangeKey"
-- "ViewController"
-- !private "!="
-- "AnyObject"
-- !private "NSURL"
-- "IntegerLiteralType"
-- !private "BooleanLiteralType"
-- "String"
-- "WKUserContentController"
-- !private "Dictionary"
-- !private "NSDate"
-- !private "StringLiteralType"
-- "WKScriptMessage"
-- "UnsafeMutableRawPointer"
-- "UIViewController"
-- "WKNavigationDelegate"
-- !private "print"
-- "WKUIDelegate"
+- "WKFrameInfo"
+- !private "Set"
+- !private "WKWebViewConfiguration"
 - !private "CGRect"
+- !private "NSURL"
+- "String"
+- "NSKeyValueChangeKey"
+- !private "URL"
+- "WKScriptMessage"
+- !private "WKWebsiteDataStore"
+- !private "!="
+- !private "print"
+- !private "Dictionary"
+- "WKWebView"
+- "AnyObject"
+- !private "UIButton"
 - !private "NSString"
 - !private "-"
-- !private "WKWebsiteDataStore"
-- !private "URL"
-- !private "Bundle"
-- !private "Set"
-- "WKWebView"
-- !private "JSONSerialization"
-- !private "Error"
 - !private "CGFloat"
+- !private "Array"
+- "Void"
+- !private "Date"
+- !private "NSDate"
+- !private "UIColor"
+- !private "UIAlertAction"
+- !private "JSONSerialization"
+- "UnsafeMutableRawPointer"
+- !private "UITextField"
+- !private "StringLiteralType"
+- !private "Error"
+- "myContext"
+- "Bool"
+- !private "UnicodeScalarType"
+- "WKNavigationDelegate"
+- !private "WKWebsiteDataTypeMemoryCache"
+- !private "NSObject"
+- "WebViewProgressView"
+- !private "BooleanLiteralType"
+- !private "WKWebsiteDataTypeDiskCache"
+- "FloatLiteralType"
 - !private "!"
+- "ViewController"
+- "UIBarButtonItem"
+- "WKUserContentController"
+- "UIViewController"
+- "IntegerLiteralType"
+- !private "UIAlertController"
+- "WKUIDelegate"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "WKUserScript"
+- !private "=="
+- !private "Bundle"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "CGRect"]
@@ -146,6 +147,7 @@ depends-member:
 - !private ["Ps9AnyObject", "reload"]
 - !private ["Ps9AnyObject", "removeData"]
 - !private ["Ps9AnyObject", "removeObserver"]
+- !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "request"]
 - !private ["Ps9AnyObject", "resourcePath"]
 - !private ["Ps9AnyObject", "setProgress"]
@@ -265,6 +267,7 @@ depends-member:
 - !private ["Ps7CVarArg", "reload"]
 - !private ["Ps7CVarArg", "removeData"]
 - !private ["Ps7CVarArg", "removeObserver"]
+- !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "request"]
 - !private ["Ps7CVarArg", "resourcePath"]
 - !private ["Ps7CVarArg", "setProgress"]
@@ -295,6 +298,7 @@ depends-member:
 - !private ["Ps10Comparable", "Encoding"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "newKey"]
+- !private ["Ps10Comparable", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "Bundle"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
@@ -366,6 +370,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "reload"]
 - !private ["Ps28CustomDebugStringConvertible", "removeData"]
 - !private ["Ps28CustomDebugStringConvertible", "removeObserver"]
+- !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "request"]
 - !private ["Ps28CustomDebugStringConvertible", "resourcePath"]
 - !private ["Ps28CustomDebugStringConvertible", "setProgress"]
@@ -390,6 +395,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "height"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "host"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "replacingOccurrences"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Encoding"]
@@ -401,6 +407,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "base64EncodedData"]
 - !private ["Ps17CustomReflectable", "height"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "replacingOccurrences"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "url"]
 - !private ["Ps17CustomReflectable", "width"]
@@ -477,6 +484,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "reload"]
 - !private ["Ps23CustomStringConvertible", "removeData"]
 - !private ["Ps23CustomStringConvertible", "removeObserver"]
+- !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "request"]
 - !private ["Ps23CustomStringConvertible", "resourcePath"]
 - !private ["Ps23CustomStringConvertible", "setProgress"]
@@ -587,6 +595,7 @@ depends-member:
 - !private ["Ps9Equatable", "reload"]
 - !private ["Ps9Equatable", "removeData"]
 - !private ["Ps9Equatable", "removeObserver"]
+- !private ["Ps9Equatable", "replacingOccurrences"]
 - !private ["Ps9Equatable", "request"]
 - !private ["Ps9Equatable", "resourcePath"]
 - !private ["Ps9Equatable", "setProgress"]
@@ -622,13 +631,17 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "replacingOccurrences"]
 - !private ["Ps23ExpressibleByNilLiteral", "yellow"]
 - !private ["Ps32ExpressibleByStringInterpolation", "Encoding"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "replacingOccurrences"]
 - !private ["Ps26ExpressibleByStringLiteral", "Encoding"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "replacingOccurrences"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Encoding"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "replacingOccurrences"]
 - ["Sf", "deinit"]
 - !private ["Ps8Hashable", "Bundle"]
 - !private ["Ps8Hashable", "CGRect"]
@@ -702,6 +715,7 @@ depends-member:
 - !private ["Ps8Hashable", "reload"]
 - !private ["Ps8Hashable", "removeData"]
 - !private ["Ps8Hashable", "removeObserver"]
+- !private ["Ps8Hashable", "replacingOccurrences"]
 - !private ["Ps8Hashable", "request"]
 - !private ["Ps8Hashable", "resourcePath"]
 - !private ["Ps8Hashable", "setProgress"]
@@ -750,8 +764,10 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "Encoding"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "replacingOccurrences"]
 - !private ["Ps10MirrorPath", "Encoding"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "replacingOccurrences"]
 - !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "base64EncodedData"]
 - !private ["Ps16MutableIndexable", "Element"]
@@ -816,6 +832,7 @@ depends-member:
 - !private ["PSo8NSCoding", "reload"]
 - !private ["PSo8NSCoding", "removeData"]
 - !private ["PSo8NSCoding", "removeObserver"]
+- !private ["PSo8NSCoding", "replacingOccurrences"]
 - !private ["PSo8NSCoding", "setProgress"]
 - !private ["PSo8NSCoding", "setTitle"]
 - ["PSo8NSCoding", "stopBarButton"]
@@ -834,6 +851,7 @@ depends-member:
 - !private ["PSo9NSCopying", "green"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "red"]
+- !private ["PSo9NSCopying", "replacingOccurrences"]
 - !private ["PSo9NSCopying", "request"]
 - !private ["PSo9NSCopying", "userContentController"]
 - !private ["PSo9NSCopying", "yellow"]
@@ -889,6 +907,7 @@ depends-member:
 - !private ["VSC19NSKeyValueChangeKey", "newKey"]
 - !private ["PSo16NSMutableCopying", "Encoding"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "replacingOccurrences"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Bundle"]
@@ -969,6 +988,7 @@ depends-member:
 - !private ["CSo8NSObject", "reload"]
 - !private ["CSo8NSObject", "removeData"]
 - !private ["CSo8NSObject", "removeObserver"]
+- !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "request"]
 - !private ["CSo8NSObject", "resourcePath"]
 - !private ["CSo8NSObject", "setProgress"]
@@ -1048,6 +1068,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "reload"]
 - !private ["PSo16NSObjectProtocol", "removeData"]
 - !private ["PSo16NSObjectProtocol", "removeObserver"]
+- !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "request"]
 - !private ["PSo16NSObjectProtocol", "resourcePath"]
 - !private ["PSo16NSObjectProtocol", "setProgress"]
@@ -1068,12 +1089,14 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "green"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "red"]
+- !private ["PSo14NSSecureCoding", "replacingOccurrences"]
 - !private ["PSo14NSSecureCoding", "yellow"]
 - ["CSo5NSSet", "deinit"]
 - !private ["CSo5NSSet", "init"]
 - !private ["CSo8NSString", "Encoding"]
 - ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "replacingOccurrences"]
 - ["CSo5NSURL", "deinit"]
 - !private ["CSo5NSURL", "init"]
 - !private ["Ps9OptionSet", "Element"]
@@ -1134,10 +1157,13 @@ depends-member:
 - !private ["SS", "Encoding"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["SS", "replacingOccurrences"]
 - !private ["Ps16TextOutputStream", "Encoding"]
 - !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "replacingOccurrences"]
 - !private ["Ps20TextOutputStreamable", "Encoding"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "replacingOccurrences"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsBackForwardNavigationGestures"]
@@ -1972,18 +1998,23 @@ depends-member:
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "replacingOccurrences"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "replacingOccurrences"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Encoding"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "replacingOccurrences"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Encoding"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "replacingOccurrences"]
 - !private ["Ps26_ExpressibleByColorLiteral", "green"]
 - !private ["Ps26_ExpressibleByColorLiteral", "red"]
 - !private ["Ps26_ExpressibleByColorLiteral", "yellow"]
 - !private ["Ps34_ExpressibleByFileReferenceLiteral", "host"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "Encoding"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "Bundle"]
 - !private ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "Encoding"]
@@ -2056,6 +2087,7 @@ depends-member:
 - !private ["Ps9_Hashable", "reload"]
 - !private ["Ps9_Hashable", "removeData"]
 - !private ["Ps9_Hashable", "removeObserver"]
+- !private ["Ps9_Hashable", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "request"]
 - !private ["Ps9_Hashable", "resourcePath"]
 - !private ["Ps9_Hashable", "setProgress"]
@@ -2087,6 +2119,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "host"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "newKey"]
+- !private ["Ps21_ObjectiveCBridgeable", "replacingOccurrences"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "url"]
 - !private ["Ps21_ObjectiveCBridgeable", "width"]

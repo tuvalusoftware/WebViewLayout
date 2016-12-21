@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C15UIWebViewLayout19WebViewProgressView", ""]
 provides-dynamic-lookup:
-- "fadeAnimationDuration"
 - "progress"
+- "fadeAnimationDuration"
+- "fadeOutDelay"
 - "barAnimationDuration"
 - "setProgress"
-- "fadeOutDelay"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private ">"
-- !private "UIViewAnimationOptions"
-- "Float"
-- "CGRect"
-- "UIView"
-- !private ">="
-- !private "Array"
-- !private "*"
-- "NSCoder"
 - !private "&&"
-- "AssignmentPrecedence"
-- "TernaryPrecedence"
+- !private "Array"
+- !private "BooleanLiteralType"
 - !private "CGFloat"
-- "Bool"
+- !private ">"
 - "WebViewProgressView"
+- "TernaryPrecedence"
+- !private "UIViewAnimationOptions"
+- "UIView"
+- "Bool"
+- "Float"
+- "NSCoder"
+- "CGRect"
+- "AssignmentPrecedence"
+- !private ">="
+- !private "*"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

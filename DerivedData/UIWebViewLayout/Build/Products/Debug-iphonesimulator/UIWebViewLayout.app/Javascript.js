@@ -11,3 +11,34 @@ function setDimensions ()
     
     
 }
+
+function printData() {
+    
+    
+    
+    alert("printing")
+    var oData = JSON.parse(window.json);
+    
+    alert(oData.glossary.title)
+    
+    alert("hello")
+    
+    
+    return true;
+}
+
+
+function setJson(json) {
+    
+    
+    
+    alert("printing")
+    var oData = JSON.parse(json);
+    
+    alert("hello")
+    alert(json)
+    
+  
+ 
+    return true;
+}

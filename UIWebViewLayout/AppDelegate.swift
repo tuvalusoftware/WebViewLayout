@@ -106,7 +106,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // do something with the_path/*.ext ....
             }
         }
-        print(applicationUrl)
+        
     }
 
 

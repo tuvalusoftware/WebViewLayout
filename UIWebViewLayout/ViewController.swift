@@ -64,10 +64,13 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                 }
             
                 let temp = "vingo"
-              let jsonString = try NSString(contentsOfFile: jsonPath, encoding: String.Encoding.utf8.rawValue) as String
-            
-              let source = "reloadData('\(temp)')"
-              webView?.evaluateJavaScript(source, completionHandler:callback)
+                let jsonString = try NSString(contentsOfFile: jsonPath, encoding: String.Encoding.utf8.rawValue) as String
+                
+                let trimmed3  = jsonString.replacingOccurrences(of: "\n", with: "")
+             
+               
+                let source = "setJson('\(trimmed3)')"
+                webView?.evaluateJavaScript(source, completionHandler:callback)
              
             }
             catch

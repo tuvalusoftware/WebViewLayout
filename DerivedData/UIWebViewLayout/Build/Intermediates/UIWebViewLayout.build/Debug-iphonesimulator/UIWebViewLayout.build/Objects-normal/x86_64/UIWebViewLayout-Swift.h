@@ -142,6 +142,24 @@ SWIFT_CLASS("_TtC15UIWebViewLayout11AppDelegate")
 
 @class WKWebViewConfiguration;
 @class NSCoder;
+@protocol WKScriptMessageHandler;
+
+SWIFT_CLASS("_TtC15UIWebViewLayout13ChartWebFrame")
+@interface ChartWebFrame : WKWebView
+@property (nonatomic, copy) NSURL * _Nullable application_support;
+- (nonnull instancetype)initWithWithoutconfig:(CGRect)frame template:(NSString * _Nonnull)template_ jsonData:(NSString * _Nonnull)jsonData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration template:(NSString * _Nonnull)template_ jsonData:(NSString * _Nonnull)jsonData OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)updateTemplateWithTemplateName:(NSString * _Nonnull)templateName;
+- (void)updateDimensionsWithJson:(NSString * _Nonnull)json;
+- (void)addHandlerWithHandler:(id <WKScriptMessageHandler> _Nonnull)handler channel:(NSString * _Nonnull)channel;
+- (void)loadTemplateFromResourceWithTemplate:(NSString * _Nonnull)template_;
+- (void)loadTemplateFromResourceDirWithTemplate:(NSString * _Nonnull)template_;
+- (void)loadTemplateFromSupportWithTemplate:(NSString * _Nonnull)template_;
+- (void)loadTemplateStringWithTemplate:(NSString * _Nonnull)template_;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
+@end
+
 @class WKNavigation;
 @class NSError;
 

@@ -174,6 +174,7 @@
 		381AECEB1DE8D450002C47C3 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AECEA1DE8D450002C47C3 /* index2.html */; };
 		381F21451DFA494F003AF1FC /* WebViewProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F21441DFA494F003AF1FC /* WebViewProgressView.swift */; };
 		3836EF051E0889BB00EFC886 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3836EF041E0889BB00EFC886 /* data.json */; };
+		3836EF0F1E09EB6C00EFC886 /* ChartWebFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */; };
 		388FC91E1DF61E5000958C4A /* angular-material in Resources */ = {isa = PBXBuildFile; fileRef = 388FC91D1DF61E5000958C4A /* angular-material */; };
 		388FC9261DF61E7300958C4A /* angular-messages in Resources */ = {isa = PBXBuildFile; fileRef = 388FC9251DF61E7300958C4A /* angular-messages */; };
 		388FC9291DF61E9700958C4A /* angular-chart in Resources */ = {isa = PBXBuildFile; fileRef = 388FC9281DF61E9700958C4A /* angular-chart */; };
@@ -423,6 +424,7 @@
 		381AECEA1DE8D450002C47C3 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
 		381F21441DFA494F003AF1FC /* WebViewProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewProgressView.swift; sourceTree = "<group>"; };
 		3836EF041E0889BB00EFC886 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartWebFrame.swift; sourceTree = "<group>"; };
 		388FC91D1DF61E5000958C4A /* angular-material */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-material"; path = "UIWebViewLayout/angular-material"; sourceTree = "<group>"; };
 		388FC9251DF61E7300958C4A /* angular-messages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-messages"; path = "UIWebViewLayout/angular-messages"; sourceTree = "<group>"; };
 		388FC9271DF61E8700958C4A /* angular-material */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-material"; path = "UIWebViewLayout/angular-material"; sourceTree = "<group>"; };
@@ -914,6 +916,7 @@
 				381874711DD959F9007020B6 /* CustomWebView.swift */,
 				381F21441DFA494F003AF1FC /* WebViewProgressView.swift */,
 				381209541DFCAAC4006C8332 /* WebData.swift */,
+				3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */,
 			);
 			path = UIWebViewLayout;
 			sourceTree = "<group>";
@@ -1355,6 +1358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				381AE72C1DE6A628002C47C3 /* 08-Bubble-Chart.md in Sources */,
+				3836EF0F1E09EB6C00EFC886 /* ChartWebFrame.swift in Sources */,
 				392060F01DD5793A0009C7FB /* ViewController.swift in Sources */,
 				381AE7331DE6A628002C47C3 /* LICENSE.md in Sources */,
 				381AE7251DE6A628002C47C3 /* 01-Chart-Configuration.md in Sources */,
