@@ -123,7 +123,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         
         let handler = NotificationScriptMessageHandler()
         
-        webView.addHandler(handler: handler, channel: <#T##String#>)
+        webView.addHandler(handler:handler, channel: "channel1")
 
         self.view.addSubview(webView)
         self.webView = webView

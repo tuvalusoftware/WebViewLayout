@@ -7,9 +7,9 @@ provides-member:
 - ["C15UIWebViewLayout7WebData", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- "AnyObject"
 - "WebData"
+- "AnyObject"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

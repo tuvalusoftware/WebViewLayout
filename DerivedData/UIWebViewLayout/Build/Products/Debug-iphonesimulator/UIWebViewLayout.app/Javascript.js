@@ -34,7 +34,7 @@ function setJson(json) {
     
     alert("printing")
     var oData = JSON.parse(json);
-    
+    window.jsonData = oData
     alert("hello")
     alert(json)
     

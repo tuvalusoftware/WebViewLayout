@@ -9,51 +9,51 @@ provides-member:
 provides-dynamic-lookup:
 - "progressView"
 - "viewDidLoad"
-- "webView"
-- "webView"
-- "webView"
-- "webView"
 - "buttonAction"
+- "webView"
+- "webView"
+- "webView"
+- "webView"
 - "addButton"
 depends-top-level:
-- "Void"
-- !private "WKScriptMessageHandler"
-- "ViewController"
-- "WebViewProgressView"
-- !private "BooleanLiteralType"
-- !private "UITextField"
-- "WKNavigationDelegate"
-- !private "Error"
-- "WKWebView"
-- "WKUserContentController"
-- !private "StringLiteralType"
-- "ChartWebFrame"
-- "Bool"
-- !private "UIAlertAction"
-- !private "NSString"
-- "WKFrameInfo"
-- !private "Bundle"
-- "UIViewController"
-- "myContext"
-- "AssignmentPrecedence"
-- !private "UnicodeScalarType"
+- "String"
 - !private "NSObject"
-- !private "UIAlertController"
-- !private "UIColor"
-- "CastingPrecedence"
-- !private "-"
-- "AnyObject"
-- "WKUIDelegate"
+- !private "StringLiteralType"
+- "ViewController"
+- "WKNavigationDelegate"
+- "WebViewProgressView"
 - !private "CGRect"
-- !private "print"
 - !private "Templates"
+- "myContext"
+- "WKFrameInfo"
+- !private "NSString"
+- !private "WKScriptMessageHandler"
+- !private "BooleanLiteralType"
+- "Void"
+- !private "UnicodeScalarType"
 - !private "UIButton"
+- !private "CGFloat"
+- !private "Error"
+- "ChartWebFrame"
+- "WKUIDelegate"
 - "FloatLiteralType"
+- "UIViewController"
+- !private "-"
+- "IntegerLiteralType"
+- !private "print"
+- "WKWebView"
+- "AssignmentPrecedence"
+- "WKUserContentController"
+- "CastingPrecedence"
+- !private "UIColor"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- "Bool"
+- "AnyObject"
+- !private "Bundle"
+- !private "UITextField"
 - "WKScriptMessage"
 - !private "Array"
-- "IntegerLiteralType"
-- !private "CGFloat"
-- "String"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "CGRect"]
@@ -68,6 +68,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "addAction"]
 - ["Ps9AnyObject", "addButton"]
+- !private ["Ps9AnyObject", "addHandler"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "addTextField"]
@@ -104,6 +105,7 @@ depends-member:
 - ["CSo6Bundle", "deinit"]
 - !private ["CSo6Bundle", "main"]
 - !private ["CSo6Bundle", "path"]
+- !private ["PSo15CALayerDelegate", "addHandler"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "addTarget"]
 - !private ["PSo15CALayerDelegate", "allowsBackForwardNavigationGestures"]
@@ -134,6 +136,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "addAction"]
 - ["Ps7CVarArg", "addButton"]
+- !private ["Ps7CVarArg", "addHandler"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "addTarget"]
 - !private ["Ps7CVarArg", "addTextField"]
@@ -167,6 +170,7 @@ depends-member:
 - !private ["Ps7CVarArg", "yellow"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["C15UIWebViewLayout13ChartWebFrame", "addHandler"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "allowsBackForwardNavigationGestures"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "autoresizingMask"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "backgroundColor"]
@@ -191,6 +195,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - ["Ps28CustomDebugStringConvertible", "addButton"]
+- !private ["Ps28CustomDebugStringConvertible", "addHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "addTextField"]
@@ -253,6 +258,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "addButton"]
+- !private ["Ps23CustomStringConvertible", "addHandler"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "addTextField"]
@@ -307,6 +313,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "addAction"]
 - ["Ps9Equatable", "addButton"]
+- !private ["Ps9Equatable", "addHandler"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "addTextField"]
@@ -385,6 +392,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "addAction"]
 - ["Ps8Hashable", "addButton"]
+- !private ["Ps8Hashable", "addHandler"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "addTextField"]
@@ -451,6 +459,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "addAction"]
 - ["PSo8NSCoding", "addButton"]
+- !private ["PSo8NSCoding", "addHandler"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "addTextField"]
@@ -538,6 +547,7 @@ depends-member:
 - ["CSo8NSObject", "WebViewProgressView"]
 - !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "addButton"]
+- !private ["CSo8NSObject", "addHandler"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "addTextField"]
@@ -584,6 +594,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - ["PSo16NSObjectProtocol", "addButton"]
+- !private ["PSo16NSObjectProtocol", "addHandler"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "addTextField"]
@@ -664,6 +675,7 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "Encoding"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "replacingOccurrences"]
+- !private ["PSo29UIAccessibilityIdentification", "addHandler"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsBackForwardNavigationGestures"]
@@ -687,6 +699,7 @@ depends-member:
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "alert"]
 - ["OSC22UIAlertControllerStyle", "deinit"]
+- !private ["PSo12UIAppearance", "addHandler"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "allowsBackForwardNavigationGestures"]
@@ -711,6 +724,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "addButton"]
+- !private ["PSo21UIAppearanceContainer", "addHandler"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "addTextField"]
@@ -777,6 +791,7 @@ depends-member:
 - !private ["VSC15UIControlEvents", "touchUpInside"]
 - ["VSC14UIControlState", "deinit"]
 - !private ["VSC14UIControlState", "normal"]
+- !private ["PSo17UICoordinateSpace", "addHandler"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "allowsBackForwardNavigationGestures"]
@@ -789,6 +804,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "uiDelegate"]
+- !private ["PSo13UIDynamicItem", "addHandler"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "allowsBackForwardNavigationGestures"]
@@ -813,6 +829,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "addButton"]
+- !private ["PSo18UIFocusEnvironment", "addHandler"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "addTextField"]
@@ -836,6 +853,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "webViewDidClose"]
 - ["PSo18UIFocusEnvironment", "webViewWebContentProcessDidTerminate"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addHandler"]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "addTarget"]
 - !private ["PSo11UIFocusItem", "allowsBackForwardNavigationGestures"]
@@ -874,6 +892,7 @@ depends-member:
 - ["CSo11UIResponder", "WebViewProgressView"]
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "addButton"]
+- !private ["CSo11UIResponder", "addHandler"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "addTextField"]
@@ -908,6 +927,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "addAction"]
 - ["PSo30UIResponderStandardEditActions", "addButton"]
+- !private ["PSo30UIResponderStandardEditActions", "addHandler"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "addTarget"]
 - !private ["PSo30UIResponderStandardEditActions", "addTextField"]
@@ -971,6 +991,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "addButton"]
+- !private ["PSo18UITraitEnvironment", "addHandler"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "addTextField"]
@@ -994,6 +1015,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "webViewDidClose"]
 - ["PSo18UITraitEnvironment", "webViewWebContentProcessDidTerminate"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addHandler"]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "allowsBackForwardNavigationGestures"]
@@ -1139,6 +1161,7 @@ depends-member:
 - ["PSo12WKUIDelegate", "webViewDidClose"]
 - ["PSo12WKUIDelegate", "webViewWebContentProcessDidTerminate"]
 - ["PSo12WKUIDelegate", ""]
+- !private ["CSo9WKWebView", "addHandler"]
 - !private ["CSo9WKWebView", "allowsBackForwardNavigationGestures"]
 - !private ["CSo9WKWebView", "autoresizingMask"]
 - !private ["CSo9WKWebView", "backgroundColor"]
@@ -1146,6 +1169,7 @@ depends-member:
 - !private ["CSo9WKWebView", "evaluateJavaScript"]
 - !private ["CSo9WKWebView", "navigationDelegate"]
 - !private ["CSo9WKWebView", "uiDelegate"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addHandler"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "allowsBackForwardNavigationGestures"]
@@ -1190,6 +1214,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "addAction"]
 - ["Ps9_Hashable", "addButton"]
+- !private ["Ps9_Hashable", "addHandler"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "addTarget"]
 - !private ["Ps9_Hashable", "addTextField"]
