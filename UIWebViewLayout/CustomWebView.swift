@@ -5,9 +5,7 @@ import WebKit
 
 class CustomWebView:WKWebView {
     
-   //  public init(frame: CGRect, configuration: WKWebViewConfiguration)
-    
-  
+ 
      override init(frame: CGRect, configuration: WKWebViewConfiguration)
      {
         

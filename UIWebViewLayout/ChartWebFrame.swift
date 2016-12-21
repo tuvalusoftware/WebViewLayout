@@ -25,12 +25,13 @@ class ChartWebFrame: WKWebView {
     
     
     init(withoutconfig frame: CGRect,
-         template:String, jsonData:String)
+         template:Templates)
     {
      
         super.init(frame: frame,configuration: WKWebViewConfiguration())
 
         configuration.userContentController = WKUserContentController()
+ 
         
         setApplicationSupport()
         do{
@@ -42,7 +43,7 @@ class ChartWebFrame: WKWebView {
             
         }
         
-        loadTemplateFromResourceDir(template: template)
+        loadTemplateFromResourceDir(template: template.rawValue)
         
     }
     

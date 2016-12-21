@@ -147,7 +147,6 @@ SWIFT_CLASS("_TtC15UIWebViewLayout11AppDelegate")
 SWIFT_CLASS("_TtC15UIWebViewLayout13ChartWebFrame")
 @interface ChartWebFrame : WKWebView
 @property (nonatomic, copy) NSURL * _Nullable application_support;
-- (nonnull instancetype)initWithWithoutconfig:(CGRect)frame template:(NSString * _Nonnull)template_ jsonData:(NSString * _Nonnull)jsonData OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration template:(NSString * _Nonnull)template_ jsonData:(NSString * _Nonnull)jsonData OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)updateTemplateWithTemplateName:(NSString * _Nonnull)templateName;
@@ -172,25 +171,15 @@ SWIFT_CLASS("_TtC15UIWebViewLayout13CustomWebView")
 
 @class WKFrameInfo;
 @class WebViewProgressView;
-@class UIBarButtonItem;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC15UIWebViewLayout14ViewController")
 @interface ViewController : UIViewController <WKUIDelegate, WKNavigationDelegate>
-@property (nonatomic, weak) WKWebView * _Nullable webView;
+@property (nonatomic, weak) ChartWebFrame * _Nullable webView;
 @property (nonatomic, weak) WebViewProgressView * _Nullable progressView;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified backBarButton;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified forwardBarButton;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified stopBarButton;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified refreshBarButton;
 - (void)addButton;
 - (IBAction)buttonAction:(id _Nonnull)sender;
 - (void)viewDidLoad;
-- (void)evaluateJavaScriptForDataWithDictionaryData:(NSDictionary<NSString *, id> * _Nonnull)dictionaryData;
-- (void)evaluateJavaScriptForDataInitWithDictionaryData:(NSDictionary<NSString *, id> * _Nonnull)dictionaryData;
-- (BOOL)injectAngularInto:(WKWebView * _Nonnull)webView error:(NSError * _Nullable * _Nullable)error;
-- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
-- (IBAction)refreshBarButtonTapped:(id _Nonnull)sender;
 - (void)webView:(WKWebView * _Nonnull)webView runJavaScriptAlertPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView runJavaScriptConfirmPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView runJavaScriptTextInputPanelWithPrompt:(NSString * _Nonnull)prompt defaultText:(NSString * _Nullable)defaultText initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;

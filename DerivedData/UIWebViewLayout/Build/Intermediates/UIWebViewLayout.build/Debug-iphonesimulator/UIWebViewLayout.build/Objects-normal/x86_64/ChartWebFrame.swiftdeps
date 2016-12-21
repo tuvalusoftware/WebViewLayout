@@ -9,48 +9,48 @@ provides-member:
 - ["O15UIWebViewLayout9Templates", ""]
 - ["C15UIWebViewLayout13ChartWebFrame", ""]
 provides-dynamic-lookup:
-- "updateDimensions"
-- "loadTemplateString"
-- "loadTemplateFromResource"
 - "loadTemplateFromResourceDir"
-- "loadTemplateFromSupport"
 - "updateTemplate"
+- "loadTemplateFromSupport"
+- "loadTemplateString"
 - "application_support"
+- "loadTemplateFromResource"
 - "addHandler"
+- "updateDimensions"
 depends-top-level:
-- !private "Void"
-- !private "NSDate"
-- "CGRect"
-- !private "WKWebsiteDataTypeDiskCache"
-- !private "NSURL"
-- !private "WKWebsiteDataStore"
-- !private "FileManager"
-- !private "WKWebsiteDataTypeMemoryCache"
-- !private "NSString"
-- !private "WKUserContentController"
-- "CastingPrecedence"
-- "NSCoder"
-- !private "print"
-- !private "Array"
-- !private "~="
-- "ChartWebFrame"
-- "=="
-- "AssignmentPrecedence"
-- !private "NSSet"
-- !private "Date"
-- "Templates"
-- !private "UnicodeScalarType"
-- !private "WKUserScript"
 - "StringLiteralType"
-- !private "Bundle"
+- !private "WKUserContentController"
 - !private "Set"
-- !private "BooleanLiteralType"
-- "URL"
-- "WKWebViewConfiguration"
-- "String"
+- !private "Array"
+- "ChartWebFrame"
 - "WKScriptMessageHandler"
-- !private "Error"
+- !private "NSString"
+- !private "Bundle"
+- !private "Void"
+- "URL"
+- !private "Date"
 - "WKWebView"
+- !private "Error"
+- !private "BooleanLiteralType"
+- "CGRect"
+- "String"
+- !private "print"
+- !private "FileManager"
+- !private "NSSet"
+- !private "WKWebsiteDataTypeDiskCache"
+- !private "WKWebsiteDataStore"
+- "NSCoder"
+- !private "WKWebsiteDataTypeMemoryCache"
+- !private "UnicodeScalarType"
+- "Templates"
+- !private "WKUserScript"
+- "=="
+- !private "~="
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "WKWebViewConfiguration"
+- !private "NSDate"
+- !private "NSURL"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "Encoding"]
@@ -209,6 +209,7 @@ depends-member:
 - !private ["C15UIWebViewLayout13ChartWebFrame", "NSURL"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "Set"]
 - ["C15UIWebViewLayout13ChartWebFrame", "String"]
+- ["C15UIWebViewLayout13ChartWebFrame", "Templates"]
 - ["C15UIWebViewLayout13ChartWebFrame", "URL"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "Void"]
 - ["C15UIWebViewLayout13ChartWebFrame", "WKScriptMessageHandler"]
@@ -595,6 +596,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "Set"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Templates"]
 - ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "WKScriptMessageHandler"]
@@ -988,6 +990,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "Set"]
 - ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "Templates"]
 - ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "WKScriptMessageHandler"]
@@ -1091,6 +1094,7 @@ depends-member:
 - !private ["CSo6UIView", "NSURL"]
 - !private ["CSo6UIView", "Set"]
 - ["CSo6UIView", "String"]
+- ["CSo6UIView", "Templates"]
 - ["CSo6UIView", "URL"]
 - !private ["CSo6UIView", "Void"]
 - ["CSo6UIView", "WKScriptMessageHandler"]
@@ -1148,6 +1152,7 @@ depends-member:
 - !private ["CSo9WKWebView", "NSURL"]
 - !private ["CSo9WKWebView", "Set"]
 - ["CSo9WKWebView", "String"]
+- ["CSo9WKWebView", "Templates"]
 - ["CSo9WKWebView", "URL"]
 - !private ["CSo9WKWebView", "Void"]
 - ["CSo9WKWebView", "WKScriptMessageHandler"]
@@ -1470,4 +1475,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "77d7ddd85f1e6b4021abbad41a92c137"
+interface-hash: "1f3e98894e6f93e8b0a460220e420305"
