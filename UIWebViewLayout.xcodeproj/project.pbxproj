@@ -178,6 +178,8 @@
 		388FC92B1DF61EA900958C4A /* angular-aria in Resources */ = {isa = PBXBuildFile; fileRef = 388FC92A1DF61EA900958C4A /* angular-aria */; };
 		388FC92E1DF61ECC00958C4A /* angular-animate in Resources */ = {isa = PBXBuildFile; fileRef = 388FC92D1DF61ECC00958C4A /* angular-animate */; };
 		388FC9301DF61EDB00958C4A /* angular in Resources */ = {isa = PBXBuildFile; fileRef = 388FC92F1DF61EDA00958C4A /* angular */; };
+		389E67331E0B85210093B187 /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = 389E67321E0B85210093B187 /* bootstrap */; };
+		389E67351E0B85CA0093B187 /* app2.js in Resources */ = {isa = PBXBuildFile; fileRef = 389E67341E0B85CA0093B187 /* app2.js */; };
 		392060EE1DD5793A0009C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060ED1DD5793A0009C7FB /* AppDelegate.swift */; };
 		392060F01DD5793A0009C7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392060EF1DD5793A0009C7FB /* ViewController.swift */; };
 		392060F31DD5793A0009C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392060F11DD5793A0009C7FB /* Main.storyboard */; };
@@ -428,6 +430,8 @@
 		388FC92C1DF61EBC00958C4A /* angular-aria */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-aria"; path = "UIWebViewLayout/angular-aria"; sourceTree = "<group>"; };
 		388FC92D1DF61ECC00958C4A /* angular-animate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-animate"; path = "UIWebViewLayout/angular-animate"; sourceTree = "<group>"; };
 		388FC92F1DF61EDA00958C4A /* angular */ = {isa = PBXFileReference; lastKnownFileType = folder; name = angular; path = UIWebViewLayout/angular; sourceTree = "<group>"; };
+		389E67321E0B85210093B187 /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bootstrap; path = "node_modules/angular-ui-bootstrap/bootstrap"; sourceTree = "<group>"; };
+		389E67341E0B85CA0093B187 /* app2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app2.js; sourceTree = "<group>"; };
 		392060EA1DD5793A0009C7FB /* UIWebViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIWebViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392060ED1DD5793A0009C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392060EF1DD5793A0009C7FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -500,6 +504,7 @@
 				3942682A1DF8F4CE002BE459 /* style.css */,
 				3942EF6A1DEB3C38006F3AE9 /* myindex.html */,
 				394268261DF86DF2002BE459 /* app.js */,
+				389E67341E0B85CA0093B187 /* app2.js */,
 				3836EF041E0889BB00EFC886 /* data.json */,
 				394268241DF86DEB002BE459 /* someData.json */,
 				3942EF6B1DEB3C38006F3AE9 /* myjs */,
@@ -869,6 +874,7 @@
 		392060E11DD5793A0009C7FB = {
 			isa = PBXGroup;
 			children = (
+				389E67321E0B85210093B187 /* bootstrap */,
 				388FC92F1DF61EDA00958C4A /* angular */,
 				388FC92D1DF61ECC00958C4A /* angular-animate */,
 				388FC92C1DF61EBC00958C4A /* angular-aria */,
@@ -1119,6 +1125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389E67331E0B85210093B187 /* bootstrap in Resources */,
 				388FC9301DF61EDB00958C4A /* angular in Resources */,
 				388FC92E1DF61ECC00958C4A /* angular-animate in Resources */,
 				388FC92B1DF61EA900958C4A /* angular-aria in Resources */,
@@ -1235,6 +1242,7 @@
 				381AE7351DE6A628002C47C3 /* package.json in Resources */,
 				381AE7641DE6A628002C47C3 /* utils.js in Resources */,
 				3942EF6C1DEB3C38006F3AE9 /* myindex.html in Resources */,
+				389E67351E0B85CA0093B187 /* app2.js in Resources */,
 				381AE78D1DE6A629002C47C3 /* scale.time.js in Resources */,
 				381AE76F1DE6A629002C47C3 /* controller.bubble.js in Resources */,
 				381AE73A1DE6A628002C47C3 /* bar-stacked.html in Resources */,

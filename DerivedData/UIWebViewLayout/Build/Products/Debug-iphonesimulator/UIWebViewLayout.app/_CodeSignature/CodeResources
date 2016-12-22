@@ -2464,6 +2464,10 @@
 		<data>
 		Jeu2pd/xgEUuxS9C/4O74TwBiwA=
 		</data>
+		<key>app2.js</key>
+		<data>
+		XHM0+Kg/Ly5hsGKf7XFXrDy+LIY=
+		</data>
 		<key>bar-horizontal.html</key>
 		<data>
 		E+nc1+WyEEx81g25t48e03MDa+E=
@@ -2479,6 +2483,18 @@
 		<key>bar.html</key>
 		<data>
 		f+ABJxMM2r7r82iYVT2ribvj1OQ=
+		</data>
+		<key>bootstrap/ui-bootstrap-csp.css</key>
+		<data>
+		wyjE5otJwD3F7zpXsHsLwRLRzXE=
+		</data>
+		<key>bootstrap/ui-bootstrap-tpls.js</key>
+		<data>
+		qnfq/0+6p2JTgtK0/Q0tj9aWG1Q=
+		</data>
+		<key>bootstrap/ui-bootstrap.js</key>
+		<data>
+		0zGgGRs/TxQcWWRu5FUlFaDhO0g=
 		</data>
 		<key>bubble.html</key>
 		<data>
@@ -2750,7 +2766,7 @@
 		</data>
 		<key>index2.html</key>
 		<data>
-		zjWcM43a6HWWcFy8hOZOgNiub/8=
+		H3WG+fYrJZpFH5kScdQdwz/Fm6I=
 		</data>
 		<key>index3.html</key>
 		<data>
@@ -2990,7 +3006,7 @@
 		</data>
 		<key>variables.js</key>
 		<data>
-		FM3K3IaO+IASsnLlgfmGPg+WC6I=
+		4Ppo9hRaR/UjoFwTFl5fXBFhzZI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -9738,6 +9754,17 @@
 			593Azh7GIxBQ0kIzmlrBkTQc1+TNemhgkc93f3JRPUQ=
 			</data>
 		</dict>
+		<key>app2.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XHM0+Kg/Ly5hsGKf7XFXrDy+LIY=
+			</data>
+			<key>hash2</key>
+			<data>
+			yueg+iuA/c8pyNShS1lAnWcuIju9J9IKJQs2K8101BI=
+			</data>
+		</dict>
 		<key>bar-horizontal.html</key>
 		<dict>
 			<key>hash</key>
@@ -9780,6 +9807,39 @@
 			<key>hash2</key>
 			<data>
 			/V4gHwXGhmmVFabgLN8LulZ2tO7YtfBWKq3i3PE7/V8=
+			</data>
+		</dict>
+		<key>bootstrap/ui-bootstrap-csp.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wyjE5otJwD3F7zpXsHsLwRLRzXE=
+			</data>
+			<key>hash2</key>
+			<data>
+			PyORMuXiW7Jwqn4ZUD34Pwqlu60y9DyRxfmV0pKGDZ8=
+			</data>
+		</dict>
+		<key>bootstrap/ui-bootstrap-tpls.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qnfq/0+6p2JTgtK0/Q0tj9aWG1Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			abncX396qVj9nmhVT3YiIB70LIU1A604nU34VO7s4IE=
+			</data>
+		</dict>
+		<key>bootstrap/ui-bootstrap.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0zGgGRs/TxQcWWRu5FUlFaDhO0g=
+			</data>
+			<key>hash2</key>
+			<data>
+			XRvX0w+fEgkJwcUlrw6gz1/SGRuQSSMGgo4SHczRfTc=
 			</data>
 		</dict>
 		<key>bubble.html</key>
@@ -10523,11 +10583,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zjWcM43a6HWWcFy8hOZOgNiub/8=
+			H3WG+fYrJZpFH5kScdQdwz/Fm6I=
 			</data>
 			<key>hash2</key>
 			<data>
-			ebeqr/EKA8q0tjEvfB8mp1amwRzxW1Mt4++RH7+iX9E=
+			FgH69pTvWK2NnTO5MqLEld6Rhyg19IvxKH9pHySGCko=
 			</data>
 		</dict>
 		<key>index3.html</key>
@@ -11183,11 +11243,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FM3K3IaO+IASsnLlgfmGPg+WC6I=
+			4Ppo9hRaR/UjoFwTFl5fXBFhzZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YlkS6WEZKC/awd7yq5Gabh8lsz0KUYWIPldJJlqRrkI=
+			hcQE4TBJicJGJGf5d8b4fiN6jkqjvFoNsPIoKkZCNuQ=
 			</data>
 		</dict>
 	</dict>

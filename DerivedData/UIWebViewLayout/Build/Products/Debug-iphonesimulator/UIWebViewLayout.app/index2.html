@@ -9,12 +9,16 @@
         <script src="angular-material/angular-material.js"></script>
         <script src="chart/Chart.min.js"></script>
         <script src="angular-chart/angular-chart.min.js"></script>
+        <script src="bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="app2.js"></script>
         
-        <script>
+      
             
             
-        
-            
+          <script src="examples/app.js"></script>
+          
+     <script>
+          
         var text = '{ "employees" : [' +
         '{ "firstName":"John" , "lastName":"Doe" },' +
         '{ "firstName":"Anna" , "lastName":"Smith" },' +
@@ -92,14 +96,14 @@
               
               
               <div ng-controller="RadarCtrl">
-                  <button  ng-click="showDiv();">THIS ONE </button>
+                  <button  ng-click="showLayout();"> Layout </button>  <button  ng-click="showControls();"> Control </button>  <button  ng-click="showData();"> Data </button>
               </div>
               
               <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="column"   ng-cloak layout-wrap>
                   
                   <div flex="50"  >
                       
-                      <div   ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
+                      <div   ng-app="app" ng-controller="BarCtrl" style="width: 100%;">
                           <canvas id="bar" class="chart chart-bar"
                               chart-data="data" chart-labels="label" chart-series="series" chart-click="onClick">
                           </canvas>
@@ -107,13 +111,18 @@
                   </div>
                   
                   <div flex="50"  >
-                      
+                      <!--
                       <div ng-app="app" ng-controller="RadarCtrl" style="width: 80%;" >
                           
                           <canvas id="radar" class="chart chart-radar"
-                              chart-data="data" chart-labels="label" chart-series="series" >
+                              chart-data="datat" chart-labels="labelt" chart-series="seriest" >
                           </canvas>
                       </div>
+                       -->
+                      
+                      <canvas id="doughnut" class="chart chart-doughnut"
+                          chart-data="data" chart-labels="labels">
+                      </canvas>
                       
                   </div>
               </div>

@@ -64,10 +64,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                 let trimmed2  = jsonString.replacingOccurrences(of: "\n", with: "")
                 let trimmed3  = trimmed2.replacingOccurrences(of: "\r", with: "")
                 
-                
-               
-                let source = "setJson('\(trimmed3)')"
-                
+   
                let message =  ChartMessage()
                 
                 message.label = ["A", "B", "C", "D", "E", "F", "G"]
