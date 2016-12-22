@@ -1,5 +1,5 @@
 //
-//  LayoutViewController.swift
+//  ControlViewController.swift
 //  UIWebViewLayout
 //
 //  Created by Duc Nguyen on 12/22/16.
@@ -8,95 +8,30 @@
 
 import UIKit
 
-protocol LayoutDelegate {
-    func ItemChoosed(id: Int)
-}
-
 class LayoutViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    var layoutDelegate: LayoutDelegate?
+    var layoutDelegate: PopoverDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 80, height: 80)
-        layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 10
-        layout.minimumLineSpacing = 10
-        
-        
-        collectionView.collectionViewLayout = CenterAlignedCollectionViewFlowLayout()
-        //collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-     
-        collectionView?.register(UINib(nibName: "CollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "Cell")
-        collectionView?.dataSource = self
-        collectionView?.delegate = self
-    }
-
-}
-
-extension LayoutViewController: UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        // Do any additional setup after loading the view.
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 18
-    }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
-        cell.setData(id: indexPath.row + 1)
-        return cell
-    }
-}
-
-extension LayoutViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        let flowLayout = (collectionViewLayout as! UICollectionViewFlowLayout)
-//        let cellSpacing = flowLayout.minimumInteritemSpacing
-//        let cellWidth = flowLayout.itemSize.width
-//        let cellCount = CGFloat(collectionView.numberOfItems(inSection: section))
-//        
-//        let collectionViewWidth = collectionView.bounds.size.width
-//        
-//        let totalCellWidth = cellCount * cellWidth
-//        let totalCellSpacing = cellSpacing * (cellCount - 1)
-//        
-//        let totalCellsWidth = totalCellWidth + totalCellSpacing
-//        
-//        let edgeInsets = (collectionViewWidth - totalCellsWidth) / 2.0
-//        
-//        return edgeInsets > 0 ? UIEdgeInsetsMake(0, edgeInsets, 0, edgeInsets) : UIEdgeInsetsMake(0, cellSpacing, 0, cellSpacing)
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        cell.layer.cornerRadius = 0
-//        cell.backgroundColor = UIColor.brown
-//    }
-//    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    @IBAction func item1Action(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
-        layoutDelegate?.ItemChoosed(id: indexPath.row + 1)
+        layoutDelegate?.LayoutItemChoosed!(id: 1)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellPadding: CGFloat = 53
-        let width: CGFloat = 80 + cellPadding
-        let height: CGFloat = 80
-        return CGSize(width: width, height: height)
+    @IBAction func Item2Action(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+        layoutDelegate?.LayoutItemChoosed!(id: 2)
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 18, left: 8, bottom: 18, right: 8)
+    
+    @IBAction func Item3Action(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+        layoutDelegate?.LayoutItemChoosed!(id: 3)
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 18
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
+    
+
 }

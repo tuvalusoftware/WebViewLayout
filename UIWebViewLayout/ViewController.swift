@@ -9,6 +9,7 @@ let screenSize: CGRect = UIScreen.main.bounds
  protocol NotificationDelegate {
     func callLayoutPopover()
     func callControllPopover()
+    func callDataPopover()
  }
 
 
@@ -116,11 +117,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
             {
                 if let strBody = message.body as? String{
                     if strBody == "layouts" {
-                        notificationDelegate?.callControllPopover()
+                        notificationDelegate?.callLayoutPopover()
                     } else if strBody == "controls" {
-                        notificationDelegate?.callLayoutPopover()
+                        notificationDelegate?.callControllPopover()
                     } else if strBody == "data" {
-                        notificationDelegate?.callLayoutPopover()
+                        notificationDelegate?.callDataPopover()
                     }
                 }
                 
@@ -169,12 +170,12 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
      
     }
     
-    func AddLayout() {
+    func AddController() {
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "LayoutViewController") as! LayoutViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "ControllerViewController") as! ControllerViewController
         vc.layoutDelegate = self
         vc.modalPresentationStyle = UIModalPresentationStyle.popover
-        vc.preferredContentSize = CGSize(width: screenSize.width - 400, height: screenSize.height/3)
+        vc.preferredContentSize = CGSize(width: screenSize.width - 400, height: screenSize.height/2)
         let popover: UIPopoverPresentationController = vc.popoverPresentationController!
         popover.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
         popover.sourceView = self.view
@@ -183,12 +184,26 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         present(vc, animated: true, completion:nil)
     }
     
-    func AddControll() {
+    func AddLayout() {
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ControlViewController") as! ControlViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "LayoutViewController") as! LayoutViewController
         vc.layoutDelegate = self
         vc.modalPresentationStyle = UIModalPresentationStyle.popover
         vc.preferredContentSize = CGSize(width: screenSize.width - 400, height: 80 + 24 + 16)
+        let popover: UIPopoverPresentationController = vc.popoverPresentationController!
+        popover.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+        popover.sourceView = self.view
+        popover.sourceRect = CGRect(x: (self.view.bounds.midX), y: (self.view.bounds.midY), width: 0, height: 0)
+        popover.delegate = self
+        present(vc, animated: true, completion:nil)
+    }
+    
+    func AddData() {
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+        vc.layoutDelegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.popover
+        vc.preferredContentSize = CGSize(width: screenSize.width - 400, height: screenSize.height/2)
         let popover: UIPopoverPresentationController = vc.popoverPresentationController!
         popover.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
         popover.sourceView = self.view
@@ -250,19 +265,22 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     
     func callControllPopover() {
-        AddControll()
+        AddController()
+    }
+    func callDataPopover() {
+        AddData()
     }
  }
  
  extension ViewController: UIPopoverPresentationControllerDelegate {
     
-//    func popoverPresentationController(_ popoverPresentationController: UIPopoverPresentationController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>) {
-//        if popoverPresentationController.presentedViewController.view.tag != 0 {
-//            let x = popoverPresentationController.presentingViewController.view.center
-//            let newRect = CGRect(x: (self.view.bounds.midX)! - 200, y: (self.view.bounds.midY)!, width: 0, height: 0)
-//            rect.initialize(to: newRect)
-//        }
-//    }
+    func popoverPresentationController(_ popoverPresentationController: UIPopoverPresentationController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>) {
+        let newRect = CGRect(x: (self.view.bounds.midX), y: (self.view.bounds.midY), width: 0, height: 0)
+        rect.initialize(to: newRect)
+        if popoverPresentationController.presentedViewController.view.tag != 0 {
+            
+        }
+    }
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.none
@@ -305,8 +323,14 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
  }
 
- extension ViewController: LayoutDelegate {
-    func ItemChoosed(id: Int) {
+ extension ViewController: PopoverDelegate {
+    func DataItemChoosed(id: Int) {
+        
+    }
+    func ControllerItemChoosed(id: Int) {
+        
+    }
+    func LayoutItemChoosed(id: Int) {
         
     }
  }

@@ -16,8 +16,12 @@ class CollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setData(id: Int) {
-        imgView.image = UIImage(named: "1")
+    func setData(id: Int, type: String) {
+        if type == "controllers" {
+            imgView.image = UIImage(named: "1")
+        } else if type == "data" {
+            imgView.image = UIImage(named: "2")
+        }
     }
 
 }

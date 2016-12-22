@@ -196,9 +196,10 @@
 		394A9D8F1E0BBA8200524051 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D8D1E0BBA8200524051 /* CollectionViewCell.swift */; };
 		394A9D901E0BBA8200524051 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394A9D8E1E0BBA8200524051 /* CollectionViewCell.xib */; };
 		394A9D921E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D911E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift */; };
-		394A9D961E0BDE8000524051 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D951E0BDE8000524051 /* ControlViewController.swift */; };
+		394A9D961E0BDE8000524051 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D951E0BDE8000524051 /* LayoutViewController.swift */; };
+		394A9D9D1E0BE8B900524051 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D9C1E0BE8B900524051 /* DataViewController.swift */; };
 		39BEEF301E0A78830004F7F9 /* ChartMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEEF2F1E0A78830004F7F9 /* ChartMessage.swift */; };
-		39BEEF361E0B900B0004F7F9 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEEF351E0B900B0004F7F9 /* LayoutViewController.swift */; };
+		39BEEF361E0B900B0004F7F9 /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEEF351E0B900B0004F7F9 /* ControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -460,9 +461,10 @@
 		394A9D8D1E0BBA8200524051 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		394A9D8E1E0BBA8200524051 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		394A9D911E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		394A9D951E0BDE8000524051 /* ControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		394A9D951E0BDE8000524051 /* LayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
+		394A9D9C1E0BE8B900524051 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		39BEEF2F1E0A78830004F7F9 /* ChartMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartMessage.swift; sourceTree = "<group>"; };
-		39BEEF351E0B900B0004F7F9 /* LayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
+		39BEEF351E0B900B0004F7F9 /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
 		3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		C26196D1F18EDBB3062996A1 /* Pods_UIWebViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIWebViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -971,8 +973,9 @@
 			children = (
 				392060EF1DD5793A0009C7FB /* ViewController.swift */,
 				3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */,
-				39BEEF351E0B900B0004F7F9 /* LayoutViewController.swift */,
-				394A9D951E0BDE8000524051 /* ControlViewController.swift */,
+				39BEEF351E0B900B0004F7F9 /* ControllerViewController.swift */,
+				394A9D951E0BDE8000524051 /* LayoutViewController.swift */,
+				394A9D9C1E0BE8B900524051 /* DataViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1423,7 +1426,7 @@
 				381AE7331DE6A628002C47C3 /* LICENSE.md in Sources */,
 				381AE7251DE6A628002C47C3 /* 01-Chart-Configuration.md in Sources */,
 				381AE7271DE6A628002C47C3 /* 03-Line-Chart.md in Sources */,
-				394A9D961E0BDE8000524051 /* ControlViewController.swift in Sources */,
+				394A9D961E0BDE8000524051 /* LayoutViewController.swift in Sources */,
 				381AE72E1DE6A628002C47C3 /* 10-Notes.md in Sources */,
 				381AE7AA1DE6A629002C47C3 /* thankyou.md in Sources */,
 				381AE71D1DE6A628002C47C3 /* PULL_REQUEST_TEMPLATE.md in Sources */,
@@ -1434,11 +1437,12 @@
 				381AE7241DE6A628002C47C3 /* 00-Getting-Started.md in Sources */,
 				381AE7361DE6A628002C47C3 /* README.md in Sources */,
 				381AE7261DE6A628002C47C3 /* 02-Scales.md in Sources */,
+				394A9D9D1E0BE8B900524051 /* DataViewController.swift in Sources */,
 				381AE7231DE6A628002C47C3 /* CONTRIBUTING.md in Sources */,
 				381AE7281DE6A628002C47C3 /* 04-Bar-Chart.md in Sources */,
 				381AE72A1DE6A628002C47C3 /* 06-Polar-Area-Chart.md in Sources */,
 				39BEEF301E0A78830004F7F9 /* ChartMessage.swift in Sources */,
-				39BEEF361E0B900B0004F7F9 /* LayoutViewController.swift in Sources */,
+				39BEEF361E0B900B0004F7F9 /* ControllerViewController.swift in Sources */,
 				381AE7291DE6A628002C47C3 /* 05-Radar-Chart.md in Sources */,
 				381AE71C1DE6A628002C47C3 /* ISSUE_TEMPLATE.md in Sources */,
 			);
