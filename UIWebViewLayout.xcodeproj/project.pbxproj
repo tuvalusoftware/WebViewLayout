@@ -170,6 +170,7 @@
 		381AEC961DE6A7FD002C47C3 /* Layout.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 381AEC951DE6A7FD002C47C3 /* Layout.mustache */; };
 		381AECE91DE8D431002C47C3 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AECE81DE8D431002C47C3 /* index2.html */; };
 		381AECEB1DE8D450002C47C3 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AECEA1DE8D450002C47C3 /* index2.html */; };
+		38337D8D1E0BF09E003E01A8 /* utils.js in Resources */ = {isa = PBXBuildFile; fileRef = 38337D8C1E0BF09E003E01A8 /* utils.js */; };
 		3836EF051E0889BB00EFC886 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3836EF041E0889BB00EFC886 /* data.json */; };
 		3836EF0F1E09EB6C00EFC886 /* ChartWebFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */; };
 		388FC91E1DF61E5000958C4A /* angular-material in Resources */ = {isa = PBXBuildFile; fileRef = 388FC91D1DF61E5000958C4A /* angular-material */; };
@@ -426,6 +427,7 @@
 		381AEC951DE6A7FD002C47C3 /* Layout.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Layout.mustache; sourceTree = "<group>"; };
 		381AECE81DE8D431002C47C3 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
 		381AECEA1DE8D450002C47C3 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
+		38337D8C1E0BF09E003E01A8 /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
 		3836EF041E0889BB00EFC886 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartWebFrame.swift; sourceTree = "<group>"; };
 		388FC91D1DF61E5000958C4A /* angular-material */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-material"; path = "UIWebViewLayout/angular-material"; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 			children = (
 				3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */,
 				3815515F1E0092AE006BCF9E /* Javascript.js */,
+				38337D8C1E0BF09E003E01A8 /* utils.js */,
 				381551611E01A348006BCF9E /* variables.js */,
 				3942682A1DF8F4CE002BE459 /* style.css */,
 				3942EF6A1DEB3C38006F3AE9 /* myindex.html */,
@@ -1183,6 +1186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38337D8D1E0BF09E003E01A8 /* utils.js in Resources */,
 				389E67331E0B85210093B187 /* bootstrap in Resources */,
 				388FC9301DF61EDB00958C4A /* angular in Resources */,
 				388FC92E1DF61ECC00958C4A /* angular-animate in Resources */,

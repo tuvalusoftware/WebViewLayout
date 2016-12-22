@@ -44,7 +44,7 @@ function setVar () {
                                                      
                                                      $scope.showLayout = function () {
                                                       
-                                                        window.webkit.messageHandlers.channel1.postMessage({body: "layouts"});
+                                                        window.webkit.messageHandlers.channel1.postMessage("layouts");
                                                      
  
                                                     
@@ -53,7 +53,7 @@ function setVar () {
                                                       
                                                       $scope.showControls = function () {
                                                       
-                                                      window.webkit.messageHandlers.channel1.postMessage({body: "controls"});
+                                                      window.webkit.messageHandlers.channel1.postMessage("controls");
                                                       
  
                                                       
@@ -62,7 +62,7 @@ function setVar () {
                                                       
                                                       $scope.showData = function () {
                                                       
-                                                      window.webkit.messageHandlers.channel1.postMessage({body: "data"});
+                                                      window.webkit.messageHandlers.channel1.postMessage("data");
                                                       
                                                       
                                                       

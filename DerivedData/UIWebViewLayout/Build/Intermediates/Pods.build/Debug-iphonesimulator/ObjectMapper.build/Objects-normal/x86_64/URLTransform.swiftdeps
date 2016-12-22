@@ -7,16 +7,16 @@ provides-member:
 - ["C12ObjectMapper12URLTransform", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CastingPrecedence"
-- "TransformType"
-- "AssignmentPrecedence"
 - !private "!"
+- "CastingPrecedence"
+- "URLTransform"
+- "AssignmentPrecedence"
+- "URL"
 - "String"
+- "BooleanLiteralType"
 - !private "CharacterSet"
 - "Bool"
-- "URLTransform"
-- "BooleanLiteralType"
-- "URL"
+- "TransformType"
 depends-member:
 - !private ["Ps9AnyObject", "CharacterSet"]
 - ["Ps9AnyObject", "JSON"]
@@ -173,8 +173,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/timobrien/projects/WebViewLayout/Pods/Target Support Files/ObjectMapper/ObjectMapper-umbrella.h"
-- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Intermediates/Pods.build/Debug-iphonesimulator/ObjectMapper.build/unextended-module.modulemap"
+- "/Users/timobrien/projects/emergency/WebViewLayout/Pods/Target Support Files/ObjectMapper/ObjectMapper-umbrella.h"
+- "/Users/timobrien/projects/emergency/WebViewLayout/DerivedData/UIWebViewLayout/Build/Intermediates/Pods.build/Debug-iphonesimulator/ObjectMapper.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"

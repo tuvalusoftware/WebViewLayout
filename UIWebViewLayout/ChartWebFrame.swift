@@ -232,7 +232,7 @@ class ChartWebFrame: WKWebView {
     private func preLoadInjectJavascript() throws  {
         
         
-        guard let scriptPath = Bundle.main.path(forResource: "Javascript", ofType: "js") else {
+        guard let scriptPath = Bundle.main.path(forResource: "utils", ofType: "js") else {
             print("error")
             return
         }
