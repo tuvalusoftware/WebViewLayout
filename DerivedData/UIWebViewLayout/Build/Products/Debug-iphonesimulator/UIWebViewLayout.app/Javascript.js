@@ -6,8 +6,7 @@
 function setDimensions ()
 {
     if (window.labels == null){
-        
-      alert("setting dimentions")
+  
         
          window.labels =  ["Dog", "Cat", "Horse", "Lizard", "Frog", "Toad", "Bird"];
          window.data =  [
@@ -53,12 +52,15 @@ function setJson(json) {
     scope.$apply(function(){
                  
                  
-                 alert("setting on scope ")
-                  scope.label[0]  = "RAT"
+             
+                 // scope.label[0]  = "RAT"
                  //scope.data   = oData.data
-                 scope.labels[0] = "RAT"
-                 scope.labels[2] = "MOUSE"
-                 scope.labels[2] = "ZIBRA"
+                 for (i = 0; i < oData.label.length; i++) {
+                 scope.labels[i] = oData.label[i]
+                 
+                 }
+                 //scope.labels[2] = "MOUSE"
+                 //scope.labels[3] = "ZIBRA"
                  })
     
  
