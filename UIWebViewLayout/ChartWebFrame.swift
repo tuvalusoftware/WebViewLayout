@@ -12,9 +12,9 @@ import WebKit
 enum Templates:String {
     
     case  rows2column1 = "index2"
-    case  multipart    = "index3"
-    
-    
+    case  fourparts    = "indexA"
+    case  horizontal   = "indexB"
+    case  virtical     = "indexC"
     
 }
 

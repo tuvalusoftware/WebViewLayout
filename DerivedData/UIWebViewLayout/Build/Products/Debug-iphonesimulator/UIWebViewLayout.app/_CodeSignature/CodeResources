@@ -2808,6 +2808,18 @@
 		<data>
 		pgJ/IJt60Fd1comH703sjp4fbKc=
 		</data>
+		<key>indexA.html</key>
+		<data>
+		2aVUC6uXHY9tLO6XRUtxX0bgC88=
+		</data>
+		<key>indexB.html</key>
+		<data>
+		FrioZzV25wCmGDB7oUChlShcywo=
+		</data>
+		<key>indexC.html</key>
+		<data>
+		oy0O/Fcz/lnza+Sd7G60rkC0gP4=
+		</data>
 		<key>interaction-modes.html</key>
 		<data>
 		GTBLKX3kqK4UfbfgdfO1AUOoxA4=
@@ -10734,6 +10746,39 @@
 			<key>hash2</key>
 			<data>
 			MqelWQBKFjhir6L2qUcDZ2k3fRVh3uiOgq1MteFyot4=
+			</data>
+		</dict>
+		<key>indexA.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2aVUC6uXHY9tLO6XRUtxX0bgC88=
+			</data>
+			<key>hash2</key>
+			<data>
+			3jgwKey4G+rRnFR26BnozXsH8HyefvFa9MNnNruu3ac=
+			</data>
+		</dict>
+		<key>indexB.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FrioZzV25wCmGDB7oUChlShcywo=
+			</data>
+			<key>hash2</key>
+			<data>
+			dCEnODg3+BAqbifY+uTjao3h1qn6Epqn32ZMOkn4PEE=
+			</data>
+		</dict>
+		<key>indexC.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oy0O/Fcz/lnza+Sd7G60rkC0gP4=
+			</data>
+			<key>hash2</key>
+			<data>
+			z2/WL/1qxibVsQzDwqCoXmUUrFlhgifwI5urQmajuSY=
 			</data>
 		</dict>
 		<key>interaction-modes.html</key>

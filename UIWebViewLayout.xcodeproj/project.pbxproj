@@ -171,6 +171,9 @@
 		381AECE91DE8D431002C47C3 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AECE81DE8D431002C47C3 /* index2.html */; };
 		381AECEB1DE8D450002C47C3 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 381AECEA1DE8D450002C47C3 /* index2.html */; };
 		38337D8D1E0BF09E003E01A8 /* utils.js in Resources */ = {isa = PBXBuildFile; fileRef = 38337D8C1E0BF09E003E01A8 /* utils.js */; };
+		38337D8F1E0BF869003E01A8 /* indexA.html in Resources */ = {isa = PBXBuildFile; fileRef = 38337D8E1E0BF869003E01A8 /* indexA.html */; };
+		38337D911E0BF9FF003E01A8 /* indexB.html in Resources */ = {isa = PBXBuildFile; fileRef = 38337D901E0BF9FF003E01A8 /* indexB.html */; };
+		38337D931E0BFC64003E01A8 /* indexC.html in Resources */ = {isa = PBXBuildFile; fileRef = 38337D921E0BFC64003E01A8 /* indexC.html */; };
 		3836EF051E0889BB00EFC886 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3836EF041E0889BB00EFC886 /* data.json */; };
 		3836EF0F1E09EB6C00EFC886 /* ChartWebFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */; };
 		388FC91E1DF61E5000958C4A /* angular-material in Resources */ = {isa = PBXBuildFile; fileRef = 388FC91D1DF61E5000958C4A /* angular-material */; };
@@ -428,6 +431,9 @@
 		381AECE81DE8D431002C47C3 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
 		381AECEA1DE8D450002C47C3 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
 		38337D8C1E0BF09E003E01A8 /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
+		38337D8E1E0BF869003E01A8 /* indexA.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexA.html; sourceTree = "<group>"; };
+		38337D901E0BF9FF003E01A8 /* indexB.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexB.html; sourceTree = "<group>"; };
+		38337D921E0BFC64003E01A8 /* indexC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexC.html; sourceTree = "<group>"; };
 		3836EF041E0889BB00EFC886 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartWebFrame.swift; sourceTree = "<group>"; };
 		388FC91D1DF61E5000958C4A /* angular-material */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "angular-material"; path = "UIWebViewLayout/angular-material"; sourceTree = "<group>"; };
@@ -529,6 +535,9 @@
 				381AE6601DE6A619002C47C3 /* css */,
 				381AE65A1DE6A609002C47C3 /* index3.html */,
 				381AECEA1DE8D450002C47C3 /* index2.html */,
+				38337D8E1E0BF869003E01A8 /* indexA.html */,
+				38337D901E0BF9FF003E01A8 /* indexB.html */,
+				38337D921E0BFC64003E01A8 /* indexC.html */,
 				381AE65B1DE6A609002C47C3 /* Info.plist */,
 			);
 			name = resources;
@@ -1190,6 +1199,7 @@
 				389E67331E0B85210093B187 /* bootstrap in Resources */,
 				388FC9301DF61EDB00958C4A /* angular in Resources */,
 				388FC92E1DF61ECC00958C4A /* angular-animate in Resources */,
+				38337D911E0BF9FF003E01A8 /* indexB.html in Resources */,
 				388FC92B1DF61EA900958C4A /* angular-aria in Resources */,
 				388FC9291DF61E9700958C4A /* angular-chart in Resources */,
 				388FC91E1DF61E5000958C4A /* angular-material in Resources */,
@@ -1215,6 +1225,7 @@
 				381AE73D1DE6A628002C47C3 /* combo-bar-line.html in Resources */,
 				381AE79C1DE6A629002C47C3 /* core.scaleService.tests.js in Resources */,
 				381AE7A71DE6A629002C47C3 /* scale.logarithmic.tests.js in Resources */,
+				38337D8F1E0BF869003E01A8 /* indexA.html in Resources */,
 				381AE7791DE6A629002C47C3 /* core.helpers.js in Resources */,
 				381AE7681DE6A629002C47C3 /* Chart.Bubble.js in Resources */,
 				381AE77C1DE6A629002C47C3 /* core.layoutService.js in Resources */,
@@ -1342,6 +1353,7 @@
 				381AE73E1DE6A628002C47C3 /* data_labelling.html in Resources */,
 				381AE7661DE6A629002C47C3 /* chart.js in Resources */,
 				381AE7931DE6A629002C47C3 /* controller.radar.tests.js in Resources */,
+				38337D931E0BFC64003E01A8 /* indexC.html in Resources */,
 				381AE7531DE6A628002C47C3 /* min-max-settings.html in Resources */,
 				381AE7491DE6A628002C47C3 /* line.html in Resources */,
 				394A9D901E0BBA8200524051 /* CollectionViewCell.xib in Resources */,

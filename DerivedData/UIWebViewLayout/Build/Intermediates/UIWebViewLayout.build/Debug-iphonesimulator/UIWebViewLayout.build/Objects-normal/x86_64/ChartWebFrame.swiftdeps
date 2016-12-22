@@ -9,50 +9,50 @@ provides-member:
 - ["O15UIWebViewLayout9Templates", ""]
 - ["C15UIWebViewLayout13ChartWebFrame", ""]
 provides-dynamic-lookup:
-- "updateTemplate"
 - "loadTemplateFromResource"
+- "updateDimensions"
+- "updateTemplate"
 - "sendJavascriptMessage"
+- "loadTemplateString"
 - "loadTemplateFromResourceDir"
 - "addHandler"
-- "application_support"
 - "loadTemplateFromSupport"
-- "updateDimensions"
-- "loadTemplateString"
+- "application_support"
 depends-top-level:
-- !private "WKWebsiteDataStore"
-- !private "BooleanLiteralType"
-- "ChartWebFrame"
-- !private "Bundle"
-- !private "Set"
-- "WKWebViewConfiguration"
-- !private "NSSet"
-- !private "WKWebsiteDataTypeMemoryCache"
-- !private "Array"
-- "CGRect"
-- !private "UnicodeScalarType"
-- !private "FileManager"
-- "StringLiteralType"
-- !private "Void"
-- "WKScriptMessageHandler"
-- "URL"
 - "CastingPrecedence"
-- "String"
-- "WKWebView"
-- !private "print"
-- !private "WKUserContentController"
-- !private "~="
+- "CGRect"
 - "=="
+- !private "~="
+- !private "Array"
 - "AssignmentPrecedence"
-- "NSCoder"
-- !private "WKWebsiteDataTypeDiskCache"
+- !private "FileManager"
+- !private "WKWebsiteDataStore"
+- "URL"
 - !private "Error"
-- !private "NSURL"
-- !private "WKUserScript"
-- "ChartMessage"
 - !private "NSDate"
-- "Templates"
-- !private "Date"
+- !private "print"
+- "NSCoder"
+- "WKWebViewConfiguration"
 - !private "NSString"
+- "WKScriptMessageHandler"
+- !private "WKUserScript"
+- !private "Bundle"
+- !private "Void"
+- !private "Set"
+- "ChartWebFrame"
+- !private "BooleanLiteralType"
+- "ChartMessage"
+- "String"
+- !private "WKWebsiteDataTypeMemoryCache"
+- "StringLiteralType"
+- !private "WKWebsiteDataTypeDiskCache"
+- !private "NSSet"
+- !private "WKUserContentController"
+- "WKWebView"
+- !private "NSURL"
+- !private "Date"
+- "Templates"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "Encoding"]
@@ -774,11 +774,13 @@ depends-member:
 - ["O15UIWebViewLayout9Templates", "RawValue"]
 - ["O15UIWebViewLayout9Templates", "_toAnyHashable"]
 - ["O15UIWebViewLayout9Templates", "deinit"]
+- ["O15UIWebViewLayout9Templates", "fourparts"]
 - ["O15UIWebViewLayout9Templates", "hashValue"]
+- ["O15UIWebViewLayout9Templates", "horizontal"]
 - ["O15UIWebViewLayout9Templates", "init"]
-- ["O15UIWebViewLayout9Templates", "multipart"]
 - ["O15UIWebViewLayout9Templates", "rawValue"]
 - ["O15UIWebViewLayout9Templates", "rows2column1"]
+- ["O15UIWebViewLayout9Templates", "virtical"]
 - !private ["Ps16TextOutputStream", "Encoding"]
 - ["Ps16TextOutputStream", "init"]
 - !private ["Ps16TextOutputStream", "replacingOccurrences"]
@@ -1544,4 +1546,4 @@ depends-external:
 - "/Users/timobrien/projects/emergency/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
 - "/Users/timobrien/projects/emergency/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
 - "/Users/timobrien/projects/emergency/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
-interface-hash: "0340584d4111677040b8c39221754323"
+interface-hash: "885acd7d2d85a6139983209cdc8e9e03"
