@@ -1,10 +1,8 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
-options: "7852318317cabe934c476a5e457b5ed4"
-build_time: [535622324, 617062000]
+options: "79346a7a3b12c6c7ee991eac2983b1dd"
+build_time: [535683114, 349011000]
 inputs:
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/ChartWebFrame.swift": [535619200, 0]
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/ViewController.swift": [535622323, 0]
+  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/ChartWebFrame.swift": [535682047, 0]
+  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/ViewController.swift": [535683113, 0]
   "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/AppDelegate.swift": [535601224, 0]
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/WebViewProgressView.swift": [534565929, 0]
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/CustomWebView.swift": [535621768, 0]
-  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/WebData.swift": [534720675, 0]
+  "/Users/timobrien/projects/WebViewLayout/UIWebViewLayout/ChartMessage.swift": [535674197, 0]

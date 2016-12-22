@@ -13,7 +13,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
 
     weak var webView: ChartWebFrame?
-    weak var progressView: WebViewProgressView?
+  
     
     
  
@@ -56,10 +56,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                 }
             
                 let temp = "vingo"
-                let jsonString = try NSString(contentsOfFile: jsonPath, encoding: String.Encoding.utf8.rawValue) as String
+               // let jsonString = try NSString(contentsOfFile: jsonPath, encoding: String.Encoding.utf8.rawValue) as String
                 
-                let trimmed3  = jsonString.replacingOccurrences(of: "\n", with: "")
-             
+                let jsonString = "{ \"label\": [\"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"],\r\n\"series\":[\"Series A\", \"Series B\"],\r\n\"data\":[\r\n    [65, 59, 80, 81, 56, 55, 40],\r\n    [28, 48, 40, 19, 86, 27, 90]\r\n  ]}"
+                let trimmed2  = jsonString.replacingOccurrences(of: "\n", with: "")
+                let trimmed3  = trimmed2.replacingOccurrences(of: "\r", with: "")
                
                 let source = "setJson('\(trimmed3)')"
                 webView?.evaluateJavaScript(source, completionHandler:callback)
@@ -80,9 +81,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         let JSONString = "{ \"label\": [\"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"],\r\n\"series\":[\"Series A\", \"Series B\"],\r\n\"data\":[\r\n    [65, 59, 80, 81, 56, 55, 40],\r\n    [28, 48, 40, 19, 86, 27, 90]\r\n  ]}"
         
-        let user = Mapper<ChartData>().map(JSONString: JSONString)
+        let user = Mapper<ChartMessage>().map(JSONString: JSONString)
         let jsonstr = user?.toJSONString(prettyPrint: true)
         
         

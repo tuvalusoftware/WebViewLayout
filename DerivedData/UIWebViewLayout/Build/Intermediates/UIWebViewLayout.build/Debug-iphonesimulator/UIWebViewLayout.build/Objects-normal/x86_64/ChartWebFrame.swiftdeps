@@ -9,48 +9,49 @@ provides-member:
 - ["O15UIWebViewLayout9Templates", ""]
 - ["C15UIWebViewLayout13ChartWebFrame", ""]
 provides-dynamic-lookup:
-- "loadTemplateFromResourceDir"
-- "updateTemplate"
-- "loadTemplateString"
-- "loadTemplateFromSupport"
 - "addHandler"
-- "application_support"
+- "updateTemplate"
 - "loadTemplateFromResource"
+- "loadTemplateFromResourceDir"
+- "loadTemplateString"
 - "updateDimensions"
+- "loadTemplateFromSupport"
+- "application_support"
 depends-top-level:
-- !private "NSURL"
-- !private "UnicodeScalarType"
-- !private "Array"
-- "ChartWebFrame"
-- !private "Set"
-- !private "Error"
-- "WKScriptMessageHandler"
-- "StringLiteralType"
-- !private "Void"
-- !private "Bundle"
+- "CastingPrecedence"
+- "ChartMessage"
+- "=="
+- "CGRect"
+- "AssignmentPrecedence"
+- "String"
 - !private "Date"
-- !private "WKUserScript"
-- "URL"
-- !private "BooleanLiteralType"
+- !private "~="
+- !private "Void"
+- "Templates"
+- "WKWebViewConfiguration"
+- !private "Bundle"
 - !private "NSSet"
+- "ChartWebFrame"
+- !private "Array"
+- !private "WKWebsiteDataStore"
+- !private "WKWebsiteDataTypeDiskCache"
+- !private "print"
+- "NSCoder"
+- !private "WKWebsiteDataTypeMemoryCache"
+- !private "WKUserScript"
+- !private "UnicodeScalarType"
+- !private "FileManager"
+- "StringLiteralType"
+- !private "Set"
+- !private "NSString"
+- !private "BooleanLiteralType"
+- "URL"
+- !private "NSURL"
+- !private "Error"
 - "WKWebView"
 - !private "WKUserContentController"
-- !private "WKWebsiteDataStore"
-- "NSCoder"
-- !private "print"
-- "CGRect"
-- !private "WKWebsiteDataTypeDiskCache"
-- !private "WKWebsiteDataTypeMemoryCache"
-- "String"
-- !private "FileManager"
-- !private "NSString"
+- "WKScriptMessageHandler"
 - !private "NSDate"
-- "WKWebViewConfiguration"
-- "=="
-- !private "~="
-- "Templates"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "Encoding"]
@@ -85,6 +86,7 @@ depends-member:
 - !private ["Ps9AnyObject", "path"]
 - ["Ps9AnyObject", "preLoadInjectJavascript"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "reload"]
 - !private ["Ps9AnyObject", "removeData"]
 - !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "resourcePath"]
@@ -142,6 +144,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "loadTemplateString"]
 - ["PSo15CALayerDelegate", "preLoadInjectJavascript"]
 - !private ["PSo15CALayerDelegate", "print"]
+- !private ["PSo15CALayerDelegate", "reload"]
 - ["PSo15CALayerDelegate", "sendJavascriptMessage"]
 - ["PSo15CALayerDelegate", "setApplicationSupport"]
 - ["PSo15CALayerDelegate", "updateDimensions"]
@@ -186,6 +189,7 @@ depends-member:
 - !private ["Ps7CVarArg", "path"]
 - ["Ps7CVarArg", "preLoadInjectJavascript"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "reload"]
 - !private ["Ps7CVarArg", "removeData"]
 - !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "resourcePath"]
@@ -199,6 +203,7 @@ depends-member:
 - !private ["Vs9Character", "deinit"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "Bundle"]
 - ["C15UIWebViewLayout13ChartWebFrame", "CGRect"]
+- ["C15UIWebViewLayout13ChartWebFrame", "ChartMessage"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "Date"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "Error"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "FileManager"]
@@ -234,6 +239,7 @@ depends-member:
 - ["C15UIWebViewLayout13ChartWebFrame", "loadTemplateString"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "preLoadInjectJavascript"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "print"]
+- !private ["C15UIWebViewLayout13ChartWebFrame", "reload"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "sendJavascriptMessage"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "setApplicationSupport"]
 - ["C15UIWebViewLayout13ChartWebFrame", "updateDimensions"]
@@ -287,6 +293,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "path"]
 - ["Ps28CustomDebugStringConvertible", "preLoadInjectJavascript"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "reload"]
 - !private ["Ps28CustomDebugStringConvertible", "removeData"]
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "resourcePath"]
@@ -354,6 +361,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "preLoadInjectJavascript"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "rawValue"]
+- !private ["Ps23CustomStringConvertible", "reload"]
 - !private ["Ps23CustomStringConvertible", "removeData"]
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "resourcePath"]
@@ -411,6 +419,7 @@ depends-member:
 - ["Ps9Equatable", "preLoadInjectJavascript"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "reload"]
 - !private ["Ps9Equatable", "removeData"]
 - !private ["Ps9Equatable", "replacingOccurrences"]
 - !private ["Ps9Equatable", "resourcePath"]
@@ -488,6 +497,7 @@ depends-member:
 - ["Ps8Hashable", "preLoadInjectJavascript"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "reload"]
 - !private ["Ps8Hashable", "removeData"]
 - !private ["Ps8Hashable", "replacingOccurrences"]
 - !private ["Ps8Hashable", "resourcePath"]
@@ -565,6 +575,7 @@ depends-member:
 - ["PSo8NSCoding", "loadTemplateString"]
 - ["PSo8NSCoding", "preLoadInjectJavascript"]
 - !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "reload"]
 - !private ["PSo8NSCoding", "removeData"]
 - !private ["PSo8NSCoding", "replacingOccurrences"]
 - ["PSo8NSCoding", "sendJavascriptMessage"]
@@ -585,6 +596,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "replacingOccurrences"]
 - !private ["CSo8NSObject", "Bundle"]
 - ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "ChartMessage"]
 - !private ["CSo8NSObject", "Date"]
 - !private ["CSo8NSObject", "Encoding"]
 - !private ["CSo8NSObject", "Error"]
@@ -625,6 +637,7 @@ depends-member:
 - !private ["CSo8NSObject", "path"]
 - ["CSo8NSObject", "preLoadInjectJavascript"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "reload"]
 - !private ["CSo8NSObject", "removeData"]
 - !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "resourcePath"]
@@ -667,6 +680,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "path"]
 - ["PSo16NSObjectProtocol", "preLoadInjectJavascript"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "reload"]
 - !private ["PSo16NSObjectProtocol", "removeData"]
 - !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "resourcePath"]
@@ -781,6 +795,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "loadTemplateString"]
 - ["PSo29UIAccessibilityIdentification", "preLoadInjectJavascript"]
 - !private ["PSo29UIAccessibilityIdentification", "print"]
+- !private ["PSo29UIAccessibilityIdentification", "reload"]
 - ["PSo29UIAccessibilityIdentification", "sendJavascriptMessage"]
 - ["PSo29UIAccessibilityIdentification", "setApplicationSupport"]
 - ["PSo29UIAccessibilityIdentification", "updateDimensions"]
@@ -813,6 +828,7 @@ depends-member:
 - ["PSo12UIAppearance", "loadTemplateString"]
 - ["PSo12UIAppearance", "preLoadInjectJavascript"]
 - !private ["PSo12UIAppearance", "print"]
+- !private ["PSo12UIAppearance", "reload"]
 - ["PSo12UIAppearance", "sendJavascriptMessage"]
 - ["PSo12UIAppearance", "setApplicationSupport"]
 - ["PSo12UIAppearance", "updateDimensions"]
@@ -845,6 +861,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "loadTemplateString"]
 - ["PSo21UIAppearanceContainer", "preLoadInjectJavascript"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "reload"]
 - ["PSo21UIAppearanceContainer", "sendJavascriptMessage"]
 - ["PSo21UIAppearanceContainer", "setApplicationSupport"]
 - ["PSo21UIAppearanceContainer", "updateDimensions"]
@@ -877,6 +894,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "loadTemplateString"]
 - ["PSo17UICoordinateSpace", "preLoadInjectJavascript"]
 - !private ["PSo17UICoordinateSpace", "print"]
+- !private ["PSo17UICoordinateSpace", "reload"]
 - ["PSo17UICoordinateSpace", "sendJavascriptMessage"]
 - ["PSo17UICoordinateSpace", "setApplicationSupport"]
 - ["PSo17UICoordinateSpace", "updateDimensions"]
@@ -909,6 +927,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "loadTemplateString"]
 - ["PSo13UIDynamicItem", "preLoadInjectJavascript"]
 - !private ["PSo13UIDynamicItem", "print"]
+- !private ["PSo13UIDynamicItem", "reload"]
 - ["PSo13UIDynamicItem", "sendJavascriptMessage"]
 - ["PSo13UIDynamicItem", "setApplicationSupport"]
 - ["PSo13UIDynamicItem", "updateDimensions"]
@@ -941,6 +960,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "loadTemplateString"]
 - ["PSo18UIFocusEnvironment", "preLoadInjectJavascript"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "reload"]
 - ["PSo18UIFocusEnvironment", "sendJavascriptMessage"]
 - ["PSo18UIFocusEnvironment", "setApplicationSupport"]
 - ["PSo18UIFocusEnvironment", "updateDimensions"]
@@ -973,6 +993,7 @@ depends-member:
 - ["PSo11UIFocusItem", "loadTemplateString"]
 - ["PSo11UIFocusItem", "preLoadInjectJavascript"]
 - !private ["PSo11UIFocusItem", "print"]
+- !private ["PSo11UIFocusItem", "reload"]
 - ["PSo11UIFocusItem", "sendJavascriptMessage"]
 - ["PSo11UIFocusItem", "setApplicationSupport"]
 - ["PSo11UIFocusItem", "updateDimensions"]
@@ -980,6 +1001,7 @@ depends-member:
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo11UIResponder", "Bundle"]
 - ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "ChartMessage"]
 - !private ["CSo11UIResponder", "Date"]
 - !private ["CSo11UIResponder", "Error"]
 - !private ["CSo11UIResponder", "FileManager"]
@@ -1014,6 +1036,7 @@ depends-member:
 - ["CSo11UIResponder", "loadTemplateString"]
 - ["CSo11UIResponder", "preLoadInjectJavascript"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "reload"]
 - ["CSo11UIResponder", "sendJavascriptMessage"]
 - ["CSo11UIResponder", "setApplicationSupport"]
 - ["CSo11UIResponder", "updateDimensions"]
@@ -1045,6 +1068,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "loadTemplateString"]
 - ["PSo30UIResponderStandardEditActions", "preLoadInjectJavascript"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "reload"]
 - ["PSo30UIResponderStandardEditActions", "sendJavascriptMessage"]
 - ["PSo30UIResponderStandardEditActions", "setApplicationSupport"]
 - ["PSo30UIResponderStandardEditActions", "updateDimensions"]
@@ -1077,6 +1101,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "loadTemplateString"]
 - ["PSo18UITraitEnvironment", "preLoadInjectJavascript"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "reload"]
 - ["PSo18UITraitEnvironment", "sendJavascriptMessage"]
 - ["PSo18UITraitEnvironment", "setApplicationSupport"]
 - ["PSo18UITraitEnvironment", "updateDimensions"]
@@ -1084,6 +1109,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "Bundle"]
 - ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "ChartMessage"]
 - !private ["CSo6UIView", "Date"]
 - !private ["CSo6UIView", "Error"]
 - !private ["CSo6UIView", "FileManager"]
@@ -1118,6 +1144,7 @@ depends-member:
 - ["CSo6UIView", "loadTemplateString"]
 - ["CSo6UIView", "preLoadInjectJavascript"]
 - !private ["CSo6UIView", "print"]
+- !private ["CSo6UIView", "reload"]
 - ["CSo6UIView", "sendJavascriptMessage"]
 - ["CSo6UIView", "setApplicationSupport"]
 - ["CSo6UIView", "updateDimensions"]
@@ -1142,6 +1169,7 @@ depends-member:
 - !private ["OSC25WKUserScriptInjectionTime", "deinit"]
 - !private ["CSo9WKWebView", "Bundle"]
 - ["CSo9WKWebView", "CGRect"]
+- ["CSo9WKWebView", "ChartMessage"]
 - !private ["CSo9WKWebView", "Date"]
 - !private ["CSo9WKWebView", "Error"]
 - !private ["CSo9WKWebView", "FileManager"]
@@ -1177,6 +1205,7 @@ depends-member:
 - ["CSo9WKWebView", "loadTemplateString"]
 - ["CSo9WKWebView", "preLoadInjectJavascript"]
 - !private ["CSo9WKWebView", "print"]
+- !private ["CSo9WKWebView", "reload"]
 - ["CSo9WKWebView", "sendJavascriptMessage"]
 - ["CSo9WKWebView", "setApplicationSupport"]
 - ["CSo9WKWebView", "updateDimensions"]
@@ -1219,6 +1248,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "loadTemplateString"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "preLoadInjectJavascript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reload"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "sendJavascriptMessage"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "setApplicationSupport"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateDimensions"]
@@ -1288,6 +1318,7 @@ depends-member:
 - ["Ps9_Hashable", "preLoadInjectJavascript"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "reload"]
 - !private ["Ps9_Hashable", "removeData"]
 - !private ["Ps9_Hashable", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "resourcePath"]
@@ -1475,4 +1506,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "1f3e98894e6f93e8b0a460220e420305"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
+- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
+interface-hash: "393171acdf817fe74e1bcc689418a84f"

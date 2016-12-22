@@ -102,7 +102,7 @@
 		</data>
 		<key>Frameworks/FileKit.framework/FileKit</key>
 		<data>
-		EwPtpOJjq4lDbLWJbRSTtynP9E8=
+		tl/9fMz1oHy/wAay1Qum06iStbY=
 		</data>
 		<key>Frameworks/FileKit.framework/Info.plist</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Frameworks/GCDWebServer.framework/GCDWebServer</key>
 		<data>
-		ybKoQXDM7oUUZg1nZ675FTbsDx0=
+		JuZa0/FxuQwitLbl0nG29dM5du4=
 		</data>
 		<key>Frameworks/GCDWebServer.framework/Info.plist</key>
 		<data>
@@ -123,6 +123,18 @@
 		<key>Frameworks/GCDWebServer.framework/_CodeSignature/CodeResources</key>
 		<data>
 		5ARCbyVm5HLDS/pgnrH0PlA7x4M=
+		</data>
+		<key>Frameworks/ObjectMapper.framework/Info.plist</key>
+		<data>
+		Tc4ybvxI+iCu84bN/VCV7vKTqF0=
+		</data>
+		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
+		<data>
+		Vg7FibmOWLU3MdFokJbjb9UKzrE=
+		</data>
+		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
+		<data>
+		5q/2fc+8YpArn9A+GNlugrhQ+Yg=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -170,7 +182,7 @@
 		</data>
 		<key>Javascript.js</key>
 		<data>
-		g/9z7r7+tJ9DtMVFRCUNhjHIqiA=
+		evTHG3gFDtSeYHpkTpvXqnFQ71I=
 		</data>
 		<key>Layout.mustache</key>
 		<data>
@@ -2738,7 +2750,7 @@
 		</data>
 		<key>index2.html</key>
 		<data>
-		jO6qHyH3oSrY4KxmXPLjRxJIEAM=
+		1DEFBEI/iYEgPiC5bPIz08CPBm4=
 		</data>
 		<key>index3.html</key>
 		<data>
@@ -2978,7 +2990,7 @@
 		</data>
 		<key>variables.js</key>
 		<data>
-		07zrSWzJ3GIzeqOFOukzMLvVgJI=
+		lS7aARbQAqmSy0/XMHVQikMMVqg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -3251,11 +3263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EwPtpOJjq4lDbLWJbRSTtynP9E8=
+			tl/9fMz1oHy/wAay1Qum06iStbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3OZqwfmvgpSFgAjLgGPX1gkVrWrSbzoZUc+oDDqD73U=
+			lfCwftghC11FHLsODAJc9IqnY3Ym9NQiu5AFHysNI7s=
 			</data>
 		</dict>
 		<key>Frameworks/FileKit.framework/Info.plist</key>
@@ -3284,11 +3296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ybKoQXDM7oUUZg1nZ675FTbsDx0=
+			JuZa0/FxuQwitLbl0nG29dM5du4=
 			</data>
 			<key>hash2</key>
 			<data>
-			B8fHaPACchBZGmiq+th0tRE74dhIMsqL2i/CmtzphSw=
+			b1G7utsTRBzHG8Hy6/ZTEdxsM/rKKpgvNvgbEq6qZxc=
 			</data>
 		</dict>
 		<key>Frameworks/GCDWebServer.framework/Info.plist</key>
@@ -3311,6 +3323,39 @@
 			<key>hash2</key>
 			<data>
 			iNSGyrs8O3C1dWmp4oh+jXzZBsVTih/hq+L21H4/zZE=
+			</data>
+		</dict>
+		<key>Frameworks/ObjectMapper.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Tc4ybvxI+iCu84bN/VCV7vKTqF0=
+			</data>
+			<key>hash2</key>
+			<data>
+			WTSh79CJlUXff2zBUCaGV4W7ZKnPHoy9LVSJl4BHIfI=
+			</data>
+		</dict>
+		<key>Frameworks/ObjectMapper.framework/ObjectMapper</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vg7FibmOWLU3MdFokJbjb9UKzrE=
+			</data>
+			<key>hash2</key>
+			<data>
+			tRA9fF349Lh3ik/qmHSEn5VFVJXB/i8uRacENYKB8Wg=
+			</data>
+		</dict>
+		<key>Frameworks/ObjectMapper.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5q/2fc+8YpArn9A+GNlugrhQ+Yg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z8WbsKFpHCiSy+9wTdNi4AxQvfUa9knKY6yIf7MzwiU=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -3427,11 +3472,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g/9z7r7+tJ9DtMVFRCUNhjHIqiA=
+			evTHG3gFDtSeYHpkTpvXqnFQ71I=
 			</data>
 			<key>hash2</key>
 			<data>
-			RgwH0bIyWb01aaBo0cr5Tuz85GT/MxlVDitvMjpMyRU=
+			v+6bieCzy/SsZGel6khTeSpGqS8b24Q/dM+IC/UQoPU=
 			</data>
 		</dict>
 		<key>Layout.mustache</key>
@@ -10478,11 +10523,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jO6qHyH3oSrY4KxmXPLjRxJIEAM=
+			1DEFBEI/iYEgPiC5bPIz08CPBm4=
 			</data>
 			<key>hash2</key>
 			<data>
-			HpX8Tbak8I7mb/kyPWNyGe/o0di5GH5EEvPoB7aIvq8=
+			rHO4KyI3WI4AahpILgJ8VG7ByFVsRpNa7r2oFdrV5wg=
 			</data>
 		</dict>
 		<key>index3.html</key>
@@ -11138,11 +11183,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			07zrSWzJ3GIzeqOFOukzMLvVgJI=
+			lS7aARbQAqmSy0/XMHVQikMMVqg=
 			</data>
 			<key>hash2</key>
 			<data>
-			aP1NVnMiBxBu4bm4VZDaxmGGA7w6qp8jU6OvgFwBMSo=
+			CMEWklbpcVRrt477Ph2X43f56bDmc6q0BcV5eXa/pm4=
 			</data>
 		</dict>
 	</dict>

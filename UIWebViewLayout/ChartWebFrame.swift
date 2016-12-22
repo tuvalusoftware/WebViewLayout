@@ -48,7 +48,7 @@ class ChartWebFrame: WKWebView {
     }
     
     init(frame: CGRect,
-                  configuration: WKWebViewConfiguration, template:String, jsonData:String)
+         configuration: WKWebViewConfiguration, template:String, jsonData:String, data:ChartMessage)
     {
         
         super.init(frame: frame,configuration: configuration)

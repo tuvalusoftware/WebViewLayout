@@ -8,10 +8,10 @@ function setVar () {
     angular.module("Graph", ["chart.js"]).controller("RadarCtrl", function ($scope) {
                                                      
                                                      console.log("Reloading chart");
-                                                     $scope.label =
+                                                    // $scope.label =
                                                      
                                                      $scope.series = ["Temperatura"];
-                                                     $scope.data = [[65, 59, 80, 81, 56, 55, 40]];
+                                                    // $scope.data = [[65, 59, 80, 81, 56, 55, 40]];
                                                      
                                                      
                                                      
@@ -26,11 +26,13 @@ function setVar () {
                                                      $scope.series = window.series;
                                                      
                                                      $scope.data = window.data;
-                                                     alert(window.labels);
+                                                    
                                                      
                                                      
                                                      $scope.showDiv = function () {
-                                                     $scope.labels =  ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+                                                     
+                                                     
+                                                    // $scope.labels =  ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
                                                     
                                                      
                                                      };

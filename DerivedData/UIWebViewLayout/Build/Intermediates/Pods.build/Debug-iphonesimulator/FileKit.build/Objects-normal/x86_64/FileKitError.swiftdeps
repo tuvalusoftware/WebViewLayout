@@ -7,14 +7,14 @@ provides-member:
 - ["O7FileKit12FileKitError", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
+- "Path"
 - "Error"
 - !private "UnicodeScalarType"
-- "Path"
-- "FileKitError"
-- !private "+"
-- "CustomStringConvertible"
-- "String"
 - !private "StringLiteralType"
+- "String"
+- "CustomStringConvertible"
+- "FileKitError"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sb", "deinit"]

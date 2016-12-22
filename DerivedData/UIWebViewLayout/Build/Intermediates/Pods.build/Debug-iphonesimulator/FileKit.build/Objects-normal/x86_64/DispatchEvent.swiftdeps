@@ -7,21 +7,21 @@ provides-member:
 - ["V7FileKit24DispatchFileSystemEvents", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "CustomDebugStringConvertible"
+- "CustomStringConvertible"
+- "UInt"
+- !private "+="
+- "StringLiteralType"
+- "String"
+- "DispatchFileSystemEvents"
+- !private "+"
 - "=="
 - "AssignmentPrecedence"
-- "Array"
-- "DispatchFileSystemEvents"
-- "OptionSet"
-- !private "UnicodeScalarType"
-- "CustomDebugStringConvertible"
-- "TernaryPrecedence"
-- "CustomStringConvertible"
-- "StringLiteralType"
-- !private "+="
-- "String"
-- "UInt"
 - "DispatchSource"
-- !private "+"
+- !private "UnicodeScalarType"
+- "Array"
+- "OptionSet"
+- "TernaryPrecedence"
 depends-member:
 - ["Ps9AnyObject", "FileSystemEvent"]
 - ["Ps9AnyObject", "init"]

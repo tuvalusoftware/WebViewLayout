@@ -7,13 +7,13 @@ provides-member:
 - ["CSo8NSString", "init"]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSString"
+- "Writable"
 - !private "String"
-- "Bool"
-- "Path"
 - !private "FileKitError"
 - !private "BooleanLiteralType"
-- "Writable"
+- "Bool"
+- "Path"
+- "NSString"
 depends-member:
 - !private ["Ps9AnyObject", "Encoding"]
 - !private ["Ps9AnyObject", "FileKitError"]

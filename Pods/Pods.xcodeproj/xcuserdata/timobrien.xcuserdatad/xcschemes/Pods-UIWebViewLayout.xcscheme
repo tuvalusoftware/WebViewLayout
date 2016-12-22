@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C03B465A9DC80D249937B032179F5BB8"
+               BlueprintIdentifier = "8725D09E7E6F2997B6336F46BCECB3F1"
                BuildableName = "Pods_UIWebViewLayout.framework"
                BlueprintName = "Pods-UIWebViewLayout"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C03B465A9DC80D249937B032179F5BB8"
+            BlueprintIdentifier = "8725D09E7E6F2997B6336F46BCECB3F1"
             BuildableName = "Pods_UIWebViewLayout.framework"
             BlueprintName = "Pods-UIWebViewLayout"
             ReferencedContainer = "container:Pods.xcodeproj">

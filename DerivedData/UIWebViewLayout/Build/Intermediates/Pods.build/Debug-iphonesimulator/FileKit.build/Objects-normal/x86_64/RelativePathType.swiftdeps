@@ -7,11 +7,11 @@ provides-member:
 - ["O7FileKit16RelativePathType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
-- !private "~="
 - "String"
-- "RelativePathType"
 - "StringLiteralType"
+- !private "~="
+- "=="
+- "RelativePathType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

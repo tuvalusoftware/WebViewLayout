@@ -7,10 +7,10 @@ provides-member:
 - ["V7FileKit19DirectoryEnumerator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
 - "FileManager"
 - "CastingPrecedence"
 - !private "String"
+- "AssignmentPrecedence"
 - !private "+"
 - "IteratorProtocol"
 - "Path"

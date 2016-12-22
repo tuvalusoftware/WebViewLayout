@@ -13,10 +13,7 @@
         <script>
             
             
-            var myJSON = '{ "name":"John", "age":31,"city":"New York" }';
-            var myObj = JSON.parse(myJSON);
-          
-            alert(myObj.name)
+        
             
         var text = '{ "employees" : [' +
         '{ "firstName":"John" , "lastName":"Doe" },' +
@@ -25,15 +22,13 @@
  
         
         window.parsedJson = JSON.parse( text);
-              
-              
     
               
 
         
         
         function printOutput(sBinaryParam) {
-            alert("defined")
+            
             
             return true;
             
@@ -84,10 +79,10 @@
           
           <body ng-app="app" ng-controller="RadarCtrl">
               <script>
-                  
-                  
-                  setDimensions()
-                  
+                
+                if (window.abc === undefined)
+                    setDimensions()
+              
                   setVar();
                   
                   
@@ -96,15 +91,15 @@
                   </script>
               
               
-              <div ng-controller="layoutController">
-                  <button  ng-click="sayHello();">THIS ONE </button>
+              <div ng-controller="RadarCtrl">
+                  <button  ng-click="showDiv();">THIS ONE </button>
               </div>
 
               <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="column"   ng-cloak layout-wrap>
                   
                   <div flex="50"  >
                       
-                        <div ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
+                        <div id="radar"  ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
                           <canvas id="bar" class="chart chart-bar"
                               chart-data="data" chart-labels="label" chart-series="series" chart-click="onClick">
                           </canvas>

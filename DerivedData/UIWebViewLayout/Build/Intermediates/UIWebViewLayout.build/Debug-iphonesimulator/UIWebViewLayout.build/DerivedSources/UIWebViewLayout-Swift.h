@@ -140,14 +140,13 @@ SWIFT_CLASS("_TtC15UIWebViewLayout11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class WKWebViewConfiguration;
 @class NSCoder;
 @protocol WKScriptMessageHandler;
+@class WKWebViewConfiguration;
 
 SWIFT_CLASS("_TtC15UIWebViewLayout13ChartWebFrame")
 @interface ChartWebFrame : WKWebView
 @property (nonatomic, copy) NSURL * _Nullable application_support;
-- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration template:(NSString * _Nonnull)template_ jsonData:(NSString * _Nonnull)jsonData OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)updateTemplateWithTemplateName:(NSString * _Nonnull)templateName;
 - (void)updateDimensionsWithJson:(NSString * _Nonnull)json;
@@ -159,24 +158,12 @@ SWIFT_CLASS("_TtC15UIWebViewLayout13ChartWebFrame")
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
 @end
 
-@class WKNavigation;
-@class NSError;
-
-SWIFT_CLASS("_TtC15UIWebViewLayout13CustomWebView")
-@interface CustomWebView : WKWebView
-- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)webViewWithWebView:(WKWebView * _Null_unspecified)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Null_unspecified)error;
-@end
-
 @class WKFrameInfo;
-@class WebViewProgressView;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC15UIWebViewLayout14ViewController")
 @interface ViewController : UIViewController <WKUIDelegate, WKNavigationDelegate>
 @property (nonatomic, weak) ChartWebFrame * _Nullable webView;
-@property (nonatomic, weak) WebViewProgressView * _Nullable progressView;
 - (void)addButton;
 - (IBAction)buttonAction:(id _Nonnull)sender;
 - (void)viewDidLoad;
@@ -185,18 +172,6 @@ SWIFT_CLASS("_TtC15UIWebViewLayout14ViewController")
 - (void)webView:(WKWebView * _Nonnull)webView runJavaScriptTextInputPanelWithPrompt:(NSString * _Nonnull)prompt defaultText:(NSString * _Nullable)defaultText initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC15UIWebViewLayout19WebViewProgressView")
-@interface WebViewProgressView : UIView
-@property (nonatomic) double barAnimationDuration;
-@property (nonatomic) double fadeAnimationDuration;
-@property (nonatomic) double fadeOutDelay;
-@property (nonatomic) float progress;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)setProgress:(float)progress animated:(BOOL)animated;
 @end
 
 #pragma clang diagnostic pop
