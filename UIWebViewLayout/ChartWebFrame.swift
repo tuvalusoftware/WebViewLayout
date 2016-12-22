@@ -12,9 +12,9 @@ import WebKit
 enum Templates:String {
     
     case  rows2column1 = "index2"
-    case  multipart    = "index3"
-    
-    
+    case  fourparts    = "indexA"
+    case  horizontal   = "indexB"
+    case  virtical     = "indexC"
     
 }
 
@@ -232,7 +232,7 @@ class ChartWebFrame: WKWebView {
     private func preLoadInjectJavascript() throws  {
         
         
-        guard let scriptPath = Bundle.main.path(forResource: "Javascript", ofType: "js") else {
+        guard let scriptPath = Bundle.main.path(forResource: "utils", ofType: "js") else {
             print("error")
             return
         }

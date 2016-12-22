@@ -10,6 +10,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,9 +19,14 @@ class CollectionViewCell: UICollectionViewCell {
     
     func setData(id: Int, type: String) {
         if type == "controllers" {
+            imgView.isHidden = false
             imgView.image = UIImage(named: "\(id%10)")
+            lbName.isHidden = true
         } else if type == "data" {
-            imgView.image = UIImage(named: "2")
+            lbName.isHidden = false
+            lbName.text = "\(id)"
+            imgView.isHidden = true
+            
         }
     }
 

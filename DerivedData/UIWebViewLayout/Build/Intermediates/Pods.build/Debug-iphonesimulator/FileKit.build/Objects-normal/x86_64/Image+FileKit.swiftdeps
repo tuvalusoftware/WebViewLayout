@@ -8,17 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "writable"
 depends-top-level:
-- !private "??"
-- "Path"
+- "String"
+- !private "FileKitError"
+- "UIImage"
+- "ReadableWritable"
 - "Data"
 - "URL"
-- "UIImage"
-- "String"
-- "ReadableWritable"
 - !private "UIImagePNGRepresentation"
 - "WritableConvertible"
-- !private "FileKitError"
+- !private "??"
 - "Image"
+- "Path"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
 - !private ["Ps9AnyObject", "FileKitError"]
@@ -273,8 +273,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/timobrien/projects/WebViewLayout/Pods/Target Support Files/FileKit/FileKit-umbrella.h"
-- "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Intermediates/Pods.build/Debug-iphonesimulator/FileKit.build/unextended-module.modulemap"
+- "/Users/timobrien/projects/emergency/WebViewLayout/Pods/Target Support Files/FileKit/FileKit-umbrella.h"
+- "/Users/timobrien/projects/emergency/WebViewLayout/DerivedData/UIWebViewLayout/Build/Intermediates/Pods.build/Debug-iphonesimulator/FileKit.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"

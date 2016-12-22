@@ -117,8 +117,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
-@import WebKit;
 @import CoreGraphics;
+@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -140,7 +140,16 @@ SWIFT_CLASS("_TtC15UIWebViewLayout11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UICollectionViewLayoutAttributes;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC15UIWebViewLayout37CenterAlignedCollectionViewFlowLayout")
+@interface CenterAlignedCollectionViewFlowLayout : UICollectionViewFlowLayout
+- (NSArray<UICollectionViewLayoutAttributes *> * _Nullable)layoutAttributesForElementsInRect:(CGRect)rect;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol WKScriptMessageHandler;
 @class WKWebViewConfiguration;
 
@@ -159,20 +168,138 @@ SWIFT_CLASS("_TtC15UIWebViewLayout13ChartWebFrame")
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
 @end
 
-@class WKFrameInfo;
+@class UIImageView;
+
+SWIFT_CLASS("_TtC15UIWebViewLayout18CollectionViewCell")
+@interface CollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgView;
+- (void)awakeFromNib;
+- (void)setDataWithId:(NSInteger)id type:(NSString * _Nonnull)type;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@protocol PopoverDelegate;
+@class UICollectionView;
 @class NSBundle;
+
+SWIFT_CLASS("_TtC15UIWebViewLayout24ControllerViewController")
+@interface ControllerViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@property (nonatomic, strong) id <PopoverDelegate> _Nullable layoutDelegate;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ControllerViewController (SWIFT_EXTENSION(UIWebViewLayout)) <UICollectionViewDataSource>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+@class UICollectionViewLayout;
+
+@interface ControllerViewController (SWIFT_EXTENSION(UIWebViewLayout)) <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout>
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
+@end
+
+
+SWIFT_CLASS("_TtC15UIWebViewLayout18DataViewController")
+@interface DataViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@property (nonatomic, strong) id <PopoverDelegate> _Nullable layoutDelegate;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface DataViewController (SWIFT_EXTENSION(UIWebViewLayout)) <UICollectionViewDataSource>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
+@interface DataViewController (SWIFT_EXTENSION(UIWebViewLayout)) <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout>
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
+@end
+
+
+SWIFT_CLASS("_TtC15UIWebViewLayout20LayoutViewController")
+@interface LayoutViewController : UIViewController
+@property (nonatomic, strong) id <PopoverDelegate> _Nullable layoutDelegate;
+- (void)viewDidLoad;
+- (IBAction)item1Action:(id _Nonnull)sender;
+- (IBAction)Item2Action:(id _Nonnull)sender;
+- (IBAction)Item3Action:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP15UIWebViewLayout15PopoverDelegate_")
+@protocol PopoverDelegate
+@optional
+- (void)ControllerItemChoosedWithId:(NSInteger)id;
+- (void)DataItemChoosedWithId:(NSInteger)id;
+- (void)LayoutItemChoosedWithId:(NSInteger)id;
+@end
+
+@class WKFrameInfo;
 
 SWIFT_CLASS("_TtC15UIWebViewLayout14ViewController")
 @interface ViewController : UIViewController <WKUIDelegate, WKNavigationDelegate>
 @property (nonatomic, weak) ChartWebFrame * _Nullable webView;
+- (void)createMessages;
 - (void)addButton;
 - (IBAction)buttonAction:(id _Nonnull)sender;
 - (void)viewDidLoad;
+- (void)AddController;
+- (void)AddLayout;
+- (void)AddData;
 - (void)webView:(WKWebView * _Nonnull)webView runJavaScriptAlertPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView runJavaScriptConfirmPanelWithMessage:(NSString * _Nonnull)message initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView runJavaScriptTextInputPanelWithPrompt:(NSString * _Nonnull)prompt defaultText:(NSString * _Nullable)defaultText initiatedByFrame:(WKFrameInfo * _Nonnull)frame completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ViewController (SWIFT_EXTENSION(UIWebViewLayout)) <PopoverDelegate>
+- (void)DataItemChoosedWithId:(NSInteger)id;
+- (void)ControllerItemChoosedWithId:(NSInteger)id;
+- (void)LayoutItemChoosedWithId:(NSInteger)id;
+@end
+
+
+@interface ViewController (SWIFT_EXTENSION(UIWebViewLayout))
+- (void)callLayoutPopover;
+- (void)callControllPopover;
+- (void)callDataPopover;
+@end
+
+@class UIPopoverPresentationController;
+@class UIView;
+@class UIPresentationController;
+@class UITraitCollection;
+
+@interface ViewController (SWIFT_EXTENSION(UIWebViewLayout)) <UIPopoverPresentationControllerDelegate, UIAdaptivePresentationControllerDelegate>
+- (void)popoverPresentationController:(UIPopoverPresentationController * _Nonnull)popoverPresentationController willRepositionPopoverToRect:(CGRect * _Nonnull)rect inView:(UIView * _Nonnull * _Nonnull)view;
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController * _Nonnull)controller traitCollection:(UITraitCollection * _Nonnull)traitCollection;
+- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController * _Nonnull)popoverPresentationController;
+- (BOOL)popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController * _Nonnull)popoverPresentationController;
+- (void)dismiss;
 @end
 
 #pragma clang diagnostic pop

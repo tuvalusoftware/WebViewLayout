@@ -18,7 +18,169 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
     weak var webView: ChartWebFrame?
   
+    var  listOfRadarMessages :[ChartMessage] = []
+    var  listOfBarMessages   :[ChartMessage] = []
+    var  listOfHorizontalBarMessages   :[ChartMessage] = []
+    var  listOfDoughnutMessages   :[ChartMessage] = []
+    var  listOfPieMessages   :[ChartMessage] = []
+    var  listOfPolarMessages   :[ChartMessage] = []
     
+    var listOfChart = [[ChartMessage]]()
+    
+   
+    
+    func createMessages()
+    {
+        var message =  ChartMessage()
+        message.label = ["A", "B", "C", "D", "E", "F", "G"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "radar-id"
+        
+        listOfRadarMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Dog", "Cat", "Horse", "Lion", "Toad", "Bird", "Mouse"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "radar-id"
+        
+        listOfRadarMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Hammer", "Drill", "Axe", "Wrench", "Pliars", "Saw", "Drill"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "radar-id"
+        
+        listOfRadarMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["A", "B", "C", "D", "E", "F", "G"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "bar-id"
+        
+        listOfBarMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Dog", "Cat", "Horse", "Lion", "Toad", "Bird", "Mouse"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "bar-id"
+        
+        listOfBarMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Hammer", "Drill", "Axe", "Wrench", "Pliars", "Saw", "Drill"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "bar-id"
+        
+        listOfBarMessages.append(message)
+        
+        
+        
+        message =  ChartMessage()
+        message.label = ["A", "B", "C", "D", "E", "F", "G"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "bar-id"
+        
+        listOfDoughnutMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Dog", "Cat", "Horse", "Lion", "Toad", "Bird", "Mouse"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "bar-id"
+        
+        listOfDoughnutMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Hammer", "Drill", "Axe", "Wrench", "Pliars", "Saw", "Drill"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "bar-id"
+        
+        listOfDoughnutMessages.append(message)
+        
+        message =  ChartMessage()
+        message.label = ["A", "B", "C", "D", "E", "F", "G"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "horizontal-bar-id"
+        
+        listOfHorizontalBarMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Dog", "Cat", "Horse", "Lion", "Toad", "Bird", "Mouse"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "horizontal-bar-id"
+        
+        listOfHorizontalBarMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Hammer", "Drill", "Axe", "Wrench", "Pliars", "Saw", "Drill"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "horizontal-bar-id"
+        
+        listOfHorizontalBarMessages.append(message)
+        
+        message =  ChartMessage()
+        message.label = ["A", "B", "C", "D", "E", "F", "G"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "pie-id"
+        
+        listOfPieMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Dog", "Cat", "Horse", "Lion", "Toad", "Bird", "Mouse"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "pie-id"
+        
+        listOfPieMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Hammer", "Drill", "Axe", "Wrench", "Pliars", "Saw", "Drill"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "polar-id"
+        
+        listOfPieMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["A", "B", "C", "D", "E", "F", "G"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "polar-id"
+        
+        listOfPieMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Dog", "Cat", "Horse", "Lion", "Toad", "Bird", "Mouse"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "polar-id"
+        listOfPieMessages.append(message)
+        
+        
+        message =  ChartMessage()
+        message.label = ["Hammer", "Drill", "Axe", "Wrench", "Pliars", "Saw", "Drill"]
+        message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+        message.element_key = "polar-id"
+        
+        listOfPieMessages.append(message)
+        
+        listOfChart.append(listOfBarMessages)
+        listOfChart.append(listOfDoughnutMessages)
+        listOfChart.append(listOfRadarMessages)
+        listOfChart.append(listOfPieMessages)
+        listOfChart.append(listOfPolarMessages)
+        listOfChart.append(listOfHorizontalBarMessages)
+     
+        
+    }
     
  
     
@@ -60,13 +222,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                 }
             
                 
-               // let jsonString = try NSString(contentsOfFile: jsonPath, encoding: String.Encoding.utf8.rawValue) as String
-                
-                let jsonString = "{ \"element_key\":\"radar\", \"label\": [\"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"],\r\n\"series\":[\"Series A\", \"Series B\"],\r\n\"data\":[\r\n    [65, 59, 80, 81, 56, 55, 40],\r\n    [28, 48, 40, 19, 86, 27, 90]\r\n  ]}"
-               
-                
-                let trimmed2  = jsonString.replacingOccurrences(of: "\n", with: "")
-                let trimmed3  = trimmed2.replacingOccurrences(of: "\r", with: "")
+             
                 
    
                let message =  ChartMessage()
@@ -74,7 +230,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                 message.label = ["A", "B", "C", "D", "E", "F", "G"]
                 message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
                 message.series = ["Series A", "Series B"]
-                message.element_key = "radar"
+                message.element_key = "bar-id"
                 
                 
                 webView?.sendMessage(message: message)
@@ -82,7 +238,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                 
                 
                 
-               // webView?.evaluateJavaScript(source, completionHandler:callback)
+             
              
             }
             catch
@@ -100,7 +256,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        createMessages()
         
         let JSONString = "{ \"label\": [\"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"],\r\n\"series\":[\"Series A\", \"Series B\"],\r\n\"data\":[\r\n    [65, 59, 80, 81, 56, 55, 40],\r\n    [28, 48, 40, 19, 86, 27, 90]\r\n  ]}"
         
@@ -325,12 +481,14 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
  extension ViewController: PopoverDelegate {
     func DataItemChoosed(id: Int) {
-        
+        print("data")
     }
     func ControllerItemChoosed(id: Int) {
-        
+        print(id/3, id%3)
+        webView?.sendMessage(message: listOfChart[id/3][id%3])
+         print("controller")
     }
     func LayoutItemChoosed(id: Int) {
-        
+         print("layout")
     }
  }
