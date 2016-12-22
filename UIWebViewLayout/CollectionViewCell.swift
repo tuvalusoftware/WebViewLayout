@@ -20,7 +20,19 @@ class CollectionViewCell: UICollectionViewCell {
     func setData(id: Int, type: String) {
         if type == "controllers" {
             imgView.isHidden = false
-            imgView.image = UIImage(named: "\(id/3 + 1)")
+            if id >= 1 && id <= 3 {
+                imgView.image = UIImage(named: "2")
+            } else if id >= 4 && id <= 6 {
+                imgView.image = UIImage(named: "3")
+            } else if id >= 7 && id <= 9 {
+                imgView.image = UIImage(named: "4")
+            } else if id >= 10 && id <= 12 {
+                imgView.image = UIImage(named: "5")
+            }else if id >= 13 && id <= 15 {
+                imgView.image = UIImage(named: "6")
+            }else if id >= 16 && id <= 18 {
+                imgView.image = UIImage(named: "7")
+            }
             lbName.isHidden = true
         } else if type == "data" {
             lbName.isHidden = false
