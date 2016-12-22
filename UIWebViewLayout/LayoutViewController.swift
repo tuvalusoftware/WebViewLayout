@@ -44,7 +44,7 @@ extension LayoutViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 18
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -79,10 +79,10 @@ extension LayoutViewController: UICollectionViewDelegate, UICollectionViewDelega
 //        cell.backgroundColor = UIColor.brown
 //    }
 //    
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        self.dismiss(animated: true, completion: nil)
-//        layoutDelegate?.ItemChoosed(id: indexPath.row)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.dismiss(animated: true, completion: nil)
+        layoutDelegate?.ItemChoosed(id: indexPath.row + 1)
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellPadding: CGFloat = 53

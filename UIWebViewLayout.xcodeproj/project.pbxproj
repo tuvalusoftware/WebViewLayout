@@ -196,6 +196,7 @@
 		394A9D8F1E0BBA8200524051 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D8D1E0BBA8200524051 /* CollectionViewCell.swift */; };
 		394A9D901E0BBA8200524051 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394A9D8E1E0BBA8200524051 /* CollectionViewCell.xib */; };
 		394A9D921E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D911E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift */; };
+		394A9D961E0BDE8000524051 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A9D951E0BDE8000524051 /* ControlViewController.swift */; };
 		39BEEF301E0A78830004F7F9 /* ChartMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEEF2F1E0A78830004F7F9 /* ChartMessage.swift */; };
 		39BEEF361E0B900B0004F7F9 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BEEF351E0B900B0004F7F9 /* LayoutViewController.swift */; };
 /* End PBXBuildFile section */
@@ -459,6 +460,7 @@
 		394A9D8D1E0BBA8200524051 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		394A9D8E1E0BBA8200524051 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		394A9D911E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		394A9D951E0BDE8000524051 /* ControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		39BEEF2F1E0A78830004F7F9 /* ChartMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartMessage.swift; sourceTree = "<group>"; };
 		39BEEF351E0B900B0004F7F9 /* LayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		3CD3C2D4004D4BB10CBE51CF /* Pods-UIWebViewLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIWebViewLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIWebViewLayout/Pods-UIWebViewLayout.debug.xcconfig"; sourceTree = "<group>"; };
@@ -507,6 +509,7 @@
 		381AE6571DE6A5F3002C47C3 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */,
 				3815515F1E0092AE006BCF9E /* Javascript.js */,
 				381551611E01A348006BCF9E /* variables.js */,
 				3942682A1DF8F4CE002BE459 /* style.css */,
@@ -914,21 +917,12 @@
 		392060EC1DD5793A0009C7FB /* UIWebViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				394A9D9A1E0BE16E00524051 /* Views */,
+				394A9D991E0BE14D00524051 /* Cells */,
+				394A9D981E0BE14500524051 /* ViewControllers */,
+				394A9D971E0BE13B00524051 /* Models */,
 				381AE6571DE6A5F3002C47C3 /* resources */,
-				392060ED1DD5793A0009C7FB /* AppDelegate.swift */,
-				392060EF1DD5793A0009C7FB /* ViewController.swift */,
-				3942EF6E1DEB5C59006F3AE9 /* main_ctrl.js */,
-				392060F11DD5793A0009C7FB /* Main.storyboard */,
-				392060F41DD5793A0009C7FB /* Assets.xcassets */,
-				392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */,
-				392060F91DD5793A0009C7FB /* Info.plist */,
-				3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */,
-				3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */,
-				39BEEF2F1E0A78830004F7F9 /* ChartMessage.swift */,
-				39BEEF351E0B900B0004F7F9 /* LayoutViewController.swift */,
-				394A9D8D1E0BBA8200524051 /* CollectionViewCell.swift */,
-				394A9D8E1E0BBA8200524051 /* CollectionViewCell.xib */,
-				394A9D911E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift */,
+				394A9D941E0BDE5F00524051 /* Supporting files */,
 			);
 			path = UIWebViewLayout;
 			sourceTree = "<group>";
@@ -949,6 +943,55 @@
 				3920610F1DD5793A0009C7FB /* Info.plist */,
 			);
 			path = UIWebViewLayoutUITests;
+			sourceTree = "<group>";
+		};
+		394A9D941E0BDE5F00524051 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				392060ED1DD5793A0009C7FB /* AppDelegate.swift */,
+				392060F11DD5793A0009C7FB /* Main.storyboard */,
+				3920612E1DD5E2F20009C7FB /* UIWebViewLayout-Bridging-Header.h */,
+				392060F41DD5793A0009C7FB /* Assets.xcassets */,
+				392060F61DD5793A0009C7FB /* LaunchScreen.storyboard */,
+				392060F91DD5793A0009C7FB /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		394A9D971E0BE13B00524051 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39BEEF2F1E0A78830004F7F9 /* ChartMessage.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		394A9D981E0BE14500524051 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				392060EF1DD5793A0009C7FB /* ViewController.swift */,
+				3836EF0E1E09EB6C00EFC886 /* ChartWebFrame.swift */,
+				39BEEF351E0B900B0004F7F9 /* LayoutViewController.swift */,
+				394A9D951E0BDE8000524051 /* ControlViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		394A9D991E0BE14D00524051 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				394A9D8D1E0BBA8200524051 /* CollectionViewCell.swift */,
+				394A9D8E1E0BBA8200524051 /* CollectionViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		394A9D9A1E0BE16E00524051 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				394A9D911E0BC90400524051 /* CenterAlignedCollectionViewFlowLayout.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		A3079A583C57CE982C2E5C32 /* Pods */ = {
@@ -1380,6 +1423,7 @@
 				381AE7331DE6A628002C47C3 /* LICENSE.md in Sources */,
 				381AE7251DE6A628002C47C3 /* 01-Chart-Configuration.md in Sources */,
 				381AE7271DE6A628002C47C3 /* 03-Line-Chart.md in Sources */,
+				394A9D961E0BDE8000524051 /* ControlViewController.swift in Sources */,
 				381AE72E1DE6A628002C47C3 /* 10-Notes.md in Sources */,
 				381AE7AA1DE6A629002C47C3 /* thankyou.md in Sources */,
 				381AE71D1DE6A628002C47C3 /* PULL_REQUEST_TEMPLATE.md in Sources */,

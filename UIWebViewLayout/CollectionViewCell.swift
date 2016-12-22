@@ -17,7 +17,7 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     func setData(id: Int) {
-        imgView.image = UIImage(named: "\(id)")
+        imgView.image = UIImage(named: "1")
     }
 
 }

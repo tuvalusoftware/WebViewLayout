@@ -8,6 +8,7 @@ let screenSize: CGRect = UIScreen.main.bounds
  
  protocol NotificationDelegate {
     func callLayoutPopover()
+    func callControllPopover()
  }
 
 
@@ -115,7 +116,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
             {
                 if let strBody = message.body as? String{
                     if strBody == "layouts" {
-                        notificationDelegate?.callLayoutPopover()
+                        notificationDelegate?.callControllPopover()
                     } else if strBody == "controls" {
                         notificationDelegate?.callLayoutPopover()
                     } else if strBody == "data" {
@@ -181,6 +182,20 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         popover.delegate = self
         present(vc, animated: true, completion:nil)
     }
+    
+    func AddControll() {
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ControlViewController") as! ControlViewController
+        vc.layoutDelegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.popover
+        vc.preferredContentSize = CGSize(width: screenSize.width - 400, height: 80 + 24 + 16)
+        let popover: UIPopoverPresentationController = vc.popoverPresentationController!
+        popover.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+        popover.sourceView = self.view
+        popover.sourceRect = CGRect(x: (self.view.bounds.midX), y: (self.view.bounds.midY), width: 0, height: 0)
+        popover.delegate = self
+        present(vc, animated: true, completion:nil)
+    }
   
     
  
@@ -232,6 +247,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
  extension ViewController: NotificationDelegate {
     func callLayoutPopover() {
         AddLayout()
+    }
+    
+    func callControllPopover() {
+        AddControll()
     }
  }
  
