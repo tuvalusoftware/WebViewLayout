@@ -116,6 +116,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                 if let strBody = message.body as? String{
                     if strBody == "layouts" {
                         notificationDelegate?.callLayoutPopover()
+                    } else if strBody == "controls" {
+                        notificationDelegate?.callLayoutPopover()
+                    } else if strBody == "data" {
+                        notificationDelegate?.callLayoutPopover()
                     }
                 }
                 
@@ -167,9 +171,9 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     func AddLayout() {
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LayoutViewController") as! LayoutViewController
-        //vc.delegate = self
+        vc.layoutDelegate = self
         vc.modalPresentationStyle = UIModalPresentationStyle.popover
-        vc.preferredContentSize = CGSize(width: screenSize.width , height: screenSize.height/3)
+        vc.preferredContentSize = CGSize(width: screenSize.width - 400, height: screenSize.height/3)
         let popover: UIPopoverPresentationController = vc.popoverPresentationController!
         popover.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
         popover.sourceView = self.view
@@ -280,4 +284,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
+ }
+
+ extension ViewController: LayoutDelegate {
+    func ItemChoosed(id: Int) {
+        
+    }
  }

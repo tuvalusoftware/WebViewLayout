@@ -3,8 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,72 +36,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTU-J4-B3E">
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceN-No-LHl">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="ceN-No-LHl" secondAttribute="height" multiplier="1:1" id="L8S-6h-5ZI"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewu-Hz-f98">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="ewu-Hz-f98" secondAttribute="height" multiplier="2:1" id="e0Z-73-5o0"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peF-o3-Ffn">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTP-dI-gBb">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="177" id="G43-S4-xRt"/>
-                                            <constraint firstAttribute="width" secondItem="CTP-dI-gBb" secondAttribute="height" multiplier="1:2" id="wcp-nt-xro"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="G43-S4-xRt"/>
-                                            </mask>
-                                        </variation>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YrE-1H-1YJ">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="ewu-Hz-f98" firstAttribute="leading" secondItem="ceN-No-LHl" secondAttribute="trailing" constant="20" id="4JZ-4b-ewT"/>
-                                    <constraint firstItem="CTP-dI-gBb" firstAttribute="top" secondItem="YrE-1H-1YJ" secondAttribute="top" id="5R9-Pi-k2C"/>
-                                    <constraint firstItem="ewu-Hz-f98" firstAttribute="width" secondItem="peF-o3-Ffn" secondAttribute="width" id="Aej-ou-mIU"/>
-                                    <constraint firstItem="ewu-Hz-f98" firstAttribute="height" secondItem="peF-o3-Ffn" secondAttribute="height" id="NcG-3J-DJL"/>
-                                    <constraint firstItem="ewu-Hz-f98" firstAttribute="leading" secondItem="peF-o3-Ffn" secondAttribute="leading" id="Qfw-na-O92"/>
-                                    <constraint firstItem="YrE-1H-1YJ" firstAttribute="leading" secondItem="CTP-dI-gBb" secondAttribute="trailing" constant="5" id="RAG-UN-wm4"/>
-                                    <constraint firstItem="CTP-dI-gBb" firstAttribute="height" secondItem="YrE-1H-1YJ" secondAttribute="height" id="TkI-z8-hzb"/>
-                                    <constraint firstAttribute="trailing" secondItem="YrE-1H-1YJ" secondAttribute="trailing" constant="20" id="UvW-EA-BKE"/>
-                                    <constraint firstItem="CTP-dI-gBb" firstAttribute="width" secondItem="YrE-1H-1YJ" secondAttribute="width" id="dBE-5V-EIE"/>
-                                    <constraint firstItem="CTP-dI-gBb" firstAttribute="leading" secondItem="ewu-Hz-f98" secondAttribute="trailing" constant="20" id="dke-kb-z27"/>
-                                    <constraint firstItem="ceN-No-LHl" firstAttribute="height" secondItem="CTP-dI-gBb" secondAttribute="height" id="eOP-Hd-NKW"/>
-                                    <constraint firstAttribute="bottom" secondItem="ceN-No-LHl" secondAttribute="bottom" constant="20" id="eXL-98-bVU"/>
-                                    <constraint firstItem="ceN-No-LHl" firstAttribute="width" secondItem="ewu-Hz-f98" secondAttribute="width" id="kHt-gK-MVI"/>
-                                    <constraint firstItem="ewu-Hz-f98" firstAttribute="top" secondItem="ceN-No-LHl" secondAttribute="top" id="rhY-df-7iQ"/>
-                                    <constraint firstItem="peF-o3-Ffn" firstAttribute="top" secondItem="ewu-Hz-f98" secondAttribute="bottom" constant="5" id="vSy-94-Jt8"/>
-                                    <constraint firstItem="ewu-Hz-f98" firstAttribute="top" secondItem="CTP-dI-gBb" secondAttribute="top" id="wjB-pc-vxN"/>
-                                    <constraint firstItem="ceN-No-LHl" firstAttribute="leading" secondItem="jTU-J4-B3E" secondAttribute="leading" constant="20" id="xOz-cD-lyy"/>
-                                    <constraint firstItem="ceN-No-LHl" firstAttribute="top" secondItem="jTU-J4-B3E" secondAttribute="top" constant="20" id="yo4-Jb-J2t"/>
-                                </constraints>
-                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WJ2-Jc-AI3">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QdL-Gt-Dbp">
+                                    <size key="itemSize" width="210" height="157"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Vav-04-YOE">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="210" height="157"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jTU-J4-B3E" firstAttribute="height" secondItem="Oef-3S-ypr" secondAttribute="height" id="BkQ-He-lzq"/>
-                            <constraint firstItem="jTU-J4-B3E" firstAttribute="leading" secondItem="Oef-3S-ypr" secondAttribute="leading" constant="-20" id="G1M-FS-Esl"/>
-                            <constraint firstAttribute="trailing" secondItem="jTU-J4-B3E" secondAttribute="trailing" constant="-20" id="JU7-l6-a6a"/>
-                            <constraint firstItem="ceN-No-LHl" firstAttribute="width" secondItem="Oef-3S-ypr" secondAttribute="width" multiplier="1:2" id="gXv-MM-qAQ"/>
-                            <constraint firstItem="jTU-J4-B3E" firstAttribute="centerY" secondItem="Oef-3S-ypr" secondAttribute="centerY" id="sVi-qE-tf0"/>
-                            <constraint firstItem="jTU-J4-B3E" firstAttribute="centerX" secondItem="Oef-3S-ypr" secondAttribute="centerX" id="vD8-Mv-hT6"/>
+                            <constraint firstItem="IBl-K6-Bat" firstAttribute="top" secondItem="WJ2-Jc-AI3" secondAttribute="bottom" id="14O-ZI-dFU"/>
+                            <constraint firstItem="WJ2-Jc-AI3" firstAttribute="top" secondItem="Oef-3S-ypr" secondAttribute="top" id="Ca3-xT-Hqq"/>
+                            <constraint firstAttribute="trailing" secondItem="WJ2-Jc-AI3" secondAttribute="trailing" id="LqE-3H-cU8"/>
+                            <constraint firstItem="WJ2-Jc-AI3" firstAttribute="leading" secondItem="Oef-3S-ypr" secondAttribute="leading" id="iGW-HK-vdj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="WJ2-Jc-AI3" id="tpU-cQ-Fk0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
