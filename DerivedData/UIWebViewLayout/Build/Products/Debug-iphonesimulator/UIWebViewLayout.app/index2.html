@@ -94,31 +94,30 @@
               <div ng-controller="RadarCtrl">
                   <button  ng-click="showDiv();">THIS ONE </button>
               </div>
-
+              
               <div id="layoutContainer" ng-controller="layoutController as ctrl" layout="column"   ng-cloak layout-wrap>
                   
                   <div flex="50"  >
                       
-                        <div id="bar"  ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
+                      <div   ng-app="app" ng-controller="RadarCtrl" style="width: 100%;">
                           <canvas id="bar" class="chart chart-bar"
                               chart-data="data" chart-labels="label" chart-series="series" chart-click="onClick">
                           </canvas>
-                          </div>
-                    </div>
-                 
-                   <div flex="50"  >
- 
-                      <div ng-app="app" ng-controller="BarCtrl" style="width: 80%;" id="radar">
- 
+                      </div>
+                  </div>
+                  
+                  <div flex="50"  >
+                      
+                      <div ng-app="app" ng-controller="RadarCtrl" style="width: 80%;" >
+                          
                           <canvas id="radar" class="chart chart-radar"
-                              chart-data="barData" chart-labels="barLabel" chart-series="series" >
+                              chart-data="data" chart-labels="label" chart-series="series" >
                           </canvas>
-                    </div>
+                      </div>
                       
                   </div>
-               </div>
-            
-        </body>
+              </div>
+          </body>
     
         
      

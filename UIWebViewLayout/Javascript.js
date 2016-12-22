@@ -48,15 +48,13 @@ function setJson(json) {
     
     var scope =angular.element(document.getElementById(oData.element_key)).scope()
  
-    alert(scope.barLabel)
-    
     
     scope.$apply(function(){
                  
                  
             
                  for (i = 0; i < oData.label.length; i++) {
-                      scope.barLabel[i] = oData.label[i]
+                      scope.labels[i] = oData.label[i]
 
                  }
       

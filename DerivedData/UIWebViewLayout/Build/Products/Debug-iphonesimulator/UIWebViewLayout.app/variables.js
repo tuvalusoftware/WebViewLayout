@@ -41,30 +41,7 @@ function setVar () {
     
     
     
-    // Include app dependency on ngMaterial
-    angular.module("GraphII", ["chart.js"]).controller("BarCtrl", function ($scope) {
-                                                     
-                                                     
- 
-                                                       
-                                                       
-                                                       
-                                                       
-                                                       $scope.label = window.labels
-                                                       
-                                                       $scope.data =  window.data
-                                                       
-                                                       
-                                                       $scope.labels =  window.labels
-                                                       
-                                                       $scope.series = window.series;
-                                                       
-                                                       $scope.data = window.data;
-                                                     
-                                                     
-                                                   
-                                                     
-                                                     });
+    
     
     
     
@@ -89,7 +66,7 @@ function setVar () {
     
     
     
-    angular.module("app", ["Layout", "Graph","GraphII"]);
+    angular.module("app", ["Layout", "Graph"]);
     
     
 }
