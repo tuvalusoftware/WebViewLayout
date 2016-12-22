@@ -485,7 +485,12 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     func ControllerItemChoosed(id: Int) {
         print(id/3, id%3)
-        webView?.sendMessage(message: listOfChart[id/3][id%3])
+        if id/3 <= listOfChart.count {
+            if id%3 <= listOfChart[id/3].count {
+                webView?.sendMessage(message: listOfChart[id/3][id%3])
+            }
+        }
+        
          print("controller")
     }
     func LayoutItemChoosed(id: Int) {
