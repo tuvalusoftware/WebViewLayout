@@ -41,6 +41,7 @@
             <size key="customSize" width="324" height="249"/>
             <connections>
                 <outlet property="imgView" destination="Bas-YR-xW0" id="EZ9-jz-Jgb"/>
+                <outlet property="lbName" destination="VCT-jX-ICd" id="z3v-6W-2Bv"/>
             </connections>
             <point key="canvasLocation" x="-4.5" y="124"/>
         </collectionViewCell>

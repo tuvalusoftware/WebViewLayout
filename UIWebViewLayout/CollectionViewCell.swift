@@ -20,7 +20,7 @@ class CollectionViewCell: UICollectionViewCell {
     func setData(id: Int, type: String) {
         if type == "controllers" {
             imgView.isHidden = false
-            imgView.image = UIImage(named: "\(id%10)")
+            imgView.image = UIImage(named: "\(id/3 + 1)")
             lbName.isHidden = true
         } else if type == "data" {
             lbName.isHidden = false
