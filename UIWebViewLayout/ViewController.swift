@@ -4,9 +4,11 @@ import WebKit
 import ObjectMapper
 
 var myContext = 0
+let screenSize: CGRect = UIScreen.main.bounds
  
- 
- 
+ protocol NotificationDelegate {
+    func callLayoutPopover()
+ }
 
 
 class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
@@ -107,9 +109,15 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         
         class NotificationScriptMessageHandler: NSObject, WKScriptMessageHandler {
             
+            var notificationDelegate: NotificationDelegate?
+            
             public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage)
             {
-                print(message.body)
+                if let strBody = message.body as? String{
+                    if strBody == "layouts" {
+                        notificationDelegate?.callLayoutPopover()
+                    }
+                }
                 
             }
             
@@ -147,6 +155,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         
         
         let handler = NotificationScriptMessageHandler()
+        handler.notificationDelegate = self
         
         webView.addHandler(handler:handler, channel: "channel1")
 
@@ -155,6 +164,19 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
      
     }
     
+    func AddLayout() {
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LayoutViewController") as! LayoutViewController
+        //vc.delegate = self
+        vc.modalPresentationStyle = UIModalPresentationStyle.popover
+        vc.preferredContentSize = CGSize(width: screenSize.width , height: screenSize.height/3)
+        let popover: UIPopoverPresentationController = vc.popoverPresentationController!
+        popover.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+        popover.sourceView = self.view
+        popover.sourceRect = CGRect(x: (self.view.bounds.midX), y: (self.view.bounds.midY), width: 0, height: 0)
+        popover.delegate = self
+        present(vc, animated: true, completion:nil)
+    }
   
     
  
@@ -202,3 +224,60 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
        
 }
+ 
+ extension ViewController: NotificationDelegate {
+    func callLayoutPopover() {
+        AddLayout()
+    }
+ }
+ 
+ extension ViewController: UIPopoverPresentationControllerDelegate {
+    
+//    func popoverPresentationController(_ popoverPresentationController: UIPopoverPresentationController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>) {
+//        if popoverPresentationController.presentedViewController.view.tag != 0 {
+//            let x = popoverPresentationController.presentingViewController.view.center
+//            let newRect = CGRect(x: (self.view.bounds.midX)! - 200, y: (self.view.bounds.midY)!, width: 0, height: 0)
+//            rect.initialize(to: newRect)
+//        }
+//    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.none
+//        if whatChoosed == WhatChoosed.addJob {
+//            return UIModalPresentationStyle.none
+//        } else {
+//            return UIModalPresentationStyle.overFullScreen
+//        }
+    }
+    
+//    func presentationController(_ controller: UIPresentationController, viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle) -> UIViewController? {
+//        let navigationController = UINavigationController(rootViewController: controller.presentedViewController)
+//        
+//        let image = UIImage(named: "iconBack")?.resizeImage(targetSize: CGSize(width: 30, height: 30))
+//        
+//        let btnBack = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 30))
+//        btnBack.setImage(image, for: .normal)
+//        btnBack.setTitle("   CANCEL", for: .normal)
+//        btnBack.addTarget(self, action: #selector(DetailViewController.dismiss as (DetailViewController) -> () -> ()), for: .touchUpInside)
+//        
+//        let item = UIBarButtonItem()
+//        item.customView = btnBack
+//        
+//        navigationController.topViewController!.navigationItem.leftBarButtonItem = item
+//        return navigationController
+//    }
+    
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        
+    }
+    
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return true
+    }
+    
+    func dismiss() {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+ }
