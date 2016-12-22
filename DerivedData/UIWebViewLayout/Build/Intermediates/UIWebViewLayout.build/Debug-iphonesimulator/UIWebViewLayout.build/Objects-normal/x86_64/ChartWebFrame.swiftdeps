@@ -9,49 +9,50 @@ provides-member:
 - ["O15UIWebViewLayout9Templates", ""]
 - ["C15UIWebViewLayout13ChartWebFrame", ""]
 provides-dynamic-lookup:
-- "addHandler"
-- "updateTemplate"
-- "loadTemplateFromResource"
-- "loadTemplateFromResourceDir"
-- "loadTemplateString"
-- "updateDimensions"
-- "loadTemplateFromSupport"
 - "application_support"
+- "updateDimensions"
+- "loadTemplateFromResourceDir"
+- "sendJavascriptMessage"
+- "updateTemplate"
+- "loadTemplateFromSupport"
+- "addHandler"
+- "loadTemplateFromResource"
+- "loadTemplateString"
 depends-top-level:
-- "CastingPrecedence"
-- "ChartMessage"
-- "=="
-- "CGRect"
-- "AssignmentPrecedence"
-- "String"
-- !private "Date"
-- !private "~="
-- !private "Void"
+- !private "print"
+- "WKScriptMessageHandler"
+- !private "BooleanLiteralType"
 - "Templates"
-- "WKWebViewConfiguration"
-- !private "Bundle"
-- !private "NSSet"
-- "ChartWebFrame"
+- "NSCoder"
 - !private "Array"
+- !private "Set"
+- !private "WKWebsiteDataTypeMemoryCache"
+- !private "NSString"
+- "StringLiteralType"
+- !private "Bundle"
+- "WKWebView"
+- "String"
+- !private "Error"
+- "URL"
+- !private "FileManager"
+- !private "WKUserContentController"
+- "=="
+- !private "~="
+- !private "UnicodeScalarType"
+- "AssignmentPrecedence"
+- !private "NSDate"
+- "CastingPrecedence"
+- "CGRect"
 - !private "WKWebsiteDataStore"
 - !private "WKWebsiteDataTypeDiskCache"
-- !private "print"
-- "NSCoder"
-- !private "WKWebsiteDataTypeMemoryCache"
-- !private "WKUserScript"
-- !private "UnicodeScalarType"
-- !private "FileManager"
-- "StringLiteralType"
-- !private "Set"
-- !private "NSString"
-- !private "BooleanLiteralType"
-- "URL"
+- "ChartWebFrame"
 - !private "NSURL"
-- !private "Error"
-- "WKWebView"
-- !private "WKUserContentController"
-- "WKScriptMessageHandler"
-- !private "NSDate"
+- "WKWebViewConfiguration"
+- !private "Void"
+- !private "Date"
+- !private "WKUserScript"
+- "ChartMessage"
+- !private "NSSet"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "Encoding"]
@@ -91,7 +92,9 @@ depends-member:
 - !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "resourcePath"]
 - ["Ps9AnyObject", "sendJavascriptMessage"]
+- ["Ps9AnyObject", "sendMessage"]
 - ["Ps9AnyObject", "setApplicationSupport"]
+- !private ["Ps9AnyObject", "toJSONString"]
 - ["Ps9AnyObject", "updateDimensions"]
 - ["Ps9AnyObject", "updateTemplate"]
 - !private ["Ps9AnyObject", "urls"]
@@ -102,6 +105,7 @@ depends-member:
 - !private ["Sa", "_Element"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "first"]
+- !private ["P12ObjectMapper12BaseMappable", "toJSONString"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "Iterator"]
 - !private ["Ps23BidirectionalCollection", "_Element"]
@@ -146,6 +150,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "print"]
 - !private ["PSo15CALayerDelegate", "reload"]
 - ["PSo15CALayerDelegate", "sendJavascriptMessage"]
+- ["PSo15CALayerDelegate", "sendMessage"]
 - ["PSo15CALayerDelegate", "setApplicationSupport"]
 - ["PSo15CALayerDelegate", "updateDimensions"]
 - ["PSo15CALayerDelegate", "updateTemplate"]
@@ -194,6 +199,7 @@ depends-member:
 - !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "resourcePath"]
 - ["Ps7CVarArg", "sendJavascriptMessage"]
+- ["Ps7CVarArg", "sendMessage"]
 - ["Ps7CVarArg", "setApplicationSupport"]
 - ["Ps7CVarArg", "updateDimensions"]
 - ["Ps7CVarArg", "updateTemplate"]
@@ -201,6 +207,8 @@ depends-member:
 - !private ["Ps7CVarArg", "userContentController"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
+- ["C15UIWebViewLayout12ChartMessage", "deinit"]
+- !private ["C15UIWebViewLayout12ChartMessage", "toJSONString"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "Bundle"]
 - ["C15UIWebViewLayout13ChartWebFrame", "CGRect"]
 - ["C15UIWebViewLayout13ChartWebFrame", "ChartMessage"]
@@ -240,7 +248,8 @@ depends-member:
 - !private ["C15UIWebViewLayout13ChartWebFrame", "preLoadInjectJavascript"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "print"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "reload"]
-- !private ["C15UIWebViewLayout13ChartWebFrame", "sendJavascriptMessage"]
+- ["C15UIWebViewLayout13ChartWebFrame", "sendJavascriptMessage"]
+- ["C15UIWebViewLayout13ChartWebFrame", "sendMessage"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "setApplicationSupport"]
 - ["C15UIWebViewLayout13ChartWebFrame", "updateDimensions"]
 - ["C15UIWebViewLayout13ChartWebFrame", "updateTemplate"]
@@ -298,6 +307,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "resourcePath"]
 - ["Ps28CustomDebugStringConvertible", "sendJavascriptMessage"]
+- ["Ps28CustomDebugStringConvertible", "sendMessage"]
 - ["Ps28CustomDebugStringConvertible", "setApplicationSupport"]
 - ["Ps28CustomDebugStringConvertible", "updateDimensions"]
 - ["Ps28CustomDebugStringConvertible", "updateTemplate"]
@@ -366,6 +376,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "resourcePath"]
 - ["Ps23CustomStringConvertible", "sendJavascriptMessage"]
+- ["Ps23CustomStringConvertible", "sendMessage"]
 - ["Ps23CustomStringConvertible", "setApplicationSupport"]
 - ["Ps23CustomStringConvertible", "updateDimensions"]
 - ["Ps23CustomStringConvertible", "updateTemplate"]
@@ -424,6 +435,7 @@ depends-member:
 - !private ["Ps9Equatable", "replacingOccurrences"]
 - !private ["Ps9Equatable", "resourcePath"]
 - ["Ps9Equatable", "sendJavascriptMessage"]
+- ["Ps9Equatable", "sendMessage"]
 - ["Ps9Equatable", "setApplicationSupport"]
 - ["Ps9Equatable", "updateDimensions"]
 - ["Ps9Equatable", "updateTemplate"]
@@ -502,6 +514,7 @@ depends-member:
 - !private ["Ps8Hashable", "replacingOccurrences"]
 - !private ["Ps8Hashable", "resourcePath"]
 - ["Ps8Hashable", "sendJavascriptMessage"]
+- ["Ps8Hashable", "sendMessage"]
 - ["Ps8Hashable", "setApplicationSupport"]
 - ["Ps8Hashable", "updateDimensions"]
 - ["Ps8Hashable", "updateTemplate"]
@@ -531,6 +544,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "replacingOccurrences"]
+- !private ["P12ObjectMapper8Mappable", "toJSONString"]
 - !private ["Ps10MirrorPath", "Encoding"]
 - !private ["Ps10MirrorPath", "hashValue"]
 - ["Ps10MirrorPath", "init"]
@@ -579,6 +593,7 @@ depends-member:
 - !private ["PSo8NSCoding", "removeData"]
 - !private ["PSo8NSCoding", "replacingOccurrences"]
 - ["PSo8NSCoding", "sendJavascriptMessage"]
+- ["PSo8NSCoding", "sendMessage"]
 - ["PSo8NSCoding", "setApplicationSupport"]
 - ["PSo8NSCoding", "updateDimensions"]
 - ["PSo8NSCoding", "updateTemplate"]
@@ -642,6 +657,7 @@ depends-member:
 - !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "resourcePath"]
 - ["CSo8NSObject", "sendJavascriptMessage"]
+- ["CSo8NSObject", "sendMessage"]
 - ["CSo8NSObject", "setApplicationSupport"]
 - ["CSo8NSObject", "updateDimensions"]
 - ["CSo8NSObject", "updateTemplate"]
@@ -685,6 +701,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "resourcePath"]
 - ["PSo16NSObjectProtocol", "sendJavascriptMessage"]
+- ["PSo16NSObjectProtocol", "sendMessage"]
 - ["PSo16NSObjectProtocol", "setApplicationSupport"]
 - ["PSo16NSObjectProtocol", "updateDimensions"]
 - ["PSo16NSObjectProtocol", "updateTemplate"]
@@ -797,6 +814,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - !private ["PSo29UIAccessibilityIdentification", "reload"]
 - ["PSo29UIAccessibilityIdentification", "sendJavascriptMessage"]
+- ["PSo29UIAccessibilityIdentification", "sendMessage"]
 - ["PSo29UIAccessibilityIdentification", "setApplicationSupport"]
 - ["PSo29UIAccessibilityIdentification", "updateDimensions"]
 - ["PSo29UIAccessibilityIdentification", "updateTemplate"]
@@ -830,6 +848,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "print"]
 - !private ["PSo12UIAppearance", "reload"]
 - ["PSo12UIAppearance", "sendJavascriptMessage"]
+- ["PSo12UIAppearance", "sendMessage"]
 - ["PSo12UIAppearance", "setApplicationSupport"]
 - ["PSo12UIAppearance", "updateDimensions"]
 - ["PSo12UIAppearance", "updateTemplate"]
@@ -863,6 +882,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reload"]
 - ["PSo21UIAppearanceContainer", "sendJavascriptMessage"]
+- ["PSo21UIAppearanceContainer", "sendMessage"]
 - ["PSo21UIAppearanceContainer", "setApplicationSupport"]
 - ["PSo21UIAppearanceContainer", "updateDimensions"]
 - ["PSo21UIAppearanceContainer", "updateTemplate"]
@@ -896,6 +916,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "print"]
 - !private ["PSo17UICoordinateSpace", "reload"]
 - ["PSo17UICoordinateSpace", "sendJavascriptMessage"]
+- ["PSo17UICoordinateSpace", "sendMessage"]
 - ["PSo17UICoordinateSpace", "setApplicationSupport"]
 - ["PSo17UICoordinateSpace", "updateDimensions"]
 - ["PSo17UICoordinateSpace", "updateTemplate"]
@@ -929,6 +950,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "print"]
 - !private ["PSo13UIDynamicItem", "reload"]
 - ["PSo13UIDynamicItem", "sendJavascriptMessage"]
+- ["PSo13UIDynamicItem", "sendMessage"]
 - ["PSo13UIDynamicItem", "setApplicationSupport"]
 - ["PSo13UIDynamicItem", "updateDimensions"]
 - ["PSo13UIDynamicItem", "updateTemplate"]
@@ -962,6 +984,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reload"]
 - ["PSo18UIFocusEnvironment", "sendJavascriptMessage"]
+- ["PSo18UIFocusEnvironment", "sendMessage"]
 - ["PSo18UIFocusEnvironment", "setApplicationSupport"]
 - ["PSo18UIFocusEnvironment", "updateDimensions"]
 - ["PSo18UIFocusEnvironment", "updateTemplate"]
@@ -995,6 +1018,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "print"]
 - !private ["PSo11UIFocusItem", "reload"]
 - ["PSo11UIFocusItem", "sendJavascriptMessage"]
+- ["PSo11UIFocusItem", "sendMessage"]
 - ["PSo11UIFocusItem", "setApplicationSupport"]
 - ["PSo11UIFocusItem", "updateDimensions"]
 - ["PSo11UIFocusItem", "updateTemplate"]
@@ -1038,6 +1062,7 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reload"]
 - ["CSo11UIResponder", "sendJavascriptMessage"]
+- ["CSo11UIResponder", "sendMessage"]
 - ["CSo11UIResponder", "setApplicationSupport"]
 - ["CSo11UIResponder", "updateDimensions"]
 - ["CSo11UIResponder", "updateTemplate"]
@@ -1070,6 +1095,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "reload"]
 - ["PSo30UIResponderStandardEditActions", "sendJavascriptMessage"]
+- ["PSo30UIResponderStandardEditActions", "sendMessage"]
 - ["PSo30UIResponderStandardEditActions", "setApplicationSupport"]
 - ["PSo30UIResponderStandardEditActions", "updateDimensions"]
 - ["PSo30UIResponderStandardEditActions", "updateTemplate"]
@@ -1103,6 +1129,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reload"]
 - ["PSo18UITraitEnvironment", "sendJavascriptMessage"]
+- ["PSo18UITraitEnvironment", "sendMessage"]
 - ["PSo18UITraitEnvironment", "setApplicationSupport"]
 - ["PSo18UITraitEnvironment", "updateDimensions"]
 - ["PSo18UITraitEnvironment", "updateTemplate"]
@@ -1146,6 +1173,7 @@ depends-member:
 - !private ["CSo6UIView", "print"]
 - !private ["CSo6UIView", "reload"]
 - ["CSo6UIView", "sendJavascriptMessage"]
+- ["CSo6UIView", "sendMessage"]
 - ["CSo6UIView", "setApplicationSupport"]
 - ["CSo6UIView", "updateDimensions"]
 - ["CSo6UIView", "updateTemplate"]
@@ -1207,6 +1235,7 @@ depends-member:
 - !private ["CSo9WKWebView", "print"]
 - !private ["CSo9WKWebView", "reload"]
 - ["CSo9WKWebView", "sendJavascriptMessage"]
+- ["CSo9WKWebView", "sendMessage"]
 - ["CSo9WKWebView", "setApplicationSupport"]
 - ["CSo9WKWebView", "updateDimensions"]
 - ["CSo9WKWebView", "updateTemplate"]
@@ -1250,6 +1279,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "print"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reload"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "sendJavascriptMessage"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "sendMessage"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "setApplicationSupport"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateDimensions"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateTemplate"]
@@ -1323,6 +1353,7 @@ depends-member:
 - !private ["Ps9_Hashable", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "resourcePath"]
 - ["Ps9_Hashable", "sendJavascriptMessage"]
+- ["Ps9_Hashable", "sendMessage"]
 - ["Ps9_Hashable", "setApplicationSupport"]
 - ["Ps9_Hashable", "updateDimensions"]
 - ["Ps9_Hashable", "updateTemplate"]
@@ -1350,6 +1381,7 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sa"
+- !private "P12ObjectMapper12BaseMappable"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
 - !private "Ps17BitwiseOperations"
@@ -1359,6 +1391,7 @@ depends-nominal:
 - "VSC6CGRect"
 - "Ps7CVarArg"
 - !private "Vs9Character"
+- "C15UIWebViewLayout12ChartMessage"
 - "C15UIWebViewLayout13ChartWebFrame"
 - !private "Vs11ClosedRange"
 - !private "Ps10Collection"
@@ -1395,6 +1428,7 @@ depends-nominal:
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
 - "Ps25LosslessStringConvertible"
+- !private "P12ObjectMapper8Mappable"
 - "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
@@ -1510,4 +1544,4 @@ depends-external:
 - "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
 - "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
 - "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
-interface-hash: "393171acdf817fe74e1bcc689418a84f"
+interface-hash: "0340584d4111677040b8c39221754323"

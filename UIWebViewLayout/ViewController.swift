@@ -55,17 +55,33 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
                     print("completed with")
                 }
             
-                let temp = "vingo"
+                
                // let jsonString = try NSString(contentsOfFile: jsonPath, encoding: String.Encoding.utf8.rawValue) as String
                 
-                let jsonString = "{ \"label\": [\"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"],\r\n\"series\":[\"Series A\", \"Series B\"],\r\n\"data\":[\r\n    [65, 59, 80, 81, 56, 55, 40],\r\n    [28, 48, 40, 19, 86, 27, 90]\r\n  ]}"
+                let jsonString = "{ \"element_key\":\"radar\", \"label\": [\"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\"],\r\n\"series\":[\"Series A\", \"Series B\"],\r\n\"data\":[\r\n    [65, 59, 80, 81, 56, 55, 40],\r\n    [28, 48, 40, 19, 86, 27, 90]\r\n  ]}"
                
                 
                 let trimmed2  = jsonString.replacingOccurrences(of: "\n", with: "")
                 let trimmed3  = trimmed2.replacingOccurrences(of: "\r", with: "")
+                
+                
                
                 let source = "setJson('\(trimmed3)')"
-                webView?.evaluateJavaScript(source, completionHandler:callback)
+                
+               let message =  ChartMessage()
+                
+                message.label = ["A", "B", "C", "D", "E", "F", "G"]
+                message.data  = [     [4, 7, 4, 23, 6, 7, 87],[28, 48, 40, 19, 86, 27, 90] ]
+                message.series = ["Series A", "Series B"]
+                message.element_key = "radar"
+                
+                
+                webView?.sendMessage(message: message)
+                
+                
+                
+                
+               // webView?.evaluateJavaScript(source, completionHandler:callback)
              
             }
             catch

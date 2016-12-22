@@ -7,56 +7,57 @@ provides-nominal:
 provides-member:
 - ["C15UIWebViewLayout14ViewController", ""]
 provides-dynamic-lookup:
-- "webView"
-- "webView"
-- "webView"
-- "webView"
 - "buttonAction"
 - "viewDidLoad"
+- "webView"
+- "webView"
+- "webView"
+- "webView"
 - "addButton"
 depends-top-level:
-- !private "Error"
-- "WKNavigationDelegate"
-- !private "-"
-- !private "BooleanLiteralType"
-- "String"
-- !private "print"
 - !private "UnicodeScalarType"
-- "WKUIDelegate"
-- !private "WKScriptMessageHandler"
-- "myContext"
-- "WKFrameInfo"
-- !private "StringLiteralType"
 - "Bool"
-- !private "+"
 - !private "UIAlertAction"
+- "Void"
 - !private "Templates"
+- !private "ChartMessage"
+- !private "print"
+- "AssignmentPrecedence"
+- "ViewController"
+- !private "Bundle"
+- !private "CGFloat"
+- "IntegerLiteralType"
+- !private "Array"
+- !private "DispatchQueue"
+- "WKNavigationDelegate"
+- !private "CGRect"
+- !private "NSObject"
+- !private "WKScriptMessageHandler"
+- "String"
+- "FloatLiteralType"
+- "AnyObject"
+- "UIViewController"
+- !private "Error"
+- !private "UIColor"
+- !private "BooleanLiteralType"
+- !private "-"
+- "myContext"
 - "WKWebView"
 - "WKUserContentController"
-- "AnyObject"
-- "AssignmentPrecedence"
-- "UIViewController"
-- "ChartWebFrame"
-- !private "ChartMessage"
-- !private "CGRect"
-- !private "DispatchQueue"
-- !private "NSObject"
-- "WKScriptMessage"
-- !private "UIColor"
 - !private "UIAlertController"
-- !private "Bundle"
 - !private "Mapper"
+- "WKScriptMessage"
+- "ChartWebFrame"
+- "WKUIDelegate"
 - !private "UITextField"
-- "FloatLiteralType"
+- !private "StringLiteralType"
+- "WKFrameInfo"
+- !private "+"
 - !private "UIButton"
-- "Void"
-- !private "Array"
-- "IntegerLiteralType"
-- "ViewController"
-- !private "CGFloat"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "CGRect"]
+- !private ["Ps9AnyObject", "ChartMessage"]
 - !private ["Ps9AnyObject", "ChartWebFrame"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "Mapper"]
@@ -77,10 +78,12 @@ depends-member:
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "body"]
 - ["Ps9AnyObject", "buttonAction"]
-- !private ["Ps9AnyObject", "evaluateJavaScript"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "element_key"]
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "green"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "label"]
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "map"]
 - !private ["Ps9AnyObject", "navigationDelegate"]
@@ -90,6 +93,8 @@ depends-member:
 - !private ["Ps9AnyObject", "red"]
 - !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "request"]
+- !private ["Ps9AnyObject", "sendMessage"]
+- !private ["Ps9AnyObject", "series"]
 - !private ["Ps9AnyObject", "setTitle"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "toJSONString"]
@@ -103,7 +108,16 @@ depends-member:
 - ["Ps9AnyObject", "webViewWebContentProcessDidTerminate"]
 - !private ["Ps9AnyObject", "yellow"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "deinit"]
+- !private ["P12ObjectMapper12BaseMappable", "data"]
+- !private ["P12ObjectMapper12BaseMappable", "element_key"]
+- !private ["P12ObjectMapper12BaseMappable", "init"]
+- !private ["P12ObjectMapper12BaseMappable", "label"]
+- !private ["P12ObjectMapper12BaseMappable", "series"]
 - !private ["P12ObjectMapper12BaseMappable", "toJSONString"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
 - ["Sb", "deinit"]
 - ["CSo6Bundle", "deinit"]
 - !private ["CSo6Bundle", "main"]
@@ -114,10 +128,10 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "allowsBackForwardNavigationGestures"]
 - !private ["PSo15CALayerDelegate", "autoresizingMask"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
-- !private ["PSo15CALayerDelegate", "evaluateJavaScript"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "navigationDelegate"]
+- !private ["PSo15CALayerDelegate", "sendMessage"]
 - !private ["PSo15CALayerDelegate", "setTitle"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "uiDelegate"]
@@ -129,8 +143,10 @@ depends-member:
 - !private ["VSC6CGRect", "width"]
 - !private ["Ps7CVarArg", "Bundle"]
 - !private ["Ps7CVarArg", "CGRect"]
+- !private ["Ps7CVarArg", "ChartMessage"]
 - !private ["Ps7CVarArg", "ChartWebFrame"]
 - !private ["Ps7CVarArg", "DispatchQueue"]
+- !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Mapper"]
 - !private ["Ps7CVarArg", "Templates"]
 - !private ["Ps7CVarArg", "UIAlertAction"]
@@ -149,7 +165,6 @@ depends-member:
 - !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "body"]
 - ["Ps7CVarArg", "buttonAction"]
-- !private ["Ps7CVarArg", "evaluateJavaScript"]
 - !private ["Ps7CVarArg", "frame"]
 - !private ["Ps7CVarArg", "green"]
 - !private ["Ps7CVarArg", "init"]
@@ -161,6 +176,7 @@ depends-member:
 - !private ["Ps7CVarArg", "red"]
 - !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "request"]
+- !private ["Ps7CVarArg", "sendMessage"]
 - !private ["Ps7CVarArg", "setTitle"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "uiDelegate"]
@@ -174,25 +190,33 @@ depends-member:
 - !private ["Ps7CVarArg", "yellow"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["C15UIWebViewLayout12ChartMessage", "data"]
 - ["C15UIWebViewLayout12ChartMessage", "deinit"]
+- !private ["C15UIWebViewLayout12ChartMessage", "element_key"]
+- !private ["C15UIWebViewLayout12ChartMessage", "init"]
+- !private ["C15UIWebViewLayout12ChartMessage", "label"]
+- !private ["C15UIWebViewLayout12ChartMessage", "series"]
 - !private ["C15UIWebViewLayout12ChartMessage", "toJSONString"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "addHandler"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "allowsBackForwardNavigationGestures"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "autoresizingMask"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "backgroundColor"]
 - ["C15UIWebViewLayout13ChartWebFrame", "deinit"]
-- !private ["C15UIWebViewLayout13ChartWebFrame", "evaluateJavaScript"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "init"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "navigationDelegate"]
+- !private ["C15UIWebViewLayout13ChartWebFrame", "sendMessage"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "uiDelegate"]
 - !private ["C15UIWebViewLayout13ChartWebFrame", "updateDimensions"]
+- !private ["Ps10Collection", "Element"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "now"]
 - !private ["Ps10Comparable", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "Bundle"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
+- !private ["Ps28CustomDebugStringConvertible", "ChartMessage"]
 - !private ["Ps28CustomDebugStringConvertible", "ChartWebFrame"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Mapper"]
 - !private ["Ps28CustomDebugStringConvertible", "Templates"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
@@ -211,7 +235,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "body"]
 - ["Ps28CustomDebugStringConvertible", "buttonAction"]
-- !private ["Ps28CustomDebugStringConvertible", "evaluateJavaScript"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "green"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
@@ -225,6 +248,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "red"]
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "request"]
+- !private ["Ps28CustomDebugStringConvertible", "sendMessage"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "uiDelegate"]
@@ -244,6 +268,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "replacingOccurrences"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "height"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "replacingOccurrences"]
@@ -252,8 +277,10 @@ depends-member:
 - !private ["Ps17CustomReflectable", "yellow"]
 - !private ["Ps23CustomStringConvertible", "Bundle"]
 - !private ["Ps23CustomStringConvertible", "CGRect"]
+- !private ["Ps23CustomStringConvertible", "ChartMessage"]
 - !private ["Ps23CustomStringConvertible", "ChartWebFrame"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Mapper"]
 - !private ["Ps23CustomStringConvertible", "Templates"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
@@ -272,7 +299,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "body"]
 - ["Ps23CustomStringConvertible", "buttonAction"]
-- !private ["Ps23CustomStringConvertible", "evaluateJavaScript"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "green"]
 - !private ["Ps23CustomStringConvertible", "host"]
@@ -285,6 +311,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "red"]
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "request"]
+- !private ["Ps23CustomStringConvertible", "sendMessage"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "uiDelegate"]
@@ -309,6 +336,7 @@ depends-member:
 - ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Bundle"]
 - !private ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "ChartMessage"]
 - !private ["Ps9Equatable", "ChartWebFrame"]
 - !private ["Ps9Equatable", "DispatchQueue"]
 - !private ["Ps9Equatable", "Element"]
@@ -333,7 +361,6 @@ depends-member:
 - ["Ps9Equatable", "buttonAction"]
 - !private ["Ps9Equatable", "cancel"]
 - !private ["Ps9Equatable", "default"]
-- !private ["Ps9Equatable", "evaluateJavaScript"]
 - !private ["Ps9Equatable", "flexibleHeight"]
 - !private ["Ps9Equatable", "flexibleWidth"]
 - !private ["Ps9Equatable", "frame"]
@@ -352,6 +379,7 @@ depends-member:
 - !private ["Ps9Equatable", "replacingOccurrences"]
 - !private ["Ps9Equatable", "request"]
 - !private ["Ps9Equatable", "rows2column1"]
+- !private ["Ps9Equatable", "sendMessage"]
 - !private ["Ps9Equatable", "setTitle"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "touchUpInside"]
@@ -384,6 +412,7 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "Bundle"]
 - !private ["Ps8Hashable", "CGRect"]
+- !private ["Ps8Hashable", "ChartMessage"]
 - !private ["Ps8Hashable", "ChartWebFrame"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "Mapper"]
@@ -407,7 +436,6 @@ depends-member:
 - ["Ps8Hashable", "buttonAction"]
 - !private ["Ps8Hashable", "cancel"]
 - !private ["Ps8Hashable", "default"]
-- !private ["Ps8Hashable", "evaluateJavaScript"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "green"]
 - !private ["Ps8Hashable", "host"]
@@ -421,6 +449,7 @@ depends-member:
 - !private ["Ps8Hashable", "replacingOccurrences"]
 - !private ["Ps8Hashable", "request"]
 - !private ["Ps8Hashable", "rows2column1"]
+- !private ["Ps8Hashable", "sendMessage"]
 - !private ["Ps8Hashable", "setTitle"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "uiDelegate"]
@@ -435,6 +464,8 @@ depends-member:
 - !private ["Ps8Hashable", "yellow"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps13IndexableBase", "Element"]
 - ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
@@ -442,15 +473,23 @@ depends-member:
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "replacingOccurrences"]
+- !private ["P12ObjectMapper8Mappable", "data"]
+- !private ["P12ObjectMapper8Mappable", "element_key"]
+- !private ["P12ObjectMapper8Mappable", "init"]
+- !private ["P12ObjectMapper8Mappable", "label"]
+- !private ["P12ObjectMapper8Mappable", "series"]
 - !private ["P12ObjectMapper8Mappable", "toJSONString"]
 - ["C12ObjectMapper6Mapper", "deinit"]
 - !private ["C12ObjectMapper6Mapper", "init"]
 - !private ["C12ObjectMapper6Mapper", "map"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "replacingOccurrences"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Bundle"]
 - !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "ChartMessage"]
 - !private ["PSo8NSCoding", "ChartWebFrame"]
 - !private ["PSo8NSCoding", "DispatchQueue"]
 - !private ["PSo8NSCoding", "Mapper"]
@@ -469,7 +508,6 @@ depends-member:
 - !private ["PSo8NSCoding", "autoresizingMask"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "buttonAction"]
-- !private ["PSo8NSCoding", "evaluateJavaScript"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "green"]
 - !private ["PSo8NSCoding", "init"]
@@ -478,6 +516,7 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "red"]
 - !private ["PSo8NSCoding", "replacingOccurrences"]
+- !private ["PSo8NSCoding", "sendMessage"]
 - !private ["PSo8NSCoding", "setTitle"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "uiDelegate"]
@@ -497,6 +536,7 @@ depends-member:
 - !private ["PSo9NSCopying", "yellow"]
 - !private ["PSo26NSExtensionRequestHandling", "Bundle"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "ChartMessage"]
 - !private ["PSo26NSExtensionRequestHandling", "ChartWebFrame"]
 - !private ["PSo26NSExtensionRequestHandling", "DispatchQueue"]
 - !private ["PSo26NSExtensionRequestHandling", "Mapper"]
@@ -557,7 +597,6 @@ depends-member:
 - !private ["CSo8NSObject", "body"]
 - ["CSo8NSObject", "buttonAction"]
 - ["CSo8NSObject", "deinit"]
-- !private ["CSo8NSObject", "evaluateJavaScript"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "green"]
 - ["CSo8NSObject", "init"]
@@ -569,6 +608,7 @@ depends-member:
 - !private ["CSo8NSObject", "red"]
 - !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "request"]
+- !private ["CSo8NSObject", "sendMessage"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "uiDelegate"]
@@ -583,6 +623,7 @@ depends-member:
 - !private ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "Bundle"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "ChartMessage"]
 - !private ["PSo16NSObjectProtocol", "ChartWebFrame"]
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "Mapper"]
@@ -603,7 +644,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "body"]
 - ["PSo16NSObjectProtocol", "buttonAction"]
-- !private ["PSo16NSObjectProtocol", "evaluateJavaScript"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "green"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -615,6 +655,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "red"]
 - !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "request"]
+- !private ["PSo16NSObjectProtocol", "sendMessage"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "uiDelegate"]
@@ -643,6 +684,10 @@ depends-member:
 - !private ["Ps9OptionSet", "touchUpInside"]
 - ["Sq", "deinit"]
 - !private ["Sq", "yellow"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
 - !private ["Ps16RawRepresentable", "Element"]
 - !private ["Ps16RawRepresentable", "alert"]
 - !private ["Ps16RawRepresentable", "cancel"]
@@ -655,6 +700,7 @@ depends-member:
 - !private ["P10Foundation20ReferenceConvertible", "host"]
 - !private ["P10Foundation20ReferenceConvertible", "url"]
 - ["V10ObjectiveC8Selector", "deinit"]
+- !private ["Ps8Sequence", "Element"]
 - !private ["Ps10SetAlgebra", "Element"]
 - !private ["Ps10SetAlgebra", "flexibleHeight"]
 - !private ["Ps10SetAlgebra", "flexibleWidth"]
@@ -675,10 +721,10 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "allowsBackForwardNavigationGestures"]
 - !private ["PSo29UIAccessibilityIdentification", "autoresizingMask"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
-- !private ["PSo29UIAccessibilityIdentification", "evaluateJavaScript"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "navigationDelegate"]
+- !private ["PSo29UIAccessibilityIdentification", "sendMessage"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "uiDelegate"]
@@ -700,16 +746,17 @@ depends-member:
 - !private ["PSo12UIAppearance", "allowsBackForwardNavigationGestures"]
 - !private ["PSo12UIAppearance", "autoresizingMask"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
-- !private ["PSo12UIAppearance", "evaluateJavaScript"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "navigationDelegate"]
+- !private ["PSo12UIAppearance", "sendMessage"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "uiDelegate"]
 - !private ["PSo12UIAppearance", "updateDimensions"]
 - !private ["PSo21UIAppearanceContainer", "Bundle"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "ChartMessage"]
 - !private ["PSo21UIAppearanceContainer", "ChartWebFrame"]
 - !private ["PSo21UIAppearanceContainer", "DispatchQueue"]
 - !private ["PSo21UIAppearanceContainer", "Mapper"]
@@ -728,12 +775,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "autoresizingMask"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "buttonAction"]
-- !private ["PSo21UIAppearanceContainer", "evaluateJavaScript"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "navigationDelegate"]
 - !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "sendMessage"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "uiDelegate"]
@@ -755,6 +802,7 @@ depends-member:
 - !private ["CSo7UIColor", "yellow"]
 - !private ["PSo18UIContentContainer", "Bundle"]
 - !private ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "ChartMessage"]
 - !private ["PSo18UIContentContainer", "ChartWebFrame"]
 - !private ["PSo18UIContentContainer", "DispatchQueue"]
 - !private ["PSo18UIContentContainer", "Mapper"]
@@ -792,10 +840,10 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "allowsBackForwardNavigationGestures"]
 - !private ["PSo17UICoordinateSpace", "autoresizingMask"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
-- !private ["PSo17UICoordinateSpace", "evaluateJavaScript"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "navigationDelegate"]
+- !private ["PSo17UICoordinateSpace", "sendMessage"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "uiDelegate"]
@@ -806,16 +854,17 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "allowsBackForwardNavigationGestures"]
 - !private ["PSo13UIDynamicItem", "autoresizingMask"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
-- !private ["PSo13UIDynamicItem", "evaluateJavaScript"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "navigationDelegate"]
+- !private ["PSo13UIDynamicItem", "sendMessage"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "uiDelegate"]
 - !private ["PSo13UIDynamicItem", "updateDimensions"]
 - !private ["PSo18UIFocusEnvironment", "Bundle"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
+- !private ["PSo18UIFocusEnvironment", "ChartMessage"]
 - !private ["PSo18UIFocusEnvironment", "ChartWebFrame"]
 - !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
 - !private ["PSo18UIFocusEnvironment", "Mapper"]
@@ -834,12 +883,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "autoresizingMask"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "buttonAction"]
-- !private ["PSo18UIFocusEnvironment", "evaluateJavaScript"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "navigationDelegate"]
 - !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "sendMessage"]
 - !private ["PSo18UIFocusEnvironment", "setTitle"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "uiDelegate"]
@@ -856,10 +905,10 @@ depends-member:
 - !private ["PSo11UIFocusItem", "allowsBackForwardNavigationGestures"]
 - !private ["PSo11UIFocusItem", "autoresizingMask"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
-- !private ["PSo11UIFocusItem", "evaluateJavaScript"]
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "navigationDelegate"]
+- !private ["PSo11UIFocusItem", "sendMessage"]
 - !private ["PSo11UIFocusItem", "setTitle"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "uiDelegate"]
@@ -899,12 +948,12 @@ depends-member:
 - !private ["CSo11UIResponder", "autoresizingMask"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "buttonAction"]
-- !private ["CSo11UIResponder", "evaluateJavaScript"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "navigationDelegate"]
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "sendMessage"]
 - !private ["CSo11UIResponder", "setTitle"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "uiDelegate"]
@@ -916,6 +965,7 @@ depends-member:
 - ["CSo11UIResponder", "webViewWebContentProcessDidTerminate"]
 - !private ["PSo30UIResponderStandardEditActions", "Bundle"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
+- !private ["PSo30UIResponderStandardEditActions", "ChartMessage"]
 - !private ["PSo30UIResponderStandardEditActions", "ChartWebFrame"]
 - !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
 - !private ["PSo30UIResponderStandardEditActions", "Mapper"]
@@ -934,12 +984,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "autoresizingMask"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "buttonAction"]
-- !private ["PSo30UIResponderStandardEditActions", "evaluateJavaScript"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationDelegate"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "sendMessage"]
 - !private ["PSo30UIResponderStandardEditActions", "setTitle"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "uiDelegate"]
@@ -952,6 +1002,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "Bundle"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "ChartMessage"]
 - !private ["PSo16UIStateRestoring", "ChartWebFrame"]
 - !private ["PSo16UIStateRestoring", "DispatchQueue"]
 - !private ["PSo16UIStateRestoring", "Mapper"]
@@ -979,6 +1030,7 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "Bundle"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "ChartMessage"]
 - !private ["PSo18UITraitEnvironment", "ChartWebFrame"]
 - !private ["PSo18UITraitEnvironment", "DispatchQueue"]
 - !private ["PSo18UITraitEnvironment", "Mapper"]
@@ -997,12 +1049,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "autoresizingMask"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "buttonAction"]
-- !private ["PSo18UITraitEnvironment", "evaluateJavaScript"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "navigationDelegate"]
 - !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "sendMessage"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "uiDelegate"]
@@ -1019,10 +1071,10 @@ depends-member:
 - !private ["CSo6UIView", "allowsBackForwardNavigationGestures"]
 - !private ["CSo6UIView", "autoresizingMask"]
 - !private ["CSo6UIView", "backgroundColor"]
-- !private ["CSo6UIView", "evaluateJavaScript"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "navigationDelegate"]
+- !private ["CSo6UIView", "sendMessage"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "uiDelegate"]
@@ -1118,6 +1170,7 @@ depends-member:
 - !private ["CSo11WKFrameInfo", "request"]
 - !private ["PSo20WKNavigationDelegate", "Bundle"]
 - !private ["PSo20WKNavigationDelegate", "CGRect"]
+- !private ["PSo20WKNavigationDelegate", "ChartMessage"]
 - !private ["PSo20WKNavigationDelegate", "ChartWebFrame"]
 - !private ["PSo20WKNavigationDelegate", "DispatchQueue"]
 - !private ["PSo20WKNavigationDelegate", "Mapper"]
@@ -1143,6 +1196,7 @@ depends-member:
 - !private ["PSo22WKScriptMessageHandler", ""]
 - !private ["PSo12WKUIDelegate", "Bundle"]
 - !private ["PSo12WKUIDelegate", "CGRect"]
+- !private ["PSo12WKUIDelegate", "ChartMessage"]
 - !private ["PSo12WKUIDelegate", "ChartWebFrame"]
 - !private ["PSo12WKUIDelegate", "DispatchQueue"]
 - !private ["PSo12WKUIDelegate", "Mapper"]
@@ -1165,24 +1219,26 @@ depends-member:
 - !private ["CSo9WKWebView", "autoresizingMask"]
 - !private ["CSo9WKWebView", "backgroundColor"]
 - ["CSo9WKWebView", "deinit"]
-- !private ["CSo9WKWebView", "evaluateJavaScript"]
 - !private ["CSo9WKWebView", "navigationDelegate"]
+- !private ["CSo9WKWebView", "sendMessage"]
 - !private ["CSo9WKWebView", "uiDelegate"]
 - !private ["CSo9WKWebView", "updateDimensions"]
+- !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addHandler"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "allowsBackForwardNavigationGestures"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "autoresizingMask"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "evaluateJavaScript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "navigationDelegate"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sendMessage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "uiDelegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateDimensions"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "replacingOccurrences"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -1199,6 +1255,7 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "Bundle"]
 - !private ["Ps9_Hashable", "CGRect"]
+- !private ["Ps9_Hashable", "ChartMessage"]
 - !private ["Ps9_Hashable", "ChartWebFrame"]
 - !private ["Ps9_Hashable", "DispatchQueue"]
 - !private ["Ps9_Hashable", "Mapper"]
@@ -1222,7 +1279,6 @@ depends-member:
 - ["Ps9_Hashable", "buttonAction"]
 - !private ["Ps9_Hashable", "cancel"]
 - !private ["Ps9_Hashable", "default"]
-- !private ["Ps9_Hashable", "evaluateJavaScript"]
 - !private ["Ps9_Hashable", "frame"]
 - !private ["Ps9_Hashable", "green"]
 - !private ["Ps9_Hashable", "host"]
@@ -1236,6 +1292,7 @@ depends-member:
 - !private ["Ps9_Hashable", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "request"]
 - !private ["Ps9_Hashable", "rows2column1"]
+- !private ["Ps9_Hashable", "sendMessage"]
 - !private ["Ps9_Hashable", "setTitle"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "uiDelegate"]
@@ -1249,6 +1306,7 @@ depends-member:
 - ["Ps9_Hashable", "webViewWebContentProcessDidTerminate"]
 - !private ["Ps9_Hashable", "yellow"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
 - !private ["Ps21_ObjectiveCBridgeable", "host"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -1258,7 +1316,10 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "yellow"]
 depends-nominal:
 - "Ps9AnyObject"
+- "Sa"
 - !private "P12ObjectMapper12BaseMappable"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
 - "Sb"
 - "CSo6Bundle"
 - !private "PSo15CALayerDelegate"
@@ -1268,6 +1329,7 @@ depends-nominal:
 - !private "Vs9Character"
 - "C15UIWebViewLayout12ChartMessage"
 - "C15UIWebViewLayout13ChartWebFrame"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
@@ -1288,6 +1350,8 @@ depends-nominal:
 - !private "Sf"
 - "Ps8Hashable"
 - "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
 - "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
@@ -1297,6 +1361,8 @@ depends-nominal:
 - !private "P12ObjectMapper8Mappable"
 - "C12ObjectMapper6Mapper"
 - !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -1309,9 +1375,14 @@ depends-nominal:
 - !private "CSo9OS_object"
 - !private "Ps9OptionSet"
 - "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - "V10ObjectiveC8Selector"
+- !private "Ps8Sequence"
 - !private "Ps10SetAlgebra"
 - "SS"
 - "O15UIWebViewLayout9Templates"
@@ -1361,7 +1432,9 @@ depends-nominal:
 - !private "PSo22WKScriptMessageHandler"
 - "PSo12WKUIDelegate"
 - "CSo9WKWebView"
+- !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"

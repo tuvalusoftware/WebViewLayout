@@ -17,10 +17,15 @@ class ChartMessage: Mappable {
         series <- map["series"]
         data <- map["data"]
         chartType <- map["chartType"]
+        element_key  <- map["element_key"]
     }
 
     /// This function can be used to validate JSON prior to mapping. Return nil to cancel mapping at this point
     required init?(map: Map) {
+        
+    }
+ 
+    required init( ) {
         
     }
     
@@ -29,6 +34,7 @@ class ChartMessage: Mappable {
     var series: [String]!
     var data: [[Int]]!
     var chartType:String!
+    var element_key:String!
     
     
     

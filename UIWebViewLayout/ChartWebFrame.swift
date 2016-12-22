@@ -200,19 +200,27 @@ class ChartWebFrame: WKWebView {
     
     
     
+     func sendMessage(message:ChartMessage)
+    {
+        let jsonstr = message.toJSONString(prettyPrint: false)
+        sendJavascriptMessage(json:jsonstr!)
+        
+    }
     
-    
-    private  func sendJavascriptMessage(javascript:String)
+      func sendJavascriptMessage(json:String)
     {
         
         func callback (_: Any?, _: Error?) ->Void
         {
             
-            print("completed")
+           
         }
         
-        let trimmed3  = javascript.replacingOccurrences(of: "\n", with: "")
-        self.evaluateJavaScript(trimmed3, completionHandler:callback)
+        
+        let trimmed2  = json.replacingOccurrences(of: "\n", with: "")
+        let trimmed3  = trimmed2.replacingOccurrences(of: "\r", with: "")
+        let source = "setJson('\(trimmed3)')"
+        self.evaluateJavaScript(source, completionHandler:nil)
     }
     
     

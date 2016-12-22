@@ -155,6 +155,7 @@ SWIFT_CLASS("_TtC15UIWebViewLayout13ChartWebFrame")
 - (void)loadTemplateFromResourceDirWithTemplate:(NSString * _Nonnull)template_;
 - (void)loadTemplateFromSupportWithTemplate:(NSString * _Nonnull)template_;
 - (void)loadTemplateStringWithTemplate:(NSString * _Nonnull)template_;
+- (void)sendJavascriptMessageWithJson:(NSString * _Nonnull)json;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
 @end
 

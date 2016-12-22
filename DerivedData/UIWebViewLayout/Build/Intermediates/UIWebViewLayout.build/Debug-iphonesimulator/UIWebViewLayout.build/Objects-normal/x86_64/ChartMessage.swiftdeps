@@ -7,16 +7,17 @@ provides-member:
 - ["C15UIWebViewLayout12ChartMessage", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "Mappable"
-- !private "<-"
-- !private "StringLiteralType"
 - "ChartMessage"
+- !private "<-"
+- "Mappable"
+- !private "StringLiteralType"
 - "Int"
 - "Map"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "chartType"]
 - !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "element_key"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "label"]
 - ["Ps9AnyObject", "mapping"]
@@ -26,6 +27,7 @@ depends-member:
 - !private ["Sa", "deinit"]
 - !private ["P12ObjectMapper12BaseMappable", "chartType"]
 - !private ["P12ObjectMapper12BaseMappable", "data"]
+- !private ["P12ObjectMapper12BaseMappable", "element_key"]
 - ["P12ObjectMapper12BaseMappable", "init"]
 - !private ["P12ObjectMapper12BaseMappable", "label"]
 - ["P12ObjectMapper12BaseMappable", "mapping"]
@@ -38,6 +40,7 @@ depends-member:
 - ["C15UIWebViewLayout12ChartMessage", "chartType"]
 - ["C15UIWebViewLayout12ChartMessage", "data"]
 - ["C15UIWebViewLayout12ChartMessage", "deinit"]
+- ["C15UIWebViewLayout12ChartMessage", "element_key"]
 - ["C15UIWebViewLayout12ChartMessage", "init"]
 - ["C15UIWebViewLayout12ChartMessage", "label"]
 - ["C15UIWebViewLayout12ChartMessage", "mapping"]
@@ -60,6 +63,7 @@ depends-member:
 - !private ["C12ObjectMapper3Map", "subscript"]
 - !private ["P12ObjectMapper8Mappable", "chartType"]
 - !private ["P12ObjectMapper8Mappable", "data"]
+- !private ["P12ObjectMapper8Mappable", "element_key"]
 - ["P12ObjectMapper8Mappable", "init"]
 - !private ["P12ObjectMapper8Mappable", "label"]
 - ["P12ObjectMapper8Mappable", "mapping"]
@@ -157,4 +161,4 @@ depends-external:
 - "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
 - "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Headers/ObjectMapper-umbrella.h"
 - "/Users/timobrien/projects/WebViewLayout/DerivedData/UIWebViewLayout/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework/Modules/module.modulemap"
-interface-hash: "17ae2a53394394c52f05e95b8bb993de"
+interface-hash: "b4f276dc564df18f77be59a7ad8d8503"

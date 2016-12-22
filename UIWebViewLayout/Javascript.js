@@ -44,23 +44,22 @@ function setJson(json) {
     var oData = JSON.parse(json);
  
  
+    alert(oData.element_key)
     
-    
-    var scope =angular.element(document.getElementById('radar')).scope()
+    var scope =angular.element(document.getElementById(oData.element_key)).scope()
+ 
+    alert(scope.barLabel)
     
     
     scope.$apply(function(){
                  
                  
-             
-                 // scope.label[0]  = "RAT"
-                 //scope.data   = oData.data
+            
                  for (i = 0; i < oData.label.length; i++) {
-                 scope.labels[i] = oData.label[i]
-                 
+                      scope.barLabel[i] = oData.label[i]
+
                  }
-                 //scope.labels[2] = "MOUSE"
-                 //scope.labels[3] = "ZIBRA"
+      
                  })
     
  
